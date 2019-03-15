@@ -1053,25 +1053,39 @@
               "ListofItemsMultiplevalue": 1,
               "ListofItems": [
                 {
-                 "Title": "Average Household Income (per month)",
+                 "Title": "Average  Household  Income  (US$  per  month) ",
                   "Icon": "https://via.placeholder.com/20X20",
                   "Link": "https://Population.io",
                   "Name": "Population.io",
-                  "Value": "176"
+                  "Value": "110"
                 },
                 {
-                  "Title": "Cost of 1kWh power",
+                  "Title": "Cost  of  Grid  Electricity  (US  cents  per  kWh) ",
                    "Icon": "https://via.placeholder.com/20X20",
                   "Link": "https://Population.io",
                   "Name": "Population.io",
-                  "Value": "6.25"
+                  "Value": "18"
                 },
                 {
-                   "Title": "%of Deaths attributed to indoor air pollution",
+                   "Title": "Cost  of  Off-Grid  Electricity  (US  cents  per  kWh) ",
                    "Icon": "https://via.placeholder.com/20X20",
                   "Link": "https://Population.io",
                   "Name": "Population.io",
-                  "Value": "29"
+                  "Value": "300"
+                },
+                {
+                   "Title": "Expenditure  on  medical  care  (US$  per  household) ",
+                   "Icon": "https://via.placeholder.com/20X20",
+                  "Link": "https://Population.io",
+                  "Name": "Population.io",
+                  "Value": "73"
+                },
+                {
+                   "Title": "Marginal  damage  done  by  1  ton  of  CO2 ",
+                   "Icon": "https://via.placeholder.com/20X20",
+                  "Link": "https://Population.io",
+                  "Name": "Population.io",
+                  "Value": "5"
                 }
               ]
             }
@@ -1082,40 +1096,47 @@
         "Community": {
           "Community_Basic_Info": [
             {
-              "CountryName": "South Africa",
+              "CountryName": "Philippines",
               "CountryIcons": "http://www.clipbots.com/impact-network/uploads/safricaflag.png",
-              "Latitude": "-34.2968992",
-              "Longitude": "18.2471585",
+              "Latitude": "-14.599512",
+              "Longitude": "120.984222",
               "ShortName": "SA",
               "ListofItemsMultiplevalue": 3,
               "ListofItems": [
                 {
-                  "Title": "Average Household Income (per month)",
+                  "Title": " Average  Household  Income  (US$  per  month) ",
                    "Icon": "https://via.placeholder.com/20X20",
                   "Link": "https://Population.io",
                   "Name": "Population.io",
-                  "Value": "126"
+                  "Value": "110"
                 },
                 {
-                  "Title": "Cost of 1kWh power",
+                  "Title": "Cost  of  Electricity  (US  cents  per  kWh)  ",
                    "Icon": "https://via.placeholder.com/20X20",
                   "Link": "https://Population.io",
                   "Name": "Population.io",
-                  "Value": "9.25"
+                  "Value": "38"
                 },
                 {
-                  "Title": "%of Deaths attributed to indoor air pollution",
+                  "Title": "Cost  of  Off-Grid  Electricity  (US  cents  per  kWh)  ",
                     "Icon": "https://via.placeholder.com/20X20",
                   "Link": "https://Population.io",
                   "Name": "Population.io",
-                  "Value": "39"
+                  "Value": "320"
                 },
                 {
-                  "Title": "Income",
+                  "Title": "Expenditure  on  medical  care  (US$  per  household)  ",
                   "Icon": "https://via.placeholder.com/20X20",
                   "Link": "https://via.placeholder.com",
                   "Name": "Dlink 4",
-                  "Value": "1250M"
+                  "Value": "59  "
+                },
+                {
+                  "Title": "Marginal  damage  done  by  1  ton  of  CO2  ",
+                  "Icon": "https://via.placeholder.com/20X20",
+                  "Link": "https://via.placeholder.com",
+                  "Name": "Dlink 4",
+                  "Value": "5"
                 }
               ]
             }
@@ -1142,12 +1163,12 @@
     "Social_Returns_Bottom_Block": {
       "Output": [
         {
-          "Output_Definition": "#of Households that can watch TV, listen to the Radio, and charge mobile phones using cheaper power",
-          "Value": "350",
+          "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
+          "Value": "10000",
           "Measurable_Outcomes": {
             "Listing": [
               {
-                "Outcome_Definition": "Money saved on communication and entertainment ($ per household per month)",
+                "Outcome_Definition": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
                 "Value": "5",
                 "Quantified_multiplication_value": "10",
                 "Impact_calculation_formula": {
@@ -1160,12 +1181,12 @@
           "Shown_by_default": "TRUE"
         },
         {
-          "Output_Definition": "#of Home business that can benefit from cheaper power. ",
-          "Value": "200",
+          "Output_Definition": "#of  Homes  business  that  can  benefit  from  cheaper  power  ",
+          "Value": "6000",
           "Measurable_Outcomes": {
             "Listing": [
               {
-                "Outcome_Definition": "Increased income because of improved productivity ($ per home-business per month)",
+                "Outcome_Definition": "IIncreased  income  because  of  improved  productivity  ($  per  home-business  per  month)",
                 "Value": "21",
                 "Quantified_multiplication_value": "10",
                 "Impact_calculation_formula": {
@@ -1178,13 +1199,13 @@
           "Shown_by_default": "TRUE"
         },
         {
-          "Output_Definition": "#of Home business that can benefit from cheaper power.",
-          "Value": "200",
+          "Output_Definition": "##of  Households  eliminating  the  usage  of  batteries  and  kerosene  lamps ",
+          "Value": "1000",
           "Measurable_Outcomes": {
             "Listing": [
               {
-                "Outcome_Definition": "Savings because of lower exposure to indoor air pollution, and access to clean water. ($ per month per household)",
-                "Value": "75",
+                "Outcome_Definition": "Marginal  CO2  emissions  damage  prevented  ($,  assuming  0.3  tonnes  emitted  per  month  per  house) ",
+                "Value": "1.5",
                 "Quantified_multiplication_value": "10",
                 "Impact_calculation_formula": {
                   "function": "Javascript function",

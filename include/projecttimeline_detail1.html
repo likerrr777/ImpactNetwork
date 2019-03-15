@@ -1,0 +1,151 @@
+<div class="content_box">
+   <div class="row">
+      <div class="col-md-12">
+         <div class="ttl_header">
+          <div class="pull-right">
+               <p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span> | <span class="light pus"> <i class="fa fa-lightbulb-o fa-lg2"></i> {{Project_Insight}} <a href="javascript:void(0);" class="ins_c"> Insights</a></span></p>
+            </div>
+            <h4 class="content_title" style="
+    display: inline-block;
+    margin-top:0;
+">United Nations Substainable Development Goals</h4>
+<div class="border_btottom2"></div>
+            
+         </div>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-md-4">
+         <!-- <ul>
+            <li ng-repeat="project in projects">
+               <h3 ng-click="selectProj(project)">{{project.Project_Name}}</h3>
+            </li>
+         </ul> -->
+          <div class="component">
+            <!-- <button class="smartcms_button" id="smartcms_button">Menu</button> -->
+            <div class="smartcms_wrapper opened-nav" id="smartcms_wrapper">
+               <ul>
+                   <li  ng-repeat="n in [] | range:17"  title="{{outcomeInfo[n].Project_Name}}" ng-class="{'kkitl':selectProjectIcon(n+1)}"  ng-click="selectProj(outcomeInfo[getprojIndex(n+1)])">
+                     <a href="#{{n+1}}">
+                        <span class="indexcss">
+                           {{n+1}}
+                        </span>
+                        <span>
+                           <img class="primg"  src="../img/icons/{{n+1}}.png">
+                        </span>
+                     </a>
+                  </li> 
+               
+
+<!--  <li ng-repeat="n in [] | range:17" ng-if="n>=outcomeInfo.length">
+                     <a  href="javascript:void(0)">
+                      <span class="indexcss">
+                           {{$index+1}}
+                        </span>
+                        <span>
+                           <img class="primg" src="../angular-project/img/icons/{{$index+1}}.png">
+                        </span>
+                     </a>s
+                  </li> -->
+                </ul>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-8">
+         <p class="f_light" style="margin: 0 50px 10px;">
+           <!-- <img src="img/sun.png"> -->
+           <!-- <img ng-src="{{Project_Icon}}"> -->          
+         </p>
+         <h2 class="gol_h">
+          <span class="proj_Numb">{{Project_Primary_key}}.</span><img ng-src="{{Project_Icon}}" class="c_icons_v">
+          <span class="large_cntn">{{project}}</span></h2>       
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-md-6">
+         <h3 class="o_p">OUTPUTS</h3>
+      </div>
+      <div class="col-md-6 col6_hd">
+         <h3 class="o_c">OUTCOMES</h3>
+      </div>
+   </div>
+   <!--/gray_bg-->
+<div class="gray_bg">
+   <div class="row">
+    <!-- tabs -->
+    <div class="tabbable tabs-left">
+     <div class="col-md-6 output_">
+      <!-- <div class="tab_box_3"> -->
+      <div>
+       <ul class="outcomeNew ">
+        <li ng-repeat="output in outputs track by $index" ng-init="idx=$index" ng-class="{'sel_heading':obj1[output.Project_Foreign_Key]}" ng-click="outcomehighlight(output.Project_Output_Primary_Key,output.Project_Foreign_Key)">
+<div class="outpt_caret" ng-if="obj1[output.Project_Foreign_Key]"  ><i class="fa fa-caret-right pull-left top_a q2" ></i></div>         
+<p class="num_ttl">{{output.Titles}} : {{output.Quantity}}</p>
+<div class="se_number">{{$index+1}}</div>
+         <div class="nci_icon popover__wrapper3"  ng-repeat="tag in output.Tags  track by $index" ng-if="tag.icons && tag.icons!='' || tag.popoverinfo && tag.popoverinfo!=''" ng-class="{'nci_radious' :(tag.icons=='')}" >
+         <div ng-click="showtag(idx,$index)"> <img ng-if="tag.icons && tag.icons!=''" ng-src="{{tag.icons}}" width="30px" class="nci_img">
+         {{tag.label}}</div>
+          <div class="push popover__content3" ng-if="tag.popoverinfo && tag.popoverinfo!='' && outputs_tag_[idx][$index]">
+             <p class="" ng-click="closeouttag(idx,$index)" style="
+    float: right;
+    margin-top: -8px;cursor: pointer;color:#333;
+">   x 
+                                    </p>
+             <p class="popover__message2">    
+                  <div class="sh_re"> 
+                    <img ng-if="tag.popoverinfo.image!=''" ng-src="{{tag.popoverinfo.image}}" class="img-rounded" style="    width: 100%;  height: auto;">
+                  </div>
+               <span ng-if="tag.popoverinfo.Description!=''" style="color:#333">{{tag.popoverinfo.Description}}</span>
+               <br>
+                <a href="{{tag.popoverinfo.link}}" target="_blank">{{tag.popoverinfo.linkText}}</a>
+              </p>
+              <!-- <p class="popover__message3">{{tag.popoverinfo}}</p> -->
+          </div>
+         </div>
+        </li>
+       </ul>
+         </div>
+     </div>
+     <div class="col-md-6 outcomes_">
+      <h3 class="show2">OUTCOMES</h3>
+      <!-- <div class="tab_box_2"> -->
+      <div class="outcomeNew" style="background-color: #fff;">
+       <ul class="nci">
+        <li ng-repeat="outcome in outcomes track by $index" ng-class="{'sel_heading':obj1[outcome.Project_Foreign_Key] || obj2[outcome.Project_Output_Foregin_Key] }" ng-init="idx=$index">
+         <p class="num_ttl">{{outcome.Title}} : {{outcome.Quantity}}</p>
+<div class="se_number ng-binding">{{$index+1}}</div>
+         <!-- <div class="nci_icon se_number">{{$index+1}}</div> -->
+         <div class="nci_icon popover__wrapper3"   ng-repeat="tag in outcome.Tags" ng-if="((tag.icons && tag.icons!='') || (tag.popoverinfo && tag.popoverinfo!='')) " ng-class="{'nci_radious' :(tag.icons=='')}" >
+          <div ng-click="showoutcomestag(idx,$index)" >
+          <img ng-if="tag.icons && tag.icons!=''" ng-src="{{tag.icons}}" width="30px" class="nci_img">
+         {{tag.label}}
+       </div>
+         <div ng-if="tag.icons && tag.icons!='' && outcomes_tag_[idx][$index]" class="push popover__content3">
+              <p class="" ng-click="closeoutcometag(idx,$index)" style="
+    float: right;
+    margin-top: -8px;cursor: pointer;color:#333;
+">   x 
+                                    </p>
+            <p class="popover__message2">    
+                  <div class="sh_re"> 
+                    <img ng-if="tag.popoverinfo.image!=''" ng-src="{{tag.popoverinfo.image}}" class="img-rounded" style="    width: 100%;  height: auto;">
+                  </div>
+               <span ng-if="tag.popoverinfo.Description!=''" >{{tag.popoverinfo.Description}}</span>
+               <br>
+               <a href="{{tag.popoverinfo.link}}" target="_blank">{{tag.popoverinfo.linkText}}</a>
+              </p>
+              <!-- <p class="popover__message3">{{tag.popoverinfo}}</p> -->
+          </div>
+         </div>
+        </li>
+       </ul>             
+      </div>
+     </div><!-- /col-md-6 -->
+
+    </div><!-- /tabs -->
+   </div><!--/row-->
+  </div><!--/gray_bg-->
+<!--/gray_bg-->
+
+</div>
+

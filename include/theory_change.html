@@ -1,0 +1,173 @@
+<section>
+	<div class="content_box">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="ttl_header">
+					<div class="pull-right">
+						<p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span> | <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i> {{th_insight}} Insights</span></p>
+					</div>
+					<h4 class="content_title">Summary</h4>
+<div class="border_btottom2"></div>
+				</div>
+				<p align="justify">{{th_summary}}</p>
+			</div>
+		</div>
+	</div><!--/content_box-->
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="ttl_header">
+					<div class="pull-right">
+						<p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span> | <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i> {{blockIns}} Insights</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<div class="summary_box">
+		<div class="row no_mrgin">
+			<div class="col-md-3 right_box">
+				<div class="t_h">
+					<h3 class="b_ttl">INPUTS</h3>
+					<div class="line"></div>
+					<i class="fa fa-arrow-circle-right r_errow"></i>
+				</div>
+				<p class="f_size beforear" ng-repeat="input in inputs"> 
+				{{input}}</p>
+				
+			</div>
+			<div class="col-md-3 right_box2">
+				<div class="t_h">
+					<h3 class="b_ttl">ACTIVITIES</h3>
+					<div class="line"></div>
+					<i class="fa fa-arrow-circle-right r_errow"></i>
+				</div>
+				
+				<p class="f_size beforear" ng-repeat="activity in activites"> 
+				{{activity}}</p>
+				
+			</div>
+			<div class="col-md-3 right_box">
+				<div class="t_h">
+					<h3 class="b_ttl">INTENDED OUTPUTS</h3>
+					<div class="line"></div>
+					<i class="fa fa-arrow-circle-right r_errow"></i>
+				</div>
+				<p class="f_size beforear" ng-repeat="output in Intoutputs">
+				{{output}}</p>
+				
+			</div>
+			<div class="col-md-3 right_box2">
+				<div class="t_h">
+					<h3 class="b_ttl">INTENDED OUTCOMES</h3>
+					<div class="line"></div>
+				</div>
+				<p class="f_size beforear" ng-repeat="outcome in Intoutcomes"> 
+				{{outcome}}</p>
+				
+			</div>
+		</div>
+	</div><!--/content_box-->
+</section>
+
+<section class="content_desc">
+	<div class="content_box">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="ttl_header">
+					<div class="pull-right">
+						<p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span> | <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i> {{keyAss.Insight}} Insights</span></p>
+					</div>
+					<h4 class="content_title">KEY ASSUMPTIONS</h4>
+<div class="border_btottom2"></div>
+				</div>
+				<div class="desc">
+					<div class="f_size2" ng-repeat="assumpt in keyAss.Points"> 
+					<div class="i_numb pull-left">{{$index+1}}</div>
+				<div class="cntdiv">{{assumpt}}</div></div>
+					
+				</div>
+			</div>
+		</div>
+	</div><!--/content_box-->
+</section><!--/content-->
+<section class="content_desc">
+	<div class="content_box">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="ttl_header">
+					<div class="pull-right">
+						<p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span> | <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i> {{keyAss.Insight}} Insights</span></p>
+					</div>
+					<h4 class="content_title">Problem Statements</h4>
+<div class="border_btottom2"></div>
+				</div>
+				<div class="desc">
+					<div class="f_size2" ng-repeat="Problem in problms.Points"> 
+					<div class="i_numb pull-left">{{$index+1}}</div>
+					<div class="cntdiv">{{Problem.Description}}</div>
+					<img ng-src="{{Problem.Image}}" style="width:100%;margin-bottom: 30px;">
+				</div>					
+				</div>
+			</div>
+		</div>
+	</div><!--/content_box-->
+</section><!--/content-->
+<section class="gallery_sec theroysol">
+	<div class="content_box">
+		<!-- <div class="row">
+			<div class="col-md-12">
+				<div class="ttl_header">
+					<div class="pull-right">
+						<p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span> | <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i> {{problms.Insight}} Insights</span></p>
+					</div>
+<h4 class="content_title">Solutions</h4>
+<div class="border_btottom2"></div>
+				</div>
+			</div> 
+		</div> -->
+
+		<div class="gray_bg">
+			<div class="row">
+				<!-- tabs -->
+				<div class="tabbable tabs-left"> 
+					<div class="col-md-5 acd-1">
+						<ul class="nav nav-tabs menu_tab_b">
+							<li class="sltntab" ng-class="{'active':$first}" ng-repeat="tab in solutions.tabs">
+								<i class="fa fa-caret-right pull-left crtpo"></i>
+<a data-toggle="tab" data-target="#tab_{{$index+1}}"  role="tab"  >{{tab.Label}}</a></li>							
+						</ul>
+					</div>
+					<div class="col-md-7 acd-2">
+						<div class="tab-content white_color">
+							<div class="tab-pane" id="tab_{{$index+1}}" ng-class="{'active':$first}" ng-repeat="tab in solutions.tabs">                
+								<div class="tab_box_2">
+									<ul class="pntul diff">
+										<li class="bx2" ng-repeat="point in tab.Points">
+											<div class="scroll_img_cont">
+												<a class="example-image-link" href="{{point.ImageURL}}" data-lightbox="example-2" > 
+													<img ng-if="point.ImageURL!=''"  ng-src="{{point.ImageURL}}" class="jkc_icon img_scrl example-image">
+												</a>
+												<!-- <img src="img/impact_formula/1.png" class="jkc_icon img_scrl"> -->
+
+												<br>
+												<span class="content_v">{{point.Description}}</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div><!--//id_tab_a-->
+
+						
+						</div><!-- /content_tabs -->
+					</div><!-- /col-md-6 -->
+				</div><!-- /tabs -->
+			</div><!--/row-->
+		</div><!--/gray_bg-->
+	</div><!--/content_box-->
+</section>
+<script>
+ $("[data-toggle='tab']").on("click",function( event ) {
+                event.preventDefault();
+            });
+</script>

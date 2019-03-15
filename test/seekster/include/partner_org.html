@@ -1,0 +1,132 @@
+<style type="text/css">
+  .itempad {
+    padding-right: 14px;
+  }
+</style>
+<section>
+ <div class="content_box">
+  <div class="row">
+   <div class="col-md-12">
+    <div class="ttl_header">
+     <div class="pull-right"  style=" margin-left: 12px;">
+      <div class="add_button">
+       <a href="#" ><span class="padding">+</span>Invite</a>
+      </div>
+      
+     </div>
+<div class="pull-right">
+            <p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span> | <span class="light ng-binding"> <i class="fa fa-lightbulb-o fa-lg2"></i> {{part_insight}} Insights</span></p>
+          </div>
+     <h4 class="content_title">Partner Organizations</h4>
+<div class="border_btottom2"></div>
+    </div>
+    <hr >
+   </div>
+  </div>
+  <div class="row">
+   <div class="col-md-12">
+    <div class="">
+     <input type="text" name="" class=" search form_control" ng-model="org" placeholder="Search Organization" ng-change="search_org(org)"  > 
+    </div>
+   </div>
+  </div>
+<div class='row'>
+    <div class='col-md-12'>
+      
+        <div class="carousel slide media-carousel" id="media_crouser">
+            <div class="carousel-inner">
+                <div class="item" ng-class="{'active':$first}" ng-repeat="items in orgSlider">
+                    <div class="row">
+                        <div class="col-md-4 itempad" #mainId="{{$index}}" ng-repeat="item in items">                            
+                            <div id="item_{{$index}}"  class ="box1" ng-click="showDesc(item,$index);">
+                             <div class="icon" align="center">
+                              <img ng-src="{{item.Image}}" style="width: 133px;">
+                             </div>
+                             <div class="caption1" align="center">
+                              <h5 class="text_heading">{{item.Title}}</h5>
+                              <p>{{item.Url}}</p>
+                             </div>
+                             <div  class="" >
+                              <div class="icon1" ng-repeat="tag in item.Tags"><img src="https://via.placeholder.com/50X50" class="partTag">
+                                {{tag.Title}}
+
+                              </div>
+                             </div>
+                            </div>                           
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <a data-slide="prev" data-target="#media_crouser" class="left carousel-control cc" ng-class="{'empt_slide':orgSlider[0].length==0}">‹</a>
+           <a data-slide="next" data-target="#media_crouser" class="right carousel-control cc" ng-class="{'empt_slide':orgSlider[0].length==0}">›</a>
+       </div>                          
+   </div>
+</div>
+  
+  <hr>
+<div class="row">
+   <div class="col-md-12">
+
+<div class="tab-content">
+    <div id="menu_slide1" class="tab-pane fade in active">
+      <div class="heading" >            
+            <p >{{desc}}</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="second-heading">
+                        <h4 class="headindg1">Role Invovled</h4> 
+                        <div class="content_acb" ng-repeat="role in item_roles track by $index"><i class="fa fa-caret-right pull-left top_a"></i>
+                        <p class="f_size"> {{role}} </p> 
+                      </div>
+                        <!-- <div class="content_acb"><i class="fa fa-caret-right pull-left top_a"></i></div>
+                        <p class="f_size"> {{roles[1]}} </p>  -->
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div><!---//menu_tabs--->
+  </div>    
+  </div> 
+ </div>
+</div><!--/content_box-->
+
+<!---slider--->
+
+</section>
+<section class="user_profile">
+    <div class="content_box">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ttl_header">
+                    <div class="pull-right" style=" margin-left: 12px;">
+                        <div class="add_button">
+                            <a href="#" ><span class="padding">+</span>Invite</a>
+                        </div>
+                    </div>
+<div class="pull-right">
+            <p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span> | <span class="light ng-binding"> <i class="fa fa-lightbulb-o fa-lg2"></i> {{teams_insight}} Insights</span></p>
+          </div>
+                    <h4 class="content_title">Team Members</h4>
+<div class="border_btottom2"></div>
+                </div>
+                <hr>
+                <div class="row" align="center">
+                    <div class="col-md-4" ng-repeat="team in teams">
+                        <div class="box3">
+                            <div class="color-box">
+                                 <img ng-src="{{team.Image}}" class="pro_img" alt="profile">
+                            </div>
+                            <div class="caption"> 
+                                <div  class ="">
+                                <h4 class="heading">{{team.Name}}</h4> 
+                                 <p class="">{{team.Degisnation}}</p>
+                            </div>
+                            </div>              
+                        </div>    
+                    </div>                  
+                </div><!--/row-->
+                
+            </div>
+        </div>
+    </div><!--/content_box-->
+</section>

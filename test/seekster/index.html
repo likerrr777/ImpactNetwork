@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+   <head>
+
+      <meta charset="utf-8">
+
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+      <title>Demo</title>
+
+      <!-- Bootstrap -->
+
+      <link href="css/animate.css" type="text/css" rel="stylesheet">
+
+      <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-dropdownhover.css">
+
+      <link href="font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+
+      <link href="css/style.css?v=1.1.5" type="text/css" rel="stylesheet">
+
+      <link href="css/tabs.css?v=1.1.1" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/fonts/fonts.css" />
+
+      <!--[if lt IE 9]>
+
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+      <![endif]-->
+
+      <link rel="stylesheet" type="text/css" href="css/demo1.css?v=1.1.2" />
+ <link rel="stylesheet" type="text/css" href="lightbox2-master/lightbox.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+ 
+
+    <!--Include script files in your index.html
+
+    ------------------------------------------ -->
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+       <script src="js/newjs.js"></script>
+<!---->
+
+<!---->
+<script src="lightbox2-master/lightbox.js"></script>
+   <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>-->
+        <script type="text/javascript" src="js/newangular.js"></script>
+
+    <script type="text/javascript" src="js/fusioncharts.js"></script>
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="js/fusioncharts.theme.fusion.js"></script>
+   <script type="text/javascript" src="js/fusioncharts.charts.js"></script>
+    <script type="text/javascript" src="js/angular-fusioncharts.min.js"></script>    
+<script type="text/javascript" src="js/fusioncharts.maps.js"></script>
+    <script type="text/javascript" src="js/fusioncharts.world.js"></script>
+  
+
+   <!--  Include Theme CSS File
+
+    ------------------------------------------ -->
+
+    <!-- <link rel="stylesheet" href="js/fusioncharts/themes/fusioncharts.theme.fusion.css"/> -->
+
+   </head>
+
+   <body ng-app="MainApp" ng-controller="MainCtrl">
+
+      <nav class="navbar navbar-default navbar-fixed-top nav2">
+
+         <div class="top_header">
+
+            <div class="container">
+
+               <div class="pull-right">
+
+                  <ul class="top_menu">
+
+                     <li><a href="#"> Join The Community </a></li>
+
+                     <li><a href="#"> Login </a></li>
+
+                  </ul>
+
+               </div>
+
+               <div class="pull-left">
+
+                  <ul class="top_menu">
+
+                     <li><a href="#"> About </a></li>
+
+                     <li><a href="#"> How It Works </a></li>
+
+                     <li><a href="#"> Partner With Us </a></li>
+
+                     <li><a href="#"> Contact </a></li>
+
+                  </ul>
+
+               </div>
+
+            </div>
+
+            <!--//top_header-->
+
+         </div>
+
+         <!--//container-->
+
+         <div class="container hide_header2">
+
+            <div class="navbar-header">
+
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+               <span class="sr-only">Toggle navigation</span>
+
+               <span class="icon-bar"></span>
+
+               <span class="icon-bar"></span>
+
+               <span class="icon-bar"></span>
+
+               </button>
+
+               <a class="navbar-brand" href="#">
+                 <img src="img/logo01.png" alt="logo" class="logo01">
+               </a>
+
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+
+               <ul class="nav navbar-nav navbar-right">
+
+                  <li><a href="#">Home</a></li>
+
+                  <li><a href="#about">About</a></li>
+
+                  <li><a href="#contact">Contact</a></li>
+                  
+               </ul>
+
+            </div>
+
+            <!--/.nav-collapse -->
+
+         </div>
+      </nav>
+
+
+      <!--responsive_tabs-->
+
+      <nav class="navbar navbar-default nav_select">
+
+      <div class="container">
+
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed zero" data-toggle="collapse" data-target="#select_menu" aria-expanded="false" aria-controls="navbar">
+
+              <!-- <span class="fa fa-sort-desc f_sz"></span> -->
+              <span class="icon-bar"></span>
+
+               <span class="icon-bar"></span>
+
+               <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand select_name" href="#">Select Tabs</a>
+
+          </div>
+
+          <div id="select_menu" class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav select_btn">
+
+              <li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
+
+              <li><a href="#theory_change" data-toggle="tab">Theory of Change</a></li>
+
+              <li><a href="#communitiesImctd" data-toggle="tab">Communities Impacted</a></li>
+
+              <li><a href="#riskmanage" data-toggle="tab">Funding & Risk Management</a></li>
+
+              <li><a href="#partner_org" data-toggle="tab">Partner Organizations</a></li>
+
+              <li><a href="#mileStone" data-toggle="tab">Milestones</a></li>
+
+              <!-- <li><a href="#contact" data-toggle="tab">Contact</a></li> -->
+
+            </ul>
+
+          </div>
+
+      </div>
+
+      </nav>
+
+      <!--responsive_tabs-->
+
+
+
+
+      <ng-include src="'include/slider.html'"></ng-include>
+
+      <ng-include src="'include/project_detail.html'"></ng-include>
+
+
+
+
+
+  <!--responsive_tabs-->
+  <!-- <nav class="navbar navbar-default nav_select">
+    <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed zero" data-toggle="collapse" data-target="#select_menu" aria-expanded="false" aria-controls="navbar">
+            <span class="fa fa-sort-desc f_sz"></span>
+          </button>
+          <a class="navbar-brand select_name" href="#">Select Tabs</a>
+        </div>
+        <div id="select_menu" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav select_btn">
+            <li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
+            <li><a href="#theory_change" data-toggle="tab">Theory of Change</a></li>
+            <li><a href="#communitiesImctd" data-toggle="tab">Communities Impacted</a></li>
+            <li><a href="#riskmanage" data-toggle="tab">Funding & Risk Management</a></li>
+            <li><a href="#partner_org" data-toggle="tab">Partner Organizations</a></li>
+            <li><a href="#mileStone" data-toggle="tab">Milestones</a></li>
+          </ul>
+        </div>
+    </div>
+  </nav> -->
+  <!--responsive_tabs-->
+
+
+
+
+
+
+
+      <section class="tab_sec">
+
+     <div class="container">
+
+        <div class="row">
+
+           <!-- tabs -->
+
+           <div class="tabbable tabs-left">
+
+              <div class="col-md-3">
+
+                 <ul class="nav nav-tabs menu_tab_a">
+
+                    <li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
+
+                    <li><a href="#theory_change" data-toggle="tab">Theory of Change</a></li>
+
+                    <li><a href="#communitiesImctd" data-toggle="tab" id="communitiesmap">Communities Impacted</a></li>
+
+                    <li><a href="#riskmanage" data-toggle="tab">Funding & Risk Management</a></li>
+
+                    <li><a href="#partner_org" data-toggle="tab">Partner Organizations</a></li>
+
+                    <li><a href="#mileStone" data-toggle="tab">Milestones</a></li>
+
+                    <!-- <li><a href="#contact" data-toggle="tab">Contact</a></li> -->
+
+                 </ul>
+
+              </div>
+
+              <!-- //col-md-3 -->
+
+<div class="col-md-9">
+
+ <div class="tab-content">
+
+    <div class="tab-pane active" id="overview">
+
+   <section>
+
+      <div class="content_box">
+
+         <div class="row">
+
+            <div class="col-md-12">
+
+               <div class="ttl_header">
+
+                  <div class="pull-right">
+
+                     <p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span> | <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i> {{overview.OverviewInfo.Overview_Insights}} <a href="javascript:void(0);" class="ins_c"> Insights</a></span></p>
+
+                  </div>
+
+                  <h4 class="content_title">Overview</h4>
+                    <div class="border_btottom2"></div>
+
+               </div>
+
+               <p align="justify" class="p_graph">{{overview.OverviewInfo.Overview_Title}}</p>
+
+            </div>
+
+         </div>
+
+      </div>
+
+      <!--/content_box-->
+
+    <ng-include src="'include/time_line.html'"></ng-include>    
+
+    <!--/content_box-->
+
+    <div ng-include src="'include/projecttimeline_detail.html'"></div> 
+
+    <!--/content_box-->
+
+  </section>
+
+  <ng-include src="'include/gallery.html'"></ng-include>
+
+                           <!--/gellary-->
+
+    <ng-include src="'include/funding_partner.html'"></ng-include> 
+
+    <!--/funding_partner-->
+
+    <ng-include src="'include/comment_sec.html'"></ng-include>
+
+    <!--/comments-sec-->
+
+</div>
+
+
+
+    <!-- /tabs_id_overview -->
+
+    <div class="tab-pane" id="theory_change">
+
+       <ng-include src="'include/theory_change.html'"></ng-include>
+
+    </div>
+
+    <!-- /tabs_id -->
+
+    <div class="tab-pane" id="communitiesImctd">
+
+       <ng-include src="'include/comunitiesImpct.html'"></ng-include>
+
+    </div>
+
+    <div class="tab-pane" id="riskmanage">
+
+       <ng-include src="'include/funding_risk_mgmt.html'"></ng-include>
+
+    </div>
+
+    <div class="tab-pane" id="partner_org">
+
+       <ng-include src="'include/partner_org.html'"></ng-include>
+
+    </div>
+
+    <div class="tab-pane" id="mileStone">
+
+       <ng-include src="'include/mileStone.html'"></ng-include>
+
+    </div> 
+ </div>
+
+             <!-- /content_tabs -->
+
+          </div>
+
+          <!--//col-md-9-->
+
+       </div>
+
+       <!-- /tabs -->
+
+    </div>
+
+    <!-- /row -->
+
+ </div>
+
+ <!-- /container -->
+
+</section>
+
+<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h4 class="modal-title" id="image-gallery-title"></h4>
+
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+
+                </button>
+
+
+
+                <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+      <!---/////footer---->
+
+      <footer class="footer_sec">
+
+         <div class="container">
+
+            <div class="row">
+
+               <div class=" col-xs-6 col-md-3">
+
+                  <div class="footer_box">
+
+                     <h3 class="footer_heading"> About Us </h3>
+
+                  </div>
+
+               </div>
+
+               <div class="col-xs-6 col-md-3">
+
+                  <div class="footer_box">
+
+                     <h3 class="footer_heading"> About Us </h3>
+
+                     <ul class="footer_link">
+
+                        <li><a href="#"> Home </a></li>
+
+                        <li><a href="#"> About Us </a></li>
+
+                        <li><a href="#"> Services </a></li>
+
+                        <li><a href="#"> Contact Us </a></li>
+
+                     </ul>
+
+                  </div>
+
+               </div>
+
+               <div class="col-xs-6 col-md-3">
+
+                  <div class="footer_box">
+
+                     <h3 class="footer_heading"> About Us </h3>
+
+                     <ul class="footer_link">
+
+                        <li><a href="#"> Home </a></li>
+
+                        <li><a href="#"> About Us </a></li>
+
+                        <li><a href="#"> Services </a></li>
+
+                        <li><a href="#"> Contact Us </a></li>
+
+                     </ul>
+
+                  </div>
+
+               </div>
+
+               <div class=" col-xs-6 col-md-3">
+
+                  <div class="footer_box">
+
+                     <h3 class="footer_heading"> About Us </h3>
+
+                     <ul class="footer_link">
+
+                        <li><a href="#"> Home </a></li>
+
+                        <li><a href="#"> About Us </a></li>
+
+                        <li><a href="#"> Services </a></li>
+
+                        <li><a href="#"> Contact Us </a></li>
+
+                     </ul>
+
+                  </div>
+
+               </div>
+
+            </div>
+
+         </div>
+
+      </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+     <!--  <script src="js/angular.js"></script> -->
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      
+      <!-- <script src="js/jquery.js"></script> -->
+
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script>
+
+       var app = angular.module('MainApp', ["ng-fusioncharts"]);
+app.filter('range', function() {
+    return function(input, total) {
+        total = parseInt(total);
+
+        for (var i = 0; i < total; i++) {
+            input.push(i);
+        }
+
+        return input;
+    };
+});
+app.controller('MainCtrl', function($scope, $http) {
+    $scope.mapclickfun = mapclickfun;
+    $scope.output = [];
+    $scope.social_chart_arr = [];
+    $scope.selcountry = {};
+    $scope.search_org = search_org;
+    $scope.search_milestone = search_milestone;
+    $scope.updatecountryinfo = updatecountryinfo;
+    $scope.dopopover = dopopover;
+    $scope.outcome = [];
+    $scope.obj1 = {};
+    $scope.obj2 = {};
+    $scope.outcomehighlight = outcomehighlight;
+    $scope.showformaula = showformaula;
+    $scope.Funding_rasing_GraphPlotting1 = [];
+    $scope.Investment_Bottom_Block = [];
+    $scope.Social_Returns_Bottom_Block = [];
+    $scope.impact_fg = {};
+    $scope.Measurable_Outcomes1 = [];
+    $scope.countryChart1 = [];
+    $scope.investmentChart = [];
+    $scope.socialinvst_container = [];
+    $scope.countrylist = [];
+    $scope.countrylist_new = [];
+    $scope.CountryName = [];
+    $scope.country_ListofItems = [];
+    $scope.ttlinvestment = 0;
+    $scope.multiplycm = 1;
+    $scope.ttlsocialinvestment = 0;
+    function dopopover(val,icon,actv){
+     
+      $scope.slect_vl = val;
+      $scope.selct_icon = icon;
+      $scope.activeCircle = actv;
+    }
+    $http.get("inpact-network-ui-json.json")
+
+        .then(function(response) {
+
+            $scope.projectData = response.data;
+           
+            $scope.ProjSec = response.data.ProjectSection;
+
+            $scope.overview = response.data.Overview;
+
+            $scope.gallery = response.data.Overview.Gallery;
+
+            $scope.time_line = response.data.Overview.TimelineInfo;
+            $scope.TimelineInsight = response.data.Overview.TimelineInsight;
+
+            $scope.fundInfo = response.data.Overview.Funding_Information;
+
+            $scope.partners = response.data.Overview.Partnership_Organizations;
+            $scope.partnerInsgt = response.data.Overview.Partnership_Organizations_Insight;
+
+            $scope.outcomeInfo = response.data.Overview.Outputs_Outcomes_Info.Listing;
+            $scope.selectProjectIcon = selectProjectIcon;
+            function selectProjectIcon(n){
+var f = false;
+                 $.each($scope.outcomeInfo,function(key,dt){
+                 //console.log('n',n)
+                 //console.log('primary',dt.Project_Primary_key)
+
+                  if(n==dt.Project_Primary_key){
+ f = true;
+}
+});
+                
+return f;
+              }
+
+    $scope.getprojIndex = getprojIndex ; 
+
+ function getprojIndex(n){
+
+var f = '';
+                 $.each($scope.outcomeInfo,function(key,dt){
+                  if(n==dt.Project_Primary_key){
+ f = key;
+}
+});
+ 
+return f;
+}
+
+
+            $scope.leftpr = 17 - $scope.outcomeInfo.length;
+
+            $scope.comments = response.data.Overview.Insight;
+
+            ///Second Page
+
+            $scope.secpage = response.data.Theory_of_Change;
+
+            $scope.th_summary = $scope.secpage.Summary_Section.Summary;
+
+            $scope.th_insight = $scope.secpage.Summary_Section.Insight;
+
+            $scope.blockIns = $scope.secpage.Summary_Section_Block.Insight;
+
+            $scope.inputs = $scope.secpage.Summary_Section_Block.Input.Points;
+
+            $scope.activites = $scope.secpage.Summary_Section_Block.Activities.Points;
+
+            $scope.Intoutputs = $scope.secpage.Summary_Section_Block.IntendentOutput.Points;
+
+            $scope.Intoutcomes = $scope.secpage.Summary_Section_Block.IntendentOutcomes.Points;
+            $scope.following = following;
+             $scope.follow = 'Follow';
+    $scope.is_following = false;
+    
+    function following(){
+    $scope.follow = 'Following';
+   
+      $scope.ProjSec.TotalFollower = $scope.ProjSec.TotalFollower+'';
+      if($scope.ProjSec.TotalFollower.indexOf(',') != -1){
+      var t =  parseInt($scope.ProjSec.TotalFollower.replace(',',''));
+    }else{
+      var t = $scope.ProjSec.TotalFollower;
+    }
+    t = parseInt(t);
+     if(!$scope.is_following){
+        $scope.is_following = true;
+       t = t +1+'';
+    
+    
+      $scope.ProjSec.TotalFollower = t.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+     
+     
+     }else{
+      t = t -1+'';
+      $scope.follow = 'Follow';
+      $scope.is_following = false;
+            $scope.ProjSec.TotalFollower = t.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+     }
+      //$scope.ProjSec.TotalFollower = t.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+    }
+            $scope.keyAss = $scope.secpage.Key_Assumptions;
+            $scope.solutions = $scope.secpage.Solutions;
+
+            $scope.problms = $scope.secpage.Problem_Statements;
+            selectProject(0);
+
+           
+            ///New Code For project detail circle section         
+
+            $scope.outputs = response.data.Overview.Outputs_Outcomes_Info.Project_Output_Section;
+             $scope.outputs_tag_ = {};
+             $scope.outcomes_tag_ = {};
+            $.each($scope.outputs,function(kry,dt){
+                 
+                   $scope.outputs_tag_[kry] = {};
+                   console.log(dt)
+                   $.each(dt.Tags,function(ky,t){
+                     console.log(t)
+                   $scope.outputs_tag_[kry][ky] = false;
+                   console.log($scope.outputs_tag_)
+
+
+            });
+            });
+            $scope.outcomes = response.data.Overview.Outputs_Outcomes_Info.Project_Outcomes_Section;
+               $.each($scope.outcomes,function(kry,dt){
+                   console.log('$scope.outputs_tag')
+                   console.log(kry)
+                   $scope.outcomes_tag_[kry] = {};
+                   console.log(dt)
+                   $.each(dt.Tags,function(ky,t){
+                     console.log(t)
+                   $scope.outcomes_tag_[kry][ky] = false;
+                   console.log($scope.outcomes_tag_);
+
+
+            });
+            });
+            $scope.projects = response.data.Overview.Outputs_Outcomes_Info.Listing;
+            $scope.intotal = 0;
+            selectProj($scope.projects[0]);
+            //End 
+
+            //Mile Stone page
+
+            $scope.milestone = $scope.projectData.Milestones.Listing;
+            $scope.milestone_insite = $scope.projectData.Milestones.Insight;
+            $scope.updatetotal = updatetotal;
+            $scope.milestone1 = $scope.projectData.Milestones.Listing;
+
+            $scope.teams = $scope.projectData.People_Partnership.TeamMember;
+            $scope.teams_insight = $scope.projectData.People_Partnership.TeamMember_Insight;
+
+            $scope.list_org = $scope.projectData.People_Partnership.Listing;
+            $scope.part_insight = $scope.projectData.People_Partnership.People_Partnership_Insight;
+
+            $scope.orgSlider = orgSlidersplit($scope.list_org, 3);
+            
+            showDesc($scope.list_org[0],0);
+            
+            var i = 1;
+            $.each($scope.outcomeInfo, function(key, dt) {
+
+               
+                if (i == 1) {
+                    $scope.obj1[dt.Project_Primary_key] = true;
+                } else {
+                    $scope.obj1[dt.Project_Primary_key] = false;
+                }
+                i = i + 1;
+            });
+
+            $.each($scope.outputs, function(key, dt) {
+
+
+
+                $scope.obj2[dt.Project_Output_Primary_Key] = false;
+            });
+
+            
+            //Funding and Risk  
+            $scope.fundSec = $scope.projectData.Fund_and_Risk.Funding_Round_Section;
+            $scope.fund_ins = $scope.projectData.Fund_and_Risk.Fund_and_Risk_Insight;
+
+            $scope.fundSecAmnt = $scope.projectData.Fund_and_Risk.Funding_Amount_Section;
+
+            $scope.fundSourc = $scope.projectData.Fund_and_Risk.Source_of_Funding.Listing;
+            $scope.notesInv = $scope.projectData.Fund_and_Risk.Notes_for_Investor;
+            $scope.notes_ins = $scope.projectData.Fund_and_Risk.Notes_for_Investor_Insight;
+
+            $scope.fundgraph = $scope.projectData.Fund_and_Risk.Funding_rasing_over_the_period_of_time;
+
+            $scope.sustain = $scope.projectData.Fund_and_Risk.Sustainability;
+             $scope.social_color = [];
+            $scope.financialxls = $scope.projectData.Fund_and_Risk.Financial_Management.Listing;
+            $scope.financialInsght = $scope.projectData.Fund_and_Risk.Financial_Management.Financial_Insight;
+            $scope.circle_title = $scope.projectData.Fund_and_Risk.Financial_Management_Chart.CenterCircle;
+            $scope.circle_tIcon = $scope.projectData.Fund_and_Risk.Financial_Management_Chart.CenterCircleIcon;
+            $scope.circle_tDesc = $scope.projectData.Fund_and_Risk.Financial_Management_Chart.CenterCirclePopoverText;
+            $scope.FinancialChartInsight = $scope.projectData.Fund_and_Risk.Financial_Management_Chart.FinancialChartInsight;
+
+            $scope.circle_Listing = $scope.projectData.Fund_and_Risk.Financial_Management_Chart.Listing;
+             dopopover($scope.circle_Listing[0].CirclePopoverText,$scope.circle_Listing[0].CircleIcon,$scope.circle_Listing[0].CircleText);
+
+            ///Chart code 
+            $scope.countryChart = response.data.Communities_And_Impact.List_of_Communities[0].Community.Community_Basic_Info[0].ListofItems;
+            $scope.measure_clc = response.data.Communities_And_Impact.List_of_Communities[0].Community.Community_Basic_Info[0].measurable_clc;
+            $scope.Investment = response.data.Communities_And_Impact.Investment_Bottom_Block;
+            $.each($scope.Investment.Listing, function(k, dt) {
+                $scope.intotal = $scope.intotal + parseInt(dt.Value);
+            });
+            $scope.CountryName = response.data.Communities_And_Impact.List_of_Communities[0].Community.Community_Basic_Info[0].CountryName;
+            $scope.CommunityName = response.data.Communities_And_Impact.List_of_Communities[0].Community.Community_Basic_Info[0].CommunityName;
+            $.each($scope.countryChart, function(ky, dty) {
+                $scope.countryChart1.push({
+                    label: dty.Title,
+                    value: dty.Value
+                });
+               
+
+            });
+            
+
+            $.each(response.data.Communities_And_Impact.List_of_Communities, function(ky, dty) {
+               
+                $scope.selcountry[dty.Community.Community_Basic_Info[0].CountryName] = '';
+                $scope.selcountry[dty.Community.Community_Basic_Info[0].CountryName] = false;
+
+
+            });
+           
+            $scope.invstChart = response.data.Communities_And_Impact.Investment_Bottom_Block.Listing;
+            $scope.invest_color = [];
+            $.each($scope.invstChart, function(ky, dty) {
+                $scope.ttlinvestment += parseInt(dty.Value);
+                var c = getRandomColor();
+                $scope.invest_color.push({'color':c});
+                $scope.investmentChart.push({
+                    label: dty.Label,
+                    value: dty.Value,
+                    color:c
+                });
+
+            });
+
+            //console.log($scope.investmentChart);
+            $scope.socialinvestChart = response.data.Communities_And_Impact.Social_Returns_Bottom_Block.Output;
+            $scope.socialinvestChartProgressbar = response.data.Communities_And_Impact.Social_Returns_Bottom_Block.Output[0].Measurable_Outcomes.Listing;
+
+         
+            console.log("social array",$scope.social_chart_arr);
+
+       
+          /*  $.each(response.data.Communities_And_Impact.Social_Returns_Bottom_Block.Output, function(ky, dty) {
+                $scope.v = (dty.Value * dty.Quantified_multiplication_value);
+                $scope.ttlsocialinvestment += parseInt($scope.v);
+                var c = getRandomColor();
+                $scope.social_color.push({'color':c});
+                $scope.socialinvst_container.push({
+                    label: dty.Outcome_Definition,
+                    value: $scope.v,
+                    color:c
+                });
+            });*/
+            
+            //console.log($scope.socialinvst_container);
+            ///Uvaish
+            $scope.Community_Insights = response.data.Communities_And_Impact.Community_Insights;
+
+            $scope.Impact_Reports = response.data.Communities_And_Impact.Impact_Reports.Listing;
+            //Investment_Bottom_Block
+            $scope.Investment_Bottom_Block = response.data.Communities_And_Impact.Investment_Bottom_Block.Listing;
+
+            $scope.List_of_Communities = response.data.Communities_And_Impact.List_of_Communities;
+            $.each($scope.List_of_Communities, function(key, dty) {
+                $scope.Country_name = $scope.List_of_Communities[key].Community.Community_Basic_Info[0].CountryName;
+                $scope.Latitude = $scope.List_of_Communities[key].Community.Community_Basic_Info[0].Latitude;
+                $scope.Longitude = $scope.List_of_Communities[key].Community.Community_Basic_Info[0].Longitude;
+                $scope.Country_value = $scope.List_of_Communities[key].Community.Community_Basic_Info[0].Countryvalue;
+                $scope.countrylist.push({
+                    id: $scope.Country_name,
+                    value: $scope.Country_value
+                });
+                $scope.countrylist_new.push({
+                    latLng: [$scope.Latitude, $scope.Longitude],
+                    name: $scope.Country_name
+                });
+
+            });
+           $scope.mesure = {};
+            mapclickfun(0);
+
+            //Social Returns Bottom Block
+            $scope.Social_Returns_Bottom_Block = response.data.Communities_And_Impact.Social_Returns_Bottom_Block.Output;
+                        console.log('000000')
+            $scope.dototal1 = 0;
+           
+              $.each($scope.Social_Returns_Bottom_Block, function(ky, dty) {
+          
+          // console.log(dty)
+          if(dty.Shown_by_default=="TRUE"){
+            console.log('vs');
+            
+             $scope.mesure[ky] = {};
+            console.log('vs');
+
+             $scope.impact_fg[ky] = {};
+          $.each($scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing, function(i, vs) { 
+           // $scope.valu =  $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value*$scope.Social_Returns_Bottom_Block[ky].Value*60;
+            
+            $scope.ttlsocialinvestment += parseInt($scope.valu);
+                 $scope.impact_fg[ky][i]=false; 
+                 //var t = eval(vs.measure_for);
+         //   console.log( $scope.mesure[ky]);
+             //    $scope.mesure[ky][i]=t; 
+                
+                // $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value = $scope.mesure[ky][i];
+           console.log( $scope.measure_clc);
+           console.log( $scope.measure_clc[ky]);
+           console.log( i);
+           console.log(eval($scope.measure_clc[ky].Value));
+
+                 $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value = eval($scope.measure_clc[ky].Value);
+           console.log( $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value);
+
+                  vs.pers = $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value*$scope.Social_Returns_Bottom_Block[ky].Value*60;
+                  $scope.social_chart_arr.push(vs);
+                $scope.dototal1 += $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value*$scope.Social_Returns_Bottom_Block[ky].Value*60;
+                $scope.valu  = vs.pers;
+             var c = getRandomColor();
+              
+                $scope.social_color.push({'color':c});
+                $scope.socialinvst_container.push({
+                    label: vs.Outcome_Definition,
+                    value: $scope.valu,
+                    color:c
+
+                });
+            });
+       
+           // console.log('after changes socialinvst_container=',$scope.socialinvst_container);  
+           // console.log('after changes socialinvestChartProgressbar=',$scope.socialinvestChartProgressbar);
+       
+          }          
+          
+            }); 
+                 $scope.social_chart = response.data.Communities_And_Impact.Social_Returns_Bottom_Block;
+            $.each($scope.Social_Returns_Bottom_Block,function(k,v){
+console.log('veee');
+              if(v.Shown_by_default=='TRUE'){  
+console.log(v);             
+                $.each(v.Measurable_Outcomes.Listing,function(k1,v1){ 
+
+console.log(v1);
+console.log(v.Value);
+console.log(v1.Value);
+                  v1.pers = (v1.Value*v.Value)*60 ;        
+               
+console.log(v1);
+
+                })
+                
+              }              
+            });
+          /*    $.each($scope.Social_Returns_Bottom_Block, function(k, v) {
+                if (v.Shown_by_default == 'TRUE') {
+                    //$scope.selcountry
+                        console.log(v)
+                        console.log($scope.Social_Returns_Bottom_Block[k])
+
+                    $.each(v.Measurable_Outcomes.Listing, function(i, vs) {
+                        console.log(vs)
+                        console.log((vs.Value * v.Value)*60)
+                          
+                        $scope.dototal1 += ($scope.Social_Returns_Bottom_Block[k].Measurable_Outcomes.Listing[i].Value * $scope.Social_Returns_Bottom_Block[k].Value)*60;
+                    })
+                }
+            });*/
+            ///To date calculate day
+            $scope.timeDiffInMinutes =function(date) {
+              var today = new Date();
+              var dd = today.getDate();
+              var mm = today.getMonth() + 1; //January is 0!
+              var yyyy = today.getFullYear();
+              if (dd < 10) {
+                dd = '0' + dd
+              }
+              if (mm < 10) {
+                mm = '0' + mm
+              }
+              today = yyyy + '/' + mm + '/' + dd;
+              $scope.today = today;
+              var date2 = new Date(today);
+              var date1 = new Date(date);
+              var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+              $scope.dayDifference = Math.ceil(timeDiff / (1000 * 3600 * 24));
+              return $scope.dayDifference;
+            }
+            $scope.dateMonth =function(date) {
+
+            var months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+              const d = new Date(date);             
+              
+              return d.getDate()+' '+months[d.getMonth()];
+            }                    
+
+            $scope.Funding_rasing_GraphPlotting = $scope.projectData.Fund_and_Risk.Funding_rasing_over_the_period_of_time.GraphPlotting;
+            $.each($scope.Funding_rasing_GraphPlotting, function(ky, dty) {
+                $scope.Funding_rasing_GraphPlotting1.push({
+                    label: dty.Year,
+                    value: dty.Amount
+                });
+            });
+        });
+
+    $scope.selectProject = selectProject;
+    $scope.showInvest = showInvest;
+    $scope.hight_outcome = hight_outcome;
+    $scope.showDesc = showDesc;   
+    $scope.mileStCmnt = mileStCmnt;
+    $scope.testGal = testGal;
+    $scope.selectProj = selectProj;
+    $scope.impact_fg = {};
+    $scope.getSelReturn = getSelReturn;
+    $scope.closeformula = closeformula;
+    function closeformula(idx,index){
+$scope.impact_fg[idx][index] = false;
+    }
+    function showformaula(idx,index){    
+          $.each($scope.impact_fg[idx],function(key,dt){
+                    $scope.impact_fg[idx][key] = false;
+          });
+          $scope.impact_fg[idx][index] = true;
+ 
+    } 
+     
+            $scope.showtag = showtag;
+            function showtag(idx,index){
+              console.log('llll')
+              console.log($scope.outputs_tag_)
+              console.log($scope.outputs_tag_[idx])
+                 $.each($scope.outputs_tag_[idx],function(kry,dt){
+                  
+                   $scope.outputs_tag_[idx][kry] = false;
+            });
+                   $scope.outputs_tag_[idx][index] = true;
+
+            } 
+            $scope.showoutcomestag = showoutcomestag;
+            $scope.closeouttag = closeouttag;
+             function closeouttag(idx,index){
+              console.log(idx)
+              console.log(index)
+$scope.outputs_tag_[idx][index] = false;
+    }
+       function closeoutcometag(idx,index){
+$scope.outcomes_tag_[idx][index] = false;
+    }
+            function showoutcomestag(idx,index){
+              console.log('llll')
+              console.log($scope.outcomes_tag_)
+                 $.each($scope.outcomes_tag_[idx],function(kry,dt){
+                  
+                   $scope.outcomes_tag_[idx][kry] = false;
+            });
+                   $scope.outcomes_tag_[idx][index] = true;
+
+            }
+    function mapclickfun(index) {
+        $scope.country_ListofItems = $scope.List_of_Communities[index].Community.Community_Basic_Info[0].ListofItems;
+        $scope.CountryName = $scope.List_of_Communities[index].Community.Community_Basic_Info[0].CountryName;
+        $scope.CommunityName = $scope.List_of_Communities[index].Community.Community_Basic_Info[0].CommunityName;
+        $scope.CountryIcons = $scope.List_of_Communities[index].Community.Community_Basic_Info[0].CountryIcons;
+        $scope.selcountry[$scope.CountryName] = true;
+
+    }
+
+    function showInvest() {
+        $("#investModal").modal("show");
+    }
+
+    function getSelReturn() {
+
+        $scope.Social_Returns_Bottom_Block_new = [];
+        var html = ''
+
+        $("input:checkbox[name=socialExtra]:checked").each(function() {
+          // console.log('befor changes socialinvst_container=',$scope.socialinvst_container);
+          // console.log('socialinvestChartProgressbar=',$scope.socialinvestChartProgressbar);
+            var d = $scope.Social_Returns_Bottom_Block[$(this).val()];
+            // console.log('test12=',d);
+            d.Shown_by_default = "TRUE";
+            $.each(d.Measurable_Outcomes.Listing,function(k1,v1){          
+                  $scope.social_chart_arr.push(v1)
+            });
+            // $scope.Social_Returns_Bottom_Block.push(d);
+            // console.log('test12=',$scope.Social_Returns_Bottom_Block);
+
+            $.each(d.Measurable_Outcomes.Listing, function(i, vs) { 
+            $scope.total += (vs.Value * vs.Quantified_multiplication_value);
+            });
+          $('#auto_height').animate({height: '+=110'}, 500); 
+
+        });
+        $scope.socialinvst_container=[];
+        //$scope.social_chart_arr=[];
+        $scope.socialinvestChartProgressbar=[];
+        
+        $scope.ttlsocialinvestment = 0;
+       
+        var i1 = 0;
+        $.each($scope.Social_Returns_Bottom_Block, function(ky, dty) {
+           
+          if(dty.Shown_by_default=="TRUE"){
+            if(typeof $scope.impact_fg[ky] === 'undefined' ){
+                 $scope.impact_fg[ky]={}; 
+               }
+          $.each($scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing, function(i, vs) { 
+            //$scope.valu = (vs.Value * vs.Quantified_multiplication_value);
+            $scope.valu = $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value*$scope.Social_Returns_Bottom_Block[ky].Value*60;
+             dty.pers = $scope.valu;
+                  $scope.social_chart_arr[ky].pers = $scope.valu; ;
+            console.log($scope.valu);
+            $scope.ttlsocialinvestment += parseInt($scope.valu);
+            if(typeof $scope.impact_fg[ky] === 'undefined' ){
+                 $scope.impact_fg[ky][i]=false; 
+               }
+                if(typeof $scope.social_color[i1]!=='undefined' && typeof $scope.social_color[i1].color!=='undefined'){
+                  
+                
+              
+            $scope.socialinvst_container.push({
+                    label: vs.Outcome_Definition,
+                    value: $scope.valu,
+                    color:$scope.social_color[i1].color
+
+                });
+            
+          }else{
+             var c = getRandomColor();
+ console.log($scope.valu);
+
+                $scope.social_color.push({'color':c});
+              $scope.socialinvst_container.push({
+                    label: vs.Outcome_Definition,
+                    value: $scope.valu,
+                    color:c
+
+                });
+          }
+            $scope.socialinvestChartProgressbar.push({
+                    Outcome_Definition: vs.Outcome_Definition,
+                    Value: $scope.valu
+                });
+            i1 = i1+1;
+            });
+        
+          setTimeout(function() {                
+              $('#investment_container svg').attr('height','275');
+              $('#socialinvst_container svg').attr('height','275');
+
+              console.log('$scope.socialinvst_container');
+              console.log($scope.socialinvst_container);
+               socialinvstFusionCharts($scope.ttlsocialinvestment,$scope.socialinvst_container); 
+            }, 1000);
+           // console.log('after changes socialinvst_container=',$scope.socialinvst_container);  
+           // console.log('after changes socialinvestChartProgressbar=',$scope.socialinvestChartProgressbar);
+           dototal();  
+          }
+                          
+          
+            });        
+        $("#investModal").modal("hide");
+    }
+
+    function selectProject(index) {
+
+        $scope.output = $scope.outcomeInfo[index].Project_Output_Section;
+        var x = [];
+
+        $scope.obj = {};
+
+        $.each($scope.output, function(key, dt) {
+
+
+            $scope.obj[key] = false;
+
+
+            x.push(dt.Outcome);
+
+            $.each(dt.Outcome, function(ky, t) {
+
+                t['id'] = key;
+
+                $scope.outcome.push(t);
+
+            });
+
+        });
+    }
+
+    function hight_outcome(index) {
+
+        $.each($scope.obj, function(ky, t) {
+
+            $scope.obj[ky] = false;
+
+        });
+
+        $scope.obj[index] = true;
+
+    }
+
+    // Org data
+
+    function orgSlidersplit(arr, size) {
+
+        var newArr = [];
+
+        for (var i = 0; i < arr.length; i += size) {
+
+            newArr.push(arr.slice(i, i + size));
+
+        }
+
+        return newArr;
+
+    }
+
+    function showDesc(item,key1) {
+
+        $scope.desc = item.Description;
+        $scope.item_roles = item.RoleInvolved;
+      
+        $scope.tags = item.Tags;
+        $('.box1').css("border","1px solid #07c776"); 
+        $('.box1').removeClass("boxselect");
+        /*$('#item_'+key1).css("border","1px solid red");*/
+        $('#item_'+key1).addClass("boxselect");
+    }
+    //get comment
+    function mileStCmnt(cmnt){
+      $('.maile_stone_moal').modal('show');
+     
+      $scope.milst_cmnt = cmnt;
+    }
+    $scope.mileStTask = mileStTask;
+    function mileStTask(task){
+      $('.milestone_task').modal('show');
+     
+      $scope.milst_task = task;
+    }
+    $scope.mileStAttach = mileStAttach;
+    function mileStAttach(attach){
+      $('.milestone_attach').modal('show');
+    
+      $scope.milst_attach = attach;
+    }
+
+    function testGal(url) {
+        $('#image-gallery').modal('show');
+        $('#image-gallery-image').attr('src', url);
+       // console.log(url);
+    }
+
+    function search_org(val) {
+        var d = orgSlidersplit($scope.list_org, 3);
+        $scope.orgSlider = [];
+        var f = [];
+        if (val != '') {
+           
+            $.each(d, function(key, dt) {
+                $.each(dt, function(k, d1) {
+
+                    if (d1.Title.indexOf(val) != -1) {
+                        f.push(d1);
+                    }
+                });
+            });
+            $scope.orgSlider.push(f);
+
+        } else {
+            $scope.orgSlider = d;
+        }
+    }
+
+    function search_milestone(val) {
+        var d = $scope.milestone1
+        $scope.milestone = [];
+        var f = [];
+        if (val != '') {
+            $.each(d, function(key, dt) {
+               
+                if (dt.MainTitle.indexOf(val) != -1) {
+                    $scope.milestone.push(dt);
+                }
+            });
+
+
+        } else {
+            $scope.milestone = d;
+        }
+    }
+
+    function selectProj(proj) {
+
+
+        $scope.project = proj.Project_Name;
+        $scope.Project_Primary_key = proj.Project_Primary_key;
+        console.log("///////////////////////",proj);
+        $scope.Project_Icon = proj.Project_Icon;
+
+        $scope.Project_Insight = proj.Project_Insight;
+
+        $scope.Proj_ID = proj.Proj_ID;
+
+        $.each($scope.obj1, function(ky, t) {
+
+            $scope.obj1[ky] = false;
+
+        });
+
+        $scope.obj1[proj.Project_Primary_key] = true;
+
+
+    }
+
+    function outcomehighlight(proj, pt) {
+
+        $.each($scope.obj1, function(ky, t) {
+
+            $scope.obj1[ky] = false;
+
+        });
+        $scope.obj1[pt] = true;
+        $.each($scope.obj2, function(ky, t) {
+
+            $scope.obj2[ky] = false;
+
+        });
+
+        $scope.obj2[proj] = true;
+    }
+
+    $scope.myDataSource = {
+
+        "chart": {
+
+            "caption": "Funding Over Time(in millions)",
+
+            "numberprefix": "$",
+
+            "rotatelabels": "0",
+
+            "theme": "fusion"
+        },
+
+        "data": $scope.Funding_rasing_GraphPlotting1
+
+    };
+    function updatecountryinfo(name) {
+             $scope.social_chart_arr = [];
+        $.each($scope.List_of_Communities, function(key, dt) {
+            if (dt.Community.Community_Basic_Info[0].CountryName == name) {
+                $scope.country_ListofItems = [];
+                $scope.CountryName = name;
+                $scope.CommunityName = dt.Community.Community_Basic_Info[0].CommunityName;
+                $scope.CountryIcons = dt.Community.Community_Basic_Info[0].CountryIcons
+                $scope.measure_clc = dt.Community.Community_Basic_Info[0].measurable_clc
+                console.log( $scope.measure_clc)
+                if (!$scope.selcountry[name]) {
+                    $scope.multiplycm = dt.Community.Community_Basic_Info[0].ListofItemsMultiplevalue;
+                }
+                $scope.country_ListofItems = dt.Community.Community_Basic_Info[0].ListofItems;
+               $.each($scope.Social_Returns_Bottom_Block, function(ky, d) {
+                    if (d.Shown_by_default == 'TRUE') {
+                        $.each(d.Measurable_Outcomes.Listing, function(i, vs) {
+                console.log( $scope.measure_clc[ky])
+
+                            $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value = eval($scope.measure_clc[ky].Value);
+                console.log(eval($scope.measure_clc[ky].Value))
+                console.log(eval($scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value))
+
+                  vs.pers = $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value*$scope.Social_Returns_Bottom_Block[ky].Value*60;
+                  $scope.social_chart_arr.push(vs);
+                $scope.dototal1 += $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value*$scope.Social_Returns_Bottom_Block[ky].Value*60;
+                $scope.valu  = vs.pers;
+             var c = getRandomColor();
+              
+                $scope.social_color.push({'color':c});
+                $scope.socialinvst_container.push({
+                    label: vs.Outcome_Definition,
+                    value: $scope.valu,
+                    color:c
+
+                });
+                        });
+                    }
+                });
+
+            }
+        });
+        getSelReturn()
+    }
+
+
+    $scope.dototal1 = 0;
+    $scope.dototal = dototal;
+
+            function dototal() {
+                $scope.dototal1 = 0;
+                $.each($scope.Social_Returns_Bottom_Block, function(ke, d) {
+                    if (d.Shown_by_default == 'TRUE') {
+                      console.log($scope.Social_Returns_Bottom_Block[ke])
+                        $.each(d.Measurable_Outcomes.Listing, function(key, dt1) {
+                   $scope.dototal1 += ($scope.Social_Returns_Bottom_Block[ke].Measurable_Outcomes.Listing[key].Value * $scope.Social_Returns_Bottom_Block[ke].Value)*60; 
+                        });
+                    }
+                });
+            }
+            function updatetotal(val, i) {
+              getSelReturn();
+                dototal();
+            }
+            dototal();
+$scope.changeoutcomes = changeoutcomes;
+function changeoutcomes(val,index){
+
+ $.each($scope.Social_Returns_Bottom_Block, function(ke, d) {
+                    if (d.Shown_by_default == 'TRUE') {
+                        $.each(d.Measurable_Outcomes.Listing, function(key, dt1) {
+                            //$scope.Social_Returns_Bottom_Block[index].Measurable_Outcomes.Listing[key].Value = val*//;
+                        });
+                    }
+                });
+ dototal();
+getSelReturn();
+}
+
+$scope.invests = invests;
+function invests(val,key){
+  
+
+ $scope.Investment.Listing[key].Value = val;
+
+$.each($scope.Investment.Listing, function(k, dt) {
+
+   if (k == key) {
+    
+    if(val==''){
+      val=parseInt(0);
+    }   
+  }
+    });
+intotals();
+$.each($scope.Investment.Listing, function(k, dt) {
+
+      $scope.Investment.Listing[k].color = $scope.invest_color[k].color;
+    });
+//This function effected graph on-blur
+getinputvalue();
+}
+$scope.intotals = $scope.intotals;
+function intotals(){
+  $scope.intotal = 0;
+$.each($scope.Investment.Listing, function(k, dt) {
+      if(dt.Value!==''){
+   $scope.intotal += parseInt(dt.Value); 
+  }
+    });
+}
+$scope.abc = abc;
+    function abc() {
+        $("#investmentModal").modal("show");
+    }
+// $scope.tooltips = tooltips;    
+// function tooltips(val) {
+//   $('#close').html('<div class="alert"  style="background-color: #ececec;width: 136px;min-height: 70px;border-radius: 0px;border: 1px solid #ececec;    padding: 5px 10px 0px 0px; display: block;"><a href="#" data-dismiss="alert" aria-label="close" class="close">×</a><strong><span id="tooltips" style="padding: 18px 0px 0px 11px;">'+val+'</span></strong></div>');
+//   $('.ale rt').css('display','block');
+//     }
+$scope.getinputvalue = getinputvalue;
+function getinputvalue() {
+var text = $('#text1').val();
+var value = $('#value1').val();
+if(text!='' && value!=''){
+$scope.ttlinvestment += parseInt(value);
+$scope.ttlinvestment += parseInt(value);
+      var c = getRandomColor();
+$scope.invest_color.push({'color':c});
+$scope.Investment.Listing.push({
+                    Label: text,
+                    Value: value,
+                     color: c
+                });
+intotals();
+$('#text1').val('');
+$('#value1').val('');
+}
+aa($scope.intotal,$scope.Investment.Listing);
+$("#investmentModal").modal("hide");
+            setTimeout(function() {
+              $('#investment_container svg').attr('height','275');
+              $('#socialinvst_container svg').attr('height','275');
+            }, 300);
+    }
+    
+   
+    function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+});
+</script>
+<script src = "js/bootstrap-dropdownhover.js" > </script>
+    <script type = "text/javascript">
+    $(document).ready(function() {
+      $('.close').click(function() {
+          alert();
+   $('.alert').css('display','none');
+});
+        $('[data-toggle=tab]').click(function(e) {
+            setTimeout(function() {
+              $('#investment_container svg').attr('height','275');
+              $('#socialinvst_container svg').attr('height','275');
+            }, 1000);
+            e.preventDefault();
+            e.preventDefault();
+        });
+        setTimeout(function() {
+            var t = 0;
+            $('.csstransforms .opened-nav li').each(function() {
+
+                $(this).css('transform', 'rotate(' + t + 'deg) skew(72deg)');
+                t = t + 21.2;
+            });
+        }
+, 1000);
+        $('[data-toggle="popover"]').popover();
+ $("body").on("click","[data-toggle='tab']",function( event ) {
+
+                event.preventDefault();
+            });
+    });
+$(document).ready(function(){
+  setTimeout(function(){  
+    $(".ins_c").click(function() {
+      $('html,body').animate({
+          scrollTop: $("#comment_sec").offset().top},
+              'slow');
+      });
+  }, 3000);
+ 
+})
+</script>
+
+   </body>
+
+</html>

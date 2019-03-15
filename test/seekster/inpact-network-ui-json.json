@@ -1,0 +1,846 @@
+{
+  "HomepageSlider": {
+    "Banner": [{
+        "Name": "homepageSlider1",
+        "Sequence": "1",
+        "ImgUrl": "simg/seekster-flyer1.jpg"
+      },
+      {
+        "Name": "homepageSlider2",
+        "Sequence": "2",
+        "ImgUrl": "simg/Seekster_Banner.jpg"
+      }
+    ]
+  },
+  "ProjectSection": {
+    "Project_Info": {
+      "Logo": "simg/seekster-logo.png",
+      "Title": "Digital platform for connecting maids and technicians to customers",
+     "Username": "@Username",
+      "OrganisationName": "Seekster",
+      "OrganisationURL": "www.seekster.co"
+    },
+    "Rating_Info": {
+      "Star": "4.5",
+      "Total": "38"
+    },
+    "Social_Network": {
+      "Facebook": "https://www.facebook.com/",
+      "Tweeter": "https://twitter.com/login",
+      "Instagram": "https://instagram.com//",
+      "LinkedIn": "https://in.linkedin.com/"
+    },
+    "Location": "Bangkok, Thailand",
+    "TotalInsight": "38",
+    "TotalFollower": 124,
+    "FollowerLink": "http://www.clipbots.com/impact-network/uploads/",
+    "InvestLink": "http://www.clipbots.com/impact-network/uploads/"
+  },
+  "Overview": {
+    "OverviewInfo": {
+      "Overview_Title": "Seekster is an online platform that connects blue-collar service providers to consumers in Thailand. While it provides an easy way to book cleaning and other services for homes and offices, for the workers, it provides a deterministic and stable source of jobs. Seekster streamelines the process of ordering, paying, and rating the service providers.",
+      "Overview_Insights": "3"
+    },
+    "TimelineInfo": [{
+        "Label": "App Launch",
+        "Icon": "green",
+        "Date": "  01/01/2017",
+        "Type": "completed"
+      },
+      {
+        "Label": "1000 Jobs Connected",
+        "Icon": "green",
+        "Date": " 01/01/2018",
+        "Type": "completed"
+      },
+      {
+        "Label": "Seeding Funding",
+        "Icon": "yellow",
+        "Date": " 01/01/2019",
+        "Type": "ongoing"
+      },
+      {
+        "Label": "100M Annual Revenue",
+        "Icon": "Text",
+        "Date": " 01/01/2020",
+        "Type": "future"
+      }
+    ],
+    "TimelineInsight": "34",
+    "Outputs_Outcomes_Info": {
+      "Outputs_Outcomes_Insight": "8",
+      "Listing": [
+        {
+          "Project_Name": "Make  cities  and  human  settlements  inclusive,  resilient  and  sustainable for all",
+          "Project_Icon": "http://impactnetwork.vision/img/yellow_icons/11.png",
+          "Project_Insight": "280",
+          "Project_Primary_key": "11"
+        },
+        {
+          "Project_Name": "Promote  sustained,  inclusive  and  sustainable  economic  growth,  full  and  productive  employment  and  decent  work  for  all",
+          "Project_Icon": "http://impactnetwork.vision/img/yellow_icons/8.png",
+          "Project_Insight": "290",
+          "Project_Primary_key": "8"
+        }
+      ],
+      "Project_Output_Section": [{
+          "Title": "Average # of hours saved by the customer because of the matched job",
+          "Quantity": "3",
+          "Project_Foreign_Key": "8",
+          "Project_Output_Primary_Key": "B1",
+          "Tags": [{
+              "icons": "img/new_img/irs.png",
+              "label": "IRIS  MetricPI2845",
+              "popoverinfo": {
+                "image": "img/impact_formula/1.png",
+                "link": "img/impact_formula/1.png",
+                "linkText": "Click here",
+                "Description": "World Bank entitled, â€œRural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002) "
+              }
+            },
+            {
+              "icons": "img/new_img/glogo1.jpg",
+              "label": "GOGLA  metric  1ai ",
+              "popoverinfo": {
+                "image": "img/impact_formula/1.png",
+                "link": "img/impact_formula/1.png",
+                "linkText": "Click here",
+                "Description": "World Bank entitled, â€œRural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002) "
+              }
+            },
+            {
+              "icons": "",
+              "label": "",
+              "popoverinfo": ""
+            }
+          ]
+        },
+        {
+          "Title": "Average # of jobs perfromed by each worker",
+          "Quantity": "100",
+          "Project_Foreign_Key": "11",
+          "Project_Output_Primary_Key": "B2",
+          "Tags": [{
+              "icons": "",
+              "label": "IRIS  Metric  OI2496",
+              "popoverinfo": {
+                "image": "img/impact_formula/1.png",
+                "link": "img/impact_formula/1.png",
+                "linkText": "Click here",
+                "Description": "World Bank entitled, â€œRural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002)"
+              }
+            },
+            {
+              "icons": "",
+              "label": "",
+              "popoverinfo": ""
+            }
+          ]
+        }
+      ],
+      "Project_Outcomes_Section": [{
+          "Title": "Additonal income opportunity for the blue-collar workers, many of them with low-income.",
+          "Quantity": "",
+          "Project_Foreign_Key": "7",
+          "Project_Output_Foregin_Key": "B1",
+          "Tags": [{
+              "icons": "",
+              "label": "IRIS  MetricPI2845",
+              "popoverinfo": {
+                "image": "img/impact_formula/1.png",
+                "link": "img/impact_formula/1.png",
+                "linkText": "Click here",
+                "Description": "World Bank entitled, â€œRural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002) "
+              }
+            },
+            {
+              "icons": "",
+              "label": "IRIS  MetricPI2845",
+              "popoverinfo": {
+                "image": "img/impact_formula/1.png",
+                "link": "img/impact_formula/1.png",
+                "linkText": "Click here",
+                "Description": "World Bank entitled, â€œRural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002) "
+              }
+            }
+          ]
+        },
+        {
+          "Title": "Time savings for the customers because of the jobs done by Seekster",
+          "Quantity": "--",
+          "Project_Foreign_Key": "11",
+          "Project_Output_Foregin_Key": "B2",
+          "Tags": [{
+              "icons": "",
+              "label": "IRIS  Metric  OI2496",
+              "popoverinfo": {
+                "image": "img/impact_formula/1.png",
+                "link": "img/impact_formula/1.png",
+                "linkText": "Click here",
+                "Description": "World Bank entitled, â€œRural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002) "
+              }
+            },
+            {
+              "icons": "",
+              "label": "IRIS  Metric  OI2496",
+              "popoverinfo": {
+                "image": "img/impact_formula/1.png",
+                "link": "img/impact_formula/1.png",
+                "linkText": "Click here",
+                "Description": "World Bank entitled, â€œRural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002) "
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Gallery": {
+      "Gallery_Insight": "220",
+      "Images": [{
+          "Small_Image": "simg/Team_KH.jpg",
+          "Big_Image": "",
+          "Image_Title": "Seekster Team"
+        }
+      ]
+    },
+    "Partnership_Organizations": [{
+        "Partnership_Title": "DTAC",
+        "Partnership_ImageURL": "simg/dtac-logo-vector.png"
+      },
+      {
+        "Partnership_Title": "500 TukTuks",
+        "Partnership_ImageURL": "simg/500 TukTuks.jpg"
+      },
+      {
+        "Partnership_Title": " Ananda",
+        "Partnership_ImageURL": "simg/Logo-ananda.original.jpg"
+      }
+    ],
+    "Partnership_Organizations_Insight": "45",
+    "Funding_Information": {
+      "Insight": "5",
+      "Amount": "0.4M",
+      "AmountSign": "$",
+      "FundingList": [{
+          "Label": "DTAC Accelerate, and 500 TukTuks",
+          "Color": "#00D246",
+          "Percentage": "100"
+        }
+      ]
+    },
+    "Insight": {
+      "Overview": [
+        {
+          "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor1.png",
+          "Author_Name": "Aaron Taylor",
+          "Review_Description": "Much needed platform for offline maids and technicians",
+          "Review_Image": "",
+          "Review_Number": "163",
+          "Review_Star": "4",
+          "Date_Time": "11 jan 2018 - 15:45"
+        },
+        {
+          "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor1.png",
+          "Author_Name": "Xue Lidan",
+          "Review_Description": "Maids in our community are able to earn above their average income",
+          "Review_Image": "",
+          "Review_Number": "163",
+          "Review_Star": "3",
+          "Date_Time": "11 jan 2018 - 15:45"
+        }
+      ],
+      "Timeline": [
+        {
+          "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor3.png",
+          "Author_Name": "Rao Saoy",
+          "Review_Description": "Connected to larger community is short time",
+          "Review_Image": "",
+          "Review_Number": "163",
+          "Review_Star": "4",
+          "Date_Time": "11 jan 2018 - 15:45"
+        }
+      ],
+      "Project": [
+        {
+          "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor3.png",
+          "Author_Name": "Chang Tao",
+          "Review_Description": "Digital platforms like these are much needed to our community to connect maids and technicians who have very less visiability to online network",
+          "Review_Image": "",
+          "Review_Number": "163",
+          "Review_Star": "3",
+          "Date_Time": "11 jan 2018 - 15:45"
+        }
+      ],
+      "Gallery": [
+        {
+          "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor3.png",
+          "Author_Name": "Tom Sally",
+          "Review_Description": "We would like to see more pictures from the community",
+          "Review_Image": "",
+          "Review_Number": "163",
+          "Review_Star": "2",
+          "Date_Time": "11 jan 2018 - 15:45"
+        }
+      ]
+    }
+  },
+  "Theory_of_Change": {
+    "Summary_Section": {
+      "Summary": "Seekster is an online platform that connects blue-collar service providers to consumers in Thailand. While it provides an easy way to book cleaning and other services for homes and offices, for the workers, it provides a deterministic and stable source of jobs. Seekster streamelines the process of ordering, paying, and rating the service providers.",
+      "Insight": "800"
+    },
+    "Summary_Section_Block": {
+      "Insight": "800",
+      "Input": {
+        "Points": [
+          "Online Platform (Website)",
+          "A paid, fulltime staff team of 20",
+          "Marketing expenditure"
+        ]
+      },
+      "Activities": {
+        "Points": [
+          "Sign up residents and offices in Tier-1 cities of Thailand",
+          "Run promotion campaigns to use the cleaning packages from Seekster",
+          "Oversee the success of jobs and manage payments",
+          "Encourage and receive ratings for each of the jobs completed"
+        ]
+      },
+      "IntendentOutput": {
+        "Points": [
+          "#of of jobs successfully connected with the service provider(s) needed",
+          " #of workers provided with jobs via Seekster",
+          "A database of workers sorted by their reputation score"
+        ]
+      },
+      "IntendentOutcomes": {
+        "Points": [
+          "Additonal income opportunity for the workers",
+          "Time savings for the customers because of the jobs done by Seekster"
+        ]
+      }
+    },
+    "Key_Assumptions": {
+      "Insight": "800",
+      "Points": [
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i"
+      ]
+    },
+    "Problem_Statements": {
+      "Insight": "770",
+      "Points": [
+        "I bet we all have seen some flyers posted on walls or electricity poles advertising services or looking to recruit a maids or technicians. What’s happening in the fragmented market of service is about the space between customers and service providers where customer have no centralized data of the reliable service provider’s whereabouts. Some may have a regular service provider that may be reliable but will have to wait for the queue for 1 month. The pricing in the service market is fluctuated and differs by each provider making it a tough decision for customer to decide. On the other hand service provider is living in a risky condition where jobs came inconsistently."
+      ]
+    },
+    "Solutions": {
+      "Insight": "800",
+      "tabs": [{
+          "Label": "Proposed Solution",
+          "Points": [{
+              "Description": "Seekster sees the problem and willing to tackle. We want you to be able to find reliable service provider that can track the background. Seekster curated each service provider and secure their information. We design the system as per Crowd Sourcing model where jobs will be distributed and you can be serviced as long as the service provider is presented in your area.",
+              "ImageURL": "https://via.placeholder.com/100X50"
+            }
+          ]
+        },
+        {
+          "Label": "Alternative Solutions",
+          "Points": [{
+              "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i",
+              "ImageURL": "https://via.placeholder.com/100X50"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "Milestones": {
+    "Insight": "800",
+    "Listing": [{
+        "MainTitle": "Project Main Title 1",
+        "SubTitle": "Sub-Title 1",
+        "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+        "Date": "12-NOV-2018",
+        "DateTimeStamp": "1541961000",
+        "StatusLabel": "INPROGRESS",
+        "StatusColor": "progressblue",
+        "StatusPercentage": "30",
+        "Task": [
+          "Points 1",
+          "Points 2",
+          "Points 3",
+          "Points 4"
+        ],
+        "Attachment": [{
+            "Label": "Title 1",
+            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+          },
+          {
+            "Label": "Title 2",
+            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+          }
+        ]
+      },
+      {
+        "MainTitle": "Project Main Title 2",
+        "SubTitle": "Sub-Title 2",
+        "Description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using",
+        "Date": "13-NOV-2018",
+        "DateTimeStamp": "1542047400",
+        "StatusLabel": "INPROGRESS",
+        "StatusColor": "progressblue",
+        "StatusPercentage": "50",
+        "Task": [
+          "Points 1",
+          "Points 2"
+        ],
+        "Attachment": [{
+            "Label": "Title 1",
+            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+          },
+          {
+            "Label": "Title 2",
+            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+          }
+        ]
+      },
+      {
+        "MainTitle": "Project Main Title 3",
+        "SubTitle": "Sub-Title 3",
+        "Description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making",
+        "Date": "14-NOV-2018",
+        "DateTimeStamp": "1542133800",
+        "StatusLabel": "INPROGRESS",
+        "StatusColor": "progressblue",
+        "StatusPercentage": "48",
+        "Task": [
+          "Points 1",
+          "Points 2",
+          "Points 3",
+          "Points 4"
+        ],
+        "Attachment": [{
+            "Label": "Title 1",
+            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+          },
+          {
+            "Label": "Title 2",
+            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+          }
+        ]
+      },
+      {
+        "MainTitle": "Project Main Title 4",
+        "SubTitle": "Sub-Title 4",
+        "Description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
+        "Date": "15-NOV-2018",
+        "DateTimeStamp": "1542220200",
+        "StatusLabel": "HOLDING",
+        "StatusColor": "holdingred",
+        "StatusPercentage": "78",
+        "Task": [
+          "Points 1",
+          "Points 2",
+          "Points 3"
+        ],
+        "Attachment": [{
+            "Label": "Title 1",
+            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+          },
+          {
+            "Label": "Title 2",
+            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+          }
+        ]
+      },
+      {
+        "MainTitle": "Project Main Title 5",
+        "SubTitle": "Sub-Title 5",
+        "Description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making",
+        "Date": "16-NOV-2018",
+        "DateTimeStamp": "1542306600",
+        "StatusLabel": "HOLDING",
+        "StatusColor": "holdingred",
+        "StatusPercentage": "38",
+        "Task": [
+          "Points 1",
+          "Points 2",
+          "Points 3",
+          "Points 4"
+        ],
+        "Attachment": [
+          "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx",
+          "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docxhttp://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+        ],
+        "StatusIcon": "http://www.clipbots.com/impact-network/uploads/milestonestatusinprogress.png"
+      },
+      {
+        "MainTitle": "Project Main Title 6",
+        "SubTitle": "Sub-Title 6",
+        "Description": "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes",
+        "Date": "17-NOV-2018",
+        "DateTimeStamp": "1542393000",
+        "StatusLabel": "HOLDING",
+        "StatusColor": "holdingred",
+        "StatusPercentage": "43",
+        "Task": [
+          "Points 1"
+        ],
+        "Attachment": [{
+            "Label": "Title 1",
+            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+          },
+          {
+            "Label": "Title 2",
+            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+          }
+        ]
+      },
+      {
+        "MainTitle": "Project Main Title 7",
+        "SubTitle": "Sub-Title 7",
+        "Description": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the mo",
+        "Date": "1-NOV-2018",
+        "DateTimeStamp": "1541010600",
+        "StatusLabel": "FINISHED",
+        "StatusColor": "finishedgreen",
+        "StatusPercentage": "98",
+        "Task": [
+          "Points 1",
+          "Points 2",
+          "Points 3",
+          "Points 4"
+        ],
+        "Attachment": [{
+            "Label": "Title 1",
+            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+          },
+          {
+            "Label": "Title 2",
+            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+          }
+        ]
+      },
+      {
+        "MainTitle": "Project Main Title 8",
+        "SubTitle": "Sub-Title 8",
+        "Description": "Mauris vel turpis luctus, semper purus eu, lobortis lorem. Nulla ut suscipit velit. Integer ut ante id magna imperdiet commodo a at lorem. ",
+        "Date": "19-NOV-2018",
+        "DateTimeStamp": "1542565800",
+        "StatusLabel": "FINISHED",
+        "StatusColor": "finishedgreen",
+        "StatusPercentage": "100",
+        "Task": [
+          "Points 1",
+          "Points 2",
+          "Points 3",
+          "Points 4"
+        ],
+        "Attachment": [{
+            "Label": "Title 1",
+            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+          },
+          {
+            "Label": "Title 2",
+            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+          }
+        ]
+      },
+      {
+        "MainTitle": "Project Main Title 9",
+        "SubTitle": "Sub-Title 9",
+        "Description": "Aenean tincidunt dapibus justo, vel pellentesque nisi mattis ac. Integer diam sapien, rhoncus vitae dapibus in, faucibus vel diam. In ",
+        "Date": "2-NOV-2018",
+        "DateTimeStamp": "1541097000",
+        "StatusLabel": "FINISHED",
+        "StatusColor": "finishedgreen",
+        "StatusPercentage": "100",
+        "Task": [
+          "Points 1",
+          "Points 2"
+        ],
+        "Attachment": [{
+            "Label": "Title 1",
+            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+          },
+          {
+            "Label": "Title 2",
+            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+          }
+        ]
+      }
+    ]
+  },
+  "People_Partnership": {
+    "People_Partnership_Insight": "800",
+    "Listing": [{
+        "Image": "simg/dtacaccelerate.png",
+        "Title": " DTAC - Total Access Communication Public Company Limited",
+        "Url": "https://accelerat/e.dtac.co.th",
+        "Description": "DTAC Accelerate is Thailand's No. 1 Accelerator house. Our mission is to seek out potential startups. And push these startup. Grow up fast We believe that startup Thailand. Can expand the business to the world. And that is our mission. To create the next Unicorn of South East Asia, we have already invested in 34 teams from the past 5 batches worth a total of over $ 3.5 billion. 70% of the startups we invested. The investment is continued from investors in both Thailand and the region. We are one of the most accredited Accelerator houses in Southeast Asia. At present, our startup projects are in Exit 1, Series A 4 and Seed 17.",
+        "RoleInvolved": [
+          "DTAC connects Investors from both Thailand and outside to invest in the South Asian Staurtups. DTAC also provides business strategy and executing guidance legeraging the pool of seasoned entrepreneurs and mentors."
+        ],
+        "Tags": [{
+            "Title": "Accelerator",
+            "Icon": "https://via.placeholder.com/50X50"
+          },
+          {
+            "Title": "Funding Partner",
+            "Icon": "https://via.placeholder.com/50X50"
+          }
+        ]
+      },
+      {
+        "Image": "simg/500 TukTuks.jpg",
+        "Title": "500 TukTuks",
+        "Url": "https://500.co/500tuktuks-fund/",
+        "Description": " “500 TukTuks”, a $10M USD micro-fund focused on promising startups, managed by new 500 investing partners Krating Poonpol and Moo Natavudh. Why the name TukTuks? Well they are small, lean, fast, agile, and dangerous. JUST LIKE STARTUPS. They are excited to take a trip through the winding roads of Thailand to discover smart, badass entrepreneurs.",
+        "RoleInvolved": [
+          "500 sees an opportunity to invest early and often into the next generation of Thailand’s most promising startups and empower them with best of Silicon Valley’s education, thinking, talent, and money to provide unfair advantage in the local market. 500 will be the first major SV accelerator and seed stage investor in the local Thai market and founders will gain access to our global network of high-value mentors and 2,000+ founders. 500 will look to invest in not just companies that can succeed in the local Asian market, but through its accelerator, find and work with Thai companies that can succeed in the US and global market."
+        ],
+        "Tags": [{
+            "Title": "Seed Funding",
+            "Icon": "https://via.placeholder.com/50X50"
+          }
+        ]
+      },
+      {
+        "Image": "simg/Logo-ananda.original.jpg",
+        "Title": "Ananda Development",
+        "Url": "https://www.ananda.co.th/th/home",
+        "Description": "Ananda Development Public Company Limited was founded in 1999 by Chanond Ruangkritya.Ananda has continued to develop its brands and its unique Urban Living Solutions, resulting in it becoming the leading developer of residential projects in close proximity to mass transit stations in Bangkok. Ananda achieved this success through its branded products such as IDEO, first launched in 2007 and IDEO MOBI first launched in the first quarter of 2012. Its stylish, modern and high quality, yet affordable products have led to Ananda becoming one of the best known property development brands in Bangkok.",
+        "RoleInvolved": [
+          "Seekster will be a preferred partner for sourcing service-providers to the Ananda Development projects and customers."
+        ],
+        "Tags": [{
+            "Title": "Preferred Consumer Partner",
+            "Icon": "https://via.placeholder.com/50X50"
+          }
+        ]
+      }
+    ],
+    "TeamMember": [{
+        "Image": "simg/ceo.jpg",
+        "Name": "Sahib Anandsongvit",
+        "Degisnation": "CEO"
+      },
+      {
+        "Image": "simg/CTO.png",
+        "Name": "Daniel Dye",
+        "Degisnation": "CTO"
+      },
+      {
+        "Image": "simg/CMO.png",
+        "Name": "Joez C",
+        "Degisnation": "CMO"
+      }
+    ],
+    "TeamMember_Insight": "800"
+  },
+  "Fund_and_Risk": {
+    "Fund_and_Risk_Insight": "30",
+    "Funding_Round_Section": {
+      "TotalNumber": "1",
+      "Icon": "http://www.clipbots.com/impact-network/uploads/fundingrouteicon.png"
+    },
+    "Funding_Amount_Section": {
+      "Amount": "$458,000",
+      "Icon": "http://www.clipbots.com/impact-network/uploads/fundingamounticon.png"
+    },
+    "Source_of_Funding": {
+      "Listing": [{
+          "Label": "Seedfunding from Digital Ventures, DTAC Accelerate, and 500 TukTuks",
+          "Amount": "$458,000"
+        }
+      ]
+    },
+    "Funding_rasing_over_the_period_of_time": {
+      "GraphTitle": "Text",
+      "GraphPlotting": [{
+          "Year": "2018",
+          "Amount": "$0.46"
+        }
+      ]
+    },
+    "Notes_for_Investor": "This Project is Looking to Raise 2M US$ with blended returns. For Investment Profile, please visit: impact.apicista.com",
+    "Notes_for_Investor_Insight": "400",
+    "Sustainability": {
+      "FinancialSustainability": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i ",
+      "OpereationalSustainability": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i",
+      "Sustainability_Insight": "800"
+    },
+    "Financial_Management": {
+      "Financial_Insight": "600",
+      "Listing": [{
+          "Label": "Expense_Report.xlsx",
+          "DownloadUrl": "http://www.clipbots.com/impact-network/uploads/fundingrouteicon.png"
+        },
+        {
+          "Label": "Expense_Report.xlsxk",
+          "DownloadUrl": "http://www.clipbots.com/impact-network/uploads/fundingrouteicon.png"
+        },
+        {
+          "Label": "Expense_Report.xlsx",
+          "DownloadUrl": "http://www.clipbots.com/impact-network/uploads/fundingrouteicon.png"
+        },
+        {
+          "Label": "Expense_Report.xlsx",
+          "DownloadUrl": "http://www.clipbots.com/impact-network/uploads/fundingrouteicon.png"
+        }
+      ]
+    },
+    "Financial_Management_Chart": {
+      "CenterCircle": "PASTEL ANALYSIS",
+      "CenterCircleIcon": "https://via.placeholder.com/30X30",
+      "CenterCirclePopoverText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i",
+      "Listing": [{
+          "CircleText": "Economic",
+          "CircleIcon": "https://via.placeholder.com/30X30",
+          "CirclePopoverText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i"
+        },
+        {
+          "CircleText": "Social",
+          "CircleIcon": "https://via.placeholder.com/30X30",
+          "CirclePopoverText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i"
+        },
+        {
+          "CircleText": "Legal",
+          "CircleIcon": "https://via.placeholder.com/30X30",
+          "CirclePopoverText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i"
+        },
+        {
+          "CircleText": "Environtal",
+          "CircleIcon": "https://via.placeholder.com/30X30",
+          "CirclePopoverText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i"
+        },
+        {
+          "CircleText": "Technological",
+          "CircleIcon": "https://via.placeholder.com/30X30",
+          "CirclePopoverText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i"
+        },
+        {
+          "CircleText": "Political",
+          "CircleIcon": "https://via.placeholder.com/30X30",
+          "CirclePopoverText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i"
+        }
+      ]
+    }
+  },
+  "Communities_And_Impact": {
+    "Community_Insights": "12",
+    "List_of_Communities": [{
+        "Community": {
+          "Community_Basic_Info": [{
+            "CountryName": "Thailand",
+            "CommunityName": "Bangkok",
+            "CountryIcons": "simg/flag-thailand-XL.jpg",
+            "Latitude": "13.756331",
+            "Longitude": "100.501762",
+            "ShortName": "TH",
+            "ListofItemsMultiplevalue": 3,
+            "ListofItems": [{
+                "Title": "Average per-capita annual income (US$ )",
+                "Icon": "simg/Trading-Economics.png",
+                "Link": "https://tradingeconomics.com/thailand/wages",
+                "Name": "Trading Economics",
+                "Value": "5160"
+              },
+              {
+                "Title": "Poverty Line (Average annual per-capita income in US$) ",
+                "Icon": "simg/Trading-Economics.png",
+                "Link": "https://tradingeconomics.com/thailand/wages",
+                "Name": "Trading Economics",
+                "Value": "582"
+              },
+              {
+                "Title": "Minimum wages - 325 THB per day (US$ per-capita per year)",
+                "Icon": "simg/Trading-Economics.png",
+                "Link": "https://tradingeconomics.com/thailand/wages",
+                "Name": "Trading Economics",
+                "Value": "2861"
+              }
+            ],
+            "measurable_clc": [{
+                "Value": "1"
+              },
+              {
+                "Value": "1"
+              },
+              {
+                "Value": "1"
+              }
+            ]
+          }]
+        }
+      }
+    ],
+    "Investment_Bottom_Block": {
+      "Listing": [{
+          "Label": "Product Development",
+          "Value": "400000"
+        },
+        {
+          "Label": "Marketing",
+          "Value": "200000"
+        },
+        {
+          "Label": "Total Operational Exepnses",
+          "Value": "500000"
+        }
+      ]
+    },
+    "Social_Returns_Bottom_Block": {
+      "Output": [{
+          "Output_Definition": "# of Jobs matched",
+          "Value": "100000",
+          "Measurable_Outcomes": {
+            "Listing": [{
+              "Outcome_Definition": "Average # of hours saved by the customer because of the matched job",
+              "Value": "3",
+              "Quantified_multiplication_value": "1",
+              "Impact_calculation_formula": {
+                "link": "https://tradingeconomics.com/thailand/wages",
+                "linkText": "Click here",
+                "Description": "World Bank entitled, â€œRural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002) "
+              }
+
+            }]
+          },
+          "Shown_by_default": "TRUE"
+        },
+        {
+          "Output_Definition": "# of workers served",
+          "Value": "10000",
+          "Measurable_Outcomes": {
+            "Listing": [{
+              "Outcome_Definition": "Average # of jobs perfromed by each worker",
+              "Value": "100",
+              "Quantified_multiplication_value": "1",
+              "Impact_calculation_formula": {
+                "link": "",
+                "Description": "Average earning per job per worker = 10USD"
+              }
+
+            }]
+          },
+          "Shown_by_default": "TRUE"
+        }
+      ]
+    },
+    "Impact_Reports": {
+      "Listing": [{
+          "Label": "Attachment",
+          "DownloadUrl": "http://www.africau.edu/images/default/sample.pdf"
+        },
+        {
+          "Label": "Attachment",
+          "DownloadUrl": "http://www.africau.edu/images/default/sample.pdf"
+        },
+        {
+          "Label": "Attachment",
+          "DownloadUrl": "http://www.africau.edu/images/default/sample.pdf"
+        }
+      ]
+    }
+  }
+}

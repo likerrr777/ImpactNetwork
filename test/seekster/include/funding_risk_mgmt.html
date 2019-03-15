@@ -1,0 +1,233 @@
+<section class="frm">
+  <div class="content_box a3 bgcolor">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="ttl_header bdr">
+            <div class="pull-right">
+                        <p><span class="chat"><img src="img/blogging.png"></span> | <span class="light ng-binding"> <i class="fa fa-lightbulb-o fa-lg2"></i> {{notes_ins}} Insights</span></p>
+                    </div>
+          <h4 class="content_title">Note for Investors</h4>
+<div class="border_btottom2" style="border: 2px solid #ffffff;"></div>
+        </div>
+        <div class="funding_risk">
+          <div class="row">           
+
+            <div class="col-md-12">
+              <!-- <h4 class="note"><b></b></h4> -->
+              <p align="justify" class="note-paragraph">{{notesInv}}</p>
+            </div>
+
+          </div><!--///row-->
+        </div><!--///Funding-->
+
+      </div>
+    </div><!--///row-->
+  </div><!--/content_box-->
+</section>
+<section class="frm">
+  <div class="content_box a3">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="ttl_header bdr">   
+        <div class="pull-right">
+          <p><span class="chat"><img src="img/blogging.png"></span> | <span class="light ng-binding"> <i class="fa fa-lightbulb-o fa-lg2"></i> {{fund_ins}} Insights</span></p>
+        </div>      
+          <h4 class="content_title">Funding & Risk Management</h4>
+<div class="border_btottom2"></div>
+        </div>
+        <div class="funding_risk">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="f_round">
+                <div class="pull-right">
+                  <img ng-src="{{fundSec.Icon}}" width="40px">
+                </div>
+                <p class="f_ro">
+                  <span class="pre">Funding Rounds</span><br>
+                  <strong class="doller">{{fundSec.TotalNumber}}</strong>
+                </p>
+              </div><!--/f_round-->
+
+              <ul class="list-group">
+                      <li class="list-group-item n_bdr"><b>Source Of Funding</b></li>
+                      <li class="list-group-item n_bdr" ng-repeat="source in fundSourc">
+                        <span><div class="s_no"> {{$index+1}} </div></span>
+                        <span class="s_ttl">{{source.Label}}</span>
+                        <span class="s_doller pull-right">${{source.Amount}}</span>
+                      </li>
+                   </ul>
+            </div><!--/col-md-6-->
+
+            <div class="col-md-6">
+              <div class="f_round">
+                <div class="pull-right">
+                  <img ng-src="{{fundSecAmnt.Icon}}" width="40px">
+                </div>
+                <p class="f_ro">
+                  <span class="pre">Funding Amount</span><br>
+                  <strong class="doller">{{fundSecAmnt.Amount}}</strong>
+                </p>
+              </div><!--/f_round-->
+              <div class="chart2">
+                        <span class="" style="
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 1px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+"><b class="ng-binding">{{fundgraph.GraphTitle}}</b></span>
+        <div fusioncharts
+      width="390"
+      height="180"      
+      type="line"
+      dataSource="{{myDataSource}}" >
+   </div>
+              </div>
+            </div><!--/col-md-6-->
+
+            <!-- <div class="col-md-12">
+              <h4 class="note"><b>Note for Investors</b></h4>
+              <p align="justify" class="note-paragraph">{{notesInv}}</p>
+            </div> -->
+
+          </div><!--///row-->
+        </div><!--///Funding-->
+
+      </div>
+    </div><!--///row-->
+  </div><!--/content_box-->
+</section>
+<section class="frm2">
+  <div class="content_box a3">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="ttl_header bdr">
+            <div class="pull-right">
+                        <p><span class="chat"><img src="img/blogging.png"></span> | <span class="light ng-binding"> <i class="fa fa-lightbulb-o fa-lg2"></i> {{sustain.Sustainability_Insight}} Insights</span></p>
+                    </div>
+          <h4 class="content_title">Sustainability</h4>
+<div class="border_btottom2"></div>
+        </div>
+        <div class="funding_risk">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="funding_box">
+                <h4 class="funding_box_title1"> Financial Sustainability </h4>
+                <p align="justify">{{sustain.FinancialSustainability}}</p>
+              </div>
+            </div><!--/col-md-6-->
+
+            <div class="col-md-6">
+              <div class="funding_box">
+                <h4 class="funding_box_title1">Operational Sustainability</h4>
+                <p align="justify">{{sustain.OpereationalSustainability}}</p>
+              </div>
+            </div><!--/col-md-6-->
+          </div><!--///row-->
+        </div><!--///Funding-->
+
+      </div>
+    </div><!--///row-->
+  </div><!--/content_box-->
+</section>
+
+<section class="frm3">
+  <div class="content_box a3">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="ttl_header bdr">
+            <div class="pull-right">
+                        <p><span class="chat"><img src="img/blogging.png"></span> | <span class="light ng-binding"> <i class="fa fa-lightbulb-o fa-lg2"></i> {{financialInsght}} Insights</span></p>
+                    </div>
+          <h4 class="content_title">Financial Management</h4>
+<div class="border_btottom2"></div>
+        </div>
+        <div class="financial">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="f_xel">
+                <div class="xel_box" ng-repeat="financefile in financialxls">
+                  <div class="hover_div">
+                    <a href="{{financefile.DownloadUrl}}" download="{{financefile.DownloadUrl}}" target="_self">Download</a>
+                  </div>
+                  <img src="img/exel.jpg" width="80px" alt="chart"><br>
+                  <span class="x_name">{{financefile.Label}}</span>
+                </div>                
+              </div>
+            </div>  
+          </div><!--///row-->
+        </div><!--///Funding-->
+
+      </div>
+    </div><!--///row-->
+  </div><!--/content_box-->
+</section>
+<section class="frm4">
+<div class="content_box a3">
+<div class="row">
+
+<div class="col-md-12">
+<div class="ttl_header bdr">
+    <div class="pull-right">
+                        <p><span class="chat"><img src="img/blogging.png"></span> | <span class="light ng-binding"> <i class="fa fa-lightbulb-o fa-lg2"></i> {{FinancialChartInsight}} Insights</span></p>
+                    </div>
+<h4 class="content_title">Title Here</h4>
+<div class="border_btottom2"></div>
+</div>
+<div class="col-md-12">
+<div class="col-md-2" style="text-align: right;">
+  <img ng-src="{{selct_icon}}" class="circleIcom">
+</div>
+<div class="col-md-8">
+  <div class="fhg"> <p class="lkd"> {{slect_vl}}.</p> </div>
+</div>
+</div>
+<div class="financial">
+<div class="row">
+ <!--  <div class="col-md-2" id="close" style="margin-left: 4px;">
+    <div class="alert"  style="background-color: #ececec;
+    width: 136px;min-height: 70px;border-radius: 0px;border: 1px solid #ececec
+    padding: 5px 10px 0px 0px; display: none;">
+    <a href="#" data-dismiss="alert" aria-label="close" class="close">×</a>
+    <strong><span id="tooltips" style="padding: 18px 0px 0px 11px;"></span></strong>
+  </div>
+    </div> -->
+<div class="col-md-12">
+
+<div class="ht3" style="height: 30px; width: 100%;"></div>
+<img src="img/graph.jpg" class="a12">
+<img src="img/graph09.jpg" class="a13" >
+<nav class="menu">
+<input type="checkbox" href="#" checked="true" class="menu-open" name="menu-open" id="menu-open">
+<div class="menu-open-button popover__wrapper" style="z-index: 3;" ng-click="dopopover(circle_tDesc,circle_tIcon,circle_title)" ng-class="{activeCir : activeCircle === circle_title}">  
+{{circle_title}}
+   <!-- <div class="push popover__content" style="top: 130px;">
+      <p class="popover__message"><img ng-src="{{circle_tIcon}}" width="pop_c_size">{{circle_tDesc}}</p>
+      
+    </div> -->
+</div>
+
+<a href="javascript:void(0)" ng-click="dopopover(circle.CirclePopoverText,circle.CircleIcon,circle.CircleText)" class="popover__wrapper menu-item item-{{$index+1}}" ng-repeat="circle in circle_Listing track by $index" ng-style="{ 'z-index' : (circle.CircleText == 'Social' || circle.CircleText == 'Economic') ? '4' : '' }" ng-class="{activeCir : activeCircle === circle.CircleText}">
+<span id="pop{{$index}}">{{circle.CircleText}}</span>
+<!--<div class="push popover__content">
+    <p class="popover__message"><img ng-src="{{circle.CircleIcon}}" width="pop_c_size"> {{circle.CirclePopoverText}}</p>
+   
+  </div>-->
+</a>
+</nav>
+<div class="ht3" style="height: 30px; width: 100%;"></div>
+
+</div> 
+</div><!--///row-->
+</div><!--///Funding-->
+
+</div>
+</div><!--///row-->
+</div><!--/content_box-->
+</section>
+<script>
+$(document).ready(function() {
+    //$('a[rel=popover]').popover();
+});
+</script>

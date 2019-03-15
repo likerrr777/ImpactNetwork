@@ -1,0 +1,121 @@
+<section class="comment_sec" id="comment_sec">
+   <div class="row">
+      <div class="col-md-12">
+         <div class="content_box">
+            <h4 class="content_title">Comments</h4>
+<div class="border_btottom2"></div>
+            <br>
+            <ul class="nav nav-tabs btn_color">
+               <li class="active"><a data-toggle="tab" href="#home">Overview</a></li>
+               <li><a data-toggle="tab" href="#menu1">Timeline</a></li>
+               <li><a data-toggle="tab" href="#menu2">Project</a></li>
+               <li><a data-toggle="tab" href="#menu3">Gallery</a></li>
+            </ul>
+            <div class="tab-content">
+               <div id="home" class="tab-pane fade in active">
+                  <div class="comments_box" ng-repeat="comment in comments.Overview">
+                     <div class="media">
+                        <div class="media-left">
+                           <a href="#">
+                           <img class="media-object user_profile" ng-src="{{comment.Author_Image}}" alt="profile">
+                           </a>
+                        </div>
+                        <div class="media-body">                          
+                           <p class="comment_content">{{comment.Review_Description}}</p>
+                           <p>
+                              <span class="insd">{{comment.Author_Name}}</span>
+                              <span class="insd date"><small>{{comment.Date_Time}}</small></span>
+                              
+                              <img src="http://www.clipbots.com/impact-network/uploads/{{comment.Review_Star}}-star.png">
+                              <!-- <span class="review">{{comment.Review_Number}} Review</span> -->
+                           </p>
+                            <div ng-if="comment.Review_Image && comment.Review_Image!=''" class="stk_img">
+                              <img ng-src="{{comment.Review_Image}}" class="sticky_banner" width="100%">
+                           </div>
+                        </div>
+                     </div>
+                  </div>                  
+               </div>
+               <!---//menu_tabs--->
+               <div id="menu1" class="tab-pane fade">
+                  <div class="comments_box" ng-repeat="comment in comments.Timeline">
+                     <div class="media">
+                        <div class="media-left">
+                           <a href="#">
+                           <img class="media-object user_profile" ng-src="{{comment.Author_Image}}" alt="profile">
+                           </a>
+                        </div>
+                        <div class="media-body">                          
+                           <p class="comment_content">{{comment.Review_Description}}</p>
+                           <p>
+                              <span class="insd">{{comment.Author_Name}}</span>
+                              <span class="insd date"><small>{{comment.Date_Time}}</small></span>
+                              
+                              <img src="http://www.clipbots.com/impact-network/uploads/{{comment.Review_Star}}-star.png">
+                              <!-- <span class="review">{{comment.Review_Number}} Review</span> -->
+                           </p>
+                            <div ng-if="comment.Review_Image && comment.Review_Image!=''" class="stk_img">
+                              <img ng-src="{{comment.Review_Image}}" class="sticky_banner" width="100%">
+                           </div>
+                        </div>
+                     </div>
+                  </div> 
+               </div>
+               <!---//menu_tabs--->
+               <div id="menu2" class="tab-pane fade">
+                  <div class="comments_box" ng-repeat="comment in comments.Project">
+                     <div class="media">
+                        <div class="media-left">
+                           <a href="#">
+                           <img class="media-object user_profile" ng-src="{{comment.Author_Image}}" alt="profile">
+                           </a>
+                        </div>
+                        <div class="media-body">                          
+                           <p class="comment_content">{{comment.Review_Description}}</p>
+                           <p>
+                              <span class="insd">{{comment.Author_Name}}</span>
+                              <span class="insd date"><small>{{comment.Date_Time}}</small></span>
+                              
+                              <img src="http://www.clipbots.com/impact-network/uploads/{{comment.Review_Star}}-star.png">
+                              <!-- <span class="review">{{comment.Review_Number}} Review</span> -->
+                           </p>
+                            <div ng-if="comment.Review_Image && comment.Review_Image!=''" class="stk_img">
+                              <img ng-src="{{comment.Review_Image}}" class="sticky_banner" width="100%">
+                           </div>
+                        </div>
+                     </div>
+                  </div> 
+               </div>
+               <!---//menu_tabs--->
+               <div id="menu3" class="tab-pane fade">
+                  <div class="comments_box" ng-repeat="comment in comments.Gallery">
+                     <div class="media">
+                        <div class="media-left">
+                           <a href="#">
+                           <img class="media-object user_profile" ng-src="{{comment.Author_Image}}" alt="profile">
+                           </a>
+                        </div>
+                        <div class="media-body">                          
+                           <p class="comment_content">{{comment.Review_Description}}</p>
+                           <p>
+                              <span class="insd">{{comment.Author_Name}}</span>
+                              <span class="insd date"><small>{{comment.Date_Time}}</small></span>
+                              
+                              <img src="http://www.clipbots.com/impact-network/uploads/{{comment.Review_Star}}-star.png">
+                              <!-- <span class="review">{{comment.Review_Number}} Review</span> -->
+                           </p>
+                            <div ng-if="comment.Review_Image && comment.Review_Image!=''" class="stk_img">
+                              <img ng-src="{{comment.Review_Image}}" class="sticky_banner" width="100%">
+                           </div>
+                        </div>
+                     </div>
+                  </div> 
+               </div>
+               <!---//menu_tabs--->
+            </div>
+         </div>
+      </div>
+      <!--/col-md-12-->
+   </div>
+   <!--/row-->
+</section>

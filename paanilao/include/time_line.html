@@ -1,0 +1,26 @@
+<div class="content_box p_b">
+  <div class="row">
+   <div class="col-md-12">
+    <div class="ttl_header">
+     <div class="pull-right">
+      <p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span> | <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i> {{TimelineInsight}} <a href="javascript:void(0);" class="ins_c"> Insights</a></span></p> 
+     </div>
+     <h4 class="content_title">Time Line</h4>
+   <div class="border_btottom2"></div>
+    </div>
+    <div class="progress">
+      <div ng-repeat="timeline in time_line">
+         <div class="one_{{$index+1}} success-color"><i class="fa fa-check-circle {{timeline.Icon}}"></i></div>
+           <div class="a0{{$index+1}} {{timeline.Icon}}">{{timeline.Label}}<br><span class="date2">{{timeline.Date}}</span></div>
+      </div>  
+          <!--  <div class="one_2 success-color"><i class="fa fa-check-circle green"></i></div>
+           <div class="a02">Hello<br><span class="date2">12-12-18</span> </div>
+           <div class="one_3 success-color"><i class="fa fa-check-circle yellow"></i></div>
+           <div class="a03">Hello<br><span class="date2">12-12-18</span></div>
+           <div class="one_4 success-color"><i class="fa fa-check-circle gray"></i></div>
+           <div class="a04">Hello<br><span class="date2">12-12-18</span></div> -->
+       <div class="progress-bar progress-bar-success" style="width: 60%"></div>
+      </div>
+   </div>
+  </div>
+ </div><!--/content_box-->

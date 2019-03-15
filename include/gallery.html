@@ -1,0 +1,54 @@
+<section class="gallery_sec">
+   <div class="content_box">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="ttl_header">
+               <div class="pull-right">
+                  <p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span> | <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i> {{gallery.Gallery_Insight}} <a href="javascript:void(0);" class="ins_c"> Insights</a></span></p>
+               </div>
+               <h4 class="content_title">Gallery</h4>
+<div class="border_btottom2"></div>
+            </div>
+      <div class="gellary_img">
+         <div class="col-lg-3 col-md-4 col-xs-6 thumb a_gallery" ng-repeat="image in gallery.Images">
+                <!-- <a class="thumbnail2" href="#" ng-click="testGal(image.Small_Image)">
+                    <img class="img-thumbnail2"
+                         src="{{image.Small_Image}}?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                         alt="Another alt text">
+                </a> -->
+                <a class="example-image-link" href="{{image.Small_Image}}" data-lightbox="example-2" ><img class="example-image" src="{{image.Small_Image}}"></a>
+            </div>            
+        </div>
+            <!-- <ul class="gellary_img">
+               <li ng-repeat="image in gallery.Images">
+                  <a href="#">
+                     <img ng-src="{{image.Small_Image}}" class="thumb_img">
+                  </a>
+               </li>             
+            </ul> -->
+        <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="image-gallery-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                    </div>
+                    <div class="modal-footer" style="border-top: white;">
+                        <!-- <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                        </button>
+
+                        <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+         </div>
+      </div>
+   </div>
+   <!--/content_box-->
+</section>
