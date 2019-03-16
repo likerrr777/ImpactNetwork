@@ -283,10 +283,10 @@ app.controller('MainCtrl', function ($scope, $http) {
 
             });
 
-            $scope.socialinvestChart = response.data.Communities_And_Impact.Social_Returns_Bottom_Block.Output;
-            $scope.socialinvestChartProgressbar = response.data.Communities_And_Impact.Social_Returns_Bottom_Block.Output[0].Measurable_Outcomes.Listing;
+            $scope.socialinvestChart = response.data.Communities_And_Impact.Social_Returns_Bottom_Block;
+            $scope.socialinvestChartProgressbar = response.data.Communities_And_Impact.Social_Returns_Bottom_Block[0].Measurable_Outcomes.Listing;
 
-            /*  $.each(response.data.Communities_And_Impact.Social_Returns_Bottom_Block.Output, function(ky, dty) {
+            /*  $.each(response.data.Communities_And_Impact.Social_Returns_Bottom_Block, function(ky, dty) {
                   $scope.v = (dty.Value * dty.Quantified_multiplication_value);
                   $scope.ttlsocialinvestment += parseInt($scope.v);
                   var c = getRandomColor();
@@ -325,7 +325,7 @@ app.controller('MainCtrl', function ($scope, $http) {
             mapclickfun(0);
 
             //Social Returns Bottom Block
-            $scope.Social_Returns_Bottom_Block = response.data.Communities_And_Impact.Social_Returns_Bottom_Block.Output;
+            $scope.Social_Returns_Bottom_Block = response.data.Communities_And_Impact.Social_Returns_Bottom_Block;
             $scope.dototal1 = 0;
 
             $.each($scope.Social_Returns_Bottom_Block, function (ky, dty) {

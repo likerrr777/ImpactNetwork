@@ -4176,6 +4176,9 @@ ul.table_tabs7 li a {
     margin-top: 1.5rem;
     display: inline-block;
 }*/
+.popover__content2 {
+    word-wrap: break-word;
+}
 @media (min-width: 768px){
     .popover__content2{
     top: 8.5em;

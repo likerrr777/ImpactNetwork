@@ -223,11 +223,10 @@
     "Gallery": {
       "Gallery_Insight": "220",
       "Images": [{
-          "Small_Image": "img/salvador-bahia-brasil.jpg",
-          "Big_Image": "img/salvador-bahia-brasil.jpg",
-          "Image_Title": "Houses in Bahia"
-        }
-      ]
+        "Small_Image": "img/salvador-bahia-brasil.jpg",
+        "Big_Image": "img/salvador-bahia-brasil.jpg",
+        "Image_Title": "Houses in Bahia"
+      }]
     },
     "Partnership_Organizations": [{
         "Partnership_Title": "World  Bank: ",
@@ -437,16 +436,15 @@
     },
     "Problem_Statements": {
       "Insight": "770",
-      "Points": [
-        {
-          "Description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+      "Points": [{
+          "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
         },
         {
-          "Description":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+          "Description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
         },
         {
-          "Description":"The  benefits  are  quantified  for  15  years  because  the  expectation  is  that  the  villages  electrified  through  Developing  Power  will  not  likely  receive  grid  connection  over  that  time  period."
-        }        
+          "Description": "The  benefits  are  quantified  for  15  years  because  the  expectation  is  that  the  villages  electrified  through  Developing  Power  will  not  likely  receive  grid  connection  over  that  time  period."
+        }
       ]
     },
     "Solutions": {
@@ -945,7 +943,7 @@
                 "Name": "Statista",
                 "Value": "300"
               },
-    
+
               {
                 "Title": "Expenditure  on  medical  care  (US$  per  household) ",
                 "Icon": "img/who_logo.jpg",
@@ -963,15 +961,15 @@
             ],
             "measurable_clc": [{
                 "Value": "5",
-                "mul":"12"
+                "mul": "12"
               },
               {
                 "Value": "143",
-                "mul":"12"
+                "mul": "12"
               },
               {
                 "Value": "0.3",
-                "mul":"12"
+                "mul": "12"
               }
             ]
           }]
@@ -994,7 +992,7 @@
                 "Name": "World Data Labs",
                 "Value": "302"
               },
-             {
+              {
                 "Title": "Cost  of  Grid  Electricity  (US  cents  per  kWh) ",
                 "Icon": "img/statista-logo.png",
                 "Link": "https://www.statista.com/statistics/263492/electricity-prices-in-selected-countries/",
@@ -1008,7 +1006,7 @@
                 "Name": "Statista",
                 "Value": "310"
               },
-               {
+              {
                 "Title": "Expenditure  on  medical  care  (US$  per  household) ",
                 "Icon": "img/who_logo.jpg",
                 "Link": "https://www.who.int/mediacentre/events/H&SD_Plaq_no9.pdf",
@@ -1025,15 +1023,15 @@
             ],
             "measurable_clc": [{
                 "Value": "4",
-                "mul":"12"
+                "mul": "12"
               },
               {
                 "Value": "60",
-                "mul":"12"
+                "mul": "12"
               },
               {
                 "Value": "0.3",
-                "mul":"12"
+                "mul": "12"
               }
             ]
           }]
@@ -1055,61 +1053,59 @@
         }
       ]
     },
-    "Social_Returns_Bottom_Block": {
-      "Output": [{
-          "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
-          "Value": "3000",
-          "Measurable_Outcomes": {
-            "Listing": [{
-              "Outcome_Definition": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
-              "Value": "5",
-              "Quantified_multiplication_value": "10",
-              "Impact_calculation_formula": {
-                "link": "img/entertainment-formula.png",
-                "linkText": "Click here",
-                "Description": "Source: http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
-              }
-
-            }]
-          },
-          "Shown_by_default": "TRUE"
+    "Social_Returns_Bottom_Block": [{
+        "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
+        "Value": "3000",
+        "Measurable_Outcomes": {
+          "Listing": [{
+            "Outcome_Definition": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
+            "Value": "5",
+            "Quantified_multiplication_value": "10",
+            "Impact_calculation_formula": {
+              "link": "img/entertainment-formula.png",
+              "linkText": "Click here",
+              "description": "Source: ",
+              "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+            }
+          }]
         },
-        {
-          "Output_Definition": "#of  Homes  business  that  can  benefit  from  cheaper  power  ",
-          "Value": "1000",
-          "Measurable_Outcomes": {
-            "Listing": [{
-              "Outcome_Definition": "Increased  income  because  of  improved  productivity  (US$  per  home-business  per  month)",
-              "Value": "21",
-              "Quantified_multiplication_value": "10",
-              "Impact_calculation_formula": {
-                "link": "img/formula-additional-income.png",
-                "Description": "Source: - http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
-              }
-
-            }]
-          },
-          "Shown_by_default": "TRUE"
+        "Shown_by_default": "TRUE"
+      },
+      {
+        "Output_Definition": "#of  Homes  business  that  can  benefit  from  cheaper  power  ",
+        "Value": "1000",
+        "Measurable_Outcomes": {
+          "Listing": [{
+            "Outcome_Definition": "Increased  income  because  of  improved  productivity  (US$  per  home-business  per  month)",
+            "Value": "21",
+            "Quantified_multiplication_value": "10",
+            "Impact_calculation_formula": {
+              "link": "img/formula-additional-income.png",
+              "description": "Source: ",
+              "descriptionLink": "http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
+            }
+          }]
         },
-        {
-          "Output_Definition": "#of  Households  eliminating  the  usage  of   kerosene  lamps ",
-          "Value": "1000",
-          "Measurable_Outcomes": {
-            "Listing": [{
-              "Outcome_Definition": "Marginal  CO2  emissions  damage  prevented  (US$ per  month  per  house) ",
-              "Value": "0.3",
-              "Quantified_multiplication_value": "10",
-              "Impact_calculation_formula": {
-                "link": "img/impact_formula/2.png",
-                "Description": "Source: https://www.who.int/mediacentre/events/H&SD_Plaq_no9.pdf"
-              }
-            }]
-          },
-          "Shown_by_default": "FALSE"
-        }
-
-      ]
-    },
+        "Shown_by_default": "TRUE"
+      },
+      {
+        "Output_Definition": "#of  Households  eliminating  the  usage  of   kerosene  lamps ",
+        "Value": "1000",
+        "Measurable_Outcomes": {
+          "Listing": [{
+            "Outcome_Definition": "Marginal  CO2  emissions  damage  prevented  (US$ per  month  per  house) ",
+            "Value": "0.3",
+            "Quantified_multiplication_value": "10",
+            "Impact_calculation_formula": {
+              "link": "img/impact_formula/2.png",
+              "description": "Source: ",
+              "descriptionLink": "https://www.who.int/mediacentre/events/H&SD_Plaq_no9.pdf"
+            }
+          }]
+        },
+        "Shown_by_default": "FALSE"
+      }
+    ],
     "Impact_Reports": {
       "Listing": [{
           "Label": "Attachment",
