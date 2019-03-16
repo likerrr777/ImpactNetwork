@@ -105,40 +105,40 @@
     pointer-events: none;
 
     overflow: hidden;
-    
+
 }
 
 
 
 /*cover to prevent extra space of anchors from being clickable*/
 
-.csstransforms .smartcms_wrapper:after{
+.csstransforms .smartcms_wrapper:after {
 
-  content:".";
+    content: ".";
 
-  display:block;
+    display: block;
 
-  font-size:2em;
+    font-size: 2em;
 
-  width:6.2em;
+    width: 6.2em;
 
-  height:6.2em;
+    height: 6.2em;
 
-  position: absolute;
+    position: absolute;
 
-  left: 50%;
+    left: 50%;
 
-  margin-left: -3.1em;
+    margin-left: -3.1em;
 
-  top:50%;
+    top: 50%;
 
-  margin-top: -3.1em;
+    margin-top: -3.1em;
 
-  border-radius: 50%;
+    border-radius: 50%;
 
-  z-index:10;
+    z-index: 10;
 
-  color: transparent;
+    color: transparent;
 
 }
 
@@ -196,13 +196,13 @@
 
     transition: all .3s ease;
 
-    -webkit-transform: rotate(75deg) skew(62deg); 
+    -webkit-transform: rotate(75deg) skew(62deg);
 
-    -moz-transform: rotate(75deg) skew(62deg); 
+    -moz-transform: rotate(75deg) skew(62deg);
 
-    -ms-transform: rotate(75deg) skew(62deg); 
+    -ms-transform: rotate(75deg) skew(62deg);
 
-    transform: rotate(75deg) skew(62deg); 
+    transform: rotate(75deg) skew(62deg);
 
     -webkit-transform-origin: 100% 100%;
 
@@ -214,8 +214,8 @@
     z-index: 199;
 }
 
-.csstransforms .smartcms_wrapper li.kkitl a{
-background: radial-gradient(transparent 35%, #ffc506 35%);
+.csstransforms .smartcms_wrapper li.kkitl a {
+    background: radial-gradient(transparent 35%, #ffc506 35%) !important;
 }
 
 .csstransforms .smartcms_wrapper li a {
@@ -267,7 +267,7 @@ background: radial-gradient(transparent 35%, #ffc506 35%);
     backface-visibility: hidden;
 
     pointer-events: auto;
-    
+
 
 }
 
@@ -297,11 +297,11 @@ background: radial-gradient(transparent 35%, #ffc506 35%);
 
 .csstransforms .smartcms_wrapper li a:focus {
 
-    background: -webkit-radial-gradient(transparent 35%, #329196 35%);
+    background: -webkit-radial-gradient(transparent 35%, #329196 35%) !important;
 
-    background: -moz-radial-gradient(transparent 35%, #329196 35%);
+    background: -moz-radial-gradient(transparent 35%, #329196 35%) !important;
 
-    background: radial-gradient(transparent 35%, #329196 35%);
+    background: radial-gradient(transparent 35%, #329196 35%) !important;
 
 }
 
@@ -327,7 +327,7 @@ background: radial-gradient(transparent 35%, #ffc506 35%);
 
     -ms-transform: skew(62deg);
 
-    transform: skew(62deg); 
+    transform: skew(62deg);
 
 }
 
@@ -347,7 +347,7 @@ background: radial-gradient(transparent 35%, #ffc506 35%);
 
 
 
-.csstransforms .opened-nav  li:nth-child(3) {
+.csstransforms .opened-nav li:nth-child(3) {
 
     -webkit-transform: rotate(30deg) skew(62deg);
 
@@ -476,6 +476,7 @@ background: radial-gradient(transparent 35%, #ffc506 35%);
     transform: rotate(165deg) skew(62deg);
 
 }
+
 .csstransforms .opened-nav li:nth-child(13) {
 
     -webkit-transform: rotate(180deg) skew(62deg);
@@ -487,6 +488,7 @@ background: radial-gradient(transparent 35%, #ffc506 35%);
     transform: rotate(180deg) skew(62deg);
 
 }
+
 .csstransforms .opened-nav li:nth-child(14) {
 
     -webkit-transform: rotate(195deg) skew(62deg);
@@ -498,6 +500,7 @@ background: radial-gradient(transparent 35%, #ffc506 35%);
     transform: rotate(195deg) skew(62deg);
 
 }
+
 .csstransforms .opened-nav li:nth-child(15) {
 
     -webkit-transform: rotate(210deg) skew(62deg);
@@ -509,6 +512,7 @@ background: radial-gradient(transparent 35%, #ffc506 35%);
     transform: rotate(210deg) skew(62deg);
 
 }
+
 .csstransforms .opened-nav li:nth-child(16) {
 
     -webkit-transform: rotate(225deg) skew(62deg);
@@ -520,6 +524,7 @@ background: radial-gradient(transparent 35%, #ffc506 35%);
     transform: rotate(225deg) skew(62deg);
 
 }
+
 .csstransforms .opened-nav li:nth-child(17) {
 
     -webkit-transform: rotate(240deg) skew(62deg);
@@ -603,7 +608,7 @@ background: radial-gradient(transparent 35%, #ffc506 35%);
 
 
 
-.no-csstransforms .smartcms_wrapper li.active a{
+.no-csstransforms .smartcms_wrapper li.active a {
 
     background-color: #6F325C;
 
@@ -671,10 +676,10 @@ background: radial-gradient(transparent 35%, #ffc506 35%);
 
     }
 
-.outpt_caret{
-    display: none;
+    .outpt_caret {
+        display: none;
 
-}
+    }
 
     .smartcms_button {
 
@@ -714,7 +719,7 @@ background: radial-gradient(transparent 35%, #ffc506 35%);
 
 }
 
-.view_demo > a {
+.view_demo>a {
 
     background: #08c none repeat scroll 0 0;
 
@@ -726,28 +731,31 @@ background: radial-gradient(transparent 35%, #ffc506 35%);
 
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
 
     .csstransforms .smartcms_wrapper {
 
         /*width: 40em;*/
-            width: 100%;
+        width: 100%;
 
     }
 
 }
-.outpt_caret{
+
+.outpt_caret {
     position: relative;
 
 }
-.outpt_caret i{
-     position: absolute;
+
+.outpt_caret i {
+    position: absolute;
     right: -32px;
     margin-top: 21px;
     color: #07c776;
     font-size: 20px;
 
 }
+
 .icon1 {
     background: #e2e2e2;
     padding: 2px 8px;
@@ -762,11 +770,12 @@ background: radial-gradient(transparent 35%, #ffc506 35%);
     position: relative;
     margin-bottom: 5px;
 }
+
 li.sltntab {
-cursor: pointer;
+    cursor: pointer;
 }
 
-.activeCir{
-	background-color: #07c676 !important;
-	color: #ffffff !important;
+.activeCir {
+    background-color: #07c676 !important;
+    color: #ffffff !important;
 }

@@ -21,14 +21,14 @@
       <div class="component">
         <div class="smartcms_wrapper opened-nav" id="smartcms_wrapper">
           <ul>
-            <li ng-repeat="n in [] | range:17" title="{{outcomeInfo[n].Project_Name}}" ng-class="{'kkitl':selectProjectIcon(n+1)}"
-              ng-click="selectProj(outcomeInfo[getprojIndex(n+1)])">
-              <a href="#{{n+1}}">
+            <li ng-repeat="item in outcomeInfo" title="{{item.Project_Name}}" ng-class="{'kkitl':item.isSupported}"
+              ng-click="selectProj(item.isSupported ? item : '')">
+              <a href="#{{item.Project_Primary_key}}" style="background: radial-gradient(transparent 35%, {{item.backgroundColor}} 35%)">
                 <span class="indexcss">
-                  {{n+1}}
+                  {{item.Project_Primary_key}}
                 </span>
                 <span>
-                  <img class="primg" src="../img/icons/{{n+1}}.png">
+                  <img class="primg" src="{{item.imageSrc}}">
                 </span>
               </a>
             </li>

@@ -69,35 +69,10 @@ app.controller('MainCtrl', function ($scope, $http) {
             $scope.partnerInsgt = response.data.Overview.Partnership_Organizations_Insight;
 
             $scope.outcomeInfo = response.data.Overview.Outputs_Outcomes_Info.Listing;
-            $scope.selectProjectIcon = selectProjectIcon;
-
-            function selectProjectIcon(n) {
-                var f = false;
-                $.each($scope.outcomeInfo, function (key, dt) {
-                    if (n == dt.Project_Primary_key) {
-                        f = true;
-                    }
-                });
-
-                return f;
-            }
-
-            $scope.getprojIndex = getprojIndex;
-
-            function getprojIndex(n) {
-
-                var f = '';
-                $.each($scope.outcomeInfo, function (key, dt) {
-                    if (n == dt.Project_Primary_key) {
-                        f = key;
-                    }
-                });
-
-                return f;
-            }
-
-
-            $scope.leftpr = 17 - $scope.outcomeInfo.length;
+            $scope.outcomeInfoSupportedProjects = $scope.outcomeInfo.filter(function(element){
+                return element.isSupported;
+            });
+            $scope.leftpr = $scope.outcomeInfo.length - $scope.outcomeInfoSupportedProjects.length;
 
             $scope.comments = response.data.Overview.Insight;
 
@@ -174,9 +149,8 @@ app.controller('MainCtrl', function ($scope, $http) {
                     $scope.outcomes_tag_[kry][ky] = false;
                 });
             });
-            $scope.projects = response.data.Overview.Outputs_Outcomes_Info.Listing;
             $scope.intotal = 0;
-            selectProj($scope.projects[0]);
+            selectProj($scope.outcomeInfoSupportedProjects[0]);
             //End 
 
             //Mile Stone page
@@ -709,25 +683,19 @@ app.controller('MainCtrl', function ($scope, $http) {
     }
 
     function selectProj(proj) {
+        if(proj) {
+            $scope.project = proj.Project_Name;
+            $scope.Project_Primary_key = proj.Project_Primary_key;
+            $scope.Project_Icon = proj.Project_Icon;
+            $scope.Project_Insight = proj.Project_Insight;
+            $scope.Proj_ID = proj.Proj_ID;
 
+            $.each($scope.obj1, function (ky, t) {
+                $scope.obj1[ky] = false;
+            });
 
-        $scope.project = proj.Project_Name;
-        $scope.Project_Primary_key = proj.Project_Primary_key;
-        $scope.Project_Icon = proj.Project_Icon;
-
-        $scope.Project_Insight = proj.Project_Insight;
-
-        $scope.Proj_ID = proj.Proj_ID;
-
-        $.each($scope.obj1, function (ky, t) {
-
-            $scope.obj1[ky] = false;
-
-        });
-
-        $scope.obj1[proj.Project_Primary_key] = true;
-
-
+            $scope.obj1[proj.Project_Primary_key] = true;
+        }
     }
 
     function outcomehighlight(proj, pt) {
