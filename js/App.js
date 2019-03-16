@@ -31,7 +31,6 @@ app.controller('MainCtrl', function ($scope, $http) {
     $scope.Social_Returns_Bottom_Block = [];
     $scope.impact_fg = {};
     $scope.Measurable_Outcomes1 = [];
-    $scope.countryChart1 = [];
     $scope.investmentChart = [];
     $scope.socialinvst_container = [];
     $scope.countrylist = [];
@@ -42,14 +41,7 @@ app.controller('MainCtrl', function ($scope, $http) {
     $scope.multiplycm = 1;
     $scope.ttlsocialinvestment = 0;
 
-    function dopopover(val, icon, actv) {
-
-        $scope.slect_vl = val;
-        $scope.selct_icon = icon;
-        $scope.activeCircle = actv;
-    }
     $http.get("inpact-network-ui-json.json")
-
         .then(function (response) {
 
             $scope.projectData = response.data;
@@ -69,7 +61,7 @@ app.controller('MainCtrl', function ($scope, $http) {
             $scope.partnerInsgt = response.data.Overview.Partnership_Organizations_Insight;
 
             $scope.outcomeInfo = response.data.Overview.Outputs_Outcomes_Info.Listing;
-            $scope.outcomeInfoSupportedProjects = $scope.outcomeInfo.filter(function(element){
+            $scope.outcomeInfoSupportedProjects = $scope.outcomeInfo.filter(function (element) {
                 return element.isSupported;
             });
             $scope.leftpr = $scope.outcomeInfo.length - $scope.outcomeInfoSupportedProjects.length;
@@ -170,22 +162,7 @@ app.controller('MainCtrl', function ($scope, $http) {
 
             showDesc($scope.list_org[0], 0);
 
-            var i = 1;
-            $.each($scope.outcomeInfo, function (key, dt) {
-
-
-                if (i == 1) {
-                    $scope.obj1[dt.Project_Primary_key] = true;
-                } else {
-                    $scope.obj1[dt.Project_Primary_key] = false;
-                }
-                i = i + 1;
-            });
-
             $.each($scope.outputs, function (key, dt) {
-
-
-
                 $scope.obj2[dt.Project_Output_Primary_Key] = false;
             });
 
@@ -223,16 +200,7 @@ app.controller('MainCtrl', function ($scope, $http) {
             });
             $scope.CountryName = response.data.Communities_And_Impact.List_of_Communities[0].Community.Community_Basic_Info[0].CountryName;
             $scope.CommunityName = response.data.Communities_And_Impact.List_of_Communities[0].Community.Community_Basic_Info[0].CommunityName;
-            $.each($scope.countryChart, function (ky, dty) {
-                $scope.countryChart1.push({
-                    label: dty.Title,
-                    value: dty.Value
-                });
-
-
-            });
-
-
+            
             $.each(response.data.Communities_And_Impact.List_of_Communities, function (ky, dty) {
 
                 $scope.selcountry[dty.Community.Community_Basic_Info[0].CountryName] = '';
@@ -396,6 +364,9 @@ app.controller('MainCtrl', function ($scope, $http) {
                     value: dty.Amount
                 });
             });
+        })
+        .then(function () {
+            communitiesImpacted();
         });
 
     $scope.selectProject = selectProject;
@@ -409,6 +380,12 @@ app.controller('MainCtrl', function ($scope, $http) {
     $scope.getSelReturn = getSelReturn;
     $scope.closeformula = closeformula;
 
+    function dopopover(val, icon, actv) {
+        $scope.slect_vl = val;
+        $scope.selct_icon = icon;
+        $scope.activeCircle = actv;
+    }
+
     function closeformula(idx, index) {
         $scope.impact_fg[idx][index] = false;
     }
@@ -418,7 +395,6 @@ app.controller('MainCtrl', function ($scope, $http) {
             $scope.impact_fg[idx][key] = false;
         });
         $scope.impact_fg[idx][index] = true;
-
     }
 
     $scope.showtag = showtag;
@@ -683,7 +659,7 @@ app.controller('MainCtrl', function ($scope, $http) {
     }
 
     function selectProj(proj) {
-        if(proj) {
+        if (proj) {
             $scope.project = proj.Project_Name;
             $scope.Project_Primary_key = proj.Project_Primary_key;
             $scope.Project_Icon = proj.Project_Icon;

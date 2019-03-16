@@ -1,45 +1,3 @@
-<script src="css/src/jquery-1.8.2.js"></script>
-<script type="text/javascript" src="css/src/jquery-jvectormap.js"></script>
-<script type="text/javascript" src="css/src/jquery-mousewheel.js"></script>
-
-<script type="text/javascript" src="css/src/jvectormap.js"></script>
-
-<script src="css/src/abstract-element.js"></script>
-<script src="css/src/abstract-canvas-element.js"></script>
-<script src="css/src/abstract-shape-element.js"></script>
-
-<script src="css/src/svg-element.js"></script>
-<script src="css/src/svg-group-element.js"></script>
-<script src="css/src/svg-canvas-element.js"></script>
-<script src="css/src/svg-shape-element.js"></script>
-<script src="css/src/svg-path-element.js"></script>
-<script src="css/src/svg-circle-element.js"></script>
-<script src="css/src/svg-image-element.js"></script>
-<script src="css/src/svg-text-element.js"></script>
-
-<script src="css/src/vml-element.js"></script>
-<script src="css/src/vml-group-element.js"></script>
-<script src="css/src/vml-canvas-element.js"></script>
-<script src="css/src/vml-shape-element.js"></script>
-<script src="css/src/vml-path-element.js"></script>
-<script src="css/src/vml-circle-element.js"></script>
-<script src="css/src/vml-image-element.js"></script>
-
-<script src="css/src/map-object.js"></script>
-<script src="css/src/region.js"></script>
-<script src="css/src/marker.js"></script>
-
-<script src="css/src/vector-canvas.js"></script>
-<script src="css/src/simple-scale.js"></script>
-<script src="css/src/ordinal-scale.js"></script>
-<script src="css/src/numeric-scale.js"></script>
-<script src="css/src/color-scale.js"></script>
-<script src="css/src/legend.js"></script>
-<script src="css/src/data-series.js"></script>
-<script src="css/src/proj.js"></script>
-<script src="css/src/map.js"></script>
-
-<script src="css/src/jquery-jvectormap-world-mill-en.js"></script>
 <link rel="stylesheet" media="all" href="css/src/jquery-jvectormap.css" />
 
 <section class="asd">
@@ -57,11 +15,9 @@
       </div>
       <div class="col-md-6">
 
-        <div class="ma_P">
-          <!-- <img src="img/map.jpg" class="maps" width="100%" alt="map"> -->
+        <div>
           <div id="map1" class="map_size3" style="width: 100%; height: 324px">
           </div>
-          <!-- <div id="chart-container">FusionCharts will render here</div>-->
         </div>
       </div>
       <div class="col-md-6 bdr_map b_left3">
@@ -69,11 +25,8 @@
           <div class="map_head">
             <p class="brazil pull-right">
               <img ng-src="{{CountryIcons}}" class="maps02" alt="map">{{CommunityName}}, {{CountryName}}</p>
-            <!-- <img src="img/map2.jpg" class="maps02" alt="map">{{CountryName}}</p> -->
             <h5>Community</h5>
           </div>
-          <!-- <img src="img/map2.jpg" class="maps" width="100%" alt="map"> -->
-          <!-- <div id="country_container">Coutry render here</div> -->
           <div class="pro_pdng">
             <h4 class="contyAtt">Community Profile</h4>
             <div class="col-md-12 core" ng-repeat="Clistitem in country_ListofItems track by $index">
@@ -88,14 +41,7 @@
                           {{Clistitem.Name}}</a></div>
                     </div>
                   </div>
-
-                  <!-- <div class="col-md-1"></div>
-              <div class="col-md-3">
-                <div class="a_link"><a href="{{Clistitem.Link}}}">{{Clistitem.Name}}</a></div>
-              </div> -->
-
                 </div>
-                <!-- <span></span> <span class="pull-right"></span> -->
               </p>
               <div class="progress ht">
                 <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0"
@@ -114,26 +60,6 @@
   </div>
   <!--/content_box-->
 </section>
-<!-- <section class="asd">
-  <div class="content_box a3">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="ttl_header bdr">          
-          <h4 class="content_title">Investment/Social Return</h4>
-<div class="border_btottom2"></div>
-        </div>
-      </div>
-
-      <div class="col-md-12">
-  <div class="row">
-<div class="col-sm-12"><span class="t_return">SROI: Total Investment/Total Return</span><b class="bold_11">{{ (ttlsocialinvestment / ttlinvestment).toFixed(2)  }} </b></div>
-   <div class="col-sm-4 btn">{{ttlsocialinvestment}}</div>
-  <div class="col-sm-4 btn">{{ ttlinvestment / ttlsocialinvestment }}</div>
-</div>
-      </div>
-    </div>
-  </div>
-</section> -->
 <section class="progress_bar">
   <div class="row">
     <div class="col-sm-12">
@@ -199,82 +125,6 @@
   <!--///row-->
 </section>
 
-
-<!-- <section class="tbl_bill">
-  <div class="content_box bill">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="table-responsive">
-           <table class="table table-bordered" id="socialReturn">
-              <thead>
-                 <tr>
-                  <th style="background-color: #01ab63;color: #fff;font-size:16px;">Investment</th>
-                    <th colspan="4" style="background-color: #07c776;text-align: center;color: #fff;font-size:16px;">Social Return</th>
-                 </tr>
-              </thead>
-              <tbody>
-                 <tr>
-                    <td  rowspan="3" style="background-color: #fff7f7;">
-                      <div class="invest" ng-repeat="invest in Investment.Listing track by $index">
-                      <span class="tcl_b ng-binding">{{invest.Label}}</span>
-                      <span  class="tcl_b ng-binding" style="float: right;">
-                      <input type="text" ng-model="invest.Value" class="c_val" ng-blur="invests(invest.Value,$index)">
-                      </span>
-                    </div>
-                      <br>
-                      <a href="#" ng-click="abc()" class="plus2">+ Add</a>
-                    </td>
-                    <td style="background-color: #fff7f7; text-align: center;">Output</td>
-                    <td style="background-color: #fff7f7; text-align: center;width: 24.7%;">Outputs</td>
-                    <td style="background-color: #fff7f7; text-align: center;">Quantified Outcomes</td>
-                 </tr>
-                 <tr ng-repeat="social in Social_Returns_Bottom_Block" ng-if="social.Shown_by_default=='TRUE'" ng-init="total = 0" >
-                <td>
-            <span class="abc"><span>{{social.Output_Definition}}</span> <input type="text" ng-model="social.Value" class="c_val" ng-blur="changeoutcomes(social.Value)"></span>
-                </td>
-            <td colspan="3">
-              <div class="row r_b_d" ng-repeat="Measurable_Outcomes in social.Measurable_Outcomes.Listing track by $index">
-                <div class="col-md-6 cel2">
-                  <span class="tcl_b">{{Measurable_Outcomes.Outcome_Definition}}</span>
-                  
-                  <input type="text" ng-model="Measurable_Outcomes.Value" ng-blur="updatetotal(Measurable_Outcomes.Value,$index)" class="c_val" >
-                  <input type="text" name="" value="{{Measurable_Outcomes.Value}}" ng-model="Measurable_Outcomes.Value" class="c_val" >
-              
-                </div>
-                <div class="col-md-6 cel2" ng-init="total = total + (Measurable_Outcomes.Value*Measurable_Outcomes.Quantified_multiplication_value)">
-                
-                  <span class="pull-right tcl_a">{{Measurable_Outcomes.Value*Measurable_Outcomes.Quantified_multiplication_value}}</span>
-                </div>
-              </div>           
-                </td>
-              </tr>
-                 
-                 <tr class="appedtr">
-                  <td  rowspan="5"><a href="#" ng-click="showInvest()" class="plus2">+ Add</a></td>
-                
-                 </tr>
-
-                 <tr>
-
-                    <td style="background-color: #01ab63;font-weight: 800; color: #fff;font-size: 16px;">
-                      Total <span class="pull-right">${{ intotal }}</span>
-                    </td>
-                    <td>&nbsp;</td>
-                    <td style="background-color: #fff7f7;font-weight: 800;font-size: 16px;">
-                      Total <span class="pull-right">${{ dototal1 }}</span>
-                    </td>
-                 </tr>
-                
-              </tbody>
-           </table>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
-
 <section class="as_sec" style="margin-top: 10px;">
   <div class="table_tab_a" style="border: 1px solid #dedede;">
     <div class="container-fluid">
@@ -289,20 +139,6 @@
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade" role="tabpanel" id="investment" aria-labelledby="home-tab">
               <div class="container-fluid">
-                <!--  <div class="row" style="border-bottom: 1px solid #ccc;">
-                        <div class="col-md-12  elements-color" style="border-right: 1px solid #ccc;" >
-                         <p class="inner-elements" >Investment</p>
-                        </div>
-                       <div class="col-md-4 elements-color" style="border-right: 1px solid #ccc;">
-                           <p class="inner-elements">Output</p>
-                        </div>
-                        <div class="col-md-3  elements-color" style="border-right: 1px solid #ccc;">
-                           <p class="inner-elements" >Measurable Outcomes</p>
-                        </div>
-                        <div class="col-md-3 elements-color">
-                           <p class="inner-elements">Quantified Outcomes</p>
-                        </div>
-                     </div> -->
                 <div class="row" style="border-bottom: 1px solid #ccc;">
                   <div class="col-md-12 elements-color" id="auto_height1" style="border-right: 1px solid #ccc;  padding-left: 0px; padding-right: 0px;">
                     <ul class="list-style">
@@ -319,10 +155,6 @@
                 </div>
                 <div class="row">
                   <div class="col-md-8" style="background-color: #01ab63;height: 38px;">
-                    <!-- <div class="total-amount">
-                              <span>Total</span>
-                              <span class="pull-right">${{intotal}}</span>
-                           </div> -->
                   </div>
                   <div class="col-md-4" style="background-color: #01ab63;">
                     <div class="total-amount">
@@ -330,14 +162,6 @@
                       <span class="pull-right">${{intotal}}</span>
                     </div>
                   </div>
-                  <!-- <div class="col-md-4"><a href="#" class="plus3" ng-click="showInvest()">+ Add</a></div>
-                        <div class="col-md-3" style="border-left: 1px solid #ccc;"></div>
-                        <div class="col-md-3 elements-color" style="border-left: 1px solid #ccc;">
-                           <div class="total-amounts">
-                              <span>Total</span>
-                              <span class="pull-right">${{dototal1 }}</span>
-                           </div>
-                        </div> -->
                 </div>
               </div>
             </div>
@@ -346,12 +170,6 @@
             <div class="tab-pane fade in active" role="tabpanel" id="social_return" aria-labelledby="profile-tab">
               <div class="container-fluid">
                 <div class="row" style="border-bottom: 1px solid #ccc;">
-                  <!-- <div class="col-md-2  elements-color" style="border-right: 1px solid #ccc; " >
-                         <p class="inner-elements" >Investment</p>
-                        </div> -->
-                  <!-- <div class="col-md-6elements-color" style="border-right: 1px solid #ccc;">
-                           <p class="inner-elements">Output</p>
-                        </div> -->
                   <div class="col-md-4i col-xs-4 elements-color" style="border-right: 1px solid #ccc;">
                     <p class="inner-elements">Outputs</p>
                   </div>
@@ -465,7 +283,6 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <!-- <h4 class="modal-title">Modal Header</h4> -->
       </div>
       <div class="modal-body">
         <ul class="li_popup">
@@ -477,7 +294,6 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" ng-click="getSelReturn()">Add</button>
-        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
       </div>
     </div>
   </div>
@@ -487,11 +303,6 @@
 <div class="modal fade" id="investmentModal" role="dialog">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
-      <!-- <div class="modal-header"> -->
-      <!-- <div style="padding: 6px 15px 0px 0px; border-bottom: none;"> -->
-      <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-      <!-- <h4 class="modal-title">Modal Header</h4> -->
-      <!-- </div> -->
       <div class="modal-body">
         <div class="add_cl_rw">
           <div class="modal-body mx-3">
@@ -506,12 +317,51 @@
             <br>
             <button type="button" class="btn btn-primary" ng-click="getinputvalue()">Add</button>
           </div>
-        </div><!-- //add_cl_rw -->
-        <!-- <div class="modal-footer"> -->
-        <!-- <div style="padding: 6px 15px 0px 0px;border-top: none;"> -->
-        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-        <!-- </div> -->
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+<script src="css/src/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="css/src/jquery-jvectormap.js"></script>
+<script type="text/javascript" src="css/src/jquery-mousewheel.js"></script>
+
+<script type="text/javascript" src="css/src/jvectormap.js"></script>
+
+<script src="css/src/abstract-element.js"></script>
+<script src="css/src/abstract-canvas-element.js"></script>
+<script src="css/src/abstract-shape-element.js"></script>
+
+<script src="css/src/svg-element.js"></script>
+<script src="css/src/svg-group-element.js"></script>
+<script src="css/src/svg-canvas-element.js"></script>
+<script src="css/src/svg-shape-element.js"></script>
+<script src="css/src/svg-path-element.js"></script>
+<script src="css/src/svg-circle-element.js"></script>
+<script src="css/src/svg-image-element.js"></script>
+<script src="css/src/svg-text-element.js"></script>
+
+<script src="css/src/vml-element.js"></script>
+<script src="css/src/vml-group-element.js"></script>
+<script src="css/src/vml-canvas-element.js"></script>
+<script src="css/src/vml-shape-element.js"></script>
+<script src="css/src/vml-path-element.js"></script>
+<script src="css/src/vml-circle-element.js"></script>
+<script src="css/src/vml-image-element.js"></script>
+
+<script src="css/src/map-object.js"></script>
+<script src="css/src/region.js"></script>
+<script src="css/src/marker.js"></script>
+
+<script src="css/src/vector-canvas.js"></script>
+<script src="css/src/simple-scale.js"></script>
+<script src="css/src/ordinal-scale.js"></script>
+<script src="css/src/numeric-scale.js"></script>
+<script src="css/src/color-scale.js"></script>
+<script src="css/src/legend.js"></script>
+<script src="css/src/data-series.js"></script>
+<script src="css/src/proj.js"></script>
+<script src="css/src/map.js"></script>
+
+<script src="css/src/jquery-jvectormap-world-mill-en.js"></script>
