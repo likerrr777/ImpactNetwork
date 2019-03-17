@@ -45,7 +45,7 @@
                         <span>
                            <img class="primg" src="../angular-project/img/icons/{{$index+1}}.png">
                         </span>
-                     </a>s
+                     </a>
                   </li> -->
                 </ul>
             </div>
@@ -95,9 +95,9 @@
                   <div class="sh_re"> 
                     <img ng-if="tag.popoverinfo.image!=''" ng-src="{{tag.popoverinfo.image}}" class="img-rounded" style="    width: 100%;  height: auto;">
                   </div>
-               <span ng-if="tag.popoverinfo.Description!=''" style="color:#333">{{tag.popoverinfo.Description}}</span>
+               <span ng-if="tag.popoverinfo.Description!=''" >{{tag.popoverinfo.Description}}</span>
                <br>
-                <a href="{{tag.popoverinfo.link}}" target="_blank">{{tag.popoverinfo.linkText}}</a>
+                <a href="{{tag.popoverinfo.link}}">{{tag.popoverinfo.linkText}}</a>
               </p>
               <!-- <p class="popover__message3">{{tag.popoverinfo}}</p> -->
           </div>
@@ -132,7 +132,7 @@
                   </div>
                <span ng-if="tag.popoverinfo.Description!=''" >{{tag.popoverinfo.Description}}</span>
                <br>
-               <a href="{{tag.popoverinfo.link}}" target="_blank">{{tag.popoverinfo.linkText}}</a>
+               <a href="{{tag.popoverinfo.link}}">{{tag.popoverinfo.linkText}}</a>
               </p>
               <!-- <p class="popover__message3">{{tag.popoverinfo}}</p> -->
           </div>

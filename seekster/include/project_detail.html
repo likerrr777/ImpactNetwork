@@ -26,8 +26,8 @@
                <p class="follow">Followers</p>
                <h2 class="f_count">{{ProjSec.TotalFollower}}</h2>
                <p class="join_follow_us">
-               	  <a target="_blank" href="{{ProjSec.InvestLink}}"><img src="img/growth.png" width="18px"> Invest</a>
-                  <a target="_blank" href="{{ProjSec.FollowerLink}}"><i class="fa fa-user-plus"></i> Join</a>
+               	  <a href="{{ProjSec.InvestLink}}"> Invest</a>
+                  <a href="{{ProjSec.FollowerLink}}"><i class="fa fa-user-plus"></i> Join</a>
                   <a ng-class="{'following':is_following}" ng-click="following()" id="follwing"><i class="fa fa-users"></i> {{follow}}</a>
                </p>
             </div>

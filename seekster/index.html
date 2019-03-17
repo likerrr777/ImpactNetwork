@@ -3,6 +3,7 @@
 <html lang="en">
 
    <head>
+
       <meta charset="utf-8">
 
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,7 +37,7 @@
       <![endif]-->
 
       <link rel="stylesheet" type="text/css" href="css/demo1.css?v=1.1.2" />
-    <link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+ <link rel="stylesheet" type="text/css" href="css/lightbox.css" />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
@@ -46,20 +47,7 @@
     <!--Include script files in your index.html
 
     ------------------------------------------ -->
-<style type="text/css">
-   .col-md-4i {
-    width: 37.5%;
-  }
-  @media(max-width: 767px) {
-    .col-md-4i {
-    width: 32.5%;
-    }
-   #social_return .col-xs-4.elements{
-    width: 34.933333%;
-   }
 
-  }
-</style>
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
        <script src="js/newjs.js"></script>
 <!---->
@@ -931,19 +919,14 @@ return f;
            console.log( $scope.measure_clc);
            console.log( $scope.measure_clc[ky]);
            console.log( i);
-           
+           console.log(eval($scope.measure_clc[ky].Value));
 
                  $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value = eval($scope.measure_clc[ky].Value);
            console.log( $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value);
-           console.log($scope.Social_Returns_Bottom_Block[ky].Value);
-           console.log($scope.measure_clc[ky].mul);
 
-                  vs.pers = $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value*$scope.Social_Returns_Bottom_Block[ky].Value*$scope.measure_clc[ky].mul;
+                  vs.pers = $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value*$scope.Social_Returns_Bottom_Block[ky].Value*60;
                   $scope.social_chart_arr.push(vs);
-                $scope.dototal1 += $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value*$scope.Social_Returns_Bottom_Block[ky].Value*$scope.measure_clc[ky].mul;
-           console.log('$scope.dototal1');
-           console.log($scope.dototal1);
-
+                $scope.dototal1 += $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value*$scope.Social_Returns_Bottom_Block[ky].Value*60;
                 $scope.valu  = vs.pers;
              var c = getRandomColor();
               
@@ -972,7 +955,7 @@ console.log(v);
 console.log(v1);
 console.log(v.Value);
 console.log(v1.Value);
-                  v1.pers = (v1.Value*v.Value)*$scope.measure_clc[k1].mul;        
+                  v1.pers = (v1.Value*v.Value)*60 ;        
                
 console.log(v1);
 
@@ -1044,8 +1027,7 @@ console.log(v1);
     function closeformula(idx,index){
 $scope.impact_fg[idx][index] = false;
     }
-    function showformaula(idx,index){   
-    console.log(index) 
+    function showformaula(idx,index){    
           $.each($scope.impact_fg[idx],function(key,dt){
                     $scope.impact_fg[idx][key] = false;
           });
@@ -1136,12 +1118,9 @@ $scope.outcomes_tag_[idx][index] = false;
                }
           $.each($scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing, function(i, vs) { 
             //$scope.valu = (vs.Value * vs.Quantified_multiplication_value);
-            $scope.valu = $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value*$scope.Social_Returns_Bottom_Block[ky].Value*$scope.measure_clc[ky].mul;
+            $scope.valu = $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value*$scope.Social_Returns_Bottom_Block[ky].Value*60;
              dty.pers = $scope.valu;
-                  $scope.social_chart_arr[ky].pers = $scope.valu; 
-                   console.log($scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value)
-                console.log($scope.Social_Returns_Bottom_Block[ky].Value)
-                console.log($scope.measure_clc[ky].mul)
+                  $scope.social_chart_arr[ky].pers = $scope.valu; ;
             console.log($scope.valu);
             $scope.ttlsocialinvestment += parseInt($scope.valu);
             if(typeof $scope.impact_fg[ky] === 'undefined' ){
@@ -1401,14 +1380,11 @@ $scope.outcomes_tag_[idx][index] = false;
 
                             $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value = eval($scope.measure_clc[ky].Value);
                 console.log(eval($scope.measure_clc[ky].Value))
-                console.log($scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value)
-                console.log($scope.Social_Returns_Bottom_Block[ky].Value)
-                console.log($scope.measure_clc[i].mul)
+                console.log(eval($scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value))
 
-                  vs.pers = $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value*$scope.Social_Returns_Bottom_Block[ky].Value*$scope.measure_clc[ky].mul;
+                  vs.pers = $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value*$scope.Social_Returns_Bottom_Block[ky].Value*60;
                   $scope.social_chart_arr.push(vs);
-                $scope.dototal1 += $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value*$scope.Social_Returns_Bottom_Block[ky].Value*$scope.measure_clc[ky].mul;
-                console.log($scope.dototal1)
+                $scope.dototal1 += $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value*$scope.Social_Returns_Bottom_Block[ky].Value*60;
                 $scope.valu  = vs.pers;
              var c = getRandomColor();
               
@@ -1438,7 +1414,7 @@ $scope.outcomes_tag_[idx][index] = false;
                     if (d.Shown_by_default == 'TRUE') {
                       console.log($scope.Social_Returns_Bottom_Block[ke])
                         $.each(d.Measurable_Outcomes.Listing, function(key, dt1) {
-                   $scope.dototal1 += ($scope.Social_Returns_Bottom_Block[ke].Measurable_Outcomes.Listing[key].Value * $scope.Social_Returns_Bottom_Block[ke].Value)*$scope.measure_clc[ke].mul; 
+                   $scope.dototal1 += ($scope.Social_Returns_Bottom_Block[ke].Measurable_Outcomes.Listing[key].Value * $scope.Social_Returns_Bottom_Block[ke].Value)*60; 
                         });
                     }
                 });

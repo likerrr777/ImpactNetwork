@@ -143,17 +143,9 @@
 								<div class="tab_box_2">
 									<ul class="pntul diff">
 										<li class="bx2" ng-repeat="point in tab.Points">
-											<div class="scroll_img_cont">
-												<a class="example-image-link" href="{{point.ImageURL}}" data-lightbox="example-2" > 
-													<img ng-if="point.ImageURL!=''"  ng-src="{{point.ImageURL}}" class="jkc_icon img_scrl example-image">
-												</a>
-												<!-- <img src="img/impact_formula/1.png" class="jkc_icon img_scrl"> -->
-
-												<br>
-												<span class="content_v">{{point.Description}}</span>
-											</div>
-										</li>
-									</ul>
+										<img ng-src="{{point.ImageURL}}" class="jkc_icon"><br><span class="content_v">{{point.Description}}</span></li>
+									
+								</ul>
 								</div>
 							</div><!--//id_tab_a-->
 

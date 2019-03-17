@@ -12,6 +12,7 @@
       <div class="add_button">
        <a href="#" ><span class="padding">+</span>Invite</a>
       </div>
+      
      </div>
 <div class="pull-right">
             <p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span> | <span class="light ng-binding"> <i class="fa fa-lightbulb-o fa-lg2"></i> {{part_insight}} Insights</span></p>
@@ -39,16 +40,14 @@
                         <div class="col-md-4 itempad" #mainId="{{$index}}" ng-repeat="item in items">                            
                             <div id="item_{{$index}}"  class ="box1" ng-click="showDesc(item,$index);">
                              <div class="icon" align="center">
-                             <!--  <img ng-src="https://ricohandsglobal.com/angular-project-sun/img/logo01.png" style="width: 133px;"> -->
-                              <img ng-src="{{item.Image}}" style="max-width: 133px;">
+                              <img ng-src="{{item.Image}}" style="width: 133px;">
                              </div>
                              <div class="caption1" align="center">
                               <h5 class="text_heading">{{item.Title}}</h5>
                               <p>{{item.Url}}</p>
                              </div>
                              <div  class="" >
-                              <div class="icon1" ng-repeat="tag in item.Tags">
-                                <img ng-if="tag.Icon!=''"  ng-src="{{tag.Icon}}" class="partTag">
+                              <div class="icon1" ng-repeat="tag in item.Tags"><img src="https://via.placeholder.com/50X50" class="partTag">
                                 {{tag.Title}}
 
                               </div>
