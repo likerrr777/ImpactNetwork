@@ -20,6 +20,8 @@
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap-dropdownhover.css">
+    <link rel="stylesheet" media="all" href="css/src/jquery-jvectormap.css" />
+
 
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
 
@@ -249,7 +251,7 @@
 
                                                     <div class="pull-right">
 
-                                                        <p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span>
+                                                        <p><span class="chat"><img ng-src="{{projectData.sharedResources.blogImage}}" class="cc_icons"></span>
                                                             | <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i>
                                                                 {{overview.OverviewInfo.Overview_Insights}} <a href="javascript:void(0);"
                                                                     class="ins_c"> Insights</a></span></p>
@@ -487,17 +489,52 @@
 
     <!--[if lt IE 9]>
 
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script type="text/javascript" src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script type="text/javascript" src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
     <![endif]-->
-    
+
+    <script type="text/javascript" src="css/src/jquery-1.8.2.js"></script>
     <script type="text/javascript" src="js/newangular.js"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    
+    <script type="text/javascript" src="css/src/jquery-jvectormap.js"></script>
+    <script type="text/javascript" src="css/src/jquery-mousewheel.js"></script>
+    <script type="text/javascript" src="css/src/jvectormap.js"></script>
+    <script type="text/javascript" src="css/src/abstract-element.js"></script>
+    <script type="text/javascript" src="css/src/abstract-canvas-element.js"></script>
+    <script type="text/javascript" src="css/src/abstract-shape-element.js"></script>
+    <script type="text/javascript" src="css/src/svg-element.js"></script>
+    <script type="text/javascript" src="css/src/svg-group-element.js"></script>
+    <script type="text/javascript" src="css/src/svg-canvas-element.js"></script>
+    <script type="text/javascript" src="css/src/svg-shape-element.js"></script>
+    <script type="text/javascript" src="css/src/svg-path-element.js"></script>
+    <script type="text/javascript" src="css/src/svg-circle-element.js"></script>
+    <script type="text/javascript" src="css/src/svg-image-element.js"></script>
+    <script type="text/javascript" src="css/src/svg-text-element.js"></script>
+    <script type="text/javascript" src="css/src/vml-element.js"></script>
+    <script type="text/javascript" src="css/src/vml-group-element.js"></script>
+    <script type="text/javascript" src="css/src/vml-canvas-element.js"></script>
+    <script type="text/javascript" src="css/src/vml-shape-element.js"></script>
+    <script type="text/javascript" src="css/src/vml-path-element.js"></script>
+    <script type="text/javascript" src="css/src/vml-circle-element.js"></script>
+    <script type="text/javascript" src="css/src/vml-image-element.js"></script>
+    <script type="text/javascript" src="css/src/map-object.js"></script>
+    <script type="text/javascript" src="css/src/region.js"></script>
+    <script type="text/javascript" src="css/src/marker.js"></script>
+    <script type="text/javascript" src="css/src/vector-canvas.js"></script>
+    <script type="text/javascript" src="css/src/simple-scale.js"></script>
+    <script type="text/javascript" src="css/src/ordinal-scale.js"></script>
+    <script type="text/javascript" src="css/src/numeric-scale.js"></script>
+    <script type="text/javascript" src="css/src/color-scale.js"></script>
+    <script type="text/javascript" src="css/src/legend.js"></script>
+    <script type="text/javascript" src="css/src/data-series.js"></script>
+    <script type="text/javascript" src="css/src/proj.js"></script>
+    <script type="text/javascript" src="css/src/map.js"></script>
+    <script type="text/javascript" src="css/src/jquery-jvectormap-world-mill-en.js"></script>
 
     <script type="text/javascript" src="js/fusioncharts.js"></script>
-    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript" src="js/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript" src="js/fusioncharts.charts.js"></script>
     <script type="text/javascript" src="js/angular-fusioncharts.min.js"></script>
@@ -506,12 +543,9 @@
 
     <script type="text/javascript" src="js/communitiesImpacted.js"></script>
     <script type="text/javascript" src="js/App.js"> </script>
-    <script src="js/modernizr-2.6.2.min.js"></script>
-    <script src="js/newjs.js"></script>
-    <script src="js/lightbox.js"></script>
+    <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+    <script type="text/javascript" src="js/newjs.js"></script>
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-dropdownhover.js"> </script>
     <script type="text/javascript" src="js/postTransformations.js"></script>

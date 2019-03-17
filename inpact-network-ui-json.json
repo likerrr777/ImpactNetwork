@@ -1,4 +1,8 @@
 {
+  "sharedResources": {
+    "blogImage": "img/blogging.png",
+    "growthImage": "img/growth.png"
+  },
   "HomepageSlider": {
     "Banner": [{
         "Name": "homepageSlider1",

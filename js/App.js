@@ -43,7 +43,6 @@ app.controller('MainCtrl', function ($scope, $http) {
 
     $http.get("inpact-network-ui-json.json")
         .then(function (response) {
-
             $scope.projectData = response.data;
 
             $scope.ProjSec = response.data.ProjectSection;

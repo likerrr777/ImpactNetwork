@@ -1,4 +1,86 @@
+function aa(ttlinvestment, investmentChart) {
+    var interval = setInterval(function () {
+        if (document.querySelector('#investment_container')) {
+            revenueChart1 = new FusionCharts({
+                type: 'doughnut2d',
+                renderAt: 'investment_container',
+                width: '350',
+                height: '300',
+                dataFormat: 'json',
+                dataSource: {
+                    "chart": {
+                        "numberPrefix": "$",
+                        "bgColor": "#ffffff",
+                        "showBorder": "0",
+                        "use3DLighting": "0",
+                        "showShadow": "0",
+                        "enableSmartLabels": "0",
+                        "startingAngle": "310",
+                        "showLabels": "0",
+                        "showPercentValues": "1",
+                        "showLegend": "0",
+                        "legendShadow": "0",
+                        "legendBorderAlpha": "0",
+                        "defaultCenterLabel": "$" + ttlinvestment + "",
+                        "centerLabelBold": "0",
+                        "showTooltip": "0",
+                        "decimals": "0",
+                        "captionFontSize": "14",
+                        "subcaptionFontSize": "14",
+                        "subcaptionFontBold": "0",
+                        "doughnutRadius": "80"
+                    },
+                    "data": investmentChart
+                }
+            }).render();
+
+            clearInterval(interval);
+        }
+    }, 10);
+}
+
+function socialinvstFusionCharts(ttlsocialinvestment, socialinvst_container) {
+    var interval = setInterval(function () {
+        if (document.querySelector('#socialinvst_container')) {
+            var revenueChart = new FusionCharts({
+                type: 'doughnut2d',
+                renderAt: 'socialinvst_container',
+                width: '350',
+                height: '300',
+                dataFormat: 'json',
+                dataSource: {
+                    "chart": {
+                        "numberPrefix": "$",
+                        "bgColor": "#ffffff",
+                        "defaultCenterLabel": "$" + ttlsocialinvestment + "",
+                        "theme": "fusion",
+                        "centerLabelBold": "0",
+                        "showTooltip": "0",
+                        "decimals": "0",
+                        "captionFontSize": "14",
+                        "subcaptionFontSize": "14",
+                        "subcaptionFontBold": "0",
+                        "doughnutRadius": "80",
+                        "enableSmartLabels": "0",
+                        "startingAngle": "310",
+                        "showLabels": "0",
+                        "showPercentValues": "1",
+                        "showLegend": "0",
+                        "legendShadow": "0",
+                        "legendBorderAlpha": "0",
+                    },
+                    "data": socialinvst_container
+                }
+            }).render();
+
+            clearInterval(interval);
+        }
+    }, 10);
+}
+
 function communitiesImpacted() {
+    var $ = jvm.$;
+
     var scope = angular.element(document.querySelector('[ng-controller="MainCtrl"]')).scope();
     var investmentChart = scope.investmentChart;
     var countrylist_new = scope.countrylist_new;
@@ -8,92 +90,10 @@ function communitiesImpacted() {
     aa(ttlinvestment, investmentChart);
     socialinvstFusionCharts(ttlsocialinvestment, socialinvst_container);
 
-    function aa(ttlinvestment, investmentChart) {
-        var interval = setInterval(function () {
-            if (document.querySelector('#investment_container')) {
-                revenueChart1 = new FusionCharts({
-                    type: 'doughnut2d',
-                    renderAt: 'investment_container',
-                    width: '350',
-                    height: '300',
-                    dataFormat: 'json',
-                    dataSource: {
-                        "chart": {
-                            "numberPrefix": "$",
-                            "bgColor": "#ffffff",
-                            "showBorder": "0",
-                            "use3DLighting": "0",
-                            "showShadow": "0",
-                            "enableSmartLabels": "0",
-                            "startingAngle": "310",
-                            "showLabels": "0",
-                            "showPercentValues": "1",
-                            "showLegend": "0",
-                            "legendShadow": "0",
-                            "legendBorderAlpha": "0",
-                            "defaultCenterLabel": "$" + ttlinvestment + "",
-                            "centerLabelBold": "0",
-                            "showTooltip": "0",
-                            "decimals": "0",
-                            "captionFontSize": "14",
-                            "subcaptionFontSize": "14",
-                            "subcaptionFontBold": "0",
-                            "doughnutRadius": "80"
-                        },
-                        "data": investmentChart
-                    }
-                }).render();
-
-                clearInterval(interval);
-            }
-        }, 10);
-    }
-
-    function socialinvstFusionCharts(ttlsocialinvestment, socialinvst_container) {
-        var interval = setInterval(function () {
-            if (document.querySelector('#socialinvst_container')) {
-                var revenueChart = new FusionCharts({
-                    type: 'doughnut2d',
-                    renderAt: 'socialinvst_container',
-                    width: '350',
-                    height: '300',
-                    dataFormat: 'json',
-                    dataSource: {
-                        "chart": {
-                            "numberPrefix": "$",
-                            "bgColor": "#ffffff",
-                            "defaultCenterLabel": "$" + ttlsocialinvestment + "",
-                            "theme": "fusion",
-                            "centerLabelBold": "0",
-                            "showTooltip": "0",
-                            "decimals": "0",
-                            "captionFontSize": "14",
-                            "subcaptionFontSize": "14",
-                            "subcaptionFontBold": "0",
-                            "doughnutRadius": "80",
-                            "enableSmartLabels": "0",
-                            "startingAngle": "310",
-                            "showLabels": "0",
-                            "showPercentValues": "1",
-                            "showLegend": "0",
-                            "legendShadow": "0",
-                            "legendBorderAlpha": "0",
-                        },
-                        "data": socialinvst_container
-                    }
-                }).render();
-
-                clearInterval(interval);
-            }
-        }, 10);
-    }
-    jQuery.noConflict();
-
-    jQuery(function () {
-        jQuery('[href="#communitiesImctd"]').click(function () {
-            jQuery('#map1').html('');
+    $(function () {
+        $('[href="#communitiesImctd"]').click(function () {
+            $('#map1').html('');
             setTimeout(function () {
-                var $ = jQuery;
 
                 $('#map1').vectorMap({
                     map: 'world_mill_en',
@@ -376,7 +376,6 @@ function communitiesImpacted() {
                 });
                 var map = $('#map1').vectorMap('get', 'mapObject');
                 setGreenColor(map, green = false);
-                //setTimeout(function(){$('#map1 svg').width("422");$('#map1 svg').height("324");},1000);
             }, 1000);
         });
     });
@@ -389,16 +388,5 @@ function communitiesImpacted() {
                 v.element.setStyle('fill', '#000');
             }
         })
-        //     $.each($('.jvectormap-container svg g').eq(0).children('path'),function(k,d1){        var name = map.getRegionName($(this).attr('data-code'));   
-
-        //       var nn = countrylist_new.filter(function (person) { return person.name == name });
-        //       if(nn.length > 0){            
-        //           if(green == false){              
-        //             $(this).css('fill','#07c776'); 
-        //             green = true;
-        //           }
-        //        }       
-
-        // });
     }
 }

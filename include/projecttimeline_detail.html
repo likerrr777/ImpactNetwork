@@ -3,7 +3,7 @@
     <div class="col-md-12">
       <div class="ttl_header">
         <div class="pull-right">
-          <p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span> | <span class="light pus">
+          <p><span class="chat"><img ng-src="{{projectData.sharedResources.blogImage}}" class="cc_icons"></span> | <span class="light pus">
               <i class="fa fa-lightbulb-o fa-lg2"></i>
               {{Project_Insight}}
               <a href="javascript:void(0);" class="ins_c">Insights</a>
@@ -28,7 +28,7 @@
                   {{item.Project_Primary_key}}
                 </span>
                 <span>
-                  <img class="primg" src="{{item.imageSrc}}">
+                  <img class="primg" ng-src="{{item.imageSrc}}">
                 </span>
               </a>
             </li>

@@ -1,12 +1,10 @@
-<link rel="stylesheet" media="all" href="css/src/jquery-jvectormap.css" />
-
 <section class="asd">
   <div class="content_box a3">
     <div class="row">
       <div class="col-md-12">
         <div class="ttl_header bdr">
           <div class="pull-right">
-            <p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span> | <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i>
+            <p><span class="chat"><img ng-src="{{projectData.sharedResources.blogImage}}" class="cc_icons"></span> | <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i>
                 {{Community_Insights}} Insights</span></p>
           </div>
           <h4 class="content_title">Communities Impacted</h4>
@@ -214,11 +212,11 @@
                             <p class="" ng-click="closeformula(idx,$index)" style="float: right; margin-top: -8px;cursor: pointer;">x</p>
                             <p class="popover__message2">
                               <div class="sh_re">
-                                <img ng-if="Measurable_Outcomes.Impact_calculation_formula.link!=''" ng-src="{{Measurable_Outcomes.Impact_calculation_formula.link}}"
+                                <img ng-if="Measurable_Outcomes.Impact_calculation_formula.link" ng-src="{{Measurable_Outcomes.Impact_calculation_formula.link}}"
                                   class="img-rounded" style="width: 100%;  height: auto;">
                               </div>
                               <span>{{Measurable_Outcomes.Impact_calculation_formula.description}}</span>
-                              <a href="{{Measurable_Outcomes.Impact_calculation_formula.descriptionLink}}" target="_blank">{{Measurable_Outcomes.Impact_calculation_formula.descriptionLink}}</a>
+                              <a ng-if="Measurable_Outcomes.Impact_calculation_formula.descriptionLink" href="{{Measurable_Outcomes.Impact_calculation_formula.descriptionLink}}" target="_blank">{{Measurable_Outcomes.Impact_calculation_formula.descriptionLink}}</a>
                             </p>
                           </div>
                           <span class="pull-right tcl_a ll">{{Measurable_Outcomes.Value*social.Value*measure_clc[idx].mul}}
@@ -256,7 +254,7 @@
       <div class="col-md-12">
         <div class="ttl_header bdr">
           <div class="pull-right">
-            <p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span> | <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i>
+            <p><span class="chat"><img ng-src="{{projectData.sharedResources.blogImage}}" class="cc_icons"></span> | <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i>
                 {{Community_Insights}} Insights</span></p>
           </div>
           <h4 class="content_title">Impact Report</h4>
@@ -322,46 +320,3 @@
     </div>
   </div>
 </div>
-
-<script src="css/src/jquery-1.8.2.js"></script>
-<script type="text/javascript" src="css/src/jquery-jvectormap.js"></script>
-<script type="text/javascript" src="css/src/jquery-mousewheel.js"></script>
-
-<script type="text/javascript" src="css/src/jvectormap.js"></script>
-
-<script src="css/src/abstract-element.js"></script>
-<script src="css/src/abstract-canvas-element.js"></script>
-<script src="css/src/abstract-shape-element.js"></script>
-
-<script src="css/src/svg-element.js"></script>
-<script src="css/src/svg-group-element.js"></script>
-<script src="css/src/svg-canvas-element.js"></script>
-<script src="css/src/svg-shape-element.js"></script>
-<script src="css/src/svg-path-element.js"></script>
-<script src="css/src/svg-circle-element.js"></script>
-<script src="css/src/svg-image-element.js"></script>
-<script src="css/src/svg-text-element.js"></script>
-
-<script src="css/src/vml-element.js"></script>
-<script src="css/src/vml-group-element.js"></script>
-<script src="css/src/vml-canvas-element.js"></script>
-<script src="css/src/vml-shape-element.js"></script>
-<script src="css/src/vml-path-element.js"></script>
-<script src="css/src/vml-circle-element.js"></script>
-<script src="css/src/vml-image-element.js"></script>
-
-<script src="css/src/map-object.js"></script>
-<script src="css/src/region.js"></script>
-<script src="css/src/marker.js"></script>
-
-<script src="css/src/vector-canvas.js"></script>
-<script src="css/src/simple-scale.js"></script>
-<script src="css/src/ordinal-scale.js"></script>
-<script src="css/src/numeric-scale.js"></script>
-<script src="css/src/color-scale.js"></script>
-<script src="css/src/legend.js"></script>
-<script src="css/src/data-series.js"></script>
-<script src="css/src/proj.js"></script>
-<script src="css/src/map.js"></script>
-
-<script src="css/src/jquery-jvectormap-world-mill-en.js"></script>

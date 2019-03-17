@@ -1,28 +1,24 @@
 {
-  "sharedResources": {
-    "blogImage": "../img/blogging.png",
-    "growthImage": "../img/growth.png"
-  },
   "HomepageSlider": {
     "Banner": [{
         "Name": "homepageSlider1",
         "Sequence": "1",
-        "ImgUrl": "img/seekster-flyer1.jpg"
+        "ImgUrl": "simg/seekster-flyer1.jpg"
       },
       {
         "Name": "homepageSlider2",
         "Sequence": "2",
-        "ImgUrl": "img/Seekster_Banner.jpg"
+        "ImgUrl": "simg/Seekster_Banner.jpg"
       }
     ]
   },
   "ProjectSection": {
     "Project_Info": {
-      "Logo": "img/seekster-logo.png",
+      "Logo": "simg/seekster-logo.png",
       "Title": "Digital platform for connecting maids and technicians to customers",
-      "Username": "@Username",
+     "Username": "@Username",
       "OrganisationName": "Seekster",
-      "OrganisationURL": "img/seekster-logo.png"
+      "OrganisationURL": "www.seekster.co"
     },
     "Rating_Info": {
       "Star": "4.5",
@@ -73,98 +69,18 @@
     "TimelineInsight": "34",
     "Outputs_Outcomes_Info": {
       "Outputs_Outcomes_Insight": "8",
-      "Listing": [{
-          "Project_Primary_key": 1,
-          "backgroundColor": "rgb(229, 36, 59)",
-          "imageSrc": "../img/sustainable_development/1_No_Poverty.png"
-        },
+      "Listing": [
         {
-          "Project_Primary_key": 2,
-          "backgroundColor": "rgb(221, 166, 58)",
-          "imageSrc": "../img/sustainable_development/2_Zero_Hunger.png"
-        },
-        {
-          "Project_Primary_key": 3,
-          "backgroundColor": "rgb(76, 159, 56)",
-          "imageSrc": "../img/sustainable_development/3_Good_Health_And_Well_Being.png"
-        },
-        {
-          "Project_Primary_key": 4,
-          "backgroundColor": "rgb(197, 25, 45)",
-          "imageSrc": "../img/sustainable_development/4_Quality_Education.png"
-        },
-        {
-          "Project_Primary_key": 5,
-          "backgroundColor": "rgb(255, 58, 33)",
-          "imageSrc": "../img/sustainable_development/5_Gender_Equality.png"
-        },
-        {
-          "Project_Primary_key": 6,
-          "backgroundColor": "rgb(38, 189, 226)",
-          "imageSrc": "../img/sustainable_development/6_Clean_Water_And_Sanitation.png"
-        },
-        {
-          "Project_Primary_key": 7,
-          "backgroundColor": "rgb(252, 195, 11)",
-          "imageSrc": "../img/sustainable_development/7_Affordable_And_Clean_Energy.png"
-        },
-        {
-          "Project_Primary_key": 8,
-          "backgroundColor": "rgb(162, 25, 66)",
-          "imageSrc": "../img/sustainable_development/8_Decent_Work_And_Economic_Growth.png",
-          "Project_Name": "Promote  sustained,  inclusive  and  sustainable  economic  growth,  full  and  productive  employment  and  decent  work  for  all",
-          "Project_Icon": "../img/yellow_icons/8.png",
-          "Project_Insight": "290",
-          "isSupported": true
-        },
-        {
-          "Project_Primary_key": 9,
-          "backgroundColor": "rgb(253, 105, 37)",
-          "imageSrc": "../img/sustainable_development/9_Industry_Innovation_And_Infrastructure.png"
-        },
-        {
-          "Project_Primary_key": 10,
-          "backgroundColor": "rgba(225, 20, 132, 0.99)",
-          "imageSrc": "../img/sustainable_development/10_Reduced_Inequalities.png"
-        },
-        {
-          "Project_Primary_key": 11,
-          "backgroundColor": "rgba(249, 157, 38, 0.99)",
-          "imageSrc": "../img/sustainable_development/11_Sustainable_Cities_And_Communities.png",
           "Project_Name": "Make  cities  and  human  settlements  inclusive,  resilient  and  sustainable for all",
-          "Project_Icon": "../img/yellow_icons/11.png",
+          "Project_Icon": "http://impactnetwork.vision/img/yellow_icons/11.png",
           "Project_Insight": "280",
-          "isSupported": true
+          "Project_Primary_key": "11"
         },
         {
-          "Project_Primary_key": 12,
-          "backgroundColor": "rgba(207, 141, 42, 0.99)",
-          "imageSrc": "../img/sustainable_development/12_Responsible_Consumption_And_Production.png"
-        },
-        {
-          "Project_Primary_key": 13,
-          "backgroundColor": "rgba(72, 119, 62, 0.99)",
-          "imageSrc": "../img/sustainable_development/13_Climate_Action.png"
-        },
-        {
-          "Project_Primary_key": 14,
-          "backgroundColor": "rgb(0, 125, 188)",
-          "imageSrc": "../img/sustainable_development/14_Life_Below_Water.png"
-        },
-        {
-          "Project_Primary_key": 15,
-          "backgroundColor": "rgba(62, 176, 73, 0.99)",
-          "imageSrc": "../img/sustainable_development/15_Life_On_Land.png"
-        },
-        {
-          "Project_Primary_key": 16,
-          "backgroundColor": "rgba(2, 85, 139, 0.99)",
-          "imageSrc": "../img/sustainable_development/16_Peace_Justice_And_Strong_Institutions.png"
-        },
-        {
-          "Project_Primary_key": 17,
-          "backgroundColor": "rgba(24, 54, 104, 0.99)",
-          "imageSrc": "../img/sustainable_development/17_Partnership_For_The_Goals.png"
+          "Project_Name": "Promote  sustained,  inclusive  and  sustainable  economic  growth,  full  and  productive  employment  and  decent  work  for  all",
+          "Project_Icon": "http://impactnetwork.vision/img/yellow_icons/8.png",
+          "Project_Insight": "290",
+          "Project_Primary_key": "8"
         }
       ],
       "Project_Output_Section": [{
@@ -173,21 +89,21 @@
           "Project_Foreign_Key": "8",
           "Project_Output_Primary_Key": "B1",
           "Tags": [{
-              "icons": "../img/new_img/irs.png",
+              "icons": "img/new_img/irs.png",
               "label": "IRIS  MetricPI2845",
               "popoverinfo": {
-                "image": "../img/impact_formula/1.png",
-                "link": "../img/impact_formula/1.png",
+                "image": "img/impact_formula/1.png",
+                "link": "img/impact_formula/1.png",
                 "linkText": "Click here",
                 "Description": "World Bank entitled, â€œRural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002) "
               }
             },
             {
-              "icons": "../img/new_img/glogo1.jpg",
+              "icons": "img/new_img/glogo1.jpg",
               "label": "GOGLA  metric  1ai ",
               "popoverinfo": {
-                "image": "../img/impact_formula/1.png",
-                "link": "../img/impact_formula/1.png",
+                "image": "img/impact_formula/1.png",
+                "link": "img/impact_formula/1.png",
                 "linkText": "Click here",
                 "Description": "World Bank entitled, â€œRural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002) "
               }
@@ -208,8 +124,8 @@
               "icons": "",
               "label": "IRIS  Metric  OI2496",
               "popoverinfo": {
-                "image": "../img/impact_formula/1.png",
-                "link": "../img/impact_formula/1.png",
+                "image": "img/impact_formula/1.png",
+                "link": "img/impact_formula/1.png",
                 "linkText": "Click here",
                 "Description": "World Bank entitled, â€œRural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002)"
               }
@@ -231,8 +147,8 @@
               "icons": "",
               "label": "IRIS  MetricPI2845",
               "popoverinfo": {
-                "image": "../img/impact_formula/1.png",
-                "link": "../img/impact_formula/1.png",
+                "image": "img/impact_formula/1.png",
+                "link": "img/impact_formula/1.png",
                 "linkText": "Click here",
                 "Description": "World Bank entitled, â€œRural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002) "
               }
@@ -241,8 +157,8 @@
               "icons": "",
               "label": "IRIS  MetricPI2845",
               "popoverinfo": {
-                "image": "../img/impact_formula/1.png",
-                "link": "../img/impact_formula/1.png",
+                "image": "img/impact_formula/1.png",
+                "link": "img/impact_formula/1.png",
                 "linkText": "Click here",
                 "Description": "World Bank entitled, â€œRural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002) "
               }
@@ -258,8 +174,8 @@
               "icons": "",
               "label": "IRIS  Metric  OI2496",
               "popoverinfo": {
-                "image": "../img/impact_formula/1.png",
-                "link": "../img/impact_formula/1.png",
+                "image": "img/impact_formula/1.png",
+                "link": "img/impact_formula/1.png",
                 "linkText": "Click here",
                 "Description": "World Bank entitled, â€œRural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002) "
               }
@@ -268,8 +184,8 @@
               "icons": "",
               "label": "IRIS  Metric  OI2496",
               "popoverinfo": {
-                "image": "../img/impact_formula/1.png",
-                "link": "../img/impact_formula/1.png",
+                "image": "img/impact_formula/1.png",
+                "link": "img/impact_formula/1.png",
                 "linkText": "Click here",
                 "Description": "World Bank entitled, â€œRural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002) "
               }
@@ -281,22 +197,23 @@
     "Gallery": {
       "Gallery_Insight": "220",
       "Images": [{
-        "Small_Image": "img/Team_KH.jpg",
-        "Big_Image": "",
-        "Image_Title": "Seekster Team"
-      }]
+          "Small_Image": "simg/Team_KH.jpg",
+          "Big_Image": "",
+          "Image_Title": "Seekster Team"
+        }
+      ]
     },
     "Partnership_Organizations": [{
         "Partnership_Title": "DTAC",
-        "Partnership_ImageURL": "img/dtac-logo-vector.png"
+        "Partnership_ImageURL": "simg/dtac-logo-vector.png"
       },
       {
         "Partnership_Title": "500 TukTuks",
-        "Partnership_ImageURL": "img/500 TukTuks.jpg"
+        "Partnership_ImageURL": "simg/500 TukTuks.jpg"
       },
       {
         "Partnership_Title": " Ananda",
-        "Partnership_ImageURL": "img/Logo-ananda.original.jpg"
+        "Partnership_ImageURL": "simg/Logo-ananda.original.jpg"
       }
     ],
     "Partnership_Organizations_Insight": "45",
@@ -305,13 +222,15 @@
       "Amount": "0.4M",
       "AmountSign": "$",
       "FundingList": [{
-        "Label": "DTAC Accelerate, and 500 TukTuks",
-        "Color": "#00D246",
-        "Percentage": "100"
-      }]
+          "Label": "DTAC Accelerate, and 500 TukTuks",
+          "Color": "#00D246",
+          "Percentage": "100"
+        }
+      ]
     },
     "Insight": {
-      "Overview": [{
+      "Overview": [
+        {
           "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor1.png",
           "Author_Name": "Aaron Taylor",
           "Review_Description": "Much needed platform for offline maids and technicians",
@@ -330,33 +249,39 @@
           "Date_Time": "11 jan 2018 - 15:45"
         }
       ],
-      "Timeline": [{
-        "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor3.png",
-        "Author_Name": "Rao Saoy",
-        "Review_Description": "Connected to larger community is short time",
-        "Review_Image": "",
-        "Review_Number": "163",
-        "Review_Star": "4",
-        "Date_Time": "11 jan 2018 - 15:45"
-      }],
-      "Project": [{
-        "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor3.png",
-        "Author_Name": "Chang Tao",
-        "Review_Description": "Digital platforms like these are much needed to our community to connect maids and technicians who have very less visiability to online network",
-        "Review_Image": "",
-        "Review_Number": "163",
-        "Review_Star": "3",
-        "Date_Time": "11 jan 2018 - 15:45"
-      }],
-      "Gallery": [{
-        "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor3.png",
-        "Author_Name": "Tom Sally",
-        "Review_Description": "We would like to see more pictures from the community",
-        "Review_Image": "",
-        "Review_Number": "163",
-        "Review_Star": "2",
-        "Date_Time": "11 jan 2018 - 15:45"
-      }]
+      "Timeline": [
+        {
+          "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor3.png",
+          "Author_Name": "Rao Saoy",
+          "Review_Description": "Connected to larger community is short time",
+          "Review_Image": "",
+          "Review_Number": "163",
+          "Review_Star": "4",
+          "Date_Time": "11 jan 2018 - 15:45"
+        }
+      ],
+      "Project": [
+        {
+          "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor3.png",
+          "Author_Name": "Chang Tao",
+          "Review_Description": "Digital platforms like these are much needed to our community to connect maids and technicians who have very less visiability to online network",
+          "Review_Image": "",
+          "Review_Number": "163",
+          "Review_Star": "3",
+          "Date_Time": "11 jan 2018 - 15:45"
+        }
+      ],
+      "Gallery": [
+        {
+          "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor3.png",
+          "Author_Name": "Tom Sally",
+          "Review_Description": "We would like to see more pictures from the community",
+          "Review_Image": "",
+          "Review_Number": "163",
+          "Review_Star": "2",
+          "Date_Time": "11 jan 2018 - 15:45"
+        }
+      ]
     }
   },
   "Theory_of_Change": {
@@ -412,16 +337,18 @@
       "tabs": [{
           "Label": "Proposed Solution",
           "Points": [{
-            "Description": "Seekster sees the problem and willing to tackle. We want you to be able to find reliable service provider that can track the background. Seekster curated each service provider and secure their information. We design the system as per Crowd Sourcing model where jobs will be distributed and you can be serviced as long as the service provider is presented in your area.",
-            "ImageURL": "https://via.placeholder.com/100X50"
-          }]
+              "Description": "Seekster sees the problem and willing to tackle. We want you to be able to find reliable service provider that can track the background. Seekster curated each service provider and secure their information. We design the system as per Crowd Sourcing model where jobs will be distributed and you can be serviced as long as the service provider is presented in your area.",
+              "ImageURL": "https://via.placeholder.com/100X50"
+            }
+          ]
         },
         {
           "Label": "Alternative Solutions",
           "Points": [{
-            "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i",
-            "ImageURL": "https://via.placeholder.com/100X50"
-          }]
+              "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i",
+              "ImageURL": "https://via.placeholder.com/100X50"
+            }
+          ]
         }
       ]
     }
@@ -646,7 +573,7 @@
   "People_Partnership": {
     "People_Partnership_Insight": "800",
     "Listing": [{
-        "Image": "img/dtacaccelerate.png",
+        "Image": "simg/dtacaccelerate.png",
         "Title": " DTAC - Total Access Communication Public Company Limited",
         "Url": "https://accelerat/e.dtac.co.th",
         "Description": "DTAC Accelerate is Thailand's No. 1 Accelerator house. Our mission is to seek out potential startups. And push these startup. Grow up fast We believe that startup Thailand. Can expand the business to the world. And that is our mission. To create the next Unicorn of South East Asia, we have already invested in 34 teams from the past 5 batches worth a total of over $ 3.5 billion. 70% of the startups we invested. The investment is continued from investors in both Thailand and the region. We are one of the most accredited Accelerator houses in Southeast Asia. At present, our startup projects are in Exit 1, Series A 4 and Seed 17.",
@@ -664,7 +591,7 @@
         ]
       },
       {
-        "Image": "img/500 TukTuks.jpg",
+        "Image": "simg/500 TukTuks.jpg",
         "Title": "500 TukTuks",
         "Url": "https://500.co/500tuktuks-fund/",
         "Description": " “500 TukTuks”, a $10M USD micro-fund focused on promising startups, managed by new 500 investing partners Krating Poonpol and Moo Natavudh. Why the name TukTuks? Well they are small, lean, fast, agile, and dangerous. JUST LIKE STARTUPS. They are excited to take a trip through the winding roads of Thailand to discover smart, badass entrepreneurs.",
@@ -672,12 +599,13 @@
           "500 sees an opportunity to invest early and often into the next generation of Thailand’s most promising startups and empower them with best of Silicon Valley’s education, thinking, talent, and money to provide unfair advantage in the local market. 500 will be the first major SV accelerator and seed stage investor in the local Thai market and founders will gain access to our global network of high-value mentors and 2,000+ founders. 500 will look to invest in not just companies that can succeed in the local Asian market, but through its accelerator, find and work with Thai companies that can succeed in the US and global market."
         ],
         "Tags": [{
-          "Title": "Seed Funding",
-          "Icon": "https://via.placeholder.com/50X50"
-        }]
+            "Title": "Seed Funding",
+            "Icon": "https://via.placeholder.com/50X50"
+          }
+        ]
       },
       {
-        "Image": "img/Logo-ananda.original.jpg",
+        "Image": "simg/Logo-ananda.original.jpg",
         "Title": "Ananda Development",
         "Url": "https://www.ananda.co.th/th/home",
         "Description": "Ananda Development Public Company Limited was founded in 1999 by Chanond Ruangkritya.Ananda has continued to develop its brands and its unique Urban Living Solutions, resulting in it becoming the leading developer of residential projects in close proximity to mass transit stations in Bangkok. Ananda achieved this success through its branded products such as IDEO, first launched in 2007 and IDEO MOBI first launched in the first quarter of 2012. Its stylish, modern and high quality, yet affordable products have led to Ananda becoming one of the best known property development brands in Bangkok.",
@@ -685,23 +613,24 @@
           "Seekster will be a preferred partner for sourcing service-providers to the Ananda Development projects and customers."
         ],
         "Tags": [{
-          "Title": "Preferred Consumer Partner",
-          "Icon": "https://via.placeholder.com/50X50"
-        }]
+            "Title": "Preferred Consumer Partner",
+            "Icon": "https://via.placeholder.com/50X50"
+          }
+        ]
       }
     ],
     "TeamMember": [{
-        "Image": "img/ceo.jpg",
+        "Image": "simg/ceo.jpg",
         "Name": "Sahib Anandsongvit",
         "Degisnation": "CEO"
       },
       {
-        "Image": "img/CTO.png",
+        "Image": "simg/CTO.png",
         "Name": "Daniel Dye",
         "Degisnation": "CTO"
       },
       {
-        "Image": "img/CMO.png",
+        "Image": "simg/CMO.png",
         "Name": "Joez C",
         "Degisnation": "CMO"
       }
@@ -720,16 +649,18 @@
     },
     "Source_of_Funding": {
       "Listing": [{
-        "Label": "Seedfunding from Digital Ventures, DTAC Accelerate, and 500 TukTuks",
-        "Amount": "$458,000"
-      }]
+          "Label": "Seedfunding from Digital Ventures, DTAC Accelerate, and 500 TukTuks",
+          "Amount": "$458,000"
+        }
+      ]
     },
     "Funding_rasing_over_the_period_of_time": {
       "GraphTitle": "Text",
       "GraphPlotting": [{
-        "Year": "2018",
-        "Amount": "$0.46"
-      }]
+          "Year": "2018",
+          "Amount": "$0.46"
+        }
+      ]
     },
     "Notes_for_Investor": "This Project is Looking to Raise 2M US$ with blended returns. For Investment Profile, please visit: impact.apicista.com",
     "Notes_for_Investor_Insight": "400",
@@ -798,53 +729,51 @@
   "Communities_And_Impact": {
     "Community_Insights": "12",
     "List_of_Communities": [{
-      "Community": {
-        "Community_Basic_Info": [{
-          "CountryName": "Thailand",
-          "CommunityName": "Bangkok",
-          "CountryIcons": "img/flag-thailand-XL.jpg",
-          "Latitude": "13.756331",
-          "Longitude": "100.501762",
-          "ShortName": "TH",
-          "ListofItemsMultiplevalue": 3,
-          "ListofItems": [{
-              "Title": "Average per-capita annual income (US$ )",
-              "Icon": "img/Trading-Economics.png",
-              "Link": "https://tradingeconomics.com/thailand/wages",
-              "Name": "Trading Economics",
-              "Value": "5160"
-            },
-            {
-              "Title": "Poverty Line (Average annual per-capita income in US$) ",
-              "Icon": "img/Trading-Economics.png",
-              "Link": "https://tradingeconomics.com/thailand/wages",
-              "Name": "Trading Economics",
-              "Value": "582"
-            },
-            {
-              "Title": "Minimum wages - 325 THB per day (US$ per-capita per year)",
-              "Icon": "img/Trading-Economics.png",
-              "Link": "https://tradingeconomics.com/thailand/wages",
-              "Name": "Trading Economics",
-              "Value": "2861"
-            }
-          ],
-          "measurable_clc": [{
-              "Value": "1",
-              "mul": "60"
-            },
-            {
-              "Value": "1",
-              "mul": "60"
-            },
-            {
-              "Value": "1",
-              "mul": "60"
-            }
-          ]
-        }]
+        "Community": {
+          "Community_Basic_Info": [{
+            "CountryName": "Thailand",
+            "CommunityName": "Bangkok",
+            "CountryIcons": "simg/flag-thailand-XL.jpg",
+            "Latitude": "13.756331",
+            "Longitude": "100.501762",
+            "ShortName": "TH",
+            "ListofItemsMultiplevalue": 3,
+            "ListofItems": [{
+                "Title": "Average per-capita annual income (US$ )",
+                "Icon": "simg/Trading-Economics.png",
+                "Link": "https://tradingeconomics.com/thailand/wages",
+                "Name": "Trading Economics",
+                "Value": "5160"
+              },
+              {
+                "Title": "Poverty Line (Average annual per-capita income in US$) ",
+                "Icon": "simg/Trading-Economics.png",
+                "Link": "https://tradingeconomics.com/thailand/wages",
+                "Name": "Trading Economics",
+                "Value": "582"
+              },
+              {
+                "Title": "Minimum wages - 325 THB per day (US$ per-capita per year)",
+                "Icon": "simg/Trading-Economics.png",
+                "Link": "https://tradingeconomics.com/thailand/wages",
+                "Name": "Trading Economics",
+                "Value": "2861"
+              }
+            ],
+            "measurable_clc": [{
+                "Value": "1"
+              },
+              {
+                "Value": "1"
+              },
+              {
+                "Value": "1"
+              }
+            ]
+          }]
+        }
       }
-    }],
+    ],
     "Investment_Bottom_Block": {
       "Listing": [{
           "Label": "Product Development",
@@ -860,42 +789,44 @@
         }
       ]
     },
-    "Social_Returns_Bottom_Block": [{
-        "Output_Definition": "# of Jobs matched",
-        "Value": "100000",
-        "Measurable_Outcomes": {
-          "Listing": [{
-            "Outcome_Definition": "Average # of hours saved by the customer because of the matched job",
-            "Value": "3",
-            "Quantified_multiplication_value": "1",
-            "Impact_calculation_formula": {
-              "link": "https://tradingeconomics.com/thailand/wages",
-              "linkText": "Click here",
-              "description": "World Bank entitled, â€œRural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002) "
-            }
+    "Social_Returns_Bottom_Block": {
+      "Output": [{
+          "Output_Definition": "# of Jobs matched",
+          "Value": "100000",
+          "Measurable_Outcomes": {
+            "Listing": [{
+              "Outcome_Definition": "Average # of hours saved by the customer because of the matched job",
+              "Value": "3",
+              "Quantified_multiplication_value": "1",
+              "Impact_calculation_formula": {
+                "link": "https://tradingeconomics.com/thailand/wages",
+                "linkText": "Click here",
+                "Description": "World Bank entitled, â€œRural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002) "
+              }
 
-          }]
+            }]
+          },
+          "Shown_by_default": "TRUE"
         },
-        "Shown_by_default": "TRUE"
-      },
-      {
-        "Output_Definition": "# of workers served",
-        "Value": "10000",
-        "Measurable_Outcomes": {
-          "Listing": [{
-            "Outcome_Definition": "Average # of jobs perfromed by each worker",
-            "Value": "100",
-            "Quantified_multiplication_value": "1",
-            "Impact_calculation_formula": {
-              "link": "",
-              "description": "Average earning per job per worker = 10USD"
-            }
+        {
+          "Output_Definition": "# of workers served",
+          "Value": "10000",
+          "Measurable_Outcomes": {
+            "Listing": [{
+              "Outcome_Definition": "Average # of jobs perfromed by each worker",
+              "Value": "100",
+              "Quantified_multiplication_value": "1",
+              "Impact_calculation_formula": {
+                "link": "",
+                "Description": "Average earning per job per worker = 10USD"
+              }
 
-          }]
-        },
-        "Shown_by_default": "TRUE"
-      }
-    ],
+            }]
+          },
+          "Shown_by_default": "TRUE"
+        }
+      ]
+    },
     "Impact_Reports": {
       "Listing": [{
           "Label": "Attachment",

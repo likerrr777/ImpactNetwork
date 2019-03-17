@@ -1,0 +1,955 @@
+<script src="css/src/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="css/src/jquery-jvectormap.js"></script>
+<script type="text/javascript" src="css/src/jquery-mousewheel.js"></script>
+
+<script type="text/javascript" src="css/src/jvectormap.js"></script>
+
+<script src="css/src/abstract-element.js"></script>
+<script src="css/src/abstract-canvas-element.js"></script>
+<script src="css/src/abstract-shape-element.js"></script>
+
+<script src="css/src/svg-element.js"></script>
+<script src="css/src/svg-group-element.js"></script>
+<script src="css/src/svg-canvas-element.js"></script>
+<script src="css/src/svg-shape-element.js"></script>
+<script src="css/src/svg-path-element.js"></script>
+<script src="css/src/svg-circle-element.js"></script>
+<script src="css/src/svg-image-element.js"></script>
+<script src="css/src/svg-text-element.js"></script>
+
+<script src="css/src/vml-element.js"></script>
+<script src="css/src/vml-group-element.js"></script>
+<script src="css/src/vml-canvas-element.js"></script>
+<script src="css/src/vml-shape-element.js"></script>
+<script src="css/src/vml-path-element.js"></script>
+<script src="css/src/vml-circle-element.js"></script>
+<script src="css/src/vml-image-element.js"></script>
+
+<script src="css/src/map-object.js"></script>
+<script src="css/src/region.js"></script>
+<script src="css/src/marker.js"></script>
+
+<script src="css/src/vector-canvas.js"></script>
+<script src="css/src/simple-scale.js"></script>
+<script src="css/src/ordinal-scale.js"></script>
+<script src="css/src/numeric-scale.js"></script>
+<script src="css/src/color-scale.js"></script>
+<script src="css/src/legend.js"></script>
+<script src="css/src/data-series.js"></script>
+<script src="css/src/proj.js"></script>
+<script src="css/src/map.js"></script>
+
+<script src="css/src/jquery-jvectormap-world-mill-en.js"></script>
+<link rel="stylesheet" media="all" href="css/src/jquery-jvectormap.css" />
+
+<section class="asd">
+  <div class="content_box a3">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="ttl_header bdr">
+          <div class="pull-right">
+            <p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span> | <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i>
+                {{Community_Insights}} Insights</span></p>
+          </div>
+          <h4 class="content_title">Communities Impacted</h4>
+          <div class="border_btottom2"></div>
+        </div>
+      </div>
+      <div class="col-md-6">
+
+        <div class="ma_P">
+          <!-- <img src="img/map.jpg" class="maps" width="100%" alt="map"> -->
+          <div id="map1" class="map_size3" style="width: 100%; height: 324px">
+          </div>
+          <!-- <div id="chart-container">FusionCharts will render here</div>-->
+        </div>
+      </div>
+      <div class="col-md-6 bdr_map b_left3">
+        <dir class="scrll_a">
+          <div class="map_head">
+            <p class="brazil pull-right">
+              <img ng-src="{{CountryIcons}}" class="maps02" alt="map">{{CommunityName}}, {{CountryName}}</p>
+            <!-- <img src="img/map2.jpg" class="maps02" alt="map">{{CountryName}}</p> -->
+            <h5>Community</h5>
+          </div>
+          <!-- <img src="img/map2.jpg" class="maps" width="100%" alt="map"> -->
+          <!-- <div id="country_container">Coutry render here</div> -->
+          <div class="pro_pdng">
+            <h4 class="contyAtt">Attributes</h4>
+            <div class="col-md-12 core" ng-repeat="Clistitem in country_ListofItems track by $index">
+              <p>
+                <div class="row">
+                  <div class="col-md-8">{{Clistitem.Title}}</div>
+                  <div class="col-md-4">
+                    <div class="pull-right">
+                      <div class="jkj">{{Clistitem.Value}}</div>
+                      <div class="a_link"><a href="{{Clistitem.Link}}}">
+                          <img ng-src="{{Clistitem.Icon}}" class="icon_20">
+                          {{Clistitem.Name}}</a></div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="col-md-1"></div>
+              <div class="col-md-3">
+                <div class="a_link"><a href="{{Clistitem.Link}}}">{{Clistitem.Name}}</a></div>
+              </div> -->
+
+                </div>
+                <!-- <span></span> <span class="pull-right"></span> -->
+              </p>
+              <div class="progress ht">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                  aria-valuemax="100" style="width: 40%">
+                  <span class="sr-only">40% Complete (success)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <br-->
+        </dir>
+        <!--/scrll_a/-->
+      </div>
+    </div>
+    <!--///row-->
+  </div>
+  <!--/content_box-->
+</section>
+<!-- <section class="asd">
+  <div class="content_box a3">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="ttl_header bdr">          
+          <h4 class="content_title">Investment/Social Return</h4>
+<div class="border_btottom2"></div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+  <div class="row">
+<div class="col-sm-12"><span class="t_return">SROI: Total Investment/Total Return</span><b class="bold_11">{{ (ttlsocialinvestment / ttlinvestment).toFixed(2)  }} </b></div>
+   <div class="col-sm-4 btn">{{ttlsocialinvestment}}</div>
+  <div class="col-sm-4 btn">{{ ttlinvestment / ttlsocialinvestment }}</div>
+</div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<section class="progress_bar">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="s_r_o2">
+        Social Return On Investment (SROI) = {{ (dototal1 / intotal).toFixed(2) }}
+      </div>
+    </div>
+    <div class="col-md-6 mrgin_l_r1">
+      <div class="core">
+        <div class="map_head core asc">
+          <h4>Investment</h4>
+        </div>
+        <!-- <img src="img/progress.jpg" class="maps" width="100%" alt="map"> -->
+        <div id="investment_container">Coutry render here</div>
+        <div class="pro_pdng">
+          <div class="progress_div3 core" ng-repeat="Invstblock in Investment_Bottom_Block track by $index">
+            <p><span>{{Invstblock.Label}}</span> <span class="pull-right" id="per_{{$index}}">{{((Invstblock.Value)*100/intotal).toFixed(0)}}%</span>
+            </p>
+            <div class="progress ht">
+              <div id="perprogress_{{$index}}" class="progress-bar progress-bar-success" role="progressbar"
+                aria-valuenow="{{Invstblock.Value}}" aria-valuemin="0" aria-valuemax="100" style="width: {{((Invstblock.Value)*100/intotal).toFixed(0)}}%;background-color: {{invest_color[$index].color}}">
+                <span class="sr-only">{{((Invstblock.Value)*100/intotal).toFixed(0)}}% Complete (success)</span>
+              </div>
+            </div>
+          </div>
+          <div class="sroi">
+            <p class="t_return"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--//col-md-6-->
+
+    <div class="col-md-6 mrgin_l_r2">
+      <div class="core">
+        <div class="map_head core asc">
+          <h4>Social Return</h4>
+        </div>
+        <!-- <img src="img/progress.jpg" class="maps" width="100%" alt="map"> -->
+        <div id="socialinvst_container">Coutry render here</div>
+        <div class="pro_pdng">
+          <div class="progress_div3 core" ng-repeat="Measurable_Outcomes in social_chart_arr track by $index">
+
+            <p><span>{{Measurable_Outcomes.Outcome_Definition}}</span> <span class="pull-right" id="sper_{{$index}}">{{((Measurable_Outcomes.pers)*100/dototal1).toFixed(0)}}%</span>
+            </p>
+            <div class="progress ht">
+              <div id="sperprogress_{{$index}}" class="progress-bar progress-bar-success" role="progressbar"
+                aria-valuenow="{{((Measurable_Outcomes.pers)*100/dototal1).toFixed(0)}}" aria-valuemin="0"
+                aria-valuemax="100" style="width: {{((Measurable_Outcomes.pers)*100/dototal1).toFixed(0)}}%;background-color:{{social_color[$index].color}}">
+                <span class="sr-only">{{((Measurable_Outcomes.pers)*100/dototal1).toFixed(0)}}% Complete (success)</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="sroi">
+          <p class="t_return">SROI: Total Investment/Total Return</p>
+        </div>
+      </div>
+    </div>
+    <!--//col-md-6-->
+  </div>
+  <!--///row-->
+</section>
+
+
+<!-- <section class="tbl_bill">
+  <div class="content_box bill">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="table-responsive">
+           <table class="table table-bordered" id="socialReturn">
+              <thead>
+                 <tr>
+                  <th style="background-color: #01ab63;color: #fff;font-size:16px;">Investment</th>
+                    <th colspan="4" style="background-color: #07c776;text-align: center;color: #fff;font-size:16px;">Social Return</th>
+                 </tr>
+              </thead>
+              <tbody>
+                 <tr>
+                    <td  rowspan="3" style="background-color: #fff7f7;">
+                      <div class="invest" ng-repeat="invest in Investment.Listing track by $index">
+                      <span class="tcl_b ng-binding">{{invest.Label}}</span>
+                      <span  class="tcl_b ng-binding" style="float: right;">
+                      <input type="text" ng-model="invest.Value" class="c_val" ng-blur="invests(invest.Value,$index)">
+                      </span>
+                    </div>
+                      <br>
+                      <a href="#" ng-click="abc()" class="plus2">+ Add</a>
+                    </td>
+                    <td style="background-color: #fff7f7; text-align: center;">Output</td>
+                    <td style="background-color: #fff7f7; text-align: center;width: 24.7%;">Outputs</td>
+                    <td style="background-color: #fff7f7; text-align: center;">Quantified Outcomes</td>
+                 </tr>
+                 <tr ng-repeat="social in Social_Returns_Bottom_Block" ng-if="social.Shown_by_default=='TRUE'" ng-init="total = 0" >
+                <td>
+            <span class="abc"><span>{{social.Output_Definition}}</span> <input type="text" ng-model="social.Value" class="c_val" ng-blur="changeoutcomes(social.Value)"></span>
+                </td>
+            <td colspan="3">
+              <div class="row r_b_d" ng-repeat="Measurable_Outcomes in social.Measurable_Outcomes.Listing track by $index">
+                <div class="col-md-6 cel2">
+                  <span class="tcl_b">{{Measurable_Outcomes.Outcome_Definition}}</span>
+                  
+                  <input type="text" ng-model="Measurable_Outcomes.Value" ng-blur="updatetotal(Measurable_Outcomes.Value,$index)" class="c_val" >
+                  <input type="text" name="" value="{{Measurable_Outcomes.Value}}" ng-model="Measurable_Outcomes.Value" class="c_val" >
+              
+                </div>
+                <div class="col-md-6 cel2" ng-init="total = total + (Measurable_Outcomes.Value*Measurable_Outcomes.Quantified_multiplication_value)">
+                
+                  <span class="pull-right tcl_a">{{Measurable_Outcomes.Value*Measurable_Outcomes.Quantified_multiplication_value}}</span>
+                </div>
+              </div>           
+                </td>
+              </tr>
+                 
+                 <tr class="appedtr">
+                  <td  rowspan="5"><a href="#" ng-click="showInvest()" class="plus2">+ Add</a></td>
+                
+                 </tr>
+
+                 <tr>
+
+                    <td style="background-color: #01ab63;font-weight: 800; color: #fff;font-size: 16px;">
+                      Total <span class="pull-right">${{ intotal }}</span>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td style="background-color: #fff7f7;font-weight: 800;font-size: 16px;">
+                      Total <span class="pull-right">${{ dototal1 }}</span>
+                    </td>
+                 </tr>
+                
+              </tbody>
+           </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+<section class="as_sec" style="margin-top: 10px;">
+  <div class="table_tab_a" style="border: 1px solid #dedede;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
+          <ul class="nav nav-tabs table_tabs7" id="myTabs" role="tablist">
+            <li role="presentation" class="active"><a href="#investment" id="home-tab" role="tab" data-toggle="tab"
+                aria-controls="home" aria-expanded="true">Investment (${{intotal}})</a></li>
+            <li role="presentation"><a href="#social_return" role="tab" id="profile-tab" data-toggle="tab"
+                aria-controls="profile">Social Return (${{dototal1}}) </a></li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade in active" role="tabpanel" id="investment" aria-labelledby="home-tab">
+              <div class="container-fluid">
+                <!--  <div class="row" style="border-bottom: 1px solid #ccc;">
+                        <div class="col-md-12  elements-color" style="border-right: 1px solid #ccc;" >
+                         <p class="inner-elements" >Investment</p>
+                        </div>
+                       <div class="col-md-4 elements-color" style="border-right: 1px solid #ccc;">
+                           <p class="inner-elements">Output</p>
+                        </div>
+                        <div class="col-md-3  elements-color" style="border-right: 1px solid #ccc;">
+                           <p class="inner-elements" >Measurable Outcomes</p>
+                        </div>
+                        <div class="col-md-3 elements-color">
+                           <p class="inner-elements">Quantified Outcomes</p>
+                        </div>
+                     </div> -->
+                <div class="row" style="border-bottom: 1px solid #ccc;">
+                  <div class="col-md-12 elements-color" id="auto_height1" style="border-right: 1px solid #ccc;  padding-left: 0px; padding-right: 0px;">
+                    <ul class="list-style">
+                      <li ng-repeat="invest in Investment.Listing track by $index">
+                        <span class="tcl_b ng-binding" style="float: right;">
+                          <input type="text" ng-model="invest.Value" class="c_val" ng-blur="invests(invest.Value,$index)">
+                        </span>
+                        <span class="tcl_b ng-binding">{{invest.Label}}</span>
+                      </li>
+                    </ul>
+                    <a href="#" ng-click="abc()" class="plus2" style="margin-left: 5px; line-height: 3;">+ Add</a>
+                  </div>
+
+                </div>
+                <div class="row">
+                  <div class="col-md-8" style="background-color: #01ab63;height: 38px;">
+                    <!-- <div class="total-amount">
+                              <span>Total</span>
+                              <span class="pull-right">${{intotal}}</span>
+                           </div> -->
+                  </div>
+                  <div class="col-md-4" style="background-color: #01ab63;">
+                    <div class="total-amount">
+                      <span>Total</span>
+                      <span class="pull-right">${{intotal}}</span>
+                    </div>
+                  </div>
+                  <!-- <div class="col-md-4"><a href="#" class="plus3" ng-click="showInvest()">+ Add</a></div>
+                        <div class="col-md-3" style="border-left: 1px solid #ccc;"></div>
+                        <div class="col-md-3 elements-color" style="border-left: 1px solid #ccc;">
+                           <div class="total-amounts">
+                              <span>Total</span>
+                              <span class="pull-right">${{dototal1 }}</span>
+                           </div>
+                        </div> -->
+                </div>
+              </div>
+            </div>
+            <!--/investment-->
+
+            <div class="tab-pane fade" role="tabpanel" id="social_return" aria-labelledby="profile-tab">
+              <div class="container-fluid">
+                <div class="row" style="border-bottom: 1px solid #ccc;">
+                  <!-- <div class="col-md-2  elements-color" style="border-right: 1px solid #ccc; " >
+                         <p class="inner-elements" >Investment</p>
+                        </div> -->
+                  <!-- <div class="col-md-6elements-color" style="border-right: 1px solid #ccc;">
+                           <p class="inner-elements">Output</p>
+                        </div> -->
+                  <div class="col-md-6 col-xs-4 elements-color" style="border-right: 1px solid #ccc;">
+                    <p class="inner-elements">Outcomes</p>
+                  </div>
+                  <div class="col-md-3 col-xs-4 elements-color" style="
+    border-right: 1px #9e9e9e9e solid;
+">
+                    <p class="inner-elements">Measurable Outcomes</p>
+                  </div>
+                  <div class="col-md-3 col-xs-4 elements-color">
+                    <p class="inner-elements">Quantified Outcomes</p>
+                  </div>
+                </div>
+                <div class="row" style="border-bottom: 1px solid #ccc;">
+                  <div ng-repeat="social in Social_Returns_Bottom_Block" ng-if="social.Shown_by_default=='TRUE'"
+                    ng-init="idx = $index;" style="display: flex;border-bottom: 1px #9E9E9E solid;">
+                    <div class="col-md-6" style="padding-left: 0px; padding-right: 0px;">
+                      <ul class="list-style fxd_w">
+                        <li>
+                          <div class="khs"><input type="text" ng-model="Social_Returns_Bottom_Block[idx].Value" ng-blur="dototal();getSelReturn();"
+                              class="c_val"></div>
+                          <span class="abc">{{social.Output_Definition}}</span>
+                        </li>
+
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3" style="padding-left: 0px; padding-right: 0px; border-left: 1px solid #ccc; border-right: 1px solid #ccc;">
+                      <ul class="list-style fxd_w">
+                        <li ng-repeat="Measurable_Outcomes in social.Measurable_Outcomes.Listing track by $index">{{Measurable_Outcomes.Impact_formula|json}}
+                          <div class="khs"><input type="text" ng-init="" ng-model="Measurable_Outcomes.Value" ng-blur="updatetotal(Measurable_Outcomes.Value,$index)"
+                              class="c_val"></div>
+                          <span class="cvbs">{{Measurable_Outcomes.Outcome_Definition}}</span>
+                        </li>
+
+                      </ul>
+                    </div>
+                    <div class="col-md-3" style="padding-left: 0px; padding-right: 0px;">
+                      <ul class="list-style fxd_w" style="height:100%">
+                        <li ng-repeat="Measurable_Outcomes in social.Measurable_Outcomes.Listing track by $index" style="height:{{100/social.Measurable_Outcomes.Listing.length}}%">
+                          <span ng-click="showformaula(idx,$index)" class="functForm popover__wrapper2">Impact Formula
+                          </span>
+                          <div class="push popover__content2" ng-if="impact_fg
+                                  [idx][$index] && (Measurable_Outcomes.Impact_calculation_formula.Description!='' ||Measurable_Outcomes.Impact_calculation_formula.Description!='')">
+                            <p class="" ng-click="closeformula(idx,$index)" style="
+    float: right;
+    margin-top: -8px;cursor: pointer;
+">
+                              x
+                            </p>
+                            <p class="popover__message2">
+                              <div class="sh_re">
+
+
+                                <img ng-if="Measurable_Outcomes.Impact_calculation_formula.link!=''" ng-src="{{Measurable_Outcomes.Impact_calculation_formula.link}}"
+                                  class="img-rounded" style="    width: 100%;  height: auto;">
+                              </div>
+                              <span ng-if="Measurable_Outcomes.Impact_calculation_formula.Description!=''">{{Measurable_Outcomes.Impact_calculation_formula.Description}}</span>
+                            </p>
+                          </div>
+
+                          <span class="pull-right tcl_a"> {{Measurable_Outcomes.Value*social.Value*60}}
+                          </span>
+
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6"><a href="javascript:void(0);" class="plus3" ng-click="showInvest()">+ Add</a></div>
+                  <div class="col-md-3" style="border-left: 1px solid #ccc;"></div>
+                  <div class="col-md-3 elements-color" style="border-left: 1px solid #ccc;">
+                    <div class="total-amounts">
+                      <span>Total</span>
+                      <span class="pull-right">${{dototal1 }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/social_return-->
+          </div>
+        </div>
+        <!--/col-md-12-->
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="content_box a3">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="ttl_header bdr">
+          <div class="pull-right">
+            <p><span class="chat"><img src="img/blogging.png" class="cc_icons"></span> | <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i>
+                {{Community_Insights}} Insights</span></p>
+          </div>
+          <h4 class="content_title">Impact Report</h4>
+          <div class="border_btottom2"></div>
+        </div>
+        <div class="pdf">
+          <div class="lg_btn" ng-repeat="impRpt in Impact_Reports">
+            <div class="pdf_download">
+              <a target="_blank" href="{{impRpt.DownloadUrl}}" class="link" download><i class="fa fa-download"></i>
+                Download </a>
+            </div>
+            <div class="pdf_ttl">
+              <span><i class="fa fa-file-pdf-o"></i> {{impRpt.Label}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/content_box-->
+</section>
+<div class="modal fade" id="investModal" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <!-- <h4 class="modal-title">Modal Header</h4> -->
+      </div>
+      <div class="modal-body">
+        <ul class="li_popup">
+          <li ng-repeat="social in Social_Returns_Bottom_Block track by $index" ng-if="social.Shown_by_default=='FALSE'">
+            <input type="checkbox" name="socialExtra" value="{{$index}}"> <span class="pad_left">{{social.Output_Definition}}
+            </span> </li>
+
+        </ul>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" ng-click="getSelReturn()">Add</button>
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="investmentModal" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <!-- <div class="modal-header"> -->
+      <!-- <div style="padding: 6px 15px 0px 0px; border-bottom: none;"> -->
+      <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+      <!-- <h4 class="modal-title">Modal Header</h4> -->
+      <!-- </div> -->
+      <div class="modal-body">
+        <div class="add_cl_rw">
+          <div class="modal-body mx-3">
+            <div class="md-form mb-5">
+              <label for="text">Text</label>
+              <input type="text" id="text1" class="form-control" ng-model="text1">
+            </div>
+            <div class="md-form mb-4">
+              <label for="text">Number</label>
+              <input type="number" id="value1" class="form-control" ng-model="n1">
+            </div>
+            <br>
+            <button type="button" class="btn btn-primary" ng-click="getinputvalue()">Add</button>
+          </div>
+        </div><!-- //add_cl_rw -->
+        <!-- <div class="modal-footer"> -->
+        <!-- <div style="padding: 6px 15px 0px 0px;border-top: none;"> -->
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  var scope = angular.element(document.querySelector('[ng-controller="MainCtrl"]')).scope();
+  var countryChart1 = scope.countryChart1;
+  var investmentChart = scope.investmentChart;
+  var countrylist_new = scope.countrylist_new;
+  var socialinvst_container = scope.socialinvst_container;
+  var countrylist = scope.countrylist;
+  var ttlinvestment = scope.ttlinvestment;
+  var ttlsocialinvestment = scope.dototal1;
+  aa(ttlinvestment, investmentChart);
+  socialinvstFusionCharts(ttlsocialinvestment, socialinvst_container);
+
+  function aa(ttlinvestment, investmentChart) {
+    revenueChart1 = new FusionCharts({
+      type: 'doughnut2d',
+      renderAt: 'investment_container',
+      width: '350',
+      height: '300',
+      dataFormat: 'json',
+      dataSource: {
+        "chart": {
+          // "caption": "Split of Revenue by Product Categories",
+          // "subCaption": "Last year",
+          "numberPrefix": "$",
+          // "numberSuffix": "%",
+          // "paletteColors": "#0075c2,#1aaf5d,#f2c500,#f45b00,#8e0000",
+          "bgColor": "#ffffff",
+          "showBorder": "0",
+          "use3DLighting": "0",
+          "showShadow": "0",
+          "enableSmartLabels": "0",
+          "startingAngle": "310",
+          "showLabels": "0",
+          "showPercentValues": "1",
+          "showLegend": "0",
+          "legendShadow": "0",
+          "legendBorderAlpha": "0",
+          "defaultCenterLabel": "$" + ttlinvestment + "",
+          // "centerLabel": "Revenue from $label: $value",
+          "centerLabelBold": "0",
+          "showTooltip": "0",
+          "decimals": "0",
+          "captionFontSize": "14",
+          "subcaptionFontSize": "14",
+          "subcaptionFontBold": "0",
+          "doughnutRadius": "80"
+        },
+        "data": investmentChart
+      }
+    }).render();
+  }
+
+  function socialinvstFusionCharts(ttlsocialinvestment, socialinvst_container) {
+    console.log(socialinvst_container)
+    console.log(ttlsocialinvestment)
+    //alert('ttlsocialinvestment')
+    var revenueChart = new FusionCharts({
+      type: 'doughnut2d',
+      renderAt: 'socialinvst_container',
+      width: '350',
+      height: '300',
+      dataFormat: 'json',
+      dataSource: {
+        "chart": {
+          // "caption": "Split of Revenue by Product Categories",
+          // "subCaption": "Last year",
+          "numberPrefix": "$",
+          // "numberSuffix": "%",
+          "bgColor": "#ffffff",
+          // "startingAngle": "310",
+          // "showLegend": "1",
+          "defaultCenterLabel": "$" + ttlsocialinvestment + "",
+          // "centerLabel": "Revenue from $label: $value",
+          // "centerLabelBold": "1",
+          // "showTooltip": "0",
+          // "decimals": "0",
+          "theme": "fusion",
+          "centerLabelBold": "0",
+          "showTooltip": "0",
+          "decimals": "0",
+          "captionFontSize": "14",
+          "subcaptionFontSize": "14",
+          "subcaptionFontBold": "0",
+          "doughnutRadius": "80",
+          "enableSmartLabels": "0",
+          "startingAngle": "310",
+          "showLabels": "0",
+          "showPercentValues": "1",
+          "showLegend": "0",
+          "legendShadow": "0",
+          "legendBorderAlpha": "0",
+        },
+        "data": socialinvst_container
+      }
+    }).render();
+  }
+  jQuery.noConflict();
+
+  jQuery(function () {
+    jQuery('[href="#communitiesImctd"]').click(function () {
+      jQuery('#map1').html('');
+      var $ = jQuery;
+
+      $('#map1').vectorMap({
+        map: 'world_mill_en',
+        panOnDrag: true,
+        focusOn: {
+          x: 0.5,
+          y: 0.5,
+          scale: 1,
+          animate: true
+        },
+        markerStyle: {
+          initial: {
+            fill: '#07c776',
+            stroke: '#383f47'
+          }
+        },
+        regionsSelectable: true,
+        regionStyle: {
+          selected: {
+            fill: 'orange'
+          }
+        },
+        markers: countrylist_new,
+        markerStyle: {
+          initial: {
+            fill: '#4DAC26'
+          },
+          selected: {
+            fill: '#CA0020'
+          }
+        },
+        // onMarkerTipShow: function(event, label, index){
+        //     console.log()
+        //     label.html(          
+        //       '<b>Population: </b>gfdgdfgdfg</br>'+
+        //       '<b>Test data: </b>gfdgfdgdf</b>'
+        //     );
+        //   },
+        onRegionTipShow: function (e, el, code) {
+
+          el.html(el.html());
+          // el.html(el.html()+' (Population - '+socialinvst_container[code]+')');
+        },
+        setSelectedRegionStyle: function (r, c) {
+          return this.regions[r].element.style.selected.fill = c;
+        },
+        zoomFactor: 1000,
+        onRegionClick: function (e, code) {
+          // var map = $('#map1').vectorMap('get', 'mapObject');
+          // var name = map.getRegionName(code);    
+          // var nn = countrylist_new.filter(function (person) { return person.name == name });
+
+          // if(nn.length > 0){
+          //   $.each($('.jvectormap-container svg g').eq(0).children('path'),function(k,d1){       
+          //       if($(this).attr('data-code')==code){                  
+          //        // $(this).css('fill','#07c776');                    
+          //       }else{
+          //       //  $(this).css('fill','#ccc');
+          //       }
+          //   });
+          // }       
+
+          //       scope.selectCountry = name;
+          //       //scope.country_ListofItems = [];
+          //       scope.$apply(function(){
+          //       scope.updatecountryinfo(name);
+
+          //  });
+
+        },
+        onMarkerClick: function (e, code) {
+
+          var map = $('#map1').vectorMap('get', 'mapObject');
+          var markers = map.markers;
+          var name = map.markers[code].config.name;
+          var nn = countrylist_new.filter(function (person) {
+            return person.name == name
+          });
+
+          var shortname = map.markers[code].config.ShortName;
+          if (nn.length > 0) {
+            /*$.each($('.jvectormap-container svg g').eq(0).children('path'),function(k,d1){
+             
+              if($(this).attr('data-code')==shortname){
+              
+                $(this).css('fill','#07c776');
+                
+              }else{
+                $(this).css('fill','#ccc');
+              }
+            });*/
+            $.each(markers, function (m, v) {
+              if (name == v.config.name) {
+                v.element.setStyle('fill', '#07c776');
+              } else {
+                v.element.setStyle('fill', '#000');
+              }
+
+            })
+          }
+          scope.selectCountry = name;
+          //scope.country_ListofItems = [];
+          scope.$apply(function () {
+            scope.updatecountryinfo(name);
+
+          });
+        },
+        series: {
+          regions: [{
+            scale: ['#C8EEFF', '#0071A4'],
+            normalizeFunction: 'polynomial',
+            attribute: 'r',
+            values: {
+              "AF": 16.63,
+              "AL": 11.58,
+              "DZ": 158.97,
+              "AO": 85.81,
+              "AG": 1.1,
+              "AR": 351.02,
+              "AM": 8.83,
+              "AU": 1219.72,
+              "AT": 366.26,
+              "AZ": 52.17,
+              "BS": 7.54,
+              "BH": 21.73,
+              "BD": 105.4,
+              "BB": 3.96,
+              "BY": 52.89,
+              "BE": 461.33,
+              "BZ": 1.43,
+              "BJ": 6.49,
+              "BT": 1.4,
+              "BO": 19.18,
+              "BA": 16.2,
+              "BW": 12.5,
+              "BR": 2023.53,
+              "BN": 11.96,
+              "BG": 44.84,
+              "BF": 8.67,
+              "BI": 1.47,
+              "KH": 11.36,
+              "CM": 21.88,
+              "CA": 1563.66,
+              "CV": 1.57,
+              "CF": 2.11,
+              "TD": 7.59,
+              "CL": 199.18,
+              "CN": 5745.13,
+              "CO": 283.11,
+              "KM": 0.56,
+              "CD": 12.6,
+              "CG": 11.88,
+              "CR": 35.02,
+              "CI": 22.38,
+              "HR": 59.92,
+              "CY": 22.75,
+              "CZ": 195.23,
+              "DK": 304.56,
+              "DJ": 1.14,
+              "DM": 0.38,
+              "DO": 50.87,
+              "EC": 61.49,
+              "EG": 216.83,
+              "SV": 21.8,
+              "GQ": 14.55,
+              "ER": 2.25,
+              "EE": 19.22,
+              "ET": 30.94,
+              "FJ": 3.15,
+              "FI": 231.98,
+              "FR": 2555.44,
+              "GA": 12.56,
+              "GM": 1.04,
+              "GE": 11.23,
+              "DE": 3305.9,
+              "GH": 18.06,
+              "GR": 305.01,
+              "GD": 0.65,
+              "GT": 40.77,
+              "GN": 4.34,
+              "GW": 0.83,
+              "GY": 2.2,
+              "HT": 6.5,
+              "HN": 15.34,
+              "HK": 226.49,
+              "HU": 132.28,
+              "IS": 12.77,
+              "IN": 1430.02,
+              "ID": 695.06,
+              "IR": 337.9,
+              "IQ": 84.14,
+              "IE": 204.14,
+              "IL": 201.25,
+              "IT": 2036.69,
+              "JM": 13.74,
+              "JP": 5390.9,
+              "JO": 27.13,
+              "KZ": 129.76,
+              "KE": 32.42,
+              "KI": 0.15,
+              "KR": 986.26,
+              "KW": 117.32,
+              "KG": 4.44,
+              "LA": 6.34,
+              "LV": 23.39,
+              "LB": 39.15,
+              "LS": 1.8,
+              "LR": 0.98,
+              "LY": 77.91,
+              "LT": 35.73,
+              "LU": 52.43,
+              "MK": 9.58,
+              "MG": 8.33,
+              "MW": 5.04,
+              "MY": 218.95,
+              "MV": 1.43,
+              "ML": 9.08,
+              "MT": 7.8,
+              "MR": 3.49,
+              "MU": 9.43,
+              "MX": 1004.04,
+              "MD": 5.36,
+              "MN": 5.81,
+              "ME": 3.88,
+              "MA": 91.7,
+              "MZ": 10.21,
+              "MM": 35.65,
+              "NA": 11.45,
+              "NP": 15.11,
+              "NL": 770.31,
+              "NZ": 138,
+              "NI": 6.38,
+              "NE": 5.6,
+              "NG": 206.66,
+              "NO": 413.51,
+              "OM": 53.78,
+              "PK": 174.79,
+              "PA": 27.2,
+              "PG": 8.81,
+              "PY": 17.17,
+              "PE": 153.55,
+              "PH": 189.06,
+              "PL": 438.88,
+              "PT": 223.7,
+              "QA": 126.52,
+              "RO": 158.39,
+              "RU": 1476.91,
+              "RW": 5.69,
+              "WS": 0.55,
+              "ST": 0.19,
+              "SA": 434.44,
+              "SN": 12.66,
+              "RS": 38.92,
+              "SC": 0.92,
+              "SL": 1.9,
+              "SG": 217.38,
+              "SK": 86.26,
+              "SI": 46.44,
+              "SB": 0.67,
+              "ZA": 354.41,
+              "ES": 1374.78,
+              "LK": 48.24,
+              "KN": 0.56,
+              "LC": 1,
+              "VC": 0.58,
+              "SD": 65.93,
+              "SR": 3.3,
+              "SZ": 3.17,
+              "SE": 444.59,
+              "CH": 522.44,
+              "SY": 59.63,
+              "TW": 426.98,
+              "TJ": 5.58,
+              "TZ": 22.43,
+              "TH": 312.61,
+              "TL": 0.62,
+              "TG": 3.07,
+              "TO": 0.3,
+              "TT": 21.2,
+              "TN": 43.86,
+              "TR": 729.05,
+              "TM": 0,
+              "UG": 17.12,
+              "UA": 136.56,
+              "AE": 239.65,
+              "GB": 2258.57,
+              "US": 14624.18,
+              "UY": 40.71,
+              "UZ": 37.72,
+              "VU": 0.72,
+              "VE": 285.21,
+              "VN": 101.99,
+              "YE": 30.02,
+              "ZM": 15.69,
+              "ZW": 5.57
+            }
+          }]
+        }
+      });
+      var map = $('#map1').vectorMap('get', 'mapObject');
+      setGreenColor(map, green = false);
+      //setTimeout(function(){$('#map1 svg').width("422");$('#map1 svg').height("324");},1000);
+    });
+  });
+
+  function setGreenColor(map, green) {
+    map.markers[0].element.setStyle('fill', '#07c776');
+    var markers = map.markers;
+    $.each(markers, function (m, v) {
+      if (m != '0') {
+        v.element.setStyle('fill', '#000');
+      }
+    })
+    //     $.each($('.jvectormap-container svg g').eq(0).children('path'),function(k,d1){        var name = map.getRegionName($(this).attr('data-code'));   
+
+    //       var nn = countrylist_new.filter(function (person) { return person.name == name });
+    //       if(nn.length > 0){            
+    //           if(green == false){              
+    //             $(this).css('fill','#07c776'); 
+    //             green = true;
+    //           }
+    //        }       
+
+    // });
+  }
+</script>
