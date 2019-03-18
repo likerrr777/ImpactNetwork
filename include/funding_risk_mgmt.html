@@ -151,7 +151,7 @@
                   <div class="hover_div">
                     <a href="{{financefile.DownloadUrl}}" download="{{financefile.DownloadUrl}}" target="_self">Download</a>
                   </div>
-                  <img src="img/exel.jpg" width="80px" alt="chart"><br>
+                  <img ng-src="{{projectData.sharedResources.excelImage}}" width="80px" alt="chart"><br>
                   <span class="x_name">{{financefile.Label}}</span>
                 </div>                
               </div>
@@ -196,8 +196,8 @@
 <div class="col-md-12">
 
 <div class="ht3" style="height: 30px; width: 100%;"></div>
-<img src="img/graph.jpg" class="a12">
-<img src="img/graph09.jpg" class="a13" >
+<img ng-src="{{projectData.sharedResources.graph}}" class="a12">
+<img ng-src="{{projectData.sharedResources.graph09}}" class="a13" >
 <nav class="menu">
 <input type="checkbox" href="#" checked="true" class="menu-open" name="menu-open" id="menu-open">
 <div class="menu-open-button popover__wrapper" style="z-index: 3;" ng-click="dopopover(circle_tDesc,circle_tIcon,circle_title)" ng-class="{activeCir : activeCircle === circle_title}">  

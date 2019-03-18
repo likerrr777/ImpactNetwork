@@ -1,4 +1,11 @@
 {
+  "sharedResources": {
+    "blogImage": "../img/blogging.png",
+    "growthImage": "../img/growth.png",
+    "excelImage": "../img/excel.jpg",
+    "graph": "../img/graph.jpg",
+    "graph09": "../img/graph09.jpg"
+  },
   "HomepageSlider": {
     "Banner": [{
         "Name": "homepageSlider1",
