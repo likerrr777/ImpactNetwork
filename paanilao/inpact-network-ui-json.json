@@ -95,7 +95,13 @@
           "Project_Name": "Good health and well-being for people",
           "Project_Icon": "http://www.clipbots.com/impact-network/uploads/sustainable/yellow/3.png",
           "Project_Insight": "260",
-          "isSupported": true
+          "isSupported": true,
+          "goalItems":[
+            "One more item and  text to be replaced Just text to be replaced ",
+            "Powering Bahia expects to electrify 10,000 households, using a combinatio",
+            "Power for pumping, refrigeration,entertainment, communication, and electrical devices",
+            "Powering Bahia expects to electrify 10,000 households, using a combinatio"
+          ]
         },
         {
           "Project_Primary_key": 4,
@@ -119,7 +125,13 @@
           "Project_Name": "Affordable and clean energy",
           "Project_Icon": "http://www.clipbots.com/impact-network/uploads/sustainable/yellow/7.png",
           "Project_Insight": "280",
-          "isSupported": true
+          "isSupported": true,
+          "goalItems":[
+            "Second one more item and  text to be replaced Just text to be replaced ",
+            "Powering Bahia expects to electrify 10,000 households, using a combinatio",
+            "Power for pumping, refrigeration,entertainment, communication, and electrical devices",
+            "Powering Bahia expects to electrify 10,000 households, using a combinatio"
+          ]
         },
         {
           "Project_Primary_key": 8,
@@ -153,7 +165,13 @@
           "Project_Name": "Climate action",
           "Project_Icon": "http://www.clipbots.com/impact-network/uploads/sustainable/yellow/13.png",
           "Project_Insight": "290",
-          "isSupported": true
+          "isSupported": true,
+          "goalItems":[
+            "Third to be here more item and  text to be replaced Just text to be replaced ",
+            "Powering Bahia expects to electrify 10,000 households, using a combinatio",
+            "Power for pumping, refrigeration,entertainment, communication, and electrical devices",
+            "Powering Bahia expects to electrify 10,000 households, using a combinatio"
+          ]
         },
         {
           "Project_Primary_key": 14,

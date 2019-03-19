@@ -38,9 +38,20 @@
     </div>
     <div class="col-md-8">
       <p class="f_light" style="margin: 0 50px 10px;"></p>
-      <h2 class="gol_h">
-        <span class="proj_Numb">{{Project_Primary_key}}.</span><img ng-src="{{Project_Icon}}" class="c_icons_v">
-        <span class="large_cntn">{{project}}</span></h2>
+      <div class="gol_h">
+        <div class="first_col">
+            <div class="proj_Numb">{{Project_Primary_key}}.</div>
+            <img ng-src="{{Project_Icon}}" class="c_icons_v">
+        </div>
+        <div class="second_col">
+            <div class="large_cntn">{{project}}</div>
+            <div ng-if="goalItems.length > 0" class="proj_goals">
+              <ol class="d">
+                <li ng-repeat="item in goalItems track by $index">{{item}}</li>
+              </ol>
+              </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="row">

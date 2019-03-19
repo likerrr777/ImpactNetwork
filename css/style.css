@@ -4016,12 +4016,12 @@ hr {
     height: 47px;
 }
 
-.gol_h {
+/* .gol_h {
     line-height: 47px;
     font-size: 38px;
     /*margin: 0 0 0 20px;*/
     margin: 0 0 0 0px;
-}
+} */
 
 .chat img {
     width: 13px;
@@ -4076,6 +4076,7 @@ span.functForm {
 }
 img.c_icons_v {
     width: 60px;
+    height: 60px;
 }
 /*img.jkc_icon {
     max-width: 100%;
@@ -4609,3 +4610,38 @@ span.functForm.popover__wrapper2 {
     bottom: 15px;
     right: 5px;
 }
+
+
+.gol_h{
+    line-height: 30px;
+    font-size: 24px;
+    display: flex;
+}
+
+.gol_h .first_col{
+    display: flex;
+    margin-right: 10px;
+}
+
+.gol_h .second_col{
+    display: flex;
+    flex-direction: column
+}
+
+.gol_h .second_col .proj_goals{
+    height: 200px;
+    overflow: auto;
+    background-color: #eff2f5;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.gol_h .second_col .proj_goals ol{
+    list-style-type: lower-alpha;
+}
+
+.gol_h .second_col .proj_goals ol li{
+    padding-top: 10px;
+}
+

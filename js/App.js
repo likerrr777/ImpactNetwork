@@ -420,7 +420,7 @@ app.controller("MainCtrl", function ($scope, $http) {
             "May",
             "Jun",
             "Jul",
-            "Aug",
+            "Aug", 
             "Sep",
             "Oct",
             "Nov",
@@ -707,6 +707,8 @@ app.controller("MainCtrl", function ($scope, $http) {
             });
 
             $scope.obj1[proj.Project_Primary_key] = true;
+
+            $scope.goalItems = proj.goalItems;
         }
     }
 
