@@ -216,6 +216,7 @@
 
 .csstransforms .smartcms_wrapper li.kkitl a {
     background: radial-gradient(transparent 35%, #ffc506 35%) !important;
+    transform: skew(-72deg) rotate(-77deg) scale(1.2);
 }
 
 .csstransforms .smartcms_wrapper li a {
