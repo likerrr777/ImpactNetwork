@@ -227,18 +227,6 @@ app.controller('MainCtrl', function ($scope, $http) {
             $scope.socialinvestChart = response.data.Communities_And_Impact.Social_Returns_Bottom_Block;
             $scope.socialinvestChartProgressbar = response.data.Communities_And_Impact.Social_Returns_Bottom_Block[0].Measurable_Outcomes.Listing;
 
-            /*  $.each(response.data.Communities_And_Impact.Social_Returns_Bottom_Block, function(ky, dty) {
-                  $scope.v = (dty.Value * dty.Quantified_multiplication_value);
-                  $scope.ttlsocialinvestment += parseInt($scope.v);
-                  var c = getRandomColor();
-                  $scope.social_color.push({'color':c});
-                  $scope.socialinvst_container.push({
-                      label: dty.Outcome_Definition,
-                      value: $scope.v,
-                      color:c
-                  });
-              });*/
-
             ///Uvaish
             $scope.Community_Insights = response.data.Communities_And_Impact.Community_Insights;
 
@@ -281,10 +269,6 @@ app.controller('MainCtrl', function ($scope, $http) {
 
                         $scope.ttlsocialinvestment += parseInt($scope.valu);
                         $scope.impact_fg[ky][i] = false;
-                        //var t = eval(vs.measure_for);
-                        //    $scope.mesure[ky][i]=t; 
-
-                        // $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value = $scope.mesure[ky][i];
 
                         $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing[i].Value = eval($scope.measure_clc[ky].Value);
 
@@ -318,16 +302,7 @@ app.controller('MainCtrl', function ($scope, $http) {
 
                 }
             });
-            /*    $.each($scope.Social_Returns_Bottom_Block, function(k, v) {
-                  if (v.Shown_by_default == 'TRUE') {
-                      //$scope.selcountry
-  
-                      $.each(v.Measurable_Outcomes.Listing, function(i, vs) {
 
-                          $scope.dototal1 += ($scope.Social_Returns_Bottom_Block[k].Measurable_Outcomes.Listing[i].Value * $scope.Social_Returns_Bottom_Block[k].Value)*60;
-                      })
-                  }
-              });*/
             ///To date calculate day
             $scope.timeDiffInMinutes = function (date) {
                 var today = new Date();
