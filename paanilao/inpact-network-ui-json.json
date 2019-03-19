@@ -1187,7 +1187,7 @@
             }
           }]
         },
-        "Shown_by_default": "TRUE"
+        "Shown_by_default": true
       },
       {
         "Output_Definition": "#of Home business that can benefit from cheaper power. ",
@@ -1203,7 +1203,7 @@
             }
           }]
         },
-        "Shown_by_default": "TRUE"
+        "Shown_by_default": true
       },
       {
         "Output_Definition": "#of Home business that can benefit from cheaper power.",
@@ -1219,7 +1219,7 @@
             }
           }]
         },
-        "Shown_by_default": "FALSE"
+        "Shown_by_default": false
       },
       {
         "Output_Definition": "#of Households eliminating the usage of batteries and kerosene lamps.",
@@ -1245,7 +1245,7 @@
             }
           ]
         },
-        "Shown_by_default": "FALSE"
+        "Shown_by_default": false
       }
     ],
     "Impact_Reports": {

@@ -1,4 +1,4 @@
-function aa(ttlinvestment, investmentChart) {
+function initInvestmentFusionChart(ttlinvestment, investmentChart) {
     var interval = setInterval(function () {
         if (document.querySelector('#investment_container')) {
             revenueChart1 = new FusionCharts({
@@ -39,7 +39,7 @@ function aa(ttlinvestment, investmentChart) {
     }, 10);
 }
 
-function socialinvstFusionCharts(ttlsocialinvestment, socialinvst_container) {
+function InitSocialInvestmentFusionChart(ttlsocialinvestment, socialinvst_container) {
     var interval = setInterval(function () {
         if (document.querySelector('#socialinvst_container')) {
             var revenueChart = new FusionCharts({
@@ -86,9 +86,9 @@ function communitiesImpacted() {
     var countrylist_new = scope.countrylist_new;
     var socialinvst_container = scope.socialinvst_container;
     var ttlinvestment = scope.ttlinvestment;
-    var ttlsocialinvestment = scope.dototal1;
-    aa(ttlinvestment, investmentChart);
-    socialinvstFusionCharts(ttlsocialinvestment, socialinvst_container);
+    var ttlsocialinvestment = scope.socialReturnValue;
+    initInvestmentFusionChart(ttlinvestment, investmentChart);
+    InitSocialInvestmentFusionChart(ttlsocialinvestment, socialinvst_container);
 
     $(function () {
         $('[href="#communitiesImctd"]').click(function () {

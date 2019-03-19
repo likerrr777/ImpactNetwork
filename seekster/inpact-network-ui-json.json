@@ -879,7 +879,7 @@
 
           }]
         },
-        "Shown_by_default": "TRUE"
+        "Shown_by_default": true
       },
       {
         "Output_Definition": "# of workers served",
@@ -896,7 +896,7 @@
 
           }]
         },
-        "Shown_by_default": "TRUE"
+        "Shown_by_default": true
       }
     ],
     "Impact_Reports": {
