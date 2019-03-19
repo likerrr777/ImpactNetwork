@@ -191,7 +191,6 @@ app.controller("MainCtrl", function ($scope, $http) {
                 response.data.Communities_And_Impact.List_of_Communities[0].Community.Community_Basic_Info[0].ListofItems;
             $scope.measure_clc =
                 response.data.Communities_And_Impact.List_of_Communities[0].Community.Community_Basic_Info[0].measurable_clc;
-            performMeasurableOutcomeOverride();
             $scope.Investment =
                 response.data.Communities_And_Impact.Investment_Bottom_Block;
             $.each($scope.Investment.Listing, function (k, dt) {
@@ -276,8 +275,8 @@ app.controller("MainCtrl", function ($scope, $http) {
             mapclickfun(0);
 
             //Social Returns Bottom Block
-            $scope.Social_Returns_Bottom_Block =
-                response.data.Communities_And_Impact.Social_Returns_Bottom_Block;
+            $scope.Social_Returns_Bottom_Block = response.data.Communities_And_Impact.Social_Returns_Bottom_Block;
+            performMeasurableOutcomeOverride();
             $scope.socialReturnValue = 0;
 
             $.each($scope.Social_Returns_Bottom_Block, function (ky, dty) {
@@ -738,7 +737,7 @@ app.controller("MainCtrl", function ($scope, $http) {
                         dt.Community.Community_Basic_Info[0].ListofItemsMultiplevalue;
                 }
                 $scope.country_ListofItems = dt.Community.Community_Basic_Info[0].ListofItems;
-                
+
                 $.each($scope.Social_Returns_Bottom_Block, function (ky, d) {
                     if (d.Shown_by_default) {
                         $.each(d.Measurable_Outcomes.Listing, function (i, vs) {
