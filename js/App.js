@@ -27,10 +27,10 @@ app.controller("MainCtrl", function ($scope, $http) {
     $scope.outcomehighlight = outcomehighlight;
     $scope.showformaula = showformaula;
     $scope.Funding_rasing_GraphPlotting1 = [];
-    $scope.Investment_Bottom_Block = [];
-    $scope.Social_Returns_Bottom_Block = [];
+    $scope.Investments = [];
+    $scope.SocialReturns = [];
     $scope.impact_fg = {};
-    $scope.Measurable_Outcomes1 = [];
+    $scope.MeasurableOutcomes1 = [];
     $scope.investmentChart = [];
     $scope.socialinvst_container = [];
     $scope.countrylist = [];
@@ -188,32 +188,30 @@ app.controller("MainCtrl", function ($scope, $http) {
 
             ///Chart code
             $scope.countryChart =
-                response.data.Communities_And_Impact.List_of_Communities[0].Community.Community_Basic_Info[0].ListofItems;
-            $scope.measure_clc =
-                response.data.Communities_And_Impact.List_of_Communities[0].Community.Community_Basic_Info[0].measurable_clc;
-            $scope.Investment =
-                response.data.Communities_And_Impact.Investment_Bottom_Block;
-            $.each($scope.Investment.Listing, function (k, dt) {
+                response.data.CommunitiesImpactedPage.Communities[0].ListofItems;
+            $scope.Investments =
+                response.data.CommunitiesImpactedPage.Investments;
+            $.each($scope.Investments, function (k, dt) {
                 $scope.intotal = $scope.intotal + parseInt(dt.Value);
             });
             $scope.CountryName =
-                response.data.Communities_And_Impact.List_of_Communities[0].Community.Community_Basic_Info[0].CountryName;
+                response.data.CommunitiesImpactedPage.Communities[0].CountryName;
             $scope.CommunityName =
-                response.data.Communities_And_Impact.List_of_Communities[0].Community.Community_Basic_Info[0].CommunityName;
+                response.data.CommunitiesImpactedPage.Communities[0].CommunityName;
 
-            $.each(response.data.Communities_And_Impact.List_of_Communities, function (
+            $.each(response.data.CommunitiesImpactedPage.Communities, function (
                 ky,
                 dty
             ) {
-                $scope.selcountry[dty.Community.Community_Basic_Info[0].CountryName] =
+                $scope.selcountry[dty.CountryName] =
                     "";
                 $scope.selcountry[
-                    dty.Community.Community_Basic_Info[0].CountryName
+                    dty.CountryName
                 ] = false;
             });
 
             $scope.invstChart =
-                response.data.Communities_And_Impact.Investment_Bottom_Block.Listing;
+                response.data.CommunitiesImpactedPage.Investments;
             $scope.invest_color = [];
             $.each($scope.invstChart, function (ky, dty) {
                 $scope.ttlinvestment += parseInt(dty.Value);
@@ -229,39 +227,39 @@ app.controller("MainCtrl", function ($scope, $http) {
             });
 
             $scope.socialinvestChart =
-                response.data.Communities_And_Impact.Social_Returns_Bottom_Block;
+                response.data.CommunitiesImpactedPage.Communities[0].SocialReturns;
             $scope.socialinvestChartProgressbar =
-                response.data.Communities_And_Impact.Social_Returns_Bottom_Block[0].Measurable_Outcomes.Listing;
+                response.data.CommunitiesImpactedPage.Communities[0].SocialReturns[0].MeasurableOutcomes;
 
             ///Uvaish
-            $scope.Community_Insights =
-                response.data.Communities_And_Impact.Community_Insights;
+            $scope.CommunityInsights =
+                response.data.CommunitiesImpactedPage.CommunityInsights;
 
             $scope.Impact_Reports =
-                response.data.Communities_And_Impact.Impact_Reports.Listing;
-            //Investment_Bottom_Block
-            $scope.Investment_Bottom_Block =
-                response.data.Communities_And_Impact.Investment_Bottom_Block.Listing;
+                response.data.CommunitiesImpactedPage.Impact_Reports.Listing;
+            //Investments
+            $scope.Investments =
+                response.data.CommunitiesImpactedPage.Investments;
 
-            $scope.List_of_Communities =
-                response.data.Communities_And_Impact.List_of_Communities;
-            $.each($scope.List_of_Communities, function (key, dty) {
+            $scope.Communities =
+                response.data.CommunitiesImpactedPage.Communities;
+            $.each($scope.Communities, function (key, dty) {
                 $scope.Country_name =
-                    $scope.List_of_Communities[
+                    $scope.Communities[
                         key
-                    ].Community.Community_Basic_Info[0].CountryName;
+                    ].CountryName;
                 $scope.Latitude =
-                    $scope.List_of_Communities[
+                    $scope.Communities[
                         key
-                    ].Community.Community_Basic_Info[0].Latitude;
+                    ].Latitude;
                 $scope.Longitude =
-                    $scope.List_of_Communities[
+                    $scope.Communities[
                         key
-                    ].Community.Community_Basic_Info[0].Longitude;
+                    ].Longitude;
                 $scope.Country_value =
-                    $scope.List_of_Communities[
+                    $scope.Communities[
                         key
-                    ].Community.Community_Basic_Info[0].Countryvalue;
+                    ].Countryvalue;
                 $scope.countrylist.push({
                     id: $scope.Country_name,
                     value: $scope.Country_value
@@ -275,17 +273,17 @@ app.controller("MainCtrl", function ($scope, $http) {
             mapclickfun(0);
 
             //Social Returns Bottom Block
-            $scope.Social_Returns_Bottom_Block = response.data.Communities_And_Impact.Social_Returns_Bottom_Block;
+            $scope.SocialReturns = response.data.CommunitiesImpactedPage.Communities[0].SocialReturns;
             performMeasurableOutcomeOverride();
             $scope.socialReturnValue = 0;
 
-            $.each($scope.Social_Returns_Bottom_Block, function (ky, dty) {
+            $.each($scope.SocialReturns, function (ky, dty) {
                 if (dty.Shown_by_default) {
                     $scope.mesure[ky] = {};
 
                     $scope.impact_fg[ky] = {};
                     $.each(
-                        $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing,
+                        $scope.SocialReturns[ky].MeasurableOutcomes,
                         function (i, vs) {
                             var value = calculateSocialReturnItemValue(ky, i);
                             $scope.ttlsocialinvestment += value;
@@ -354,11 +352,9 @@ app.controller("MainCtrl", function ($scope, $http) {
     $scope.socialReturnValue = calculateSocialReturnValue();
 
     function performMeasurableOutcomeOverride() {
-        $scope.Social_Returns_Bottom_Block.forEach(function (block, index) {
-            block.Measurable_Outcomes.Listing.forEach(function (listing) {
-                if ($scope.measure_clc && $scope.measure_clc[index].Value) {
-                    listing.Value = $scope.measure_clc[index].Value;
-                }
+        $scope.SocialReturns.forEach(function (item) {
+            item.MeasurableOutcomes.forEach(function (outcome) {
+                outcome.Value = item.measurable_clc.Value;
             });
         });
     };
@@ -476,21 +472,21 @@ app.controller("MainCtrl", function ($scope, $http) {
 
     function mapclickfun(index) {
         $scope.country_ListofItems =
-            $scope.List_of_Communities[
+            $scope.Communities[
                 index
-            ].Community.Community_Basic_Info[0].ListofItems;
+            ].ListofItems;
         $scope.CountryName =
-            $scope.List_of_Communities[
+            $scope.Communities[
                 index
-            ].Community.Community_Basic_Info[0].CountryName;
+            ].CountryName;
         $scope.CommunityName =
-            $scope.List_of_Communities[
+            $scope.Communities[
                 index
-            ].Community.Community_Basic_Info[0].CommunityName;
+            ].CommunityName;
         $scope.CountryIcons =
-            $scope.List_of_Communities[
+            $scope.Communities[
                 index
-            ].Community.Community_Basic_Info[0].CountryIcons;
+            ].CountryIcons;
         $scope.selcountry[$scope.CountryName] = true;
     }
 
@@ -499,18 +495,18 @@ app.controller("MainCtrl", function ($scope, $http) {
     }
 
     function getSelReturn() {
-        $scope.Social_Returns_Bottom_Block_new = [];
+        $scope.SocialReturns_new = [];
         var html = "";
 
         $("input:checkbox[name=socialExtra]:checked").each(function () {
-            var d = $scope.Social_Returns_Bottom_Block[$(this).val()];
+            var d = $scope.SocialReturns[$(this).val()];
             d.Shown_by_default = true;
-            $.each(d.Measurable_Outcomes.Listing, function (k1, v1) {
+            $.each(d.MeasurableOutcomes, function (k1, v1) {
                 $scope.social_chart_arr.push(v1);
             });
-            // $scope.Social_Returns_Bottom_Block.push(d);
+            // $scope.SocialReturns.push(d);
 
-            $.each(d.Measurable_Outcomes.Listing, function (i, vs) {
+            $.each(d.MeasurableOutcomes, function (i, vs) {
                 $scope.total += vs.Value * vs.Quantified_multiplication_value;
             });
             $("#auto_height").animate({
@@ -526,13 +522,13 @@ app.controller("MainCtrl", function ($scope, $http) {
         $scope.ttlsocialinvestment = 0;
 
         var i1 = 0;
-        $.each($scope.Social_Returns_Bottom_Block, function (ky, dty) {
+        $.each($scope.SocialReturns, function (ky, dty) {
             if (dty.Shown_by_default) {
                 if (typeof $scope.impact_fg[ky] === "undefined") {
                     $scope.impact_fg[ky] = {};
                 }
                 $.each(
-                    $scope.Social_Returns_Bottom_Block[ky].Measurable_Outcomes.Listing,
+                    $scope.SocialReturns[ky].MeasurableOutcomes,
                     function (i, vs) {
 
                         var value = calculateSocialReturnItemValue(ky, i);
@@ -726,23 +722,26 @@ app.controller("MainCtrl", function ($scope, $http) {
 
     function updatecountryinfo(name) {
         $scope.social_chart_arr = [];
-        $.each($scope.List_of_Communities, function (key, dt) {
-            if (dt.Community.Community_Basic_Info[0].CountryName == name) {
+        $.each($scope.Communities, function (key, community) {
+            if (community.CountryName == name) {
                 $scope.country_ListofItems = [];
                 $scope.CountryName = name;
-                $scope.CommunityName = dt.Community.Community_Basic_Info[0].CommunityName;
-                $scope.CountryIcons = dt.Community.Community_Basic_Info[0].CountryIcons;
-                $scope.measure_clc = dt.Community.Community_Basic_Info[0].measurable_clc;
+                $scope.CommunityName = community.CommunityName;
+                $scope.CountryIcons = community.CountryIcons;
+                $scope.socialinvestChart = community.SocialReturns;
+                $scope.SocialReturns = community.SocialReturns;
+                $scope.socialinvestChartProgressbar = community.SocialReturns[0].MeasurableOutcomes;
+                
                 performMeasurableOutcomeOverride();
                 if (!$scope.selcountry[name]) {
                     $scope.multiplycm =
-                        dt.Community.Community_Basic_Info[0].ListofItemsMultiplevalue;
+                        community.ListofItemsMultiplevalue;
                 }
-                $scope.country_ListofItems = dt.Community.Community_Basic_Info[0].ListofItems;
+                $scope.country_ListofItems = community.ListofItems;
 
-                $.each($scope.Social_Returns_Bottom_Block, function (ky, d) {
+                $.each($scope.SocialReturns, function (ky, d) {
                     if (d.Shown_by_default) {
-                        $.each(d.Measurable_Outcomes.Listing, function (i, vs) {
+                        $.each(d.MeasurableOutcomes, function (i, vs) {
                             var value = calculateSocialReturnItemValue(ky, i);
                             vs.pers = value;
                             $scope.social_chart_arr.push(vs);
@@ -768,10 +767,10 @@ app.controller("MainCtrl", function ($scope, $http) {
     function calculateSocialReturnValue() {
         var socialReturnValue = 0;
 
-        $scope.Social_Returns_Bottom_Block.forEach(function (block, index) {
-            if (block.Shown_by_default) {
-                block.Measurable_Outcomes.Listing.forEach(function (listing) {
-                    socialReturnValue += listing.Value * block.Value * $scope.measure_clc[index].mul;
+        $scope.SocialReturns.forEach(function (item, index) {
+            if (item.Shown_by_default) {
+                item.MeasurableOutcomes.forEach(function (outcome) {
+                    socialReturnValue += outcome.Value * item.Value * item.measurable_clc.mul;
                 });
             }
         });
@@ -779,10 +778,10 @@ app.controller("MainCtrl", function ($scope, $http) {
         return socialReturnValue;
     }
 
-    function calculateSocialReturnItemValue(socialIndex, listingIndex) {
-        return $scope.Social_Returns_Bottom_Block[socialIndex].Measurable_Outcomes.Listing[listingIndex].Value *
-            $scope.Social_Returns_Bottom_Block[socialIndex].Value *
-            $scope.measure_clc[socialIndex].mul;
+    function calculateSocialReturnItemValue(socialIndex, outcomeIndex) {
+        return $scope.SocialReturns[socialIndex].MeasurableOutcomes[outcomeIndex].Value *
+            $scope.SocialReturns[socialIndex].Value *
+            $scope.SocialReturns[socialIndex].measurable_clc.mul;
     }
 
     function updatetotal(val, i) {
@@ -798,9 +797,9 @@ app.controller("MainCtrl", function ($scope, $http) {
     $scope.invests = invests;
 
     function invests(val, key) {
-        $scope.Investment.Listing[key].Value = val;
+        $scope.Investments[key].Value = val;
 
-        $.each($scope.Investment.Listing, function (k, dt) {
+        $.each($scope.Investments, function (k, dt) {
             if (k == key) {
                 if (val == "") {
                     val = parseInt(0);
@@ -808,8 +807,8 @@ app.controller("MainCtrl", function ($scope, $http) {
             }
         });
         intotals();
-        $.each($scope.Investment.Listing, function (k, dt) {
-            $scope.Investment.Listing[k].color = $scope.invest_color[k].color;
+        $.each($scope.Investments, function (k, dt) {
+            $scope.Investments[k].color = $scope.invest_color[k].color;
         });
         //This function effected graph on-blur
         getinputvalue();
@@ -818,7 +817,7 @@ app.controller("MainCtrl", function ($scope, $http) {
 
     function intotals() {
         $scope.intotal = 0;
-        $.each($scope.Investment.Listing, function (k, dt) {
+        $.each($scope.Investments, function (k, dt) {
             if (dt.Value !== "") {
                 $scope.intotal += parseInt(dt.Value);
             }
@@ -842,7 +841,7 @@ app.controller("MainCtrl", function ($scope, $http) {
             $scope.invest_color.push({
                 color: c
             });
-            $scope.Investment.Listing.push({
+            $scope.Investments.push({
                 Label: text,
                 Value: value,
                 color: c
@@ -851,7 +850,7 @@ app.controller("MainCtrl", function ($scope, $http) {
             $("#text1").val("");
             $("#value1").val("");
         }
-        initInvestmentFusionChart($scope.intotal, $scope.Investment.Listing);
+        initInvestmentFusionChart($scope.intotal, $scope.Investments);
         $("#investmentModal").modal("hide");
         setTimeout(function () {
             $("#investment_container svg").attr("height", "275");

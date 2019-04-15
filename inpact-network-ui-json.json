@@ -7,7 +7,8 @@
     "graph09": "img/graph09.jpg"
   },
   "HomepageSlider": {
-    "Banner": [{
+    "Banner": [
+      {
         "Name": "homepageSlider1",
         "Sequence": "1",
         "ImgUrl": "img/new_img/slider_03.jpg"
@@ -53,7 +54,8 @@
       "Overview_Title": "Powering  Bahia expects  to  electrify  10,000  households,  using  a  combination  of  wind  and  solar  minigrids,  inover  5  years,  resulting  in  a  net  present  value  of  $9million  in  social  benefits.  And  for  every  $1  invested  in  this  project  there  is  an  average  of  $3.2  in  social  benefits.",
       "Overview_Insights": "3"
     },
-    "TimelineInfo": [{
+    "TimelineInfo": [
+      {
         "Label": "100  Homes(Prototype  Grid)",
         "Icon": "green",
         "Date": "  01/01/2017",
@@ -81,7 +83,8 @@
     "TimelineInsight": "34",
     "Outputs_Outcomes_Info": {
       "Outputs_Outcomes_Insight": "8",
-      "Listing": [{
+      "Listing": [
+        {
           "Project_Primary_key": 1,
           "backgroundColor": "rgb(229, 36, 59)",
           "imageSrc": "img/sustainable_development/1_No_Poverty.png"
@@ -119,7 +122,7 @@
           "Project_Icon": "img/yellow_icons/7.png",
           "Project_Insight": "260",
           "isSupported": true,
-          "goalItems":[
+          "goalItems": [
             "Just text to be replaced Just text to be replaced ",
             "Powering Bahia expects to electrify 10,000 households, using a combinatio",
             "Power for pumping, refrigeration,entertainment, communication, and electrical devices",
@@ -134,7 +137,7 @@
           "Project_Icon": "img/yellow_icons/8.png",
           "Project_Insight": "290",
           "isSupported": true,
-          "goalItems":[
+          "goalItems": [
             "It should be replaced Just text to be replaced ",
             "Powering Bahia expects to electrify 10,000 households, using a combinatio",
             "Power for pumping, refrigeration,entertainment, communication, and electrical devices",
@@ -159,7 +162,7 @@
           "Project_Icon": "img/yellow_icons/11.png",
           "Project_Insight": "280",
           "isSupported": true,
-          "goalItems":[
+          "goalItems": [
             "One more item and  text to be replaced Just text to be replaced ",
             "Powering Bahia expects to electrify 10,000 households, using a combinatio",
             "Power for pumping, refrigeration,entertainment, communication, and electrical devices",
@@ -197,12 +200,14 @@
           "imageSrc": "img/sustainable_development/17_Partnership_For_The_Goals.png"
         }
       ],
-      "Project_Output_Section": [{
+      "Project_Output_Section": [
+        {
           "Title": "Lighting  for  longer  working  hours  and  studying(in #of Households)",
           "Quantity": "10000",
           "Project_Foreign_Key": "7",
           "Project_Output_Primary_Key": "B1",
-          "Tags": [{
+          "Tags": [
+            {
               "icons": "img/new_img/irs.png",
               "label": "IRIS  Metric id: PI2845",
               "popoverinfo": {
@@ -234,7 +239,8 @@
           "Quantity": "8600",
           "Project_Foreign_Key": "11",
           "Project_Output_Primary_Key": "B2",
-          "Tags": [{
+          "Tags": [
+            {
               "icons": "",
               "label": "IRIS  Metric id:  OI2496",
               "popoverinfo": {
@@ -256,7 +262,8 @@
           "Quantity": "8600",
           "Project_Foreign_Key": "8",
           "Project_Output_Primary_Key": "B3",
-          "Tags": [{
+          "Tags": [
+            {
               "icons": "img/new_img/irs.png",
               "label": "IRIS  Metric id:  OI8791",
               "popoverinfo": {
@@ -266,11 +273,11 @@
                 "Description": "World Bank entitled, “Rural Electrification and Development in the Philippines: Measuring the Social and Economic Benefits (Barnes 2002) "
               }
             }
-
           ]
         }
       ],
-      "Project_Outcomes_Section": [{
+      "Project_Outcomes_Section": [
+        {
           "Title": "Reduction  in  Poverty",
           "Quantity": "--",
           "Project_Foreign_Key": "7",
@@ -281,11 +288,13 @@
           "Quantity": "--",
           "Project_Foreign_Key": "7",
           "Project_Output_Foregin_Key": "B1",
-          "Tags": [{
-            "icons": "",
-            "label": "",
-            "popoverinfo": ""
-          }]
+          "Tags": [
+            {
+              "icons": "",
+              "label": "",
+              "popoverinfo": ""
+            }
+          ]
         },
         {
           "Title": "  Increased  Productivity",
@@ -326,13 +335,16 @@
     },
     "Gallery": {
       "Gallery_Insight": "220",
-      "Images": [{
-        "Small_Image": "img/salvador-bahia-brasil.jpg",
-        "Big_Image": "img/salvador-bahia-brasil.jpg",
-        "Image_Title": "Houses in Bahia"
-      }]
+      "Images": [
+        {
+          "Small_Image": "img/salvador-bahia-brasil.jpg",
+          "Big_Image": "img/salvador-bahia-brasil.jpg",
+          "Image_Title": "Houses in Bahia"
+        }
+      ]
     },
-    "Partnership_Organizations": [{
+    "Partnership_Organizations": [
+      {
         "Partnership_Title": "World  Bank: ",
         "Partnership_ImageURL": "img/new_img/twb.jpg"
       },
@@ -354,7 +366,8 @@
       "Insight": "5",
       "Amount": "2.8M",
       "AmountSign": "$",
-      "FundingList": [{
+      "FundingList": [
+        {
           "Label": "Worldbank  and  Brazil  Govt’s  Development  Bank ",
           "Color": "#00D246",
           "Percentage": "60"
@@ -377,7 +390,8 @@
       ]
     },
     "Insight": {
-      "Overview": [{
+      "Overview": [
+        {
           "Author_Image": "img/new_img/cam.jpg",
           "Author_Name": "Alfredo  Herrerra  (Transterra  Journalist)",
           "Review_Description": "Gustavo  is  a  local  citizen  who  is  employed  by  this  project  as  an  electrical  control  operator.  This  project  is  expected  to  employ  85  new  staff  members  in  the  maintenance  and  deployment  departments.",
@@ -405,7 +419,8 @@
           "Date_Time": "11 jan 2018 - 15:45"
         }
       ],
-      "Timeline": [{
+      "Timeline": [
+        {
           "Author_Image": "img/insightauthor1.png",
           "Author_Name": "Aaron Taylor",
           "Review_Description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking atits layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.",
@@ -433,7 +448,8 @@
           "Date_Time": "11 jan 2018 - 15:45"
         }
       ],
-      "Project": [{
+      "Project": [
+        {
           "Author_Image": "img/insightauthor1.png",
           "Author_Name": "Aaron Taylor",
           "Review_Description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking atits layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.",
@@ -461,7 +477,8 @@
           "Date_Time": "11 jan 2018 - 15:45"
         }
       ],
-      "Gallery": [{
+      "Gallery": [
+        {
           "Author_Image": "img/insightauthor1.png",
           "Author_Name": "Aaron Taylor",
           "Review_Description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking atits layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.",
@@ -540,7 +557,8 @@
     },
     "Problem_Statements": {
       "Insight": "770",
-      "Points": [{
+      "Points": [
+        {
           "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
         },
         {
@@ -553,9 +571,11 @@
     },
     "Solutions": {
       "Insight": "800",
-      "tabs": [{
+      "tabs": [
+        {
           "Label": "Proposed Solution",
-          "Points": [{
+          "Points": [
+            {
               "Description": "PI7623   Energy Savings from Products Sold"
             },
             {
@@ -568,7 +588,8 @@
         },
         {
           "Label": "Alternative Solutions",
-          "Points": [{
+          "Points": [
+            {
               "Description": "OI2496  Energy Generated for Use: Renewable"
             },
             {
@@ -584,7 +605,8 @@
   },
   "Milestones": {
     "Insight": "800",
-    "Listing": [{
+    "Listing": [
+      {
         "MainTitle": "Project Main Title 1",
         "SubTitle": "Sub-Title 1",
         "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
@@ -593,13 +615,9 @@
         "StatusLabel": "INPROGRESS",
         "StatusColor": "progressblue",
         "StatusPercentage": "30",
-        "Task": [
-          "Points 1",
-          "Points 2",
-          "Points 3",
-          "Points 4"
-        ],
-        "Attachment": [{
+        "Task": ["Points 1", "Points 2", "Points 3", "Points 4"],
+        "Attachment": [
+          {
             "Label": "Title 1",
             "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           },
@@ -618,11 +636,9 @@
         "StatusLabel": "INPROGRESS",
         "StatusColor": "progressblue",
         "StatusPercentage": "50",
-        "Task": [
-          "Points 1",
-          "Points 2"
-        ],
-        "Attachment": [{
+        "Task": ["Points 1", "Points 2"],
+        "Attachment": [
+          {
             "Label": "Title 1",
             "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           },
@@ -641,13 +657,9 @@
         "StatusLabel": "INPROGRESS",
         "StatusColor": "progressblue",
         "StatusPercentage": "48",
-        "Task": [
-          "Points 1",
-          "Points 2",
-          "Points 3",
-          "Points 4"
-        ],
-        "Attachment": [{
+        "Task": ["Points 1", "Points 2", "Points 3", "Points 4"],
+        "Attachment": [
+          {
             "Label": "Title 1",
             "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           },
@@ -666,12 +678,9 @@
         "StatusLabel": "HOLDING",
         "StatusColor": "holdingred",
         "StatusPercentage": "78",
-        "Task": [
-          "Points 1",
-          "Points 2",
-          "Points 3"
-        ],
-        "Attachment": [{
+        "Task": ["Points 1", "Points 2", "Points 3"],
+        "Attachment": [
+          {
             "Label": "Title 1",
             "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           },
@@ -690,12 +699,7 @@
         "StatusLabel": "HOLDING",
         "StatusColor": "holdingred",
         "StatusPercentage": "38",
-        "Task": [
-          "Points 1",
-          "Points 2",
-          "Points 3",
-          "Points 4"
-        ],
+        "Task": ["Points 1", "Points 2", "Points 3", "Points 4"],
         "Attachment": [
           "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx",
           "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docxhttp://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
@@ -711,10 +715,9 @@
         "StatusLabel": "HOLDING",
         "StatusColor": "holdingred",
         "StatusPercentage": "43",
-        "Task": [
-          "Points 1"
-        ],
-        "Attachment": [{
+        "Task": ["Points 1"],
+        "Attachment": [
+          {
             "Label": "Title 1",
             "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           },
@@ -733,13 +736,9 @@
         "StatusLabel": "FINISHED",
         "StatusColor": "finishedgreen",
         "StatusPercentage": "98",
-        "Task": [
-          "Points 1",
-          "Points 2",
-          "Points 3",
-          "Points 4"
-        ],
-        "Attachment": [{
+        "Task": ["Points 1", "Points 2", "Points 3", "Points 4"],
+        "Attachment": [
+          {
             "Label": "Title 1",
             "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           },
@@ -758,13 +757,9 @@
         "StatusLabel": "FINISHED",
         "StatusColor": "finishedgreen",
         "StatusPercentage": "100",
-        "Task": [
-          "Points 1",
-          "Points 2",
-          "Points 3",
-          "Points 4"
-        ],
-        "Attachment": [{
+        "Task": ["Points 1", "Points 2", "Points 3", "Points 4"],
+        "Attachment": [
+          {
             "Label": "Title 1",
             "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           },
@@ -783,11 +778,9 @@
         "StatusLabel": "FINISHED",
         "StatusColor": "finishedgreen",
         "StatusPercentage": "100",
-        "Task": [
-          "Points 1",
-          "Points 2"
-        ],
-        "Attachment": [{
+        "Task": ["Points 1", "Points 2"],
+        "Attachment": [
+          {
             "Label": "Title 1",
             "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           },
@@ -801,7 +794,8 @@
   },
   "People_Partnership": {
     "People_Partnership_Insight": "800",
-    "Listing": [{
+    "Listing": [
+      {
         "Image": "img/new_img/ban.jpg",
         "Title": "Institute of Electrical and Electronics Engineers",
         "Url": "http://www.ieee.org",
@@ -811,7 +805,8 @@
           "Providing Technical Assessment and Opinion on the Power Generation and Distribution Plan",
           "Mobilizing local volunteers in sharing technical insights "
         ],
-        "Tags": [{
+        "Tags": [
+          {
             "Title": "Financial Support",
             "Icon": "http://impactnetwork.vision/img/label.png"
           },
@@ -834,7 +829,8 @@
           "Mobilizing the global community of 20K Journalists",
           "Creating insights and documentaries"
         ],
-        "Tags": [{
+        "Tags": [
+          {
             "Title": "Due Diligence",
             "Icon": "http://impactnetwork.vision/img/label.png"
           },
@@ -853,7 +849,8 @@
           "Mobilize members around the world in due diligence of the impact measurement and reporting. ",
           "Standardize impact measurement techniques"
         ],
-        "Tags": [{
+        "Tags": [
+          {
             "Title": "Impact Assessment and Measurement",
             "Icon": "http://impactnetwork.vision/img/label.png"
           },
@@ -872,7 +869,8 @@
           "Mobilize members around the world in due diligence of the impact measurement and reporting. ",
           "Standardize impact measurement techniques"
         ],
-        "Tags": [{
+        "Tags": [
+          {
             "Title": "Impact Assessment and Measurement",
             "Icon": "http://impactnetwork.vision/img/label.png"
           },
@@ -883,7 +881,8 @@
         ]
       }
     ],
-    "TeamMember": [{
+    "TeamMember": [
+      {
         "Image": "http://www.clipbots.com/impact-network/uploads/partnerteam.png",
         "Name": "Mario Aleman",
         "Degisnation": "Project Lead"
@@ -912,7 +911,8 @@
       "Icon": "http://www.clipbots.com/impact-network/uploads/fundingamounticon.png"
     },
     "Source_of_Funding": {
-      "Listing": [{
+      "Listing": [
+        {
           "Label": "Bahia Rural Development Authority",
           "Amount": "500,000"
         },
@@ -932,7 +932,8 @@
     },
     "Funding_rasing_over_the_period_of_time": {
       "GraphTitle": "Text",
-      "GraphPlotting": [{
+      "GraphPlotting": [
+        {
           "Year": "2016",
           "Amount": "40"
         },
@@ -959,7 +960,8 @@
     },
     "Financial_Management": {
       "Financial_Insight": "600",
-      "Listing": [{
+      "Listing": [
+        {
           "Label": "Expense_Report.xlsx",
           "DownloadUrl": "http://www.clipbots.com/impact-network/uploads/fundingrouteicon.png"
         },
@@ -981,7 +983,8 @@
       "CenterCircle": "PESTEL ANALYSIS",
       "CenterCircleIcon": "https://via.placeholder.com/30X30",
       "CenterCirclePopoverText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i",
-      "Listing": [{
+      "Listing": [
+        {
           "CircleText": "Economic",
           "CircleIcon": "https://via.placeholder.com/30X30",
           "CirclePopoverText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled i"
@@ -1014,204 +1017,210 @@
       ]
     }
   },
-  "Communities_And_Impact": {
-    "Community_Insights": "12",
-    "List_of_Communities": [{
-        "Community": {
-          "Community_Basic_Info": [{
-            "CommunityName": "Bahia",
-            "CountryName": "Brazil",
-            "CountryIcons": "http://www.clipbots.com/impact-network/uploads/brazilflag.png",
-            "Latitude": "-13.6603615",
-            "Longitude": "-69.6775883",
-            "ShortName": "BR",
-            "ListofItemsMultiplevalue": 1,
-            "ListofItems": [{
-                "Title": "Average  Household  Income  (US$  per  month) ",
-                "Icon": "img/populationio-logo.png",
-                "Link": "https://www.worlddata.info/average-income.php",
-                "Name": "World Data Labs",
-                "Value": "712"
-              },
-              {
-                "Title": "Cost  of  Grid  Electricity  (US  cents  per  kWh) ",
-                "Icon": "img/statista-logo.png",
-                "Link": "https://www.statista.com/statistics/263492/electricity-prices-in-selected-countries/",
-                "Name": "Statista",
-                "Value": "60"
-              },
-              {
-                "Title": "Cost  of  Off-Grid  Electricity  (US  cents  per  kW)",
-                "Icon": "img/statista-logo.png",
-                "Link": "https://www.statista.com/statistics/263492/electricity-prices-in-selected-countries/",
-                "Name": "Statista",
-                "Value": "300"
-              },
+  "CommunitiesImpactedPage": {
+    "CommunityInsights": "12",
+    "Communities": [
+      {
+        "CommunityName": "Bahia",
+        "CountryName": "Brazil",
+        "CountryIcons": "http://www.clipbots.com/impact-network/uploads/brazilflag.png",
+        "Latitude": "-13.6603615",
+        "Longitude": "-69.6775883",
+        "ShortName": "BR",
+        "ListofItemsMultiplevalue": 1,
+        "ListofItems": [
+          {
+            "Title": "Average  Household  Income  (US$  per  month) ",
+            "Icon": "img/populationio-logo.png",
+            "Link": "https://www.worlddata.info/average-income.php",
+            "Name": "World Data Labs",
+            "Value": "712"
+          },
+          {
+            "Title": "Cost  of  Grid  Electricity  (US  cents  per  kWh) ",
+            "Icon": "img/statista-logo.png",
+            "Link": "https://www.statista.com/statistics/263492/electricity-prices-in-selected-countries/",
+            "Name": "Statista",
+            "Value": "60"
+          },
+          {
+            "Title": "Cost  of  Off-Grid  Electricity  (US  cents  per  kW)",
+            "Icon": "img/statista-logo.png",
+            "Link": "https://www.statista.com/statistics/263492/electricity-prices-in-selected-countries/",
+            "Name": "Statista",
+            "Value": "300"
+          },
 
+          {
+            "Title": "Expenditure  on  medical  care  (US$  per  household) ",
+            "Icon": "img/who_logo.jpg",
+            "Link": "https://www.who.int/mediacentre/events/H&SD_Plaq_no9.pdf",
+            "Name": "World Health Organization",
+            "Value": "73"
+          },
+          {
+            "Title": "Marginal  damage  done  by  1  ton  of  CO2 (US$) ",
+            "Icon": "img/Unihamburg.gif",
+            "Link": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.175.5039&rep=rep1&type=pdf",
+            "Name": "Hamburg University",
+            "Value": "5"
+          }
+        ],
+        "SocialReturns": [
+          {
+            "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
+            "Value": "3000",
+            "measurable_clc": {
+              "Value": "5",
+              "mul": "12"
+            },
+            "MeasurableOutcomes": [
               {
-                "Title": "Expenditure  on  medical  care  (US$  per  household) ",
-                "Icon": "img/who_logo.jpg",
-                "Link": "https://www.who.int/mediacentre/events/H&SD_Plaq_no9.pdf",
-                "Name": "World Health Organization",
-                "Value": "73"
-              },
-              {
-                "Title": "Marginal  damage  done  by  1  ton  of  CO2 (US$) ",
-                "Icon": "img/Unihamburg.gif",
-                "Link": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.175.5039&rep=rep1&type=pdf",
-                "Name": "Hamburg University",
-                "Value": "5"
+                "Outcome_Definition": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
+                "Value": "5",
+                "Quantified_multiplication_value": "10",
+                "Impact_calculation_formula": {
+                  "link": "img/entertainment-formula.png",
+                  "linkText": "Click here",
+                  "description": "Source: ",
+                  "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                }
               }
             ],
-            "measurable_clc": [{
-                "Value": "5",
-                "mul": "12"
-              },
+            "Shown_by_default": true
+          },
+          {
+            "Output_Definition": "#of  Homes  business  that  can  benefit  from  cheaper  power  ",
+            "Value": "1000",
+            "measurable_clc": {
+              "Value": "143",
+              "mul": "12"
+            },
+            "MeasurableOutcomes": [
               {
-                "Value": "143",
-                "mul": "12"
-              },
-              {
-                "Value": "0.3",
-                "mul": "12"
+                "Outcome_Definition": "Increased  income  because  of  improved  productivity  (US$  per  home-business  per  month)",
+                "Value": "21",
+                "Quantified_multiplication_value": "10",
+                "Impact_calculation_formula": {
+                  "link": "img/formula-additional-income.png",
+                  "description": "Source: ",
+                  "descriptionLink": "http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
+                }
               }
-            ]
-          }]
-        }
+            ],
+            "Shown_by_default": true
+          }
+        ]
       },
       {
-        "Community": {
-          "Community_Basic_Info": [{
-            "CountryName": "Philippines",
-            "CommunityName": "Manila outskirts",
-            "CountryIcons": "http://www.clipbots.com/impact-network/uploads/safricaflag.png",
-            "Latitude": "-14.599512",
-            "Longitude": "120.984222",
-            "ShortName": "SA",
-            "ListofItemsMultiplevalue": 3,
-            "ListofItems": [{
-                "Title": " Average  Household  Income  (US$  per  month) ",
-                "Icon": "img/populationio-logo.png",
-                "Link": "https://www.worlddata.info/average-income.php",
-                "Name": "World Data Labs",
-                "Value": "302"
-              },
+        "CountryName": "Philippines",
+        "CommunityName": "Manila outskirts",
+        "CountryIcons": "http://www.clipbots.com/impact-network/uploads/safricaflag.png",
+        "Latitude": "-14.599512",
+        "Longitude": "120.984222",
+        "ShortName": "SA",
+        "ListofItemsMultiplevalue": 3,
+        "ListofItems": [
+          {
+            "Title": " Average  Household  Income  (US$  per  month) ",
+            "Icon": "img/populationio-logo.png",
+            "Link": "https://www.worlddata.info/average-income.php",
+            "Name": "World Data Labs",
+            "Value": "302"
+          },
+          {
+            "Title": "Cost  of  Grid  Electricity  (US  cents  per  kWh) ",
+            "Icon": "img/statista-logo.png",
+            "Link": "https://www.statista.com/statistics/263492/electricity-prices-in-selected-countries/",
+            "Name": "Statista",
+            "Value": "90"
+          },
+          {
+            "Title": "Cost  of  Off-Grid  Electricity  (US  cents  per  kW)",
+            "Icon": "img/statista-logo.png",
+            "Link": "https://www.statista.com/statistics/263492/electricity-prices-in-selected-countries/",
+            "Name": "Statista",
+            "Value": "310"
+          },
+          {
+            "Title": "Expenditure  on  medical  care  (US$  per  household) ",
+            "Icon": "img/who_logo.jpg",
+            "Link": "https://www.who.int/mediacentre/events/H&SD_Plaq_no9.pdf",
+            "Name": "World Health Organization",
+            "Value": "73"
+          },
+          {
+            "Title": "Marginal  damage  done  by  1  ton  of  CO2 (US$) ",
+            "Icon": "img/Unihamburg.gif",
+            "Link": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.175.5039&rep=rep1&type=pdf",
+            "Name": "Hamburg University",
+            "Value": "5"
+          }
+        ],
+        "SocialReturns": [
+          {
+            "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
+            "Value": "3000",
+            "measurable_clc": {
+              "Value": "4",
+              "mul": "12"
+            },
+            "MeasurableOutcomes": [
               {
-                "Title": "Cost  of  Grid  Electricity  (US  cents  per  kWh) ",
-                "Icon": "img/statista-logo.png",
-                "Link": "https://www.statista.com/statistics/263492/electricity-prices-in-selected-countries/",
-                "Name": "Statista",
-                "Value": "90"
-              },
-              {
-                "Title": "Cost  of  Off-Grid  Electricity  (US  cents  per  kW)",
-                "Icon": "img/statista-logo.png",
-                "Link": "https://www.statista.com/statistics/263492/electricity-prices-in-selected-countries/",
-                "Name": "Statista",
-                "Value": "310"
-              },
-              {
-                "Title": "Expenditure  on  medical  care  (US$  per  household) ",
-                "Icon": "img/who_logo.jpg",
-                "Link": "https://www.who.int/mediacentre/events/H&SD_Plaq_no9.pdf",
-                "Name": "World Health Organization",
-                "Value": "73"
-              },
-              {
-                "Title": "Marginal  damage  done  by  1  ton  of  CO2 (US$) ",
-                "Icon": "img/Unihamburg.gif",
-                "Link": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.175.5039&rep=rep1&type=pdf",
-                "Name": "Hamburg University",
-                "Value": "5"
+                "Outcome_Definition": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
+                "Value": "5",
+                "Quantified_multiplication_value": "10",
+                "Impact_calculation_formula": {
+                  "link": "img/entertainment-formula.png",
+                  "linkText": "Click here",
+                  "description": "Source: ",
+                  "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                }
               }
             ],
-            "measurable_clc": [{
-                "Value": "4",
-                "mul": "12"
-              },
+            "Shown_by_default": true
+          },
+          {
+            "Output_Definition": "#of  Homes  business  that  can  benefit  from  cheaper  power  ",
+            "Value": "1000",
+            "measurable_clc": {
+              "Value": "60",
+              "mul": "12"
+            },
+            "MeasurableOutcomes": [
               {
-                "Value": "60",
-                "mul": "12"
-              },
-              {
-                "Value": "0.3",
-                "mul": "12"
+                "Outcome_Definition": "Increased  income  because  of  improved  productivity  (US$  per  home-business  per  month)",
+                "Value": "21",
+                "Quantified_multiplication_value": "10",
+                "Impact_calculation_formula": {
+                  "link": "img/formula-additional-income.png",
+                  "description": "Source: ",
+                  "descriptionLink": "http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
+                }
               }
-            ]
-          }]
-        }
+            ],
+            "Shown_by_default": true
+          }
+        ]
       }
     ],
-    "Investment_Bottom_Block": {
-      "Listing": [{
-          "Label": "Total Capital Expenses",
-          "Value": "6000"
-        },
-        {
-          "Label": "Total Operating Expenses",
-          "Value": "111560"
-        },
-        {
-          "Label": "Total Education and Outreach Expenses",
-          "Value": "23000"
-        }
-      ]
-    },
-    "Social_Returns_Bottom_Block": [{
-        "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
-        "Value": "3000",
-        "Measurable_Outcomes": {
-          "Listing": [{
-            "Outcome_Definition": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
-            "Value": "5",
-            "Quantified_multiplication_value": "10",
-            "Impact_calculation_formula": {
-              "link": "img/entertainment-formula.png",
-              "linkText": "Click here",
-              "description": "Source: ",
-              "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
-            }
-          }]
-        },
-        "Shown_by_default": true
+    "Investments": [
+      {
+        "Label": "Total Capital Expenses",
+        "Value": "6000"
       },
       {
-        "Output_Definition": "#of  Homes  business  that  can  benefit  from  cheaper  power  ",
-        "Value": "1000",
-        "Measurable_Outcomes": {
-          "Listing": [{
-            "Outcome_Definition": "Increased  income  because  of  improved  productivity  (US$  per  home-business  per  month)",
-            "Value": "21",
-            "Quantified_multiplication_value": "10",
-            "Impact_calculation_formula": {
-              "link": "img/formula-additional-income.png",
-              "description": "Source: ",
-              "descriptionLink": "http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
-            }
-          }]
-        },
-        "Shown_by_default": true
+        "Label": "Total Operating Expenses",
+        "Value": "111560"
       },
       {
-        "Output_Definition": "#of  Households  eliminating  the  usage  of   kerosene  lamps ",
-        "Value": "1000",
-        "Measurable_Outcomes": {
-          "Listing": [{
-            "Outcome_Definition": "Marginal  CO2  emissions  damage  prevented  (US$ per  month  per  house) ",
-            "Value": "0.3",
-            "Quantified_multiplication_value": "10",
-            "Impact_calculation_formula": {
-              "link": "img/impact_formula/2.png",
-              "description": "Source: ",
-              "descriptionLink": "https://www.who.int/mediacentre/events/H&SD_Plaq_no9.pdf"
-            }
-          }]
-        },
-        "Shown_by_default": false
+        "Label": "Total Education and Outreach Expenses",
+        "Value": "23000"
       }
     ],
     "Impact_Reports": {
-      "Listing": [{
+      "Listing": [
+        {
           "Label": "Attachment",
           "DownloadUrl": "http://www.africau.edu/images/default/sample.pdf"
         },

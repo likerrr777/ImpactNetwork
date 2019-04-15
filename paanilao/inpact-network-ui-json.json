@@ -1085,9 +1085,9 @@
       ]
     }
   },
-  "Communities_And_Impact": {
-    "Community_Insights": "12",
-    "List_of_Communities": [{
+  "CommunitiesImpactedPage": {
+    "CommunityInsights": "12",
+    "Communities": [{
         "Community": {
           "Community_Basic_Info": [{
             "CountryName": "Brazil",
@@ -1176,7 +1176,7 @@
         }
       }
     ],
-    "Investment_Bottom_Block": {
+    "Investments": {
       "Listing": [{
           "Label": "Total Capital Expenses",
           "Value": "6000"
@@ -1191,10 +1191,10 @@
         }
       ]
     },
-    "Social_Returns_Bottom_Block": [{
+    "SocialReturns": [{
         "Output_Definition": "#of Households that can watch TV, listen to the Radio, and charge mobile phones using cheaper power",
         "Value": "350",
-        "Measurable_Outcomes": {
+        "MeasurableOutcomes": {
           "Listing": [{
             "Outcome_Definition": "Money saved on communication and entertainment ($ per household per month)",
             "Value": "5",
@@ -1210,7 +1210,7 @@
       {
         "Output_Definition": "#of Home business that can benefit from cheaper power. ",
         "Value": "200",
-        "Measurable_Outcomes": {
+        "MeasurableOutcomes": {
           "Listing": [{
             "Outcome_Definition": "Increased income because of improved productivity ($ per home-business per month)",
             "Value": "21",
@@ -1226,7 +1226,7 @@
       {
         "Output_Definition": "#of Home business that can benefit from cheaper power.",
         "Value": "200",
-        "Measurable_Outcomes": {
+        "MeasurableOutcomes": {
           "Listing": [{
             "Outcome_Definition": "Savings because of lower exposure to indoor air pollution, and access to clean water. ($ per month per household)",
             "Value": "75",
@@ -1242,7 +1242,7 @@
       {
         "Output_Definition": "#of Households eliminating the usage of batteries and kerosene lamps.",
         "Value": "200",
-        "Measurable_Outcomes": {
+        "MeasurableOutcomes": {
           "Listing": [{
               "Outcome_Definition": "#of Tonnes of CO2 emissions reduced per household.",
               "Value": "75",

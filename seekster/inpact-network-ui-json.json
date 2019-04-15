@@ -810,9 +810,9 @@
       ]
     }
   },
-  "Communities_And_Impact": {
-    "Community_Insights": "12",
-    "List_of_Communities": [{
+  "CommunitiesImpactedPage": {
+    "CommunityInsights": "12",
+    "Communities": [{
       "Community": {
         "Community_Basic_Info": [{
           "CountryName": "Thailand",
@@ -860,7 +860,7 @@
         }]
       }
     }],
-    "Investment_Bottom_Block": {
+    "Investments": {
       "Listing": [{
           "Label": "Product Development",
           "Value": "400000"
@@ -875,10 +875,10 @@
         }
       ]
     },
-    "Social_Returns_Bottom_Block": [{
+    "SocialReturns": [{
         "Output_Definition": "# of Jobs matched",
         "Value": "100000",
-        "Measurable_Outcomes": {
+        "MeasurableOutcomes": {
           "Listing": [{
             "Outcome_Definition": "Average # of hours saved by the customer because of the matched job",
             "Value": "3",
@@ -896,7 +896,7 @@
       {
         "Output_Definition": "# of workers served",
         "Value": "10000",
-        "Measurable_Outcomes": {
+        "MeasurableOutcomes": {
           "Listing": [{
             "Outcome_Definition": "Average # of jobs perfromed by each worker",
             "Value": "100",
