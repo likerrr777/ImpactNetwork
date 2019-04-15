@@ -66,6 +66,12 @@
         Social Return On Investment (SROI) = {{ (socialReturnValue / intotal).toFixed(2) }}
       </div>
     </div>
+    <div class="col-sm-3">
+      <select ng-model="selectedYear" ng-options="year.name for year in yearsList track by year.name"></select>
+    </div>
+    <div class="col-sm-9">
+      
+    </div>
     <div class="col-md-6 mrgin_l_r1">
       <div class="core">
         <div class="map_head core asc">

@@ -1066,6 +1066,38 @@
             "Value": "5"
           }
         ],
+        "years": [
+          {
+            "name": "2018",
+            "dataset": [
+              {
+                "name": "projected"
+              },
+              {
+                "name": "actual"
+              }
+            ]
+          },
+          {
+            "name": "2019",
+            "dataset": [
+              {
+                "name": "projected"
+              },
+              {
+                "name": "actual"
+              }
+            ]
+          },
+          {
+            "name": "2020",
+            "dataset": [
+              {
+                "name": "projected"
+              }
+            ]
+          }
+        ],
         "SocialReturns": [
           {
             "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
@@ -1155,6 +1187,38 @@
             "Link": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.175.5039&rep=rep1&type=pdf",
             "Name": "Hamburg University",
             "Value": "5"
+          }
+        ],
+        "years": [
+          {
+            "name": "2018",
+            "dataset": [
+              {
+                "name": "projected"
+              },
+              {
+                "name": "actual"
+              }
+            ]
+          },
+          {
+            "name": "2019",
+            "dataset": [
+              {
+                "name": "projected"
+              },
+              {
+                "name": "actual"
+              }
+            ]
+          },
+          {
+            "name": "2020",
+            "dataset": [
+              {
+                "name": "projected"
+              }
+            ]
           }
         ],
         "SocialReturns": [
