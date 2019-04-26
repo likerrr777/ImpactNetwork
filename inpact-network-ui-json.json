@@ -1,5 +1,6 @@
 {
   "sharedResources": {
+    "faviconImg": "img/favicon.png",
     "blogImage": "img/blogging.png",
     "growthImage": "img/growth.png",
     "excelImage": "img/excel.jpg",
