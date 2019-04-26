@@ -19,7 +19,7 @@ app.controller("MainCtrl", function($scope, $http) {
   $scope.selcountry = {};
   $scope.search_org = search_org;
   $scope.search_milestone = search_milestone;
-  $scope.updatecountryinfo = updatecountryinfo;
+  $scope.changeCountry = changeCountry;
   $scope.dopopover = dopopover;
   $scope.outcome = [];
   $scope.obj1 = {};
@@ -32,11 +32,11 @@ app.controller("MainCtrl", function($scope, $http) {
   $scope.impact_fg = {};
   $scope.MeasurableOutcomes1 = [];
   $scope.investmentChart = [];
-  $scope.socialinvst_container = [];
+  $scope.socialReturnContainer = [];
   $scope.countrylist = [];
   $scope.countrylist_new = [];
   $scope.CountryName = [];
-  $scope.country_ListofItems = [];
+  $scope.countryItemsList = [];
   $scope.ttlinvestment = 0;
   $scope.multiplycm = 1;
   $scope.ttlsocialinvestment = 0;
@@ -194,8 +194,8 @@ app.controller("MainCtrl", function($scope, $http) {
         $scope.intotal = $scope.intotal + parseInt(dt.Value);
       });
       $scope.community = response.data.CommunitiesImpactedPage.Communities[0];
-      $scope.yearsList = getYearsList();
-      $scope.selectedYear = $scope.yearsList[0].name;
+      $scope.selectedYear = $scope.community.years[0];
+      $scope.selectedDataset = $scope.selectedYear.dataset[0];
       $scope.CountryName =
         response.data.CommunitiesImpactedPage.Communities[0].CountryName;
       $scope.CommunityName =
@@ -224,12 +224,6 @@ app.controller("MainCtrl", function($scope, $http) {
         });
       });
 
-      $scope.socialinvestChart =
-        response.data.CommunitiesImpactedPage.Communities[0].SocialReturns;
-      $scope.socialinvestChartProgressbar =
-        response.data.CommunitiesImpactedPage.Communities[0].SocialReturns[0].MeasurableOutcomes;
-
-      ///Uvaish
       $scope.CommunityInsights =
         response.data.CommunitiesImpactedPage.CommunityInsights;
 
@@ -281,7 +275,7 @@ app.controller("MainCtrl", function($scope, $http) {
             $scope.social_color.push({
               color: color
             });
-            $scope.socialinvst_container.push({
+            $scope.socialReturnContainer.push({
               label: vs.Outcome_Definition,
               value: value,
               color: color
@@ -332,12 +326,6 @@ app.controller("MainCtrl", function($scope, $http) {
   };
 
   $scope.socialReturnValue = calculateSocialReturnValue();
-
-  function getYearsList() {
-    return $scope.community.years.map(function(year) {
-      return year.name;
-    });
-  }
 
   function performMeasurableOutcomeOverride() {
     $scope.SocialReturns.forEach(function(item) {
@@ -459,7 +447,7 @@ app.controller("MainCtrl", function($scope, $http) {
   }
 
   function mapclickfun(index) {
-    $scope.country_ListofItems = $scope.Communities[index].ListofItems;
+    $scope.countryItemsList = $scope.Communities[index].ListofItems;
     $scope.CountryName = $scope.Communities[index].CountryName;
     $scope.CommunityName = $scope.Communities[index].CommunityName;
     $scope.CountryIcons = $scope.Communities[index].CountryIcons;
@@ -480,7 +468,6 @@ app.controller("MainCtrl", function($scope, $http) {
       $.each(d.MeasurableOutcomes, function(k1, v1) {
         $scope.social_chart_arr.push(v1);
       });
-      // $scope.SocialReturns.push(d);
 
       $.each(d.MeasurableOutcomes, function(i, vs) {
         $scope.total += vs.Value * vs.Quantified_multiplication_value;
@@ -492,18 +479,14 @@ app.controller("MainCtrl", function($scope, $http) {
         500
       );
     });
-    $scope.socialinvst_container = [];
-    //$scope.social_chart_arr=[];
-    $scope.socialinvestChartProgressbar = [];
+    $scope.socialReturnContainer = [];
 
     $scope.ttlsocialinvestment = 0;
 
     var i1 = 0;
     $.each($scope.SocialReturns, function(ky, dty) {
       if (dty.Shown_by_default) {
-        if (typeof $scope.impact_fg[ky] === "undefined") {
-          $scope.impact_fg[ky] = {};
-        }
+        $scope.impact_fg[ky] = $scope.impact_fg[ky] || {};
         $.each($scope.SocialReturns[ky].MeasurableOutcomes, function(i, vs) {
           var value = calculateSocialReturnItemValue(ky, i);
           dty.pers = value;
@@ -516,7 +499,7 @@ app.controller("MainCtrl", function($scope, $http) {
             typeof $scope.social_color[i1] !== "undefined" &&
             typeof $scope.social_color[i1].color !== "undefined"
           ) {
-            $scope.socialinvst_container.push({
+            $scope.socialReturnContainer.push({
               label: vs.Outcome_Definition,
               value: value,
               color: $scope.social_color[i1].color
@@ -527,26 +510,22 @@ app.controller("MainCtrl", function($scope, $http) {
             $scope.social_color.push({
               color: c
             });
-            $scope.socialinvst_container.push({
+            $scope.socialReturnContainer.push({
               label: vs.Outcome_Definition,
               value: value,
               color: c
             });
           }
-          $scope.socialinvestChartProgressbar.push({
-            Outcome_Definition: vs.Outcome_Definition,
-            Value: value
-          });
           i1 = i1 + 1;
         });
 
         setTimeout(function() {
-          $("#investment_container svg").attr("height", "275");
-          $("#socialinvst_container svg").attr("height", "275");
+          $("#investmentContainer svg").attr("height", "275");
+          $("#socialReturnContainer svg").attr("height", "275");
 
-          InitSocialInvestmentFusionChart(
+          InitSocialReturnFusionChart(
             $scope.ttlsocialinvestment,
-            $scope.socialinvst_container
+            $scope.socialReturnContainer
           );
         }, 1000);
         $scope.socialReturnValue = calculateSocialReturnValue();
@@ -582,8 +561,6 @@ app.controller("MainCtrl", function($scope, $http) {
     $scope.obj[index] = true;
   }
 
-  // Org data
-
   function orgSlidersplit(arr, size) {
     var newArr = [];
 
@@ -601,10 +578,9 @@ app.controller("MainCtrl", function($scope, $http) {
     $scope.tags = item.Tags;
     $(".box1").css("border", "1px solid #07c776");
     $(".box1").removeClass("boxselect");
-    /*$('#item_'+key1).css("border","1px solid red");*/
     $("#item_" + key1).addClass("boxselect");
   }
-  //get comment
+  
   function mileStCmnt(cmnt) {
     $(".maile_stone_moal").modal("show");
 
@@ -693,48 +669,48 @@ app.controller("MainCtrl", function($scope, $http) {
     $scope.obj2[proj] = true;
   }
 
-  function updatecountryinfo(name) {
-    $scope.social_chart_arr = [];
-    $.each($scope.Communities, function(key, community) {
-      if (community.CountryName == name) {
-        $scope.community = community;
-        $scope.country_ListofItems = [];
-        $scope.CountryName = name;
-        $scope.CommunityName = community.CommunityName;
-        $scope.CountryIcons = community.CountryIcons;
-        $scope.socialinvestChart = community.SocialReturns;
-        $scope.SocialReturns = community.SocialReturns;
-        $scope.socialinvestChartProgressbar =
-          community.SocialReturns[0].MeasurableOutcomes;
+  function changeCountry(name) {
+    var community = $scope.Communities.find(el => el.CountryName === name);
+    if (community) {
+      $scope.social_chart_arr = [];
 
-        performMeasurableOutcomeOverride();
-        if (!$scope.selcountry[name]) {
-          $scope.multiplycm = community.ListofItemsMultiplevalue;
-        }
-        $scope.country_ListofItems = community.ListofItems;
+      $scope.community = community;
+      $scope.selectedYear = community.years[0];
+      $scope.selectedDataset = $scope.selectedYear.dataset[0];
+      $scope.CountryName = community.CountryName;
+      $scope.CommunityName = community.CommunityName;
+      $scope.CountryIcons = community.CountryIcons;
+      $scope.SocialReturns = $scope.selectedDataset.SocialReturns;
+      $scope.countryItemsList = [];
 
-        $.each($scope.SocialReturns, function(ky, d) {
-          if (d.Shown_by_default) {
-            $.each(d.MeasurableOutcomes, function(i, vs) {
-              var value = calculateSocialReturnItemValue(ky, i);
-              vs.pers = value;
-              $scope.social_chart_arr.push(vs);
-              $scope.socialReturnValue += value;
-              var c = getRandomColor();
-
-              $scope.social_color.push({
-                color: c
-              });
-              $scope.socialinvst_container.push({
-                label: vs.Outcome_Definition,
-                value: value,
-                color: c
-              });
-            });
-          }
-        });
+      performMeasurableOutcomeOverride();
+      if (!$scope.selcountry[name]) {
+        $scope.multiplycm = community.ListofItemsMultiplevalue;
       }
-    });
+      $scope.countryItemsList = community.ListofItems;
+
+      $.each($scope.SocialReturns, function(ky, d) {
+        if (d.Shown_by_default) {
+          $.each(d.MeasurableOutcomes, function(i, vs) {
+            var value = calculateSocialReturnItemValue(ky, i);
+            vs.pers = value;
+            $scope.social_chart_arr.push(vs);
+            $scope.socialReturnValue += value;
+            var c = getRandomColor();
+
+            $scope.social_color.push({
+              color: c
+            });
+            $scope.socialReturnContainer.push({
+              label: vs.Outcome_Definition,
+              value: value,
+              color: c
+            });
+          });
+        }
+      });
+    }
+    
     getSelReturn();
   }
 
@@ -830,8 +806,8 @@ app.controller("MainCtrl", function($scope, $http) {
     initInvestmentFusionChart($scope.intotal, $scope.Investments);
     $("#investmentModal").modal("hide");
     setTimeout(function() {
-      $("#investment_container svg").attr("height", "275");
-      $("#socialinvst_container svg").attr("height", "275");
+      $("#investmentContainer svg").attr("height", "275");
+      $("#socialReturnContainer svg").attr("height", "275");
     }, 300);
   }
 

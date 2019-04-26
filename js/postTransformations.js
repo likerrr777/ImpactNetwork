@@ -6,8 +6,8 @@ $(document).ready(function () {
 
     $('[data-toggle=tab]').click(function (e) {
         setTimeout(function () {
-            $('#investment_container svg').attr('height', '275');
-            $('#socialinvst_container svg').attr('height', '275');
+            $('#investmentContainer svg').attr('height', '275');
+            $('#socialReturnContainer svg').attr('height', '275');
         }, 1000);
         e.preventDefault();
         e.preventDefault();
