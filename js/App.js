@@ -251,8 +251,7 @@ app.controller("MainCtrl", function($scope, $http) {
       mapclickfun(0);
 
       //Social Returns Bottom Block
-      $scope.SocialReturns =
-        response.data.CommunitiesImpactedPage.Communities[0].SocialReturns;
+      $scope.SocialReturns = $scope.selectedDataset.SocialReturns;
       performMeasurableOutcomeOverride();
       $scope.socialReturnValue = 0;
 

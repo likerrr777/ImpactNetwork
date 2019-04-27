@@ -1120,7 +1120,52 @@
                 ]
               },
               {
-                "name": "Actual"
+                "name": "Actual",
+                "SocialReturns": [
+                  {
+                    "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
+                    "Value": "1000",
+                    "measurable_clc": {
+                      "Value": "1",
+                      "mul": "12"
+                    },
+                    "MeasurableOutcomes": [
+                      {
+                        "Outcome_Definition": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
+                        "Value": "4",
+                        "Quantified_multiplication_value": "10",
+                        "Impact_calculation_formula": {
+                          "link": "img/entertainment-formula.png",
+                          "linkText": "Click here",
+                          "description": "Source: ",
+                          "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                        }
+                      }
+                    ],
+                    "Shown_by_default": true
+                  },
+                  {
+                    "Output_Definition": "#of  Homes  business  that  can  benefit  from  cheaper  power  ",
+                    "Value": "3000",
+                    "measurable_clc": {
+                      "Value": "141",
+                      "mul": "12"
+                    },
+                    "MeasurableOutcomes": [
+                      {
+                        "Outcome_Definition": "Increased  income  because  of  improved  productivity  (US$  per  home-business  per  month)",
+                        "Value": "22",
+                        "Quantified_multiplication_value": "10",
+                        "Impact_calculation_formula": {
+                          "link": "img/formula-additional-income.png",
+                          "description": "Source: ",
+                          "descriptionLink": "http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
+                        }
+                      }
+                    ],
+                    "Shown_by_default": true
+                  }
+                ]
               }
             ]
           },
@@ -1128,10 +1173,100 @@
             "name": "2019",
             "dataset": [
               {
-                "name": "Projected"
+                "name": "Projected",
+                "SocialReturns": [
+                  {
+                    "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
+                    "Value": "2500",
+                    "measurable_clc": {
+                      "Value": "5",
+                      "mul": "12"
+                    },
+                    "MeasurableOutcomes": [
+                      {
+                        "Outcome_Definition": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
+                        "Value": "5",
+                        "Quantified_multiplication_value": "10",
+                        "Impact_calculation_formula": {
+                          "link": "img/entertainment-formula.png",
+                          "linkText": "Click here",
+                          "description": "Source: ",
+                          "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                        }
+                      }
+                    ],
+                    "Shown_by_default": true
+                  },
+                  {
+                    "Output_Definition": "#of  Homes  business  that  can  benefit  from  cheaper  power  ",
+                    "Value": "1000",
+                    "measurable_clc": {
+                      "Value": "143",
+                      "mul": "12"
+                    },
+                    "MeasurableOutcomes": [
+                      {
+                        "Outcome_Definition": "Increased  income  because  of  improved  productivity  (US$  per  home-business  per  month)",
+                        "Value": "21",
+                        "Quantified_multiplication_value": "10",
+                        "Impact_calculation_formula": {
+                          "link": "img/formula-additional-income.png",
+                          "description": "Source: ",
+                          "descriptionLink": "http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
+                        }
+                      }
+                    ],
+                    "Shown_by_default": true
+                  }
+                ]
               },
               {
-                "name": "Actual"
+                "name": "Actual",
+                "SocialReturns": [
+                  {
+                    "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
+                    "Value": "1030",
+                    "measurable_clc": {
+                      "Value": "1",
+                      "mul": "12"
+                    },
+                    "MeasurableOutcomes": [
+                      {
+                        "Outcome_Definition": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
+                        "Value": "4",
+                        "Quantified_multiplication_value": "10",
+                        "Impact_calculation_formula": {
+                          "link": "img/entertainment-formula.png",
+                          "linkText": "Click here",
+                          "description": "Source: ",
+                          "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                        }
+                      }
+                    ],
+                    "Shown_by_default": true
+                  },
+                  {
+                    "Output_Definition": "#of  Homes  business  that  can  benefit  from  cheaper  power  ",
+                    "Value": "3000",
+                    "measurable_clc": {
+                      "Value": "141",
+                      "mul": "12"
+                    },
+                    "MeasurableOutcomes": [
+                      {
+                        "Outcome_Definition": "Increased  income  because  of  improved  productivity  (US$  per  home-business  per  month)",
+                        "Value": "22",
+                        "Quantified_multiplication_value": "10",
+                        "Impact_calculation_formula": {
+                          "link": "img/formula-additional-income.png",
+                          "description": "Source: ",
+                          "descriptionLink": "http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
+                        }
+                      }
+                    ],
+                    "Shown_by_default": true
+                  }
+                ]
               }
             ]
           },
@@ -1139,7 +1274,52 @@
             "name": "2020",
             "dataset": [
               {
-                "name": "Projected"
+                "name": "Projected",
+                "SocialReturns": [
+                  {
+                    "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
+                    "Value": "4000",
+                    "measurable_clc": {
+                      "Value": "5",
+                      "mul": "12"
+                    },
+                    "MeasurableOutcomes": [
+                      {
+                        "Outcome_Definition": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
+                        "Value": "5",
+                        "Quantified_multiplication_value": "10",
+                        "Impact_calculation_formula": {
+                          "link": "img/entertainment-formula.png",
+                          "linkText": "Click here",
+                          "description": "Source: ",
+                          "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                        }
+                      }
+                    ],
+                    "Shown_by_default": true
+                  },
+                  {
+                    "Output_Definition": "#of  Homes  business  that  can  benefit  from  cheaper  power  ",
+                    "Value": "1000",
+                    "measurable_clc": {
+                      "Value": "143",
+                      "mul": "12"
+                    },
+                    "MeasurableOutcomes": [
+                      {
+                        "Outcome_Definition": "Increased  income  because  of  improved  productivity  (US$  per  home-business  per  month)",
+                        "Value": "21",
+                        "Quantified_multiplication_value": "10",
+                        "Impact_calculation_formula": {
+                          "link": "img/formula-additional-income.png",
+                          "description": "Source: ",
+                          "descriptionLink": "http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
+                        }
+                      }
+                    ],
+                    "Shown_by_default": true
+                  }
+                ]
               }
             ]
           }
