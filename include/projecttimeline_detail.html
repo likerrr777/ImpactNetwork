@@ -45,9 +45,12 @@
         </div>
         <div class="second_col">
             <div class="large_cntn">{{project}}</div>
+            <div class="proj_goals_title">{{goalTitle}}</div>
             <div ng-if="goalItems.length > 0" class="proj_goals">
               <ol class="d">
-                <li ng-repeat="item in goalItems track by $index">{{item}}</li>
+                <li ng-repeat="item in goalItems track by $index">
+                    <div ng-class="item.highlighted ? 'goal highlighted' : 'goal'">{{item.text}}</div>
+                </li>
               </ol>
               </div>
         </div>

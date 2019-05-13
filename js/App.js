@@ -62,6 +62,7 @@ app.controller("MainCtrl", function ($scope, $http) {
         response.data.Overview.Partnership_Organizations_Insight;
 
       $scope.outcomeInfo = response.data.Overview.Outputs_Outcomes_Info.Listing;
+      $scope.goalTitle = response.data.Overview.Outputs_Outcomes_Info.GoalTitle;
       $scope.outcomeInfoSupportedProjects = $scope.outcomeInfo.filter(function (
         element
       ) {

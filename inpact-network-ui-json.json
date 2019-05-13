@@ -84,6 +84,7 @@
     "TimelineInsight": "34",
     "Outputs_Outcomes_Info": {
       "Outputs_Outcomes_Insight": "8",
+      "GoalTitle":"SDG TARGETS",
       "Listing": [
         {
           "Project_Primary_key": 1,
@@ -124,10 +125,10 @@
           "Project_Insight": "260",
           "isSupported": true,
           "goalItems": [
-            "Just text to be replaced Just text to be replaced ",
-            "Powering Bahia expects to electrify 10,000 households, using a combinatio",
-            "Power for pumping, refrigeration,entertainment, communication, and electrical devices",
-            "Powering Bahia expects to electrify 10,000 households, using a combinatio"
+            {"text":"First text to be replaced Just text to be replaced", "highlighted":true},
+            {"text":"Powering Bahia expects to electrify 10,000 households, using a combinatio", "highlighted":false},
+            {"text":"Power for pumping, refrigeration,entertainment, communication, and electrical devices", "highlighted":true},
+            {"text":"Just text to be replaced Just text to be replaced", "highlighted":false}
           ]
         },
         {
@@ -139,11 +140,10 @@
           "Project_Insight": "290",
           "isSupported": true,
           "goalItems": [
-            "It should be replaced Just text to be replaced ",
-            "Powering Bahia expects to electrify 10,000 households, using a combinatio",
-            "Power for pumping, refrigeration,entertainment, communication, and electrical devices",
-            "Powering Bahia expects to electrify 10,000 households, using a combinatio"
-          ]
+            {"text":"Just second text to be replaced Just text to be replaced", "highlighted":false},
+            {"text":"Powering Bahia expects to electrify 10,000 households, using a combinatio", "highlighted":false},
+            {"text":"Power for pumping, refrigeration,entertainment, communication, and electrical devices", "highlighted":true},
+            {"text":"Just text to be replaced Just text to be replaced", "highlighted":false}          ]
         },
         {
           "Project_Primary_key": 9,
@@ -164,10 +164,10 @@
           "Project_Insight": "280",
           "isSupported": true,
           "goalItems": [
-            "One more item and  text to be replaced Just text to be replaced ",
-            "Powering Bahia expects to electrify 10,000 households, using a combinatio",
-            "Power for pumping, refrigeration,entertainment, communication, and electrical devices",
-            "Powering Bahia expects to electrify 10,000 households, using a combinatio"
+            {"text":"One more item and  text to be replaced Just text to be replaced ", "highlighted":false},
+            {"text":"Powering Bahia expects to electrify 10,000 households, using a combinatio", "highlighted":false},
+            {"text":"Power for pumping, refrigeration,entertainment, communication, and electrical devices", "highlighted":true},
+            {"text":"Just text to be replaced Just text to be replaced", "highlighted":true}
           ]
         },
         {
