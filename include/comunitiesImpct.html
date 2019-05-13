@@ -67,10 +67,10 @@
       </div>
     </div>
     <div class="col-sm-3 year-dropdown">
-      <select ng-model="selectedYear" ng-options="year.name for year in community.years track by year.name"></select>
+      <select ng-model="selectedYear" ng-options="year.name for year in community.years track by year.name" ng-change="onYearChange(selectedYear)"></select>
     </div>
     <div class="col-sm-9 dataset-dropdown">
-      <select ng-model="selectedDataset" ng-options="dataset.name for dataset in selectedYear.dataset track by dataset.name"></select>
+      <select ng-model="selectedDataset" ng-options="dataset.name for dataset in selectedYear.dataset track by dataset.name" ng-change="updateSocialReturnSection(selectedDataset)"></select>
     </div>
     <div class="col-md-6 mrgin_l_r2">
       <div class="core">
