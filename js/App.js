@@ -1,3 +1,5 @@
+import '../css/styles.scss';
+
 var app = angular.module("MainApp", ["ng-fusioncharts"]);
 
 app.filter("range", function () {
@@ -12,7 +14,7 @@ app.filter("range", function () {
   };
 });
 
-app.controller("MainCtrl", function ($scope, $http) {
+app.controller("MainCtrl", ['$scope', '$http', function ($scope, $http) {
   $scope.mapclickfun = mapclickfun;
   $scope.output = [];
   $scope.social_chart_arr = [];
@@ -833,4 +835,4 @@ app.controller("MainCtrl", function ($scope, $http) {
     }
     return color;
   }
-});
+}]);

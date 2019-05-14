@@ -1035,7 +1035,9 @@
                     "totalValueLabel": "Total dollar value",
                     "dollarQuantifiablesTitle": "$ Quantifiables",
                     "quantifiablesTitle": "Quantifiables",
-                    "nonQuantifiablesTitle": "Nob Quantifiables"
+                    "nonQuantifiablesTitle": "Nob Quantifiables",
+                    "arrowTopImage": "img/arrow-top.png",
+                    "arrowBottomImage": "img/arrow-bottom.png"
                   },
                   "multiplier": "12",
                   "data": [{
@@ -1091,6 +1093,32 @@
                       {
                         "description": "Some negative nonQuantifiable",
                         "isPositive": false
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Some other benefits",
+                    "number": "40",
+                    "dollarQuantifiables": [{
+                      "description": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
+                      "dollarValue": "5",
+                      "isPositive": true,
+                      "formula": {
+                        "link": "img/entertainment-formula.png",
+                        "linkText": "Click here",
+                        "description": "Source: ",
+                        "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                      }
+                    }],
+                    "quantifiables": [{
+                      "description": "Some positive quantifiable",
+                      "value": "5",
+                      "isPositive": true
+                    }],
+                    "nonQuantifiables": [
+                      {
+                        "description": "Some positive nonQuantifiable",
+                        "isPositive": true
                       }
                     ]
                   }]

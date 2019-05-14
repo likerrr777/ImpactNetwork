@@ -1,12 +1,12 @@
 <div class="stakeholders-component">
     <div class="sroi-multiplier-block">SROI Multiplier: $1:${{$ctrl.sroiMultiplier}}</div>
     <div class="stakeholders-slider">
-        <span class="left-arrow"></span>
+        <div class="triangle-left" ng-click="$ctrl.slideStakeholder(false)"></div>
         <div class="slider-content">
             <div>
                 <span>{{$ctrl.stakeholders.staticResources.nameLabel}} {{$ctrl.currentStakeholderIndex + 1}}</span>
                 <span> : </span>
-                <span>{{$ctrl.currentStakeholder.staticResources.name}}</span>
+                <span>{{$ctrl.currentStakeholder.name}}</span>
             </div>
             <div>
                 <span>{{$ctrl.stakeholders.staticResources.numberLabel}}</span>
@@ -19,12 +19,93 @@
                 <span>${{$ctrl.totalDollarValue}}</span>
             </div>
         </div>
-        <span class="right-arrow"></span>
+        <div class="triangle-right" ng-click="$ctrl.slideStakeholder(true)"></div>
     </div>
     <div class="stakeholders-content">
-        <div class="title">{{$ctrl.staticResources.dollarQuantifiablesTitle}}</div>
+        <div class="title">{{$ctrl.stakeholders.staticResources.dollarQuantifiablesTitle}}</div>
         <div class="dollar-quantifiables-block">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>#</td>
+                        <td>Outcomes</td>
+                        <td>Dollar value(dv)</td>
+                        <td>
+                            <div>Total annualized dollar value</div>
+                            <span>(dv*12*#stakeholders)</span>
+                        </td>
+                        <td>Formula</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="quantifiable in $ctrl.currentStakeholder.dollarQuantifiables">
+                        <td>
+                            <div class="icon-wrapper" ng-class="quantifiable.isPositive ? 'positive': 'negative'">
+                                <img
+                                    ng-src="{{quantifiable.isPositive ? $ctrl.stakeholders.staticResources.arrowTopImage: $ctrl.stakeholders.staticResources.arrowBottomImage}}" />
+                            </div>
+                        </td>
+                        <td>{{$index + 1}}</td>
+                        <td>{{quantifiable.description}}</td>
+                        <td>${{quantifiable.dollarValue}}</td>
+                        <td>{{$ctrl.calculateDollarValue(quantifiable)}}</td>
+                        <td>Link</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
+        <div class="title">{{$ctrl.stakeholders.staticResources.quantifiablesTitle}}</div>
+        <div class="quantifiables-block">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>#</td>
+                        <td>Outcomes</td>
+                        <td>Value</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="quantifiable in $ctrl.currentStakeholder.quantifiables">
+                        <td>
+                            <div class="icon-wrapper" ng-class="quantifiable.isPositive ? 'positive': 'negative'">
+                                <img
+                                    ng-src="{{quantifiable.isPositive ? $ctrl.stakeholders.staticResources.arrowTopImage: $ctrl.stakeholders.staticResources.arrowBottomImage}}" />
+                            </div>
+                        </td>
+                        <td>{{$index + 1}}</td>
+                        <td>{{quantifiable.description}}</td>
+                        <td>${{quantifiable.value}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="title">{{$ctrl.stakeholders.staticResources.nonQuantifiablesTitle}}</div>
+        <div class="non-quantifiables-block">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>#</td>
+                        <td>Outcomes</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="quantifiable in $ctrl.currentStakeholder.nonQuantifiables">
+                        <td>
+                            <div class="icon-wrapper" ng-class="quantifiable.isPositive ? 'positive': 'negative'">
+                                <img
+                                    ng-src="{{quantifiable.isPositive ? $ctrl.stakeholders.staticResources.arrowTopImage: $ctrl.stakeholders.staticResources.arrowBottomImage}}" />
+                            </div>
+                        </td>
+                        <td>{{$index + 1}}</td>
+                        <td>{{quantifiable.description}}</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

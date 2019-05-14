@@ -1,6 +1,4 @@
-/*===========New forth page css===========*/
-
-
+@import "../components/communitiesImpacted/stakeholders/stakeholders.scss";
 
 .add_button a{
 
@@ -31,7 +29,7 @@ font-family:Proxima Nova!important;
 
 .search{
 
-background-image: url(../img/search1.png); 
+background-image: url(/img/search1.png); 
 
 background-repeat: no-repeat;
 
@@ -283,7 +281,7 @@ h5.text_heading {
 
 .caption1{
 
-    padding: :0px;
+    padding: 0;
 
 }
 
@@ -2186,9 +2184,6 @@ transition-duration: 400ms;
 transform: scale(1.1, 1.1) translate3d(0, 0, 0);
 
 cursor: pointer;
-
-/*box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);*/
-
 }
 
 
@@ -2509,8 +2504,6 @@ transition-duration: 180ms;
 .item-1 {
 
 background-color: #eeeeee;
-
-/*/*box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);*/*/
 
 text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
 
@@ -3393,8 +3386,7 @@ path.jvectormap-region.jvectormap-element:hover {
 }
 .empt_slide{
 
-margin-top:0 ! !important;
-
+margin-top:0 !important;
 }
 ul.nci li:hover {
     background-color: #07c776;
@@ -4015,13 +4007,6 @@ hr {
 .f_light img {
     height: 47px;
 }
-
-/* .gol_h {
-    line-height: 47px;
-    font-size: 38px;
-    /*margin: 0 0 0 20px;*/
-    margin: 0 0 0 0px;
-} */
 
 .chat img {
     width: 13px;

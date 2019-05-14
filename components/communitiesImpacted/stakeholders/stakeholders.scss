@@ -1,0 +1,33 @@
+.stakeholders-component {
+    .stakeholders-slider {
+        $color-green: #07C776;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .triangle-left,
+        .triangle-right {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            cursor: pointer;
+        }
+
+        .triangle-left {
+            border-width: 22.5px 20px 22.5px 0;
+            border-color: transparent $color-green transparent transparent;
+        }
+
+        .triangle-right {
+            border-width: 22.5px 0 22.5px 20px;
+            border-color: transparent transparent transparent $color-green;
+        }
+
+    }
+
+    .stakeholders-content {
+        .table {}
+    }
+}
