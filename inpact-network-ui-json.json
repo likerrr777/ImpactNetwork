@@ -1029,9 +1029,14 @@
             "dataset": [{
                 "name": "Projected",
                 "stakeholders": {
-                  "nameLabel": "Stakeholder Category",
-                  "numberLabel": "Number of Stakeholders",
-                  "totalValueLabel": "Total dollar value",
+                  "staticResources": {
+                    "nameLabel": "Stakeholder Category",
+                    "numberLabel": "Number of Stakeholders",
+                    "totalValueLabel": "Total dollar value",
+                    "dollarQuantifiablesTitle": "$ Quantifiables",
+                    "quantifiablesTitle": "Quantifiables",
+                    "nonQuantifiablesTitle": "Nob Quantifiables"
+                  },
                   "multiplier": "12",
                   "data": [{
                     "name": "Home based businesses benefitted by this project",

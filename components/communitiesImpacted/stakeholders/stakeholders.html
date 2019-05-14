@@ -4,21 +4,27 @@
         <span class="left-arrow"></span>
         <div class="slider-content">
             <div>
-                <span>{{$ctrl.stakeholders.nameLabel}} {{$ctrl.currentStakeholderIndex + 1}}</span>
+                <span>{{$ctrl.stakeholders.staticResources.nameLabel}} {{$ctrl.currentStakeholderIndex + 1}}</span>
                 <span> : </span>
-                <span>{{$ctrl.currentStakeholder.name}}</span>
+                <span>{{$ctrl.currentStakeholder.staticResources.name}}</span>
             </div>
             <div>
-                <span>{{$ctrl.stakeholders.numberLabel}}</span>
+                <span>{{$ctrl.stakeholders.staticResources.numberLabel}}</span>
                 <span> : </span>
                 <span>{{$ctrl.currentStakeholder.number}}</span>
             </div>
             <div>
-                <span>{{$ctrl.stakeholders.totalValueLabel}}</span>
+                <span>{{$ctrl.stakeholders.staticResources.totalValueLabel}}</span>
                 <span> : </span>
                 <span>${{$ctrl.totalDollarValue}}</span>
             </div>
         </div>
         <span class="right-arrow"></span>
+    </div>
+    <div class="stakeholders-content">
+        <div class="title">{{$ctrl.staticResources.dollarQuantifiablesTitle}}</div>
+        <div class="dollar-quantifiables-block">
+
+        </div>
     </div>
 </div>
