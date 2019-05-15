@@ -51,6 +51,7 @@ export default {
   templateUrl: "components/communitiesImpacted/stakeholders/stakeholders.html",
   controller: StakeholdersController,
   bindings: {
-    stakeholders: "<"
+    stakeholders: "<",
+    staticResources: "<"
   }
 };

@@ -4,17 +4,17 @@
         <div class="triangle-left" ng-click="$ctrl.slideStakeholder(false)"></div>
         <div class="slider-content">
             <div>
-                <span>{{$ctrl.stakeholders.staticResources.nameLabel}} {{$ctrl.currentStakeholderIndex + 1}}</span>
+                <span>{{$ctrl.staticResources.nameLabel}} {{$ctrl.currentStakeholderIndex + 1}}</span>
                 <span> : </span>
                 <span>{{$ctrl.currentStakeholder.name}}</span>
             </div>
             <div>
-                <span>{{$ctrl.stakeholders.staticResources.numberLabel}}</span>
+                <span>{{$ctrl.staticResources.numberLabel}}</span>
                 <span> : </span>
                 <span>{{$ctrl.currentStakeholder.number}}</span>
             </div>
             <div>
-                <span>{{$ctrl.stakeholders.staticResources.totalValueLabel}}</span>
+                <span>{{$ctrl.staticResources.totalValueLabel}}</span>
                 <span> : </span>
                 <span>${{$ctrl.totalDollarValue}}</span>
             </div>
@@ -22,7 +22,7 @@
         <div class="triangle-right" ng-click="$ctrl.slideStakeholder(true)"></div>
     </div>
     <div class="stakeholders-content">
-        <div class="title">{{$ctrl.stakeholders.staticResources.dollarQuantifiablesTitle}}</div>
+        <div class="title">{{$ctrl.staticResources.dollarQuantifiablesTitle}}</div>
         <div class="dollar-quantifiables-block">
             <table class="table">
                 <thead>
@@ -43,7 +43,7 @@
                         <td>
                             <div class="icon-wrapper" ng-class="quantifiable.isPositive ? 'positive': 'negative'">
                                 <img
-                                    ng-src="{{quantifiable.isPositive ? $ctrl.stakeholders.staticResources.arrowTopImage: $ctrl.stakeholders.staticResources.arrowBottomImage}}" />
+                                    ng-src="{{quantifiable.isPositive ? $ctrl.staticResources.dollarPositiveImage: $ctrl.staticResources.dollarNegativeImage}}" />
                             </div>
                         </td>
                         <td>{{$index + 1}}</td>
@@ -56,7 +56,7 @@
             </table>
         </div>
 
-        <div class="title">{{$ctrl.stakeholders.staticResources.quantifiablesTitle}}</div>
+        <div class="title">{{$ctrl.staticResources.quantifiablesTitle}}</div>
         <div class="quantifiables-block">
             <table class="table">
                 <thead>
@@ -72,7 +72,7 @@
                         <td>
                             <div class="icon-wrapper" ng-class="quantifiable.isPositive ? 'positive': 'negative'">
                                 <img
-                                    ng-src="{{quantifiable.isPositive ? $ctrl.stakeholders.staticResources.arrowTopImage: $ctrl.stakeholders.staticResources.arrowBottomImage}}" />
+                                    ng-src="{{quantifiable.isPositive ? $ctrl.staticResources.plusImage: $ctrl.staticResources.minusImage}}" />
                             </div>
                         </td>
                         <td>{{$index + 1}}</td>
@@ -83,7 +83,7 @@
             </table>
         </div>
 
-        <div class="title">{{$ctrl.stakeholders.staticResources.nonQuantifiablesTitle}}</div>
+        <div class="title">{{$ctrl.staticResources.nonQuantifiablesTitle}}</div>
         <div class="non-quantifiables-block">
             <table class="table">
                 <thead>
@@ -98,7 +98,7 @@
                         <td>
                             <div class="icon-wrapper" ng-class="quantifiable.isPositive ? 'positive': 'negative'">
                                 <img
-                                    ng-src="{{quantifiable.isPositive ? $ctrl.stakeholders.staticResources.arrowTopImage: $ctrl.stakeholders.staticResources.arrowBottomImage}}" />
+                                    ng-src="{{quantifiable.isPositive ? $ctrl.staticResources.arrowTopImage: $ctrl.staticResources.arrowBottomImage}}" />
                             </div>
                         </td>
                         <td>{{$index + 1}}</td>

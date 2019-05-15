@@ -5,7 +5,21 @@
     "growthImage": "img/growth.png",
     "excelImage": "img/excel.jpg",
     "graph": "img/graph.jpg",
-    "graph09": "img/graph09.jpg"
+    "graph09": "img/graph09.jpg",
+    "stakeholders": {
+      "nameLabel": "Stakeholder Category",
+      "numberLabel": "Number of Stakeholders",
+      "totalValueLabel": "Total dollar value",
+      "dollarQuantifiablesTitle": "$ Quantifiables",
+      "quantifiablesTitle": "Quantifiables",
+      "nonQuantifiablesTitle": "Nob Quantifiables",
+      "arrowTopImage": "img/arrow-top.png",
+      "arrowBottomImage": "img/arrow-bottom.png",
+      "dollarPositiveImage": "img/dollar-positive.png",
+      "dollarNegativeImage": "img/dollar-negative.png",
+      "plusImage": "img/plus.png",
+      "minusImage": "img/minus.png"
+    }
   },
   "HomepageSlider": {
     "Banner": [{
@@ -1029,16 +1043,6 @@
             "dataset": [{
                 "name": "Projected",
                 "stakeholders": {
-                  "staticResources": {
-                    "nameLabel": "Stakeholder Category",
-                    "numberLabel": "Number of Stakeholders",
-                    "totalValueLabel": "Total dollar value",
-                    "dollarQuantifiablesTitle": "$ Quantifiables",
-                    "quantifiablesTitle": "Quantifiables",
-                    "nonQuantifiablesTitle": "Nob Quantifiables",
-                    "arrowTopImage": "img/arrow-top.png",
-                    "arrowBottomImage": "img/arrow-bottom.png"
-                  },
                   "multiplier": "12",
                   "data": [{
                     "name": "Home based businesses benefitted by this project",
@@ -1167,16 +1171,6 @@
               {
                 "name": "Actual",
                 "stakeholders": {
-                  "staticResources": {
-                    "nameLabel": "Stakeholder Category",
-                    "numberLabel": "Number of Stakeholders",
-                    "totalValueLabel": "Total dollar value",
-                    "dollarQuantifiablesTitle": "$ Quantifiables",
-                    "quantifiablesTitle": "Quantifiables",
-                    "nonQuantifiablesTitle": "Nob Quantifiables",
-                    "arrowTopImage": "img/arrow-top.png",
-                    "arrowBottomImage": "img/arrow-bottom.png"
-                  },
                   "multiplier": "12",
                   "data": [{
                     "name": "Home based businesses benefitted by this project",
@@ -1278,16 +1272,6 @@
             "dataset": [{
                 "name": "Projected",
                 "stakeholders": {
-                  "staticResources": {
-                    "nameLabel": "Stakeholder Category",
-                    "numberLabel": "Number of Stakeholders",
-                    "totalValueLabel": "Total dollar value",
-                    "dollarQuantifiablesTitle": "$ Quantifiables",
-                    "quantifiablesTitle": "Quantifiables",
-                    "nonQuantifiablesTitle": "Nob Quantifiables",
-                    "arrowTopImage": "img/arrow-top.png",
-                    "arrowBottomImage": "img/arrow-bottom.png"
-                  },
                   "multiplier": "12",
                   "data": [{
                     "name": "Home based businesses benefitted by this project",
@@ -1416,16 +1400,6 @@
               {
                 "name": "Actual",
                 "stakeholders": {
-                  "staticResources": {
-                    "nameLabel": "Stakeholder Category",
-                    "numberLabel": "Number of Stakeholders",
-                    "totalValueLabel": "Total dollar value",
-                    "dollarQuantifiablesTitle": "$ Quantifiables",
-                    "quantifiablesTitle": "Quantifiables",
-                    "nonQuantifiablesTitle": "Nob Quantifiables",
-                    "arrowTopImage": "img/arrow-top.png",
-                    "arrowBottomImage": "img/arrow-bottom.png"
-                  },
                   "multiplier": "12",
                   "data": [{
                     "name": "Home based businesses benefitted by this project",
@@ -1558,16 +1532,6 @@
             "dataset": [{
               "name": "Projected",
               "stakeholders": {
-                "staticResources": {
-                  "nameLabel": "Stakeholder Category",
-                  "numberLabel": "Number of Stakeholders",
-                  "totalValueLabel": "Total dollar value",
-                  "dollarQuantifiablesTitle": "$ Quantifiables",
-                  "quantifiablesTitle": "Quantifiables",
-                  "nonQuantifiablesTitle": "Nob Quantifiables",
-                  "arrowTopImage": "img/arrow-top.png",
-                  "arrowBottomImage": "img/arrow-bottom.png"
-                },
                 "multiplier": "12",
                 "data": [{
                   "name": "Home based businesses benefitted by this project",
@@ -1745,16 +1709,6 @@
             "dataset": [{
                 "name": "Projected",
                 "stakeholders": {
-                  "staticResources": {
-                    "nameLabel": "Stakeholder Category",
-                    "numberLabel": "Number of Stakeholders",
-                    "totalValueLabel": "Total dollar value",
-                    "dollarQuantifiablesTitle": "$ Quantifiables",
-                    "quantifiablesTitle": "Quantifiables",
-                    "nonQuantifiablesTitle": "Nob Quantifiables",
-                    "arrowTopImage": "img/arrow-top.png",
-                    "arrowBottomImage": "img/arrow-bottom.png"
-                  },
                   "multiplier": "12",
                   "data": [{
                     "name": "Home based businesses benefitted by this project",
@@ -1883,16 +1837,6 @@
               {
                 "name": "Actual",
                 "stakeholders": {
-                  "staticResources": {
-                    "nameLabel": "Stakeholder Category",
-                    "numberLabel": "Number of Stakeholders",
-                    "totalValueLabel": "Total dollar value",
-                    "dollarQuantifiablesTitle": "$ Quantifiables",
-                    "quantifiablesTitle": "Quantifiables",
-                    "nonQuantifiablesTitle": "Nob Quantifiables",
-                    "arrowTopImage": "img/arrow-top.png",
-                    "arrowBottomImage": "img/arrow-bottom.png"
-                  },
                   "multiplier": "12",
                   "data": [{
                     "name": "Home based businesses benefitted by this project",
@@ -2025,16 +1969,6 @@
             "dataset": [{
               "name": "Projected",
               "stakeholders": {
-                "staticResources": {
-                  "nameLabel": "Stakeholder Category",
-                  "numberLabel": "Number of Stakeholders",
-                  "totalValueLabel": "Total dollar value",
-                  "dollarQuantifiablesTitle": "$ Quantifiables",
-                  "quantifiablesTitle": "Quantifiables",
-                  "nonQuantifiablesTitle": "Nob Quantifiables",
-                  "arrowTopImage": "img/arrow-top.png",
-                  "arrowBottomImage": "img/arrow-bottom.png"
-                },
                 "multiplier": "12",
                 "data": [{
                   "name": "Home based businesses benefitted by this project",
