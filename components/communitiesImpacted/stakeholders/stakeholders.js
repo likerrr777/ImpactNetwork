@@ -16,7 +16,7 @@ function StakeholdersController() {
         };
 
         function calculateDollarValue(quantifiable) {
-            return quantifiable.dollarValue * 12 * ctrl.currentStakeholder.number;
+            return quantifiable.dollarValue * ctrl.stakeholders.multiplier * ctrl.currentStakeholder.number;
         };
 
         function calculateTotalDollarValue(stakeholder) {
