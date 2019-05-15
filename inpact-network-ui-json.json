@@ -1202,17 +1202,6 @@
                         "description": "Source: ",
                         "descriptionLink": "http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
                       }
-                    },
-                    {
-                      "description": "Some negative impact description",
-                      "dollarValue": "2",
-                      "isPositive": false,
-                      "formula": {
-                        "link": "img/entertainment-formula.png",
-                        "linkText": "Click here",
-                        "description": "Source: ",
-                        "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
-                      }
                     }],
                     "quantifiables": [{
                       "description": "Some positive quantifiable",

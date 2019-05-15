@@ -1,40 +1,58 @@
-function StakeholdersController() {
-    this.$onInit = function () {
-        var ctrl = this;
-        ctrl.setCurrentStakeholder = setCurrentStakeholder;
-        ctrl.calculateDollarValue = calculateDollarValue;
-        ctrl.calculateTotalDollarValue = calculateTotalDollarValue;
-        ctrl.slideStakeholder = slideStakeholder;
+function StakeholdersController() {}
 
-        ctrl.sroiMultiplier = 1;
-        ctrl.setCurrentStakeholder(0);
+StakeholdersController.prototype.init = function() {
+  let ctrl = this;
+  ctrl.setCurrentStakeholder = setCurrentStakeholder;
+  ctrl.calculateDollarValue = calculateDollarValue;
+  ctrl.calculateTotalDollarValue = calculateTotalDollarValue;
+  ctrl.slideStakeholder = slideStakeholder;
 
-        function setCurrentStakeholder(index) {
-            ctrl.currentStakeholderIndex = index;
-            ctrl.currentStakeholder = ctrl.stakeholders.data[index];
-            ctrl.totalDollarValue = calculateTotalDollarValue(ctrl.currentStakeholder);
-        };
+  ctrl.sroiMultiplier = 1;
+  ctrl.setCurrentStakeholder(0);
 
-        function calculateDollarValue(quantifiable) {
-            return quantifiable.dollarValue * ctrl.stakeholders.multiplier * ctrl.currentStakeholder.number;
-        };
+  function setCurrentStakeholder(index) {
+    ctrl.currentStakeholderIndex = index;
+    ctrl.currentStakeholder = ctrl.stakeholders.data[index];
+    ctrl.totalDollarValue = calculateTotalDollarValue(ctrl.currentStakeholder);
+  }
 
-        function calculateTotalDollarValue(stakeholder) {
-            return stakeholder.dollarQuantifiables.reduce((accumulator, currentValue) =>
-                accumulator + (currentValue.isPositive ? calculateDollarValue(currentValue) : -calculateDollarValue(currentValue)), 0);
-        };
+  function calculateDollarValue(quantifiable) {
+    return (
+      quantifiable.dollarValue *
+      ctrl.stakeholders.multiplier *
+      ctrl.currentStakeholder.number
+    );
+  }
 
-        function slideStakeholder(isNext) {
-            let newIndex = (ctrl.stakeholders.data.length + ctrl.currentStakeholderIndex + (isNext ? 1 : -1)) % ctrl.stakeholders.data.length;
-            setCurrentStakeholder(newIndex);
-        };
-    };
-}
+  function calculateTotalDollarValue(stakeholder) {
+    return stakeholder.dollarQuantifiables.reduce(
+      (accumulator, currentValue) =>
+        accumulator +
+        (currentValue.isPositive
+          ? calculateDollarValue(currentValue)
+          : -calculateDollarValue(currentValue)),
+      0
+    );
+  }
+
+  function slideStakeholder(isNext) {
+    let newIndex =
+      (ctrl.stakeholders.data.length +
+        ctrl.currentStakeholderIndex +
+        (isNext ? 1 : -1)) %
+      ctrl.stakeholders.data.length;
+    setCurrentStakeholder(newIndex);
+  }
+};
+
+StakeholdersController.prototype.$onChanges = function(changesObj) {
+  this.init();
+};
 
 angular.module("MainApp").component("stakeholders", {
-    templateUrl: "components/communitiesImpacted/stakeholders/stakeholders.html",
-    controller: StakeholdersController,
-    bindings: {
-        stakeholders: "<"
-    }
+  templateUrl: "components/communitiesImpacted/stakeholders/stakeholders.html",
+  controller: StakeholdersController,
+  bindings: {
+    stakeholders: "<"
+  }
 });
