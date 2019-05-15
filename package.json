@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack --watch",
+    "build": "webpack --mode=production",
+    "start": "webpack --watch --mode=development",
     "server": "http-server",
     "dev": "concurrently --kill-others \"npm run start\" \"npm run server\""
   },
