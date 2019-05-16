@@ -1048,7 +1048,7 @@
                   "multiplier": "12",
                   "data": [{
                     "name": "Home based businesses benefitted by this project",
-                    "number": "25",
+                    "number": "4200",
                     "dollarQuantifiables": [{
                       "description": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
                       "dollarValue": "5",
@@ -1104,7 +1104,7 @@
                   },
                   {
                     "name": "Some other benefits",
-                    "number": "40",
+                    "number": "4000",
                     "dollarQuantifiables": [{
                       "description": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
                       "dollarValue": "5",
@@ -1129,6 +1129,19 @@
                     ]
                   }]
                 },
+                "investments": [{
+                  "name": "Total Capital Expenses",
+                  "value": "6000"
+                },
+                {
+                  "name": "Total Operating Expenses",
+                  "value": "111560"
+                },
+                {
+                  "name": "Total Education and Outreach Expenses",
+                  "value": "23000"
+                }
+              ],
                 "SocialReturns": [{
                     "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
                     "Value": "3000",
@@ -1176,7 +1189,7 @@
                   "multiplier": "12",
                   "data": [{
                     "name": "Home based businesses benefitted by this project",
-                    "number": "20",
+                    "number": "2000",
                     "dollarQuantifiables": [{
                       "description": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
                       "dollarValue": "5",
@@ -1221,7 +1234,7 @@
                   },
                   {
                     "name": "Some other benefits",
-                    "number": "40",
+                    "number": "4011",
                     "dollarQuantifiables": [{
                       "description": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
                       "dollarValue": "5",
@@ -1246,6 +1259,19 @@
                     ]
                   }]
                 },
+                "investments": [{
+                  "name": "Total Capital Expenses",
+                  "value": "5000"
+                },
+                {
+                  "name": "Total Operating Expenses",
+                  "value": "121560"
+                },
+                {
+                  "name": "Total Education and Outreach Expenses",
+                  "value": "22000"
+                }
+              ],
                 "SocialReturns": [{
                   "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
                   "Value": "1000",
@@ -1277,7 +1303,7 @@
                   "multiplier": "12",
                   "data": [{
                     "name": "Home based businesses benefitted by this project",
-                    "number": "15",
+                    "number": "1512",
                     "dollarQuantifiables": [{
                       "description": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
                       "dollarValue": "5",
@@ -1333,7 +1359,7 @@
                   },
                   {
                     "name": "Some other benefits",
-                    "number": "40",
+                    "number": "4065",
                     "dollarQuantifiables": [{
                       "description": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
                       "dollarValue": "5",
@@ -1358,6 +1384,19 @@
                     ]
                   }]
                 },
+                "investments": [{
+                  "name": "Total Capital Expenses",
+                  "value": "6200"
+                },
+                {
+                  "name": "Total Operating Expenses",
+                  "value": "151560"
+                },
+                {
+                  "name": "Total Education and Outreach Expenses",
+                  "value": "23300"
+                }
+              ],
                 "SocialReturns": [{
                     "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
                     "Value": "2500",
@@ -1405,7 +1444,7 @@
                   "multiplier": "12",
                   "data": [{
                     "name": "Home based businesses benefitted by this project",
-                    "number": "25",
+                    "number": "2785",
                     "dollarQuantifiables": [{
                       "description": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
                       "dollarValue": "5",
@@ -1461,7 +1500,7 @@
                   },
                   {
                     "name": "Some other benefits",
-                    "number": "40",
+                    "number": "4035",
                     "dollarQuantifiables": [{
                       "description": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
                       "dollarValue": "5",
@@ -1486,6 +1525,19 @@
                     ]
                   }]
                 },
+                "investments": [{
+                  "name": "Total Capital Expenses",
+                  "value": "6300"
+                },
+                {
+                  "name": "Total Operating Expenses",
+                  "value": "11560"
+                },
+                {
+                  "name": "Total Education and Outreach Expenses",
+                  "value": "24000"
+                }
+              ],
                 "SocialReturns": [{
                     "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
                     "Value": "1030",
@@ -1537,7 +1589,7 @@
                 "multiplier": "12",
                 "data": [{
                   "name": "Home based businesses benefitted by this project",
-                  "number": "25",
+                  "number": "2564",
                   "dollarQuantifiables": [{
                     "description": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
                     "dollarValue": "5",
@@ -1593,7 +1645,7 @@
                 },
                 {
                   "name": "Some other benefits",
-                  "number": "40",
+                  "number": "4670",
                   "dollarQuantifiables": [{
                     "description": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
                     "dollarValue": "5",
@@ -1618,6 +1670,19 @@
                   ]
                 }]
               },
+              "investments": [{
+                "name": "Total Capital Expenses",
+                "value": "7500"
+              },
+              {
+                "name": "Total Operating Expenses",
+                "value": "112560"
+              },
+              {
+                "name": "Total Education and Outreach Expenses",
+                "value": "21300"
+              }
+            ],
               "SocialReturns": [{
                   "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
                   "Value": "4000",
@@ -1714,7 +1779,7 @@
                   "multiplier": "12",
                   "data": [{
                     "name": "Home based businesses benefitted by this project",
-                    "number": "25",
+                    "number": "2564",
                     "dollarQuantifiables": [{
                       "description": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
                       "dollarValue": "4",
@@ -1770,7 +1835,7 @@
                   },
                   {
                     "name": "Some other benefits",
-                    "number": "30",
+                    "number": "3250",
                     "dollarQuantifiables": [{
                       "description": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
                       "dollarValue": "5",
@@ -1795,6 +1860,19 @@
                     ]
                   }]
                 },
+                "investments": [{
+                  "name": "Total Capital Expenses",
+                  "value": "1200"
+                },
+                {
+                  "name": "Total Operating Expenses",
+                  "value": "114560"
+                },
+                {
+                  "name": "Total Education and Outreach Expenses",
+                  "value": "15000"
+                }
+              ],
                 "SocialReturns": [{
                     "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
                     "Value": "2500",
@@ -1842,7 +1920,7 @@
                   "multiplier": "12",
                   "data": [{
                     "name": "Home based businesses benefitted by this project",
-                    "number": "25",
+                    "number": "2755",
                     "dollarQuantifiables": [{
                       "description": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
                       "dollarValue": "5",
@@ -1898,7 +1976,7 @@
                   },
                   {
                     "name": "Some other benefits",
-                    "number": "40",
+                    "number": "4065",
                     "dollarQuantifiables": [{
                       "description": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
                       "dollarValue": "5",
@@ -1923,6 +2001,19 @@
                     ]
                   }]
                 },
+                "investments": [{
+                  "name": "Total Capital Expenses",
+                  "value": "5530"
+                },
+                {
+                  "name": "Total Operating Expenses",
+                  "value": "112560"
+                },
+                {
+                  "name": "Total Education and Outreach Expenses",
+                  "value": "22200"
+                }
+              ],
                 "SocialReturns": [{
                     "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
                     "Value": "1030",
@@ -1974,7 +2065,7 @@
                 "multiplier": "12",
                 "data": [{
                   "name": "Home based businesses benefitted by this project",
-                  "number": "25",
+                  "number": "2575",
                   "dollarQuantifiables": [{
                     "description": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
                     "dollarValue": "5",
@@ -2030,7 +2121,7 @@
                 },
                 {
                   "name": "Some other benefits",
-                  "number": "40",
+                  "number": "4097",
                   "dollarQuantifiables": [{
                     "description": "Money  saved  on  communication  and  entertainment  ($  per  household  per  month,  assuming  30  hours  of  TV  watching  per  month)",
                     "dollarValue": "5",
@@ -2055,6 +2146,19 @@
                   ]
                 }]
               },
+              "investments": [{
+                "name": "Total Capital Expenses",
+                "value": "6770"
+              },
+              {
+                "name": "Total Operating Expenses",
+                "value": "177560"
+              },
+              {
+                "name": "Total Education and Outreach Expenses",
+                "value": "23700"
+              }
+            ],
               "SocialReturns": [{
                   "Output_Definition": "#of  Households  that  can  watch  TV,  listen  to  the  Radio,  and  charge  mobile  phones  using  cheaper  power",
                   "Value": "4000",
