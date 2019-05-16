@@ -4,64 +4,87 @@
   <div class="content">
     <div>
       <div class="col-sm-3 year-dropdown">
-        <select ng-model="$ctrl.selectedYear" ng-options="year.name for year in $ctrl.yearsData track by year.name"
-          ng-change="$ctrl.changeYear(selectedYear)"></select>
+        <select
+          ng-model="$ctrl.selectedYear"
+          ng-options="year.name for year in $ctrl.yearsData track by year.name"
+          ng-change="$ctrl.changeYear($ctrl.selectedYear)"
+        ></select>
       </div>
       <div class="col-sm-9 dataset-dropdown">
-        <select ng-model="$ctrl.selectedDataset"
+        <select
+          ng-model="$ctrl.selectedDataset"
           ng-options="dataset.name for dataset in $ctrl.selectedYear.dataset track by dataset.name"
-          ng-change="$ctrl.changeDataset(selectedDataset)"></select>
+          ng-change="$ctrl.changeDataset($ctrl.selectedDataset)"
+        ></select>
       </div>
     </div>
-    <div>
+    <div class="quantifiables-container">
       <div>
-          <div class="title">{{$ctrl.staticResources.dollarQuantifiablesTitle}}</div>
+        <div class="title">
+          {{ $ctrl.staticResources.dollarQuantifiablesTitle }}
+        </div>
+        <div class="quantifiables-content-wrapper">
           <div class="quantifiables-content">
-            <span class="value">{{sroiMultiplier}}</span>
-            <img ng-src="{{sroiMultiplier >= 1 ? $ctrl.staticResources.dollarPositiveImage: $ctrl.staticResources.dollarNegativeImage}}" />
+            <span class="value">{{ $ctrl.sroiMultiplier }}</span>
+            <div class="image-wrapper">
+              <img
+                ng-src="{{
+                  sroiMultiplier >= 1
+                    ? $ctrl.staticResources.dollarPositiveImage
+                    : $ctrl.staticResources.dollarNegativeImage
+                }}"
+              />
+            </div>
+            <div class="description">For every $1 invested, ${{ sroiMultiplier }} social benefits created</div>
           </div>
-          <div>For every $1 invested, ${{sroiMultiplier}} social benefits created</div>
+        </div>
       </div>
       <div>
-          <div class="title">{{$ctrl.staticResources.quantifiablesTitle}}</div>
-          <div class="quantifiables-content">
-            <div ng-if="$ctrl.positiveQuantifiablesNumber > 0">
-              <span>{{$ctrl.positiveQuantifiablesNumber}}</span>
-              <div>
-                  <img ng-src="{{$ctrl.staticResources.plusImage}}" />
-                  <span>+ve</span>
-              </div>
+        <div class="title">{{ $ctrl.staticResources.quantifiablesTitle }}</div>
+        <div class="quantifiables-content-wrapper">
+          <div  class="quantifiables-content" ng-if="$ctrl.positiveQuantifiablesNumber > 0">
+            <span class="value">{{ $ctrl.positiveQuantifiablesNumber }}</span>
+            <div class="image-wrapper">
+              <img ng-src="{{ $ctrl.staticResources.plusImage }}" />
+              <span class="image-description">+ve</span>
             </div>
-            <div ng-if="$ctrl.negativeQuantifiablesNumber > 0">
-                <span>{{$ctrl.negativeQuantifiablesNumber}}</span>
-                <div>
-                    <img ng-src="{{$ctrl.staticResources.minusImage}}" />
-                    <span>-ve</span>
-                </div>
-              </div>
           </div>
+          <div  class="quantifiables-content" ng-if="$ctrl.negativeQuantifiablesNumber > 0">
+            <span class="value">{{ $ctrl.negativeQuantifiablesNumber }}</span>
+            <div class="image-wrapper">
+              <img ng-src="{{ $ctrl.staticResources.minusImage }}" />
+              <span class="image-description">-ve</span>
+            </div>
+          </div>
+        </div>
       </div>
       <div>
-          <div class="title">{{$ctrl.staticResources.nonQuantifiablesTitle}}</div>
-          <div class="quantifiables-content">
-              <div ng-if="$ctrl.positiveNonQuantifiablesNumber > 0">
-                <span>{{$ctrl.positiveNonQuantifiablesNumber}}</span>
-                <div>
-                    <img ng-src="{{$ctrl.staticResources.arrowTopImage}}" />
-                    <span>+ve</span>
-                </div>
-              </div>
-              <div ng-if="$ctrl.negativeNonQuantifiablesNumber > 0">
-                  <span>{{$ctrl.negativeNonQuantifiablesNumber}}</span>
-                  <div>
-                      <img ng-src="{{$ctrl.staticResources.arrowBottomImage}}" />
-                      <span>-ve</span>
-                  </div>
-                </div>
+        <div class="title">
+          {{ $ctrl.staticResources.nonQuantifiablesTitle }}
+        </div>
+        <div class="quantifiables-content-wrapper">
+          <div  class="quantifiables-content" ng-if="$ctrl.positiveNonQuantifiablesNumber > 0">
+            <span class="value">{{
+              $ctrl.positiveNonQuantifiablesNumber
+            }}</span>
+            <div class="image-wrapper">
+              <img ng-src="{{ $ctrl.staticResources.arrowTopImage }}" />
+              <span class="image-description">+ve</span>
             </div>
+          </div>
+          <div class="quantifiables-content" ng-if="$ctrl.negativeNonQuantifiablesNumber > 0">
+            <span class="value">{{
+              $ctrl.negativeNonQuantifiablesNumber
+            }}</span>
+            <div class="image-wrapper">
+              <img ng-src="{{ $ctrl.staticResources.arrowBottomImage }}" />
+              <span class="image-description">-ve</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div>
+    <div class="highlighted-text">
       VIEW IMPACT
     </div>
   </div>

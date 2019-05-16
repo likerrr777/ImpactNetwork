@@ -2879,3 +2879,59 @@ span.functForm.popover__wrapper2 {
   .stakeholders-component .stakeholders-slider .triangle-right {
     border-width: 22.5px 0 22.5px 20px;
     border-color: transparent transparent transparent #07C776; }
+.social-impact-component .content .year-dropdown,
+.social-impact-component .content .dataset-dropdown {
+  height: 35px;
+  text-align: center; }
+
+.social-impact-component .content .dataset-dropdown {
+  background-color: #07c776; }
+
+.social-impact-component .content .year-dropdown {
+  background-color: #049443; }
+
+.social-impact-component .content select {
+  height: 100%;
+  background-color: inherit;
+  font-size: 16px;
+  color: white;
+  border: none; }
+
+.social-impact-component .content .image-description {
+  display: block;
+  text-align: center;
+  font-size: 12px; }
+
+.social-impact-component .content .value {
+  font-size: 22px; }
+
+.social-impact-component .quantifiables-container {
+  display: flex;
+  width: 100%; }
+  .social-impact-component .quantifiables-container > * {
+    flex-grow: 1;
+    flex-basis: 0; }
+  .social-impact-component .quantifiables-container .title {
+    text-align: center; }
+
+.social-impact-component .quantifiables-content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  text-align: center; }
+  .social-impact-component .quantifiables-content-wrapper .quantifiables-content {
+    display: inline-block; }
+    .social-impact-component .quantifiables-content-wrapper .quantifiables-content .value, .social-impact-component .quantifiables-content-wrapper .quantifiables-content .image-wrapper {
+      display: inline-block; }
+    .social-impact-component .quantifiables-content-wrapper .quantifiables-content .value {
+      margin-right: 8px;
+      line-height: 58px;
+      vertical-align: top; }
+    .social-impact-component .quantifiables-content-wrapper .quantifiables-content .description {
+      font-size: 12px; }
+
+.social-impact-component .highlighted-text {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  background-color: #07c776;
+  padding: 5px 0; }

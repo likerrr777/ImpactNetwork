@@ -1200,7 +1200,7 @@
                     "quantifiables": [{
                       "description": "Some positive quantifiable",
                       "value": "5",
-                      "isPositive": true
+                      "isPositive": false
                     }],
                     "nonQuantifiables": [
                       {

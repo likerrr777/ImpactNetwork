@@ -1,3 +1,81 @@
 .social-impact-component {
-    
+  $color-green: #07c776;
+  $color-green-black: #049443;
+
+  .content {
+    .year-dropdown,
+    .dataset-dropdown {
+      height: 35px;
+      text-align: center;
+    }
+
+    .dataset-dropdown {
+        background-color: $color-green;
+    }
+
+    .year-dropdown {
+        background-color: $color-green-black;
+    }
+
+    select {
+      height: 100%;
+      background-color: inherit;
+      font-size: 16px;
+      color: white;
+      border: none;
+    }
+    .image-description {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+    }
+    .value {
+        font-size: 22px;
+    }
+  }
+
+  .quantifiables-container {
+    display: flex;
+    width: 100%;
+
+    & > * {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+
+    .title {
+      text-align: center;
+    }
+  }
+
+  .quantifiables-content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    .quantifiables-content {
+      display: inline-block;
+
+      .value, .image-wrapper {
+        display: inline-block;
+      }
+
+      .value {
+          margin-right: 8px;
+          line-height: 58px;
+          vertical-align: top;
+      }
+      .description {
+          font-size: 12px;
+      }
+    }
+  }
+
+  .highlighted-text {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    background-color: $color-green;
+    padding: 5px 0;
+  }
 }
