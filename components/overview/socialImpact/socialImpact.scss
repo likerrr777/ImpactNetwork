@@ -1,0 +1,123 @@
+@import '../../shared/shared.scss';
+
+.social-impact-component {
+  background-color: white;
+  padding: 15px 20px;
+
+  .main-title {
+    font-size: 20px;
+    color: $color-green;
+  }
+
+  .underscore {
+    width: 45px;
+    height: 6px;
+    background-color: $color-green;
+    border-radius: 3px;
+    margin: 15px 0 20px 0;
+  }
+
+  .highlighted-text {
+    cursor: pointer;
+  }
+
+  .content {
+    .year-dropdown,
+    .dataset-dropdown {
+      height: 50px;
+      text-align: center;
+    }
+
+    .dataset-dropdown {
+      background-color: $color-green;
+    }
+
+    .year-dropdown {
+      background-color: $color-green-black;
+    }
+
+    select {
+      height: 100%;
+      background-color: inherit;
+      font-size: 22px;
+      color: white;
+      border: none;
+    }
+    .image-description {
+      display: block;
+      text-align: center;
+      font-size: 12px;
+      padding-top: 7px;
+    }
+    .value {
+      font-size: 42px;
+    }
+  }
+
+  .quantifiables-container {
+    display: flex;
+    width: 100%;
+
+    & > * {
+      flex-grow: 1;
+      flex-basis: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+
+      &:first-child {
+        .quantifiables-content-wrapper {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+      }
+      &:nth-child(2) {
+        margin: 0 3px;
+      }
+    }
+
+    .title {
+      text-align: center;
+      background-color: #e9f1f2;
+      height: 50px;
+      line-height: 50px;
+      font-size: 18px;
+    }
+  }
+
+  .quantifiables-content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 37px 0 31px;
+    height: 100%;
+
+    .quantifiables-content {
+      display: inline-block;
+      min-width: fit-content;
+
+      .value,
+      .image-wrapper {
+        display: inline-block;
+      }
+
+      .image-wrapper {
+        img {
+          width: 74px;
+        }
+      }
+
+      .value {
+        margin-right: 8px;
+        line-height: 70px;
+        vertical-align: top;
+      }
+      .description {
+        font-size: 14px;
+        padding-top: 20px;
+        text-align: left;
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 {
   "sharedResources": {
+    "faviconImg": "../img/favicon.png",
     "blogImage": "../img/blogging.png",
     "growthImage": "../img/growth.png",
     "excelImage": "../img/excel.jpg",
@@ -118,7 +119,13 @@
           "Project_Name": "Promote  sustained,  inclusive  and  sustainable  economic  growth,  full  and  productive  employment  and  decent  work  for  all",
           "Project_Icon": "../img/yellow_icons/8.png",
           "Project_Insight": "290",
-          "isSupported": true
+          "isSupported": true,
+          "goalItems":[
+            "Third to be here more item and  text to be replaced Just text to be replaced ",
+            "Powering Bahia expects to electrify 10,000 households, using a combinatio",
+            "Power for pumping, refrigeration,entertainment, communication, and electrical devices",
+            "Powering Bahia expects to electrify 10,000 households, using a combinatio"
+          ]
         },
         {
           "Project_Primary_key": 9,
@@ -137,7 +144,13 @@
           "Project_Name": "Make  cities  and  human  settlements  inclusive,  resilient  and  sustainable for all",
           "Project_Icon": "../img/yellow_icons/11.png",
           "Project_Insight": "280",
-          "isSupported": true
+          "isSupported": true,
+          "goalItems":[
+            "Third to be here more item and  text to be replaced Just text to be replaced ",
+            "Powering Bahia expects to electrify 10,000 households, using a combinatio",
+            "Power for pumping, refrigeration,entertainment, communication, and electrical devices",
+            "Powering Bahia expects to electrify 10,000 households, using a combinatio"
+          ]
         },
         {
           "Project_Primary_key": 12,
@@ -798,9 +811,9 @@
       ]
     }
   },
-  "Communities_And_Impact": {
-    "Community_Insights": "12",
-    "List_of_Communities": [{
+  "CommunitiesImpactedPage": {
+    "CommunityInsights": "12",
+    "Communities": [{
       "Community": {
         "Community_Basic_Info": [{
           "CountryName": "Thailand",
@@ -848,7 +861,7 @@
         }]
       }
     }],
-    "Investment_Bottom_Block": {
+    "Investments": {
       "Listing": [{
           "Label": "Product Development",
           "Value": "400000"
@@ -863,10 +876,10 @@
         }
       ]
     },
-    "Social_Returns_Bottom_Block": [{
+    "SocialReturns": [{
         "Output_Definition": "# of Jobs matched",
         "Value": "100000",
-        "Measurable_Outcomes": {
+        "MeasurableOutcomes": {
           "Listing": [{
             "Outcome_Definition": "Average # of hours saved by the customer because of the matched job",
             "Value": "3",
@@ -879,12 +892,12 @@
 
           }]
         },
-        "Shown_by_default": "TRUE"
+        "Shown_by_default": true
       },
       {
         "Output_Definition": "# of workers served",
         "Value": "10000",
-        "Measurable_Outcomes": {
+        "MeasurableOutcomes": {
           "Listing": [{
             "Outcome_Definition": "Average # of jobs perfromed by each worker",
             "Value": "100",
@@ -896,7 +909,7 @@
 
           }]
         },
-        "Shown_by_default": "TRUE"
+        "Shown_by_default": true
       }
     ],
     "Impact_Reports": {

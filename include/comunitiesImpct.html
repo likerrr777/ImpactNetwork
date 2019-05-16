@@ -4,8 +4,9 @@
       <div class="col-md-12">
         <div class="ttl_header bdr">
           <div class="pull-right">
-            <p><span class="chat"><img ng-src="{{projectData.sharedResources.blogImage}}" class="cc_icons"></span> | <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i>
-                {{Community_Insights}} Insights</span></p>
+            <p><span class="chat"><img ng-src="{{projectData.sharedResources.blogImage}}" class="cc_icons"></span> |
+              <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i>
+                {{CommunityInsights}} Insights</span></p>
           </div>
           <h4 class="content_title">Communities Impacted</h4>
           <div class="border_btottom2"></div>
@@ -27,7 +28,7 @@
           </div>
           <div class="pro_pdng">
             <h4 class="contyAtt">Community Profile</h4>
-            <div class="col-md-12 core" ng-repeat="Clistitem in country_ListofItems track by $index">
+            <div class="col-md-12 core" ng-repeat="Clistitem in countryItemsList track by $index">
               <p>
                 <div class="row">
                   <div class="col-md-8">{{Clistitem.Title}}</div>
@@ -60,20 +61,53 @@
 </section>
 <section class="progress_bar">
   <div class="row">
+    <div class="dropdowns-wrapper">
+      <select class="year-dropdown" ng-model="selectedYear" ng-options="year.name for year in community.years track by year.name" ng-change="onYearChange(selectedYear)"></select>
+      <select class="dataset-dropdown" ng-model="selectedDataset" ng-options="dataset.name for dataset in selectedYear.dataset track by dataset.name" ng-change="updateSocialReturnSection(selectedDataset)"></select>
+    </div>
     <div class="col-sm-12">
       <div class="s_r_o2">
-        Social Return On Investment (SROI) = {{ (dototal1 / intotal).toFixed(2) }}
+        Social Return On Investment (SROI) = {{ (socialReturnValue / intotal).toFixed(2) }}
       </div>
     </div>
-    <div class="col-md-6 mrgin_l_r1">
+    
+    <div class="col-md-6">
+      <div class="core">
+        <div class="map_head core asc">
+          <h4>Social Return</h4>
+        </div>
+        <!-- <img src="img/progress.jpg" class="maps" width="100%" alt="map"> -->
+        <div id="socialReturnContainer">Coutry render here</div>
+        <div class="pro_pdng">
+          <div class="progress_div3 core" ng-repeat="MeasurableOutcomes in social_chart_arr track by $index">
+
+            <p><span>{{MeasurableOutcomes.Outcome_Definition}}</span> <span class="pull-right" id="sper_{{$index}}">{{((MeasurableOutcomes.pers)*100/socialReturnValue).toFixed(0)}}%</span>
+            </p>
+            <div class="progress ht">
+              <div id="sperprogress_{{$index}}" class="progress-bar progress-bar-success" role="progressbar"
+                aria-valuenow="{{((MeasurableOutcomes.pers)*100/socialReturnValue).toFixed(0)}}" aria-valuemin="0"
+                aria-valuemax="100" style="width: {{((MeasurableOutcomes.pers)*100/socialReturnValue).toFixed(0)}}%;background-color:{{social_color[$index].color}}">
+                <span class="sr-only">{{((MeasurableOutcomes.pers)*100/socialReturnValue).toFixed(0)}}% Complete
+                  (success)</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="sroi">
+          <p class="t_return">SROI: Total Investment/Total Return</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
       <div class="core">
         <div class="map_head core asc">
           <h4>Investment</h4>
         </div>
         <!-- <img src="img/progress.jpg" class="maps" width="100%" alt="map"> -->
-        <div id="investment_container">Coutry render here</div>
+        <div id="investmentContainer">Coutry render here</div>
         <div class="pro_pdng">
-          <div class="progress_div3 core" ng-repeat="Invstblock in Investment_Bottom_Block track by $index">
+          <div class="progress_div3 core" ng-repeat="Invstblock in Investments track by $index">
             <p><span>{{Invstblock.Label}}</span> <span class="pull-right" id="per_{{$index}}">{{((Invstblock.Value)*100/intotal).toFixed(0)}}%</span>
             </p>
             <div class="progress ht">
@@ -89,50 +123,23 @@
         </div>
       </div>
     </div>
-    <!--//col-md-6-->
-
-    <div class="col-md-6 mrgin_l_r2">
-      <div class="core">
-        <div class="map_head core asc">
-          <h4>Social Return</h4>
-        </div>
-        <!-- <img src="img/progress.jpg" class="maps" width="100%" alt="map"> -->
-        <div id="socialinvst_container">Coutry render here</div>
-        <div class="pro_pdng">
-          <div class="progress_div3 core" ng-repeat="Measurable_Outcomes in social_chart_arr track by $index">
-
-            <p><span>{{Measurable_Outcomes.Outcome_Definition}}</span> <span class="pull-right" id="sper_{{$index}}">{{((Measurable_Outcomes.pers)*100/dototal1).toFixed(0)}}%</span>
-            </p>
-            <div class="progress ht">
-              <div id="sperprogress_{{$index}}" class="progress-bar progress-bar-success" role="progressbar"
-                aria-valuenow="{{((Measurable_Outcomes.pers)*100/dototal1).toFixed(0)}}" aria-valuemin="0"
-                aria-valuemax="100" style="width: {{((Measurable_Outcomes.pers)*100/dototal1).toFixed(0)}}%;background-color:{{social_color[$index].color}}">
-                <span class="sr-only">{{((Measurable_Outcomes.pers)*100/dototal1).toFixed(0)}}% Complete (success)</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="sroi">
-          <p class="t_return">SROI: Total Investment/Total Return</p>
-        </div>
-      </div>
-    </div>
-    <!--//col-md-6-->
   </div>
   <!--///row-->
 </section>
-
+<div class="s_r_o2">
+    Social Return On Investment (SROI) = {{ (socialReturnValue / intotal).toFixed(2) }}
+</div>
+<stakeholders stakeholders="selectedDataset.stakeholders" static-resources="projectData.sharedResources.stakeholders"></stakeholders>
 <section class="as_sec" style="margin-top: 10px;">
   <div class="table_tab_a" style="border: 1px solid #dedede;">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
           <ul class="nav nav-tabs table_tabs7" id="myTabs" role="tablist">
-            <li role="presentation"><a href="#investment" id="home-tab" role="tab" data-toggle="tab" aria-controls="home"
+            <li role="presentation" class="active"><a href="#investment" id="home-tab" role="tab" data-toggle="tab" aria-controls="home"
                 aria-expanded="true">Investment (${{intotal}})</a></li>
-            <li role="presentation" class="active"><a href="#social_return" role="tab" id="profile-tab" data-toggle="tab"
-                aria-controls="profile">Social Return (${{dototal1}}) </a></li>
+            <li role="presentation" style="display: none;"><a href="#social_return" role="tab" id="profile-tab" data-toggle="tab"
+                aria-controls="profile">Social Return (${{socialReturnValue}}) </a></li>
           </ul>
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade" role="tabpanel" id="investment" aria-labelledby="home-tab">
@@ -140,14 +147,15 @@
                 <div class="row" style="border-bottom: 1px solid #ccc;">
                   <div class="col-md-12 elements-color" id="auto_height1" style="border-right: 1px solid #ccc;  padding-left: 0px; padding-right: 0px;">
                     <ul class="list-style">
-                      <li ng-repeat="invest in Investment.Listing track by $index">
+                      <li ng-repeat="invest in Investments track by $index">
                         <span class="tcl_b ng-binding" style="float: right;">
                           <input type="text" ng-model="invest.Value" class="c_val" ng-blur="invests(invest.Value,$index)">
                         </span>
                         <span class="tcl_b ng-binding">{{invest.Label}}</span>
                       </li>
                     </ul>
-                    <a href="#" ng-click="abc()" class="plus2" style="margin-left: 5px; line-height: 3;">+ Add</a>
+                    <a href="#" ng-click="showInvestmentModal()" class="plus2" style="margin-left: 5px; line-height: 3;">+
+                      Add</a>
                   </div>
 
                 </div>
@@ -181,49 +189,46 @@
                   </div>
                 </div>
                 <div class="row" style="border-bottom: 1px solid #ccc;">
-                  <div ng-repeat="social in Social_Returns_Bottom_Block" ng-if="social.Shown_by_default=='TRUE'"
-                    ng-init="idx = $index;" style="display: flex;border-bottom: 1px #9E9E9E solid;">
+                  <div ng-repeat="social in SocialReturns" ng-if="social.Shown_by_default" ng-init="idx = $index;"
+                    style="display: flex;border-bottom: 1px #9E9E9E solid;">
                     <div class="col-md-4i" style="padding-left: 0px; padding-right: 0px;">
                       <ul class="list-style fxd_w">
                         <li>
-                          <div class="khs"><input type="text" ng-model="Social_Returns_Bottom_Block[idx].Value" ng-blur="dototal();getSelReturn();"
+                          <div class="khs"><input type="text" ng-model="SocialReturns[idx].Value" ng-blur="calculateSocialReturnValue();getSelReturn();"
                               class="c_val"></div>
-                          <span class="abc">{{social.Output_Definition}}</span>
+                          <span class="showInvestmentModal">{{social.Output_Definition}}</span>
                         </li>
-
                       </ul>
                     </div>
 
                     <div class="col-md-4i" style="padding-left: 0px; padding-right: 0px; border-left: 1px solid #ccc; border-right: 1px solid #ccc;">
                       <ul class="list-style fxd_w">
-                        <li ng-repeat="Measurable_Outcomes in social.Measurable_Outcomes.Listing track by $index">{{Measurable_Outcomes.Impact_formula|json}}
-                          <div class="khs"><input type="text" ng-init="" ng-model="Measurable_Outcomes.Value" ng-blur="updatetotal(Measurable_Outcomes.Value,$index)"
+                        <li ng-repeat="MeasurableOutcomes in social.MeasurableOutcomes track by $index">{{MeasurableOutcomes.Impact_formula|json}}
+                          <div class="khs"><input type="text" ng-init="" ng-model="MeasurableOutcomes.Value" ng-blur="updatetotal(MeasurableOutcomes.Value,$index)"
                               class="c_val"></div>
-                          <span class="cvbs">{{Measurable_Outcomes.Outcome_Definition}}</span>
+                          <span class="cvbs">{{MeasurableOutcomes.Outcome_Definition}}</span>
                         </li>
-
                       </ul>
                     </div>
                     <div class="col-md-3" style="padding-left: 0px; padding-right: 0px;">
                       <ul class="list-style fxd_w" style="height:100%">
-                        <li ng-repeat="Measurable_Outcomes in social.Measurable_Outcomes.Listing track by $index" style="height:{{100/social.Measurable_Outcomes.Listing.length}}%">
+                        <li ng-repeat="MeasurableOutcomes in social.MeasurableOutcomes track by $index" style="height:{{100/social.MeasurableOutcomes.length}}%">
                           <span ng-click="showformaula(idx,$index)" class="functForm popover__wrapper2">Impact Formula</span>
-                          <div class="push popover__content2" ng-if="impact_fg[idx][$index] && Measurable_Outcomes.Impact_calculation_formula.description != ''">
+                          <div class="push popover__content2" ng-if="impact_fg[idx][$index] && MeasurableOutcomes.Impact_calculation_formula.description != ''">
                             <p class="" ng-click="closeformula(idx,$index)" style="float: right; margin-top: -8px;cursor: pointer;">x</p>
                             <p class="popover__message2">
                               <div class="sh_re">
-                                <img ng-if="Measurable_Outcomes.Impact_calculation_formula.link" ng-src="{{Measurable_Outcomes.Impact_calculation_formula.link}}"
+                                <img ng-if="MeasurableOutcomes.Impact_calculation_formula.link" ng-src="{{MeasurableOutcomes.Impact_calculation_formula.link}}"
                                   class="img-rounded" style="width: 100%;  height: auto;">
                               </div>
-                              <span>{{Measurable_Outcomes.Impact_calculation_formula.description}}</span>
-                              <a ng-if="Measurable_Outcomes.Impact_calculation_formula.descriptionLink" href="{{Measurable_Outcomes.Impact_calculation_formula.descriptionLink}}" target="_blank">{{Measurable_Outcomes.Impact_calculation_formula.descriptionLink}}</a>
+                              <span>{{MeasurableOutcomes.Impact_calculation_formula.description}}</span>
+                              <a ng-if="MeasurableOutcomes.Impact_calculation_formula.descriptionLink" href="{{MeasurableOutcomes.Impact_calculation_formula.descriptionLink}}"
+                                target="_blank">{{MeasurableOutcomes.Impact_calculation_formula.descriptionLink}}</a>
                             </p>
                           </div>
-                          <span class="pull-right tcl_a ll">{{Measurable_Outcomes.Value*social.Value*measure_clc[idx].mul}}
+                          <span class="pull-right tcl_a ll">{{MeasurableOutcomes.Value*social.Value*social.measurable_clc.mul}}
                           </span>
-
                         </li>
-
                       </ul>
                     </div>
                   </div>
@@ -234,7 +239,7 @@
                   <div class="col-md-3 elements-color" style="border-left: 1px solid #ccc;">
                     <div class="total-amounts">
                       <span>Total</span>
-                      <span class="pull-right">${{dototal1 }}</span>
+                      <span class="pull-right">${{socialReturnValue }}</span>
                     </div>
                   </div>
                 </div>
@@ -254,8 +259,9 @@
       <div class="col-md-12">
         <div class="ttl_header bdr">
           <div class="pull-right">
-            <p><span class="chat"><img ng-src="{{projectData.sharedResources.blogImage}}" class="cc_icons"></span> | <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i>
-                {{Community_Insights}} Insights</span></p>
+            <p><span class="chat"><img ng-src="{{projectData.sharedResources.blogImage}}" class="cc_icons"></span> |
+              <span class="light"> <i class="fa fa-lightbulb-o fa-lg2"></i>
+                {{CommunityInsights}} Insights</span></p>
           </div>
           <h4 class="content_title">Impact Report</h4>
           <div class="border_btottom2"></div>
@@ -284,11 +290,10 @@
       </div>
       <div class="modal-body">
         <ul class="li_popup">
-          <li ng-repeat="social in Social_Returns_Bottom_Block track by $index" ng-if="social.Shown_by_default=='FALSE'">
+          <li ng-repeat="social in SocialReturns track by $index" ng-if="!social.Shown_by_default">
             <input type="checkbox" name="socialExtra" value="{{$index}}"> <span class="pad_left">{{social.Output_Definition}}
             </span> </li>
         </ul>
-
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" ng-click="getSelReturn()">Add</button>
@@ -296,7 +301,6 @@
     </div>
   </div>
 </div>
-
 
 <div class="modal fade" id="investmentModal" role="dialog">
   <div class="modal-dialog modal-sm">

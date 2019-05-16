@@ -1,9 +1,9 @@
-function aa(ttlinvestment, investmentChart) {
+function initInvestmentFusionChart(ttlinvestment, investmentChart) {
     var interval = setInterval(function () {
-        if (document.querySelector('#investment_container')) {
+        if (document.querySelector('#investmentContainer')) {
             revenueChart1 = new FusionCharts({
                 type: 'doughnut2d',
-                renderAt: 'investment_container',
+                renderAt: 'investmentContainer',
                 width: '350',
                 height: '300',
                 dataFormat: 'json',
@@ -39,12 +39,12 @@ function aa(ttlinvestment, investmentChart) {
     }, 10);
 }
 
-function socialinvstFusionCharts(ttlsocialinvestment, socialinvst_container) {
+function InitSocialReturnFusionChart(ttlsocialinvestment, socialReturnContainer) {
     var interval = setInterval(function () {
-        if (document.querySelector('#socialinvst_container')) {
+        if (document.querySelector('#socialReturnContainer')) {
             var revenueChart = new FusionCharts({
                 type: 'doughnut2d',
-                renderAt: 'socialinvst_container',
+                renderAt: 'socialReturnContainer',
                 width: '350',
                 height: '300',
                 dataFormat: 'json',
@@ -69,7 +69,7 @@ function socialinvstFusionCharts(ttlsocialinvestment, socialinvst_container) {
                         "legendShadow": "0",
                         "legendBorderAlpha": "0",
                     },
-                    "data": socialinvst_container
+                    "data": socialReturnContainer
                 }
             }).render();
 
@@ -84,11 +84,11 @@ function communitiesImpacted() {
     var scope = angular.element(document.querySelector('[ng-controller="MainCtrl"]')).scope();
     var investmentChart = scope.investmentChart;
     var countrylist_new = scope.countrylist_new;
-    var socialinvst_container = scope.socialinvst_container;
+    var socialReturnContainer = scope.socialReturnContainer;
     var ttlinvestment = scope.ttlinvestment;
-    var ttlsocialinvestment = scope.dototal1;
-    aa(ttlinvestment, investmentChart);
-    socialinvstFusionCharts(ttlsocialinvestment, socialinvst_container);
+    var ttlsocialinvestment = scope.socialReturnValue;
+    initInvestmentFusionChart(ttlinvestment, investmentChart);
+    InitSocialReturnFusionChart(ttlsocialinvestment, socialReturnContainer);
 
     $(function () {
         $('[href="#communitiesImctd"]').click(function () {
@@ -134,27 +134,6 @@ function communitiesImpacted() {
                     },
                     zoomFactor: 1000,
                     onRegionClick: function (e, code) {
-                        // var map = $('#map1').vectorMap('get', 'mapObject');
-                        // var name = map.getRegionName(code);    
-                        // var nn = countrylist_new.filter(function (person) { return person.name == name });
-
-                        // if(nn.length > 0){
-                        //   $.each($('.jvectormap-container svg g').eq(0).children('path'),function(k,d1){       
-                        //       if($(this).attr('data-code')==code){                  
-                        //        // $(this).css('fill','#07c776');                    
-                        //       }else{
-                        //       //  $(this).css('fill','#ccc');
-                        //       }
-                        //   });
-                        // }       
-
-                        //       scope.selectCountry = name;
-                        //       //scope.country_ListofItems = [];
-                        //       scope.$apply(function(){
-                        //       scope.updatecountryinfo(name);
-
-                        //  });
-
                     },
                     onMarkerClick: function (e, code) {
 
@@ -178,7 +157,7 @@ function communitiesImpacted() {
                         }
                         scope.selectCountry = name;
                         scope.$apply(function () {
-                            scope.updatecountryinfo(name);
+                            scope.changeCountry(name);
 
                         });
                     },
