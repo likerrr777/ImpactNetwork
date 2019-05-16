@@ -1,56 +1,59 @@
 import "./stakeholders.scss";
 
 class StakeholdersController {
-  init() {
-    this.setCurrentStakeholder(0);
-  }
+    init() {
+        if(!this.stakeholders) return;
+        
+        this.setCurrentStakeholder(0);
+    }
 
-  slideStakeholder(isNext) {
-    let newIndex =
-      (this.stakeholders.data.length +
-        this.currentStakeholderIndex +
-        (isNext ? 1 : -1)) %
-      this.stakeholders.data.length;
-    this.setCurrentStakeholder(newIndex);
-  }
+    slideStakeholder(isNext) {
+        let newIndex =
+            (this.stakeholders.data.length +
+                this.currentStakeholderIndex +
+                (isNext ? 1 : -1)) %
+            this.stakeholders.data.length;
+        this.setCurrentStakeholder(newIndex);
+    }
 
-  setCurrentStakeholder(index) {
-    this.currentStakeholderIndex = index;
-    this.currentStakeholder = this.stakeholders.data[index];
-    this.totalDollarValue = this.calculateTotalDollarValue(
-      this.currentStakeholder
-    );
-  }
+    setCurrentStakeholder(index) {
+        this.currentStakeholderIndex = index;
+        this.currentStakeholder = this.stakeholders.data[index];
+        this.totalDollarValue = this.calculateTotalDollarValue(
+            this.currentStakeholder
+        );
+    }
 
-  calculateDollarValue(quantifiable) {
-    return (
-      quantifiable.dollarValue *
-      this.stakeholders.multiplier *
-      this.currentStakeholder.number
-    );
-  }
+    calculateDollarValue(quantifiable, stakeholder) {
+        stakeholder = stakeholder || this.currentStakeholder;
+        return (
+            quantifiable.dollarValue *
+            this.stakeholders.multiplier *
+            stakeholder.number
+        );
+    }
 
-  calculateTotalDollarValue(stakeholder) {
-    return stakeholder.dollarQuantifiables.reduce(
-      (accumulator, currentValue) =>
-        accumulator +
-        (currentValue.isPositive
-          ? this.calculateDollarValue(currentValue)
-          : -this.calculateDollarValue(currentValue)),
-      0
-    );
-  }
+    calculateTotalDollarValue(stakeholder) {
+        return stakeholder.dollarQuantifiables.reduce(
+            (accumulator, currentValue) =>
+                accumulator +
+                (currentValue.isPositive
+                    ? this.calculateDollarValue(currentValue, stakeholder)
+                    : -this.calculateDollarValue(currentValue, stakeholder)),
+            0
+        );
+    }
 
-  $onChanges(changesObj) {
-    this.init();
-  }
+    $onChanges(changesObj) {
+        this.init();
+    }
 }
 
 export default {
-  templateUrl: "components/communitiesImpacted/stakeholders/stakeholders.html",
-  controller: StakeholdersController,
-  bindings: {
-    stakeholders: "<",
-    staticResources: "<"
-  }
+    templateUrl: "components/communitiesImpacted/stakeholders/stakeholders.html",
+    controller: StakeholdersController,
+    bindings: {
+        stakeholders: "<",
+        staticResources: "<"
+    }
 };

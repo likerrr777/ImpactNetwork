@@ -7,8 +7,8 @@ let app = angular
   .component("stakeholders", StakeholderComponent)
   .component("socialImpact", SocialImpactComponent);
 
-app.filter("range", function() {
-  return function(input, total) {
+app.filter("range", function () {
+  return function (input, total) {
     total = parseInt(total);
 
     for (var i = 0; i < total; i++) {
@@ -22,7 +22,7 @@ app.filter("range", function() {
 app.controller("MainCtrl", [
   "$scope",
   "$http",
-  function($scope, $http) {
+  function ($scope, $http) {
     $scope.mapclickfun = mapclickfun;
     $scope.output = [];
     $scope.social_chart_arr = [];
@@ -53,7 +53,7 @@ app.controller("MainCtrl", [
 
     $http
       .get("inpact-network-ui-json.json")
-      .then(function(response) {
+      .then(function (response) {
         $scope.projectData = response.data;
 
         $scope.ProjSec = response.data.ProjectSection;
@@ -76,7 +76,7 @@ app.controller("MainCtrl", [
         $scope.goalTitle =
           response.data.Overview.Outputs_Outcomes_Info.GoalTitle;
         $scope.outcomeInfoSupportedProjects = $scope.outcomeInfo.filter(
-          function(element) {
+          function (element) {
             return element.isSupported;
           }
         );
@@ -121,17 +121,17 @@ app.controller("MainCtrl", [
           response.data.Overview.Outputs_Outcomes_Info.Project_Output_Section;
         $scope.outputs_tag_ = {};
         $scope.outcomes_tag_ = {};
-        $.each($scope.outputs, function(kry, dt) {
+        $.each($scope.outputs, function (kry, dt) {
           $scope.outputs_tag_[kry] = {};
-          $.each(dt.Tags, function(ky, t) {
+          $.each(dt.Tags, function (ky, t) {
             $scope.outputs_tag_[kry][ky] = false;
           });
         });
         $scope.outcomes =
           response.data.Overview.Outputs_Outcomes_Info.Project_Outcomes_Section;
-        $.each($scope.outcomes, function(kry, dt) {
+        $.each($scope.outcomes, function (kry, dt) {
           $scope.outcomes_tag_[kry] = {};
-          $.each(dt.Tags, function(ky, t) {
+          $.each(dt.Tags, function (ky, t) {
             $scope.outcomes_tag_[kry][ky] = false;
           });
         });
@@ -158,7 +158,7 @@ app.controller("MainCtrl", [
 
         showDesc($scope.list_org[0], 0);
 
-        $.each($scope.outputs, function(key, dt) {
+        $.each($scope.outputs, function (key, dt) {
           $scope.obj2[dt.Project_Output_Primary_Key] = false;
         });
 
@@ -206,7 +206,7 @@ app.controller("MainCtrl", [
         $scope.countryChart =
           response.data.CommunitiesImpactedPage.Communities[0].ListofItems;
         $scope.Investments = response.data.CommunitiesImpactedPage.Investments;
-        $.each($scope.Investments, function(k, dt) {
+        $.each($scope.Investments, function (k, dt) {
           $scope.intotal = $scope.intotal + parseInt(dt.Value);
         });
         $scope.community = response.data.CommunitiesImpactedPage.Communities[0];
@@ -217,7 +217,7 @@ app.controller("MainCtrl", [
         $scope.CommunityName =
           response.data.CommunitiesImpactedPage.Communities[0].CommunityName;
 
-        $.each(response.data.CommunitiesImpactedPage.Communities, function(
+        $.each(response.data.CommunitiesImpactedPage.Communities, function (
           ky,
           dty
         ) {
@@ -227,7 +227,7 @@ app.controller("MainCtrl", [
 
         $scope.invstChart = response.data.CommunitiesImpactedPage.Investments;
         $scope.invest_color = [];
-        $.each($scope.invstChart, function(ky, dty) {
+        $.each($scope.invstChart, function (ky, dty) {
           $scope.ttlinvestment += parseInt(dty.Value);
           var c = getRandomColor();
           $scope.invest_color.push({
@@ -249,7 +249,7 @@ app.controller("MainCtrl", [
         $scope.Investments = response.data.CommunitiesImpactedPage.Investments;
 
         $scope.Communities = response.data.CommunitiesImpactedPage.Communities;
-        $.each($scope.Communities, function(key, dty) {
+        $.each($scope.Communities, function (key, dty) {
           $scope.Country_name = $scope.Communities[key].CountryName;
           $scope.Latitude = $scope.Communities[key].Latitude;
           $scope.Longitude = $scope.Communities[key].Longitude;
@@ -270,10 +270,10 @@ app.controller("MainCtrl", [
         performMeasurableOutcomeOverride();
         $scope.socialReturnValue = 0;
 
-        $.each($scope.SocialReturns, function(ky, dty) {
+        $.each($scope.SocialReturns, function (ky, dty) {
           if (dty.Shown_by_default) {
             $scope.impact_fg[ky] = {};
-            $.each($scope.SocialReturns[ky].MeasurableOutcomes, function(
+            $.each($scope.SocialReturns[ky].MeasurableOutcomes, function (
               i,
               vs
             ) {
@@ -301,14 +301,14 @@ app.controller("MainCtrl", [
 
         $scope.Funding_rasing_GraphPlotting =
           $scope.projectData.Fund_and_Risk.Funding_rasing_over_the_period_of_time.GraphPlotting;
-        $.each($scope.Funding_rasing_GraphPlotting, function(ky, dty) {
+        $.each($scope.Funding_rasing_GraphPlotting, function (ky, dty) {
           $scope.Funding_rasing_GraphPlotting1.push({
             label: dty.Year,
             value: dty.Amount
           });
         });
       })
-      .then(function() {
+      .then(function () {
         communitiesImpacted();
       });
 
@@ -343,8 +343,8 @@ app.controller("MainCtrl", [
     $scope.socialReturnValue = calculateSocialReturnValue();
 
     function performMeasurableOutcomeOverride() {
-      $scope.SocialReturns.forEach(function(item) {
-        item.MeasurableOutcomes.forEach(function(outcome) {
+      $scope.SocialReturns.forEach(function (item) {
+        item.MeasurableOutcomes.forEach(function (outcome) {
           outcome.Value = item.measurable_clc.Value;
         });
       });
@@ -429,7 +429,7 @@ app.controller("MainCtrl", [
     }
 
     function showformaula(idx, index) {
-      $.each($scope.impact_fg[idx], function(key, dt) {
+      $.each($scope.impact_fg[idx], function (key, dt) {
         $scope.impact_fg[idx][key] = false;
       });
       $scope.impact_fg[idx][index] = true;
@@ -438,7 +438,7 @@ app.controller("MainCtrl", [
     $scope.showtag = showtag;
 
     function showtag(idx, index) {
-      $.each($scope.outputs_tag_[idx], function(kry, dt) {
+      $.each($scope.outputs_tag_[idx], function (kry, dt) {
         $scope.outputs_tag_[idx][kry] = false;
       });
       $scope.outputs_tag_[idx][index] = true;
@@ -455,7 +455,7 @@ app.controller("MainCtrl", [
     }
 
     function showoutcomestag(idx, index) {
-      $.each($scope.outcomes_tag_[idx], function(kry, dt) {
+      $.each($scope.outcomes_tag_[idx], function (kry, dt) {
         $scope.outcomes_tag_[idx][kry] = false;
       });
       $scope.outcomes_tag_[idx][index] = true;
@@ -477,14 +477,14 @@ app.controller("MainCtrl", [
       $scope.SocialReturns_new = [];
       var html = "";
 
-      $("input:checkbox[name=socialExtra]:checked").each(function() {
+      $("input:checkbox[name=socialExtra]:checked").each(function () {
         var d = $scope.SocialReturns[$(this).val()];
         d.Shown_by_default = true;
-        $.each(d.MeasurableOutcomes, function(k1, v1) {
+        $.each(d.MeasurableOutcomes, function (k1, v1) {
           $scope.social_chart_arr.push(v1);
         });
 
-        $.each(d.MeasurableOutcomes, function(i, vs) {
+        $.each(d.MeasurableOutcomes, function (i, vs) {
           $scope.total += vs.Value * vs.Quantified_multiplication_value;
         });
         $("#auto_height").animate(
@@ -499,10 +499,10 @@ app.controller("MainCtrl", [
       $scope.ttlsocialinvestment = 0;
 
       var i1 = 0;
-      $.each($scope.SocialReturns, function(ky, dty) {
+      $.each($scope.SocialReturns, function (ky, dty) {
         if (dty.Shown_by_default) {
           $scope.impact_fg[ky] = $scope.impact_fg[ky] || {};
-          $.each($scope.SocialReturns[ky].MeasurableOutcomes, function(i, vs) {
+          $.each($scope.SocialReturns[ky].MeasurableOutcomes, function (i, vs) {
             var value = calculateSocialReturnItemValue(ky, i);
             dty.pers = value;
             $scope.social_chart_arr[ky].pers = value;
@@ -534,7 +534,7 @@ app.controller("MainCtrl", [
             i1 = i1 + 1;
           });
 
-          setTimeout(function() {
+          setTimeout(function () {
             $("#investmentContainer svg").attr("height", "275");
             $("#socialReturnContainer svg").attr("height", "275");
 
@@ -555,12 +555,12 @@ app.controller("MainCtrl", [
 
       $scope.obj = {};
 
-      $.each($scope.output, function(key, dt) {
+      $.each($scope.output, function (key, dt) {
         $scope.obj[key] = false;
 
         x.push(dt.Outcome);
 
-        $.each(dt.Outcome, function(ky, t) {
+        $.each(dt.Outcome, function (ky, t) {
           t["id"] = key;
 
           $scope.outcome.push(t);
@@ -569,7 +569,7 @@ app.controller("MainCtrl", [
     }
 
     function hight_outcome(index) {
-      $.each($scope.obj, function(ky, t) {
+      $.each($scope.obj, function (ky, t) {
         $scope.obj[ky] = false;
       });
 
@@ -626,8 +626,8 @@ app.controller("MainCtrl", [
       $scope.orgSlider = [];
       var f = [];
       if (val != "") {
-        $.each(d, function(key, dt) {
-          $.each(dt, function(k, d1) {
+        $.each(d, function (key, dt) {
+          $.each(dt, function (k, d1) {
             if (d1.Title.indexOf(val) != -1) {
               f.push(d1);
             }
@@ -644,7 +644,7 @@ app.controller("MainCtrl", [
       $scope.milestone = [];
       var f = [];
       if (val != "") {
-        $.each(d, function(key, dt) {
+        $.each(d, function (key, dt) {
           if (dt.MainTitle.indexOf(val) != -1) {
             $scope.milestone.push(dt);
           }
@@ -662,7 +662,7 @@ app.controller("MainCtrl", [
         $scope.Project_Insight = proj.Project_Insight;
         $scope.Proj_ID = proj.Proj_ID;
 
-        $.each($scope.obj1, function(ky, t) {
+        $.each($scope.obj1, function (ky, t) {
           $scope.obj1[ky] = false;
         });
 
@@ -673,11 +673,11 @@ app.controller("MainCtrl", [
     }
 
     function outcomehighlight(proj, pt) {
-      $.each($scope.obj1, function(ky, t) {
+      $.each($scope.obj1, function (ky, t) {
         $scope.obj1[ky] = false;
       });
       $scope.obj1[pt] = true;
-      $.each($scope.obj2, function(ky, t) {
+      $.each($scope.obj2, function (ky, t) {
         $scope.obj2[ky] = false;
       });
 
@@ -689,24 +689,18 @@ app.controller("MainCtrl", [
       if (community) {
         $scope.community = community;
         $scope.selectedYear = community.years[0];
-        $scope.selectedDataset = $scope.selectedYear.dataset[0];
         $scope.CountryName = community.CountryName;
         $scope.CommunityName = community.CommunityName;
         $scope.CountryIcons = community.CountryIcons;
 
-        $scope.updateSocialReturnSection();
+        $scope.updateSocialReturnSection($scope.selectedYear.dataset[0]);
       }
     }
 
-    $scope.updateSocialReturnSection = function(selectedDataset) {
-      if ($scope.selectedDataset === selectedDataset) {
-        return;
-      }
+    $scope.updateSocialReturnSection = function (selectedDataset) {
+      if (!selectedDataset) return;
 
-      if (selectedDataset) {
-        $scope.selectedDataset = selectedDataset;
-      }
-
+      $scope.selectedDataset = selectedDataset;
       $scope.SocialReturns = $scope.selectedDataset.SocialReturns;
       $scope.social_chart_arr = [];
       performMeasurableOutcomeOverride();
@@ -715,9 +709,9 @@ app.controller("MainCtrl", [
       }
       $scope.countryItemsList = $scope.community.ListofItems;
 
-      $.each($scope.SocialReturns, function(ky, d) {
+      $.each($scope.SocialReturns, function (ky, d) {
         if (d.Shown_by_default) {
-          $.each(d.MeasurableOutcomes, function(i, vs) {
+          $.each(d.MeasurableOutcomes, function (i, vs) {
             var value = calculateSocialReturnItemValue(ky, i);
             vs.pers = value;
             $scope.social_chart_arr.push(vs);
@@ -739,7 +733,7 @@ app.controller("MainCtrl", [
       getSelReturn();
     };
 
-    $scope.onYearChange = function(selectedYear) {
+    $scope.onYearChange = function (selectedYear) {
       if (selectedYear) {
         $scope.selectedYear = selectedYear;
         $scope.updateSocialReturnSection($scope.selectedYear.dataset[0]);
@@ -749,9 +743,9 @@ app.controller("MainCtrl", [
     function calculateSocialReturnValue() {
       var socialReturnValue = 0;
 
-      $scope.SocialReturns.forEach(function(item, index) {
+      $scope.SocialReturns.forEach(function (item, index) {
         if (item.Shown_by_default) {
-          item.MeasurableOutcomes.forEach(function(outcome) {
+          item.MeasurableOutcomes.forEach(function (outcome) {
             socialReturnValue +=
               outcome.Value * item.Value * item.measurable_clc.mul;
           });
@@ -785,7 +779,7 @@ app.controller("MainCtrl", [
     function invests(val, key) {
       $scope.Investments[key].Value = val;
 
-      $.each($scope.Investments, function(k, dt) {
+      $.each($scope.Investments, function (k, dt) {
         if (k == key) {
           if (val == "") {
             val = parseInt(0);
@@ -793,7 +787,7 @@ app.controller("MainCtrl", [
         }
       });
       intotals();
-      $.each($scope.Investments, function(k, dt) {
+      $.each($scope.Investments, function (k, dt) {
         $scope.Investments[k].color = $scope.invest_color[k].color;
       });
       //This function effected graph on-blur
@@ -803,7 +797,7 @@ app.controller("MainCtrl", [
 
     function intotals() {
       $scope.intotal = 0;
-      $.each($scope.Investments, function(k, dt) {
+      $.each($scope.Investments, function (k, dt) {
         if (dt.Value !== "") {
           $scope.intotal += parseInt(dt.Value);
         }
@@ -838,7 +832,7 @@ app.controller("MainCtrl", [
       }
       initInvestmentFusionChart($scope.intotal, $scope.Investments);
       $("#investmentModal").modal("hide");
-      setTimeout(function() {
+      setTimeout(function () {
         $("#investmentContainer svg").attr("height", "275");
         $("#socialReturnContainer svg").attr("height", "275");
       }, 300);
