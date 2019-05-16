@@ -1,36 +1,53 @@
 .social-impact-component {
   $color-green: #07c776;
-  $color-green-black: #049443;
+  $color-green-black: #01A25E;
+
+  background-color: white;
+  padding: 15px 20px;
+
+  .main-title {
+    font-size: 20px;
+    color: $color-green;
+  }
+
+  .underscore {
+    width: 45px;
+    height: 6px;
+    background-color: $color-green;
+    border-radius: 3px;
+    margin: 15px 0 20px 0;
+  }
 
   .content {
     .year-dropdown,
     .dataset-dropdown {
-      height: 35px;
+      height: 50px;
       text-align: center;
     }
 
     .dataset-dropdown {
-        background-color: $color-green;
+      background-color: $color-green;
     }
 
     .year-dropdown {
-        background-color: $color-green-black;
+      background-color: $color-green-black;
     }
 
     select {
       height: 100%;
       background-color: inherit;
-      font-size: 16px;
+      font-size: 22px;
       color: white;
       border: none;
     }
     .image-description {
-        display: block;
-        text-align: center;
-        font-size: 12px;
+      display: block;
+      text-align: center;
+      font-size: 12px;
+      padding-top: 7px;
     }
     .value {
-        font-size: 22px;
+      font-size: 42px;
     }
   }
 
@@ -41,10 +58,27 @@
     & > * {
       flex-grow: 1;
       flex-basis: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+
+      &:first-child {
+        .quantifiables-content-wrapper {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+      }
+      &:nth-child(2) {
+        margin: 0 3px;
+      }
     }
 
     .title {
       text-align: center;
+      background-color: #e9f1f2;
+      height: 50px;
+      line-height: 50px;
+      font-size: 18px;
     }
   }
 
@@ -52,30 +86,43 @@
     display: flex;
     justify-content: space-around;
     text-align: center;
+    background-color: #f8f8f8;
+    padding: 37px 0 31px;
+    height: 100%;
 
     .quantifiables-content {
       display: inline-block;
+      min-width: fit-content;
 
-      .value, .image-wrapper {
+      .value,
+      .image-wrapper {
         display: inline-block;
       }
 
+      .image-wrapper {
+        img {
+          width: 74px;
+        }
+      }
+
       .value {
-          margin-right: 8px;
-          line-height: 58px;
-          vertical-align: top;
+        margin-right: 8px;
+        line-height: 70px;
+        vertical-align: top;
       }
       .description {
-          font-size: 12px;
+        font-size: 14px;
+        padding-top: 20px;
+        text-align: left;
       }
     }
   }
 
   .highlighted-text {
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
-    background-color: $color-green;
-    padding: 5px 0;
+    background-color: $color-green-black;
+    padding: 12px 0;
   }
 }
