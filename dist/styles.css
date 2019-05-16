@@ -2895,6 +2895,42 @@ span.functForm.popover__wrapper2 {
   background-color: white;
   margin-top: 20px;
   padding: 10px 0; }
+
+.stakeholders-component .stakeholders-content table thead td + td:nth-child(even) {
+  background-color: #07c776; }
+
+.stakeholders-component .stakeholders-content table thead td + td:nth-child(odd) {
+  background-color: white; }
+
+.stakeholders-component .stakeholders-content table tbody td {
+  font-size: 12px;
+  line-height: 12px; }
+  .stakeholders-component .stakeholders-content table tbody td + td:nth-child(even) {
+    border-top: 2px solid white; }
+  .stakeholders-component .stakeholders-content table tbody td:nth-child(odd) {
+    border-top: 2px solid #f1f1f1; }
+  .stakeholders-component .stakeholders-content table tbody td:first-child {
+    border-top: 2px solid transparent; }
+
+.stakeholders-component .stakeholders-content table td + td:nth-child(even) {
+  background-color: #e7e7e7; }
+
+.stakeholders-component .stakeholders-content table td + td:nth-child(odd) {
+  background-color: white; }
+
+.stakeholders-component .stakeholders-content table td:first-child {
+  width: 133px; }
+
+.stakeholders-component .stakeholders-content table td:nth-child(2) {
+  width: 71px; }
+
+.stakeholders-component .stakeholders-content table td:nth-child(3) {
+  width: 141px; }
+
+.stakeholders-component .stakeholders-content .dollar-quantifiables-block,
+.stakeholders-component .stakeholders-content .quantifiables-block,
+.stakeholders-component .stakeholders-content .non-quantifiables-block {
+  padding: 18px 28px; }
 .highlighted-text {
   color: white;
   font-size: 20px;

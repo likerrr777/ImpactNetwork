@@ -1,40 +1,111 @@
-@import '../../shared/shared.scss';
+@import "../../shared/shared.scss";
 
 .stakeholders-component {
-    .stakeholders-slider {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 24px 40px;
-        background-color: white;
+  .stakeholders-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    background-color: white;
 
-        .triangle-left,
-        .triangle-right {
-            display: inline-block;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            cursor: pointer;
-        }
-
-        .triangle-left {
-            border-width: 22.5px 20px 22.5px 0;
-            border-color: transparent $color-green transparent transparent;
-        }
-
-        .triangle-right {
-            border-width: 22.5px 0 22.5px 20px;
-            border-color: transparent transparent transparent $color-green;
-        }
+    .triangle-left,
+    .triangle-right {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      cursor: pointer;
     }
 
-    .stakeholders-content {
-        .title {
-            font-size: 20px;
-            text-align: center;
+    .triangle-left {
+      border-width: 22.5px 20px 22.5px 0;
+      border-color: transparent $color-green transparent transparent;
+    }
+
+    .triangle-right {
+      border-width: 22.5px 0 22.5px 20px;
+      border-color: transparent transparent transparent $color-green;
+    }
+  }
+
+  .stakeholders-content {
+    .title {
+      font-size: 20px;
+      text-align: center;
+      background-color: white;
+      margin-top: 20px;
+      padding: 10px 0;
+    }
+
+    table {
+      thead {
+        td + {
+          & td:nth-child(even) {
+            background-color: $color-green;
+          }
+          & td:nth-child(odd) {
             background-color: white;
-            margin-top: 20px;
-            padding: 10px 0;
+          }
         }
+      }
+
+      tbody {
+          td {
+            font-size: 12px;
+            line-height: 12px;
+
+            & + td:nth-child(even) {
+                border-top: 2px solid white;
+            }
+
+            &:nth-child(odd) {
+                border-top: 2px solid $color-grey-white;
+            }
+            
+            &:first-child {
+                border-top: 2px solid transparent;
+            }
+          }
+      }
+
+      td + {
+        & td:nth-child(even) {
+          background-color: $color-grey;
+        }
+        & td:nth-child(odd) {
+          background-color: white;
+        }
+      }
+
+      td {
+        &:first-child {
+            width: 133px;
+        }
+        &:nth-child(2) {
+            width: 71px;
+        }
+        &:nth-child(3) {
+            width: 141px;
+        }
+      }
     }
+    
+    .dollar-quantifiables-block,
+    .quantifiables-block,
+    .non-quantifiables-block {
+        padding: 18px 28px;
+    }
+
+    .dollar-quantifiables-block {
+
+    }
+
+    .quantifiables-block {
+
+    }
+
+    .non-quantifiables-block {
+        
+    }
+  }
 }
