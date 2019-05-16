@@ -61,17 +61,18 @@
 </section>
 <section class="progress_bar">
   <div class="row">
-    <div class="col-sm-12">
-      <div class="s_r_o2">
-        Social Return On Investment (SROI) = {{ (socialReturnValue / intotal).toFixed(2) }}
-      </div>
-    </div>
     <div class="col-sm-3 year-dropdown">
       <select ng-model="selectedYear" ng-options="year.name for year in community.years track by year.name" ng-change="onYearChange(selectedYear)"></select>
     </div>
     <div class="col-sm-9 dataset-dropdown">
       <select ng-model="selectedDataset" ng-options="dataset.name for dataset in selectedYear.dataset track by dataset.name" ng-change="updateSocialReturnSection(selectedDataset)"></select>
     </div>
+    <div class="col-sm-12">
+      <div class="s_r_o2">
+        Social Return On Investment (SROI) = {{ (socialReturnValue / intotal).toFixed(2) }}
+      </div>
+    </div>
+    
     <div class="col-md-6 mrgin_l_r2">
       <div class="core">
         <div class="map_head core asc">
@@ -127,6 +128,9 @@
   </div>
   <!--///row-->
 </section>
+<div class="s_r_o2">
+    Social Return On Investment (SROI) = {{ (socialReturnValue / intotal).toFixed(2) }}
+</div>
 <stakeholders stakeholders="selectedDataset.stakeholders" static-resources="projectData.sharedResources.stakeholders"></stakeholders>
 <section class="as_sec" style="margin-top: 10px;">
   <div class="table_tab_a" style="border: 1px solid #dedede;">
@@ -134,9 +138,9 @@
       <div class="row">
         <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
           <ul class="nav nav-tabs table_tabs7" id="myTabs" role="tablist">
-            <li role="presentation"><a href="#investment" id="home-tab" role="tab" data-toggle="tab" aria-controls="home"
+            <li role="presentation" class="active"><a href="#investment" id="home-tab" role="tab" data-toggle="tab" aria-controls="home"
                 aria-expanded="true">Investment (${{intotal}})</a></li>
-            <li role="presentation" class="active"><a href="#social_return" role="tab" id="profile-tab" data-toggle="tab"
+            <li role="presentation" style="display: none;"><a href="#social_return" role="tab" id="profile-tab" data-toggle="tab"
                 aria-controls="profile">Social Return (${{socialReturnValue}}) </a></li>
           </ul>
           <div class="tab-content" id="myTabContent">

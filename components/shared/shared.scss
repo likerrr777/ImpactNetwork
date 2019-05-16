@@ -1,0 +1,10 @@
+$color-green: #07c776;
+$color-green-black: #01a25e;
+
+.highlighted-text {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background-color: $color-green-black;
+  padding: 12px 0;
+}

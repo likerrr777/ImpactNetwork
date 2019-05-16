@@ -1,7 +1,6 @@
-.social-impact-component {
-  $color-green: #07c776;
-  $color-green-black: #01A25E;
+@import '../../shared/shared.scss';
 
+.social-impact-component {
   background-color: white;
   padding: 15px 20px;
 
@@ -116,13 +115,5 @@
         text-align: left;
       }
     }
-  }
-
-  .highlighted-text {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    background-color: $color-green-black;
-    padding: 12px 0;
   }
 }

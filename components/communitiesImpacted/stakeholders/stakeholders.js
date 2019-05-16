@@ -2,7 +2,6 @@ import "./stakeholders.scss";
 
 class StakeholdersController {
   init() {
-    this.sroiMultiplier = 1;
     this.setCurrentStakeholder(0);
   }
 

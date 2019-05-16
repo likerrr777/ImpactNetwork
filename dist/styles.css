@@ -2862,10 +2862,19 @@ span.functForm.popover__wrapper2 {
 .goal.highlighted {
   background-color: #07c776;
   color: #FFFFFF; }
+.highlighted-text {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background-color: #01a25e;
+  padding: 12px 0; }
+
 .stakeholders-component .stakeholders-slider {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding: 24px 40px;
+  background-color: white; }
   .stakeholders-component .stakeholders-slider .triangle-left,
   .stakeholders-component .stakeholders-slider .triangle-right {
     display: inline-block;
@@ -2875,10 +2884,24 @@ span.functForm.popover__wrapper2 {
     cursor: pointer; }
   .stakeholders-component .stakeholders-slider .triangle-left {
     border-width: 22.5px 20px 22.5px 0;
-    border-color: transparent #07C776 transparent transparent; }
+    border-color: transparent #07c776 transparent transparent; }
   .stakeholders-component .stakeholders-slider .triangle-right {
     border-width: 22.5px 0 22.5px 20px;
-    border-color: transparent transparent transparent #07C776; }
+    border-color: transparent transparent transparent #07c776; }
+
+.stakeholders-component .stakeholders-content .title {
+  font-size: 20px;
+  text-align: center;
+  background-color: white;
+  margin-top: 20px;
+  padding: 10px 0; }
+.highlighted-text {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background-color: #01a25e;
+  padding: 12px 0; }
+
 .social-impact-component {
   background-color: white;
   padding: 15px 20px; }
@@ -2898,7 +2921,7 @@ span.functForm.popover__wrapper2 {
   .social-impact-component .content .dataset-dropdown {
     background-color: #07c776; }
   .social-impact-component .content .year-dropdown {
-    background-color: #01A25E; }
+    background-color: #01a25e; }
   .social-impact-component .content select {
     height: 100%;
     background-color: inherit;
@@ -2955,9 +2978,3 @@ span.functForm.popover__wrapper2 {
         font-size: 14px;
         padding-top: 20px;
         text-align: left; }
-  .social-impact-component .highlighted-text {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    background-color: #01A25E;
-    padding: 12px 0; }

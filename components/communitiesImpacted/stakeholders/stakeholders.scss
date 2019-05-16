@@ -1,10 +1,12 @@
+@import '../../shared/shared.scss';
+
 .stakeholders-component {
     .stakeholders-slider {
-        $color-green: #07C776;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 24px 40px;
+        background-color: white;
 
         .triangle-left,
         .triangle-right {
@@ -24,10 +26,15 @@
             border-width: 22.5px 0 22.5px 20px;
             border-color: transparent transparent transparent $color-green;
         }
-
     }
 
     .stakeholders-content {
-        .table {}
+        .title {
+            font-size: 20px;
+            text-align: center;
+            background-color: white;
+            margin-top: 20px;
+            padding: 10px 0;
+        }
     }
 }
