@@ -61,11 +61,9 @@
 </section>
 <section class="progress_bar">
   <div class="row">
-    <div class="col-sm-3 year-dropdown">
-      <select ng-model="selectedYear" ng-options="year.name for year in community.years track by year.name" ng-change="onYearChange(selectedYear)"></select>
-    </div>
-    <div class="col-sm-9 dataset-dropdown">
-      <select ng-model="selectedDataset" ng-options="dataset.name for dataset in selectedYear.dataset track by dataset.name" ng-change="updateSocialReturnSection(selectedDataset)"></select>
+    <div class="dropdowns-wrapper">
+      <select class="year-dropdown" ng-model="selectedYear" ng-options="year.name for year in community.years track by year.name" ng-change="onYearChange(selectedYear)"></select>
+      <select class="dataset-dropdown" ng-model="selectedDataset" ng-options="dataset.name for dataset in selectedYear.dataset track by dataset.name" ng-change="updateSocialReturnSection(selectedDataset)"></select>
     </div>
     <div class="col-sm-12">
       <div class="s_r_o2">
