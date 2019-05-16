@@ -43,7 +43,8 @@
                             <div class="icon-wrapper" ng-class="quantifiable.isPositive ? 'positive': 'negative'">
                                 <img
                                     ng-src="{{quantifiable.isPositive ? $ctrl.staticResources.dollarPositiveImage: $ctrl.staticResources.dollarNegativeImage}}" />
-                            </div>
+                                    <div class="impact-title">{{quantifiable.isPositive ? $ctrl.staticResources.positiveImpactTitle : $ctrl.staticResources.negativeImpactTitle}}</div>
+                                </div>
                         </td>
                         <td>{{$index + 1}}</td>
                         <td>{{quantifiable.description}}</td>
@@ -72,7 +73,8 @@
                             <div class="icon-wrapper" ng-class="quantifiable.isPositive ? 'positive': 'negative'">
                                 <img
                                     ng-src="{{quantifiable.isPositive ? $ctrl.staticResources.plusImage: $ctrl.staticResources.minusImage}}" />
-                            </div>
+                                    <div class="impact-title">{{quantifiable.isPositive ? $ctrl.staticResources.positiveImpactTitle : $ctrl.staticResources.negativeImpactTitle}}</div>
+                                </div>
                         </td>
                         <td>{{$index + 1}}</td>
                         <td>{{quantifiable.description}}</td>
@@ -98,7 +100,9 @@
                             <div class="icon-wrapper" ng-class="quantifiable.isPositive ? 'positive': 'negative'">
                                 <img
                                     ng-src="{{quantifiable.isPositive ? $ctrl.staticResources.arrowTopImage: $ctrl.staticResources.arrowBottomImage}}" />
-                            </div>
+                                    <div class="impact-title">{{quantifiable.isPositive ? $ctrl.staticResources.positiveImpactTitle : $ctrl.staticResources.negativeImpactTitle}}</div>
+
+                                </div>
                         </td>
                         <td>{{$index + 1}}</td>
                         <td>{{quantifiable.description}}</td>

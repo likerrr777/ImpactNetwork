@@ -79,10 +79,10 @@
 
       td {
         &:first-child {
-            width: 133px;
+            width: 15%;
         }
         &:nth-child(2) {
-            width: 71px;
+            width: 15%;
         }
         &:nth-child(3) {
             width: 141px;
@@ -107,5 +107,11 @@
     .non-quantifiables-block {
         
     }
+  }
+
+  .impact-title{
+    width: 58px;
+    text-align: center;
+    padding-top: 5px;
   }
 }

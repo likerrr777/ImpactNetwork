@@ -18,7 +18,9 @@
       "dollarPositiveImage": "img/dollar-positive.png",
       "dollarNegativeImage": "img/dollar-negative.png",
       "plusImage": "img/plus.png",
-      "minusImage": "img/minus.png"
+      "minusImage": "img/minus.png",
+      "positiveImpactTitle":"Positive Impact",
+      "negativeImpactTitle":"Negative Impact"
     }
   },
   "HomepageSlider": {
