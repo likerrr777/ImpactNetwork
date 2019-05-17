@@ -15,6 +15,8 @@ class SocialImpactController {
   }
 
   changeYear(year) {
+    if (!year) return;
+
     this.selectedYear = year;
     this.changeDataset(this.selectedYear.dataset[0]);
   }

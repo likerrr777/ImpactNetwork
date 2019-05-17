@@ -833,7 +833,7 @@ app.controller("MainCtrl", [
         $("#text1").val("");
         $("#value1").val("");
       }
-      initInvestmentFusionChart($scope.intotal, $scope.Investments);
+      //initInvestmentFusionChart($scope.intotal, $scope.Investments);
       $("#investmentModal").modal("hide");
       setTimeout(function () {
         $("#investmentContainer svg").attr("height", "275");

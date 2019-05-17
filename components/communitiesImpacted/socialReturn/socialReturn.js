@@ -14,6 +14,8 @@ class SocialReturnController {
     }
 
     changeYear(year) {
+        if (!year) return;
+
         this.selectedYear = year;
         this.changeDataset(this.selectedYear.dataset[0]);
     }
@@ -52,48 +54,48 @@ class SocialReturnController {
         initInvestmentFusionChart(this.totalInvestment, investments);
     }
 
-calculateSroiMultiplier(dataset) {
-    dataset = dataset || this.selectedDataset;
-    this.totalIncome = this.calculateTotalIncome(dataset);
+    calculateSroiMultiplier(dataset) {
+        dataset = dataset || this.selectedDataset;
+        this.totalIncome = this.calculateTotalIncome(dataset);
 
-    this.totalInvestment = dataset.investments.reduce((accumulator, investment) => {
-        return accumulator + parseInt(investment.value);
-    }, 0);
+        this.totalInvestment = dataset.investments.reduce((accumulator, investment) => {
+            return accumulator + parseInt(investment.value);
+        }, 0);
 
-    this.updateSocialReturnsChart();
-    this.updateInvestmentChart();
+        this.updateSocialReturnsChart();
+        this.updateInvestmentChart();
 
-    return Math.round(this.totalIncome * 100 / this.totalInvestment);
-}
-
-calculateTotalIncome(dataset) {
-    dataset = dataset || this.selectedDataset;
-    return dataset.stakeholders.data.reduce((accumulator, stakeholder) => {
-        return accumulator + this.stakeholdersController.calculateTotalDollarValue(stakeholder);
-    }, 0);
-}
-
-calculateStakeholderValuePercent(stakeholder) {
-    return Math.round((this.stakeholdersController.calculateTotalDollarValue(stakeholder) * 100 / this.totalIncome))
-}
-
-calculateInvestmentValuePercent(investment) {
-    return Math.round((investment.value * 100 / this.totalInvestment))
-}
-
-getRandomColor() {
-    let letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
+        return Math.round(this.totalIncome * 100 / this.totalInvestment);
     }
 
-    return color;
-}
+    calculateTotalIncome(dataset) {
+        dataset = dataset || this.selectedDataset;
+        return dataset.stakeholders.data.reduce((accumulator, stakeholder) => {
+            return accumulator + this.stakeholdersController.calculateTotalDollarValue(stakeholder);
+        }, 0);
+    }
 
-$onChanges(changesObj) {
-    this.init();
-}
+    calculateStakeholderValuePercent(stakeholder) {
+        return Math.round((this.stakeholdersController.calculateTotalDollarValue(stakeholder) * 100 / this.totalIncome))
+    }
+
+    calculateInvestmentValuePercent(investment) {
+        return Math.round((investment.value * 100 / this.totalInvestment))
+    }
+
+    getRandomColor() {
+        let letters = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+
+        return color;
+    }
+
+    $onChanges(changesObj) {
+        this.init();
+    }
 }
 
 export default {
