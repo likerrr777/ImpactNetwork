@@ -6,6 +6,17 @@
   background-color: #01a25e;
   padding: 12px 0; }
 
+.title-underscore {
+  width: 45px;
+  height: 6px;
+  background-color: #07c776;
+  border-radius: 3px;
+  margin: 15px 0 20px 0; }
+
+.main-title {
+  font-size: 20px;
+  color: #07c776; }
+
 .add_button a {
   background-color: #07c776;
   color: #fff;
@@ -2902,121 +2913,28 @@ span.functForm.popover__wrapper2 {
 .goal.highlighted {
   background-color: #07c776;
   color: #FFFFFF; }
-
-.communities-impacted-page .dropdowns-wrapper {
-  text-align: right;
-  padding: 0 15px;
-  margin-bottom: 5px; }
-
-.communities-impacted-page .year-dropdown,
-.communities-impacted-page .dataset-dropdown {
-  height: 50px;
-  padding: 0 40px;
+.highlighted-text {
+  display: block;
+  color: white;
+  font-size: 20px;
   text-align: center;
+  background-color: #01a25e;
+  padding: 12px 0; }
+
+.title-underscore {
+  width: 45px;
+  height: 6px;
   background-color: #07c776;
-  color: white;
-  border: none; }
-.highlighted-text {
-  display: block;
-  color: white;
+  border-radius: 3px;
+  margin: 15px 0 20px 0; }
+
+.main-title {
   font-size: 20px;
-  text-align: center;
-  background-color: #01a25e;
-  padding: 12px 0; }
-
-.stakeholders-component .input {
-  width: 76px;
-  padding: 3px 3px;
-  height: 24px;
-  text-align: center; }
-
-.stakeholders-component .stakeholders-slider {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 40px;
-  background-color: white; }
-  .stakeholders-component .stakeholders-slider .triangle-left,
-  .stakeholders-component .stakeholders-slider .triangle-right {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    cursor: pointer; }
-  .stakeholders-component .stakeholders-slider .triangle-left {
-    border-width: 22.5px 20px 22.5px 0;
-    border-color: transparent #07c776 transparent transparent; }
-  .stakeholders-component .stakeholders-slider .triangle-right {
-    border-width: 22.5px 0 22.5px 20px;
-    border-color: transparent transparent transparent #07c776; }
-
-.stakeholders-component .stakeholders-content .title {
-  font-size: 20px;
-  text-align: center;
-  background-color: white;
-  margin-top: 20px;
-  padding: 10px 0; }
-
-.stakeholders-component .stakeholders-content table thead td + td:nth-child(even) {
-  background-color: #07c776; }
-
-.stakeholders-component .stakeholders-content table thead td + td:nth-child(odd) {
-  background-color: white; }
-
-.stakeholders-component .stakeholders-content table tbody td {
-  font-size: 12px;
-  line-height: 12px; }
-  .stakeholders-component .stakeholders-content table tbody td + td:nth-child(even) {
-    border-top: 2px solid white; }
-  .stakeholders-component .stakeholders-content table tbody td:nth-child(odd) {
-    border-top: 2px solid #f1f1f1; }
-  .stakeholders-component .stakeholders-content table tbody td:first-child {
-    border-top: 2px solid transparent; }
-
-.stakeholders-component .stakeholders-content table td + td:nth-child(even) {
-  background-color: #e7e7e7; }
-
-.stakeholders-component .stakeholders-content table td + td:nth-child(odd) {
-  background-color: white; }
-
-.stakeholders-component .stakeholders-content table td:first-child {
-  width: 15%; }
-
-.stakeholders-component .stakeholders-content table td:nth-child(2) {
-  width: 15%; }
-
-.stakeholders-component .stakeholders-content table td:nth-child(3) {
-  width: 141px; }
-
-.stakeholders-component .stakeholders-content .dollar-quantifiables-block,
-.stakeholders-component .stakeholders-content .quantifiables-block,
-.stakeholders-component .stakeholders-content .non-quantifiables-block {
-  padding: 18px 28px; }
-
-.stakeholders-component .impact-title {
-  width: 58px;
-  text-align: center;
-  padding-top: 5px; }
-.highlighted-text {
-  display: block;
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  background-color: #01a25e;
-  padding: 12px 0; }
+  color: #07c776; }
 
 .social-impact-component {
   background-color: white;
   padding: 15px 20px; }
-  .social-impact-component .main-title {
-    font-size: 20px;
-    color: #07c776; }
-  .social-impact-component .underscore {
-    width: 45px;
-    height: 6px;
-    background-color: #07c776;
-    border-radius: 3px;
-    margin: 15px 0 20px 0; }
   .social-impact-component .highlighted-text {
     cursor: pointer; }
   .social-impact-component .content .year-dropdown,
@@ -3083,3 +3001,165 @@ span.functForm.popover__wrapper2 {
         font-size: 14px;
         padding-top: 20px;
         text-align: left; }
+.highlighted-text {
+  display: block;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background-color: #01a25e;
+  padding: 12px 0; }
+
+.title-underscore {
+  width: 45px;
+  height: 6px;
+  background-color: #07c776;
+  border-radius: 3px;
+  margin: 15px 0 20px 0; }
+
+.main-title {
+  font-size: 20px;
+  color: #07c776; }
+
+.stakeholders-component .input {
+  width: 76px;
+  padding: 3px 3px;
+  height: 24px;
+  text-align: center; }
+
+.stakeholders-component .stakeholders-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  background-color: white; }
+  .stakeholders-component .stakeholders-slider .triangle-left,
+  .stakeholders-component .stakeholders-slider .triangle-right {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    cursor: pointer; }
+  .stakeholders-component .stakeholders-slider .triangle-left {
+    border-width: 22.5px 20px 22.5px 0;
+    border-color: transparent #07c776 transparent transparent; }
+  .stakeholders-component .stakeholders-slider .triangle-right {
+    border-width: 22.5px 0 22.5px 20px;
+    border-color: transparent transparent transparent #07c776; }
+
+.stakeholders-component .stakeholders-content .title {
+  font-size: 20px;
+  text-align: center;
+  background-color: white;
+  padding: 10px 0; }
+
+.stakeholders-component .stakeholders-content table thead td + td:nth-child(even) {
+  background-color: #07c776; }
+
+.stakeholders-component .stakeholders-content table thead td + td:nth-child(odd) {
+  background-color: white; }
+
+.stakeholders-component .stakeholders-content table tbody td {
+  font-size: 12px;
+  line-height: 12px; }
+  .stakeholders-component .stakeholders-content table tbody td + td:nth-child(even) {
+    border-top: 2px solid white; }
+  .stakeholders-component .stakeholders-content table tbody td:nth-child(odd) {
+    border-top: 2px solid #f1f1f1; }
+  .stakeholders-component .stakeholders-content table tbody td:first-child {
+    border-top: 2px solid transparent; }
+
+.stakeholders-component .stakeholders-content table td + td:nth-child(even) {
+  background-color: #e7e7e7; }
+
+.stakeholders-component .stakeholders-content table td + td:nth-child(odd) {
+  background-color: white; }
+
+.stakeholders-component .stakeholders-content table td:first-child {
+  width: 15%; }
+
+.stakeholders-component .stakeholders-content table td:nth-child(2) {
+  width: 15%; }
+
+.stakeholders-component .stakeholders-content table td:nth-child(3) {
+  width: 141px; }
+
+.stakeholders-component .stakeholders-content .dollar-quantifiables-block,
+.stakeholders-component .stakeholders-content .quantifiables-block,
+.stakeholders-component .stakeholders-content .non-quantifiables-block {
+  padding: 18px 28px;
+  background-color: #eff2f5; }
+
+.stakeholders-component .impact-title {
+  width: 58px;
+  text-align: center;
+  padding-top: 5px; }
+.highlighted-text {
+  display: block;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background-color: #01a25e;
+  padding: 12px 0; }
+
+.title-underscore {
+  width: 45px;
+  height: 6px;
+  background-color: #07c776;
+  border-radius: 3px;
+  margin: 15px 0 20px 0; }
+
+.main-title {
+  font-size: 20px;
+  color: #07c776; }
+
+.social-return-component {
+  background-color: white;
+  padding: 0 15px 20px; }
+  .social-return-component .header {
+    display: flex;
+    justify-content: space-between; }
+    .social-return-component .header .dropdowns-wrapper {
+      display: flex;
+      justify-content: flex-end; }
+    .social-return-component .header .main-title-wrapper {
+      padding-top: 15px; }
+  .social-return-component .year-dropdown,
+  .social-return-component .dataset-dropdown {
+    height: 50px;
+    text-align: center;
+    background-color: #33E399; }
+  .social-return-component .year-dropdown {
+    width: 152px;
+    margin-right: 1px; }
+  .social-return-component .dataset-dropdown {
+    width: 198px; }
+  .social-return-component select {
+    height: 100%;
+    background-color: inherit;
+    font-size: 22px;
+    color: white;
+    border: none; }
+  .social-return-component .content .sroi-multiplier-title {
+    color: white;
+    font-size: 20px;
+    background-color: #07c776;
+    padding: 10px 0;
+    text-align: center; }
+  .social-return-component .content .charts-section {
+    padding: 5px 10px 50px;
+    background-color: #eff2f5;
+    display: flex;
+    justify-content: space-between; }
+    .social-return-component .content .charts-section .social-returns-chart {
+      margin-right: 10px; }
+    .social-return-component .content .charts-section .social-returns-chart,
+    .social-return-component .content .charts-section .investment-chart {
+      background-color: white; }
+    .social-return-component .content .charts-section .title {
+      background-color: white;
+      margin-bottom: 5px;
+      padding: 5px 10px;
+      font-size: 20px;
+      border-top: 1px solid #01a25e; }
+    .social-return-component .content .charts-section .stakeholder-percentage {
+      text-align: right; }

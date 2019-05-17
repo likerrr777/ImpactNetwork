@@ -40,7 +40,6 @@
       font-size: 20px;
       text-align: center;
       background-color: white;
-      margin-top: 20px;
       padding: 10px 0;
     }
 
@@ -101,6 +100,7 @@
     .quantifiables-block,
     .non-quantifiables-block {
       padding: 18px 28px;
+      background-color: $color-grey-black;
     }
 
     .dollar-quantifiables-block {

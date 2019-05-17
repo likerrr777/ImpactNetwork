@@ -1,11 +1,14 @@
 import "../css/styles.scss";
-import StakeholderComponent from "../components/communitiesImpacted/stakeholders/stakeholders";
 import SocialImpactComponent from "../components/overview/socialImpact/socialImpact";
+import StakeholderComponent from "../components/communitiesImpacted/stakeholders/stakeholders";
+import SocialReturnComponent from "../components/communitiesImpacted/socialReturn/socialReturn";
+
 
 let app = angular
   .module("MainApp", ["ng-fusioncharts"])
+  .component("socialImpact", SocialImpactComponent)
   .component("stakeholders", StakeholderComponent)
-  .component("socialImpact", SocialImpactComponent);
+  .component("socialReturn", SocialReturnComponent);
 
 app.filter("range", function () {
   return function (input, total) {
@@ -538,10 +541,10 @@ app.controller("MainCtrl", [
             $("#investmentContainer svg").attr("height", "275");
             $("#socialReturnContainer svg").attr("height", "275");
 
-            InitSocialReturnFusionChart(
-              $scope.ttlsocialinvestment,
-              $scope.socialReturnContainer
-            );
+            // InitSocialReturnFusionChart(
+            //   $scope.ttlsocialinvestment,
+            //   $scope.socialReturnContainer
+            // );
           }, 1000);
           $scope.socialReturnValue = calculateSocialReturnValue();
         }

@@ -1,7 +1,9 @@
 $color-green: #07c776;
 $color-green-black: #01a25e;
+$color-green-white: #33E399;
 $color-grey-white: #f1f1f1;
 $color-grey: #e7e7e7;
+$color-grey-black: #eff2f5;
 
 .highlighted-text {
   display: block;
@@ -10,4 +12,17 @@ $color-grey: #e7e7e7;
   text-align: center;
   background-color: $color-green-black;
   padding: 12px 0;
+}
+
+.title-underscore {
+  width: 45px;
+  height: 6px;
+  background-color: $color-green;
+  border-radius: 3px;
+  margin: 15px 0 20px 0;
+}
+
+.main-title {
+  font-size: 20px;
+  color: $color-green;
 }

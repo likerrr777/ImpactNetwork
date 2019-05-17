@@ -60,76 +60,8 @@
   <!--/content_box-->
 </section>
 <section class="progress_bar">
-  <div class="row">
-    <div class="dropdowns-wrapper">
-      <select class="year-dropdown" ng-model="selectedYear" ng-options="year.name for year in community.years track by year.name" ng-change="onYearChange(selectedYear)"></select>
-      <select class="dataset-dropdown" ng-model="selectedDataset" ng-options="dataset.name for dataset in selectedYear.dataset track by dataset.name" ng-change="updateSocialReturnSection(selectedDataset)"></select>
-    </div>
-    <div class="col-sm-12">
-      <div class="s_r_o2">
-        Social Return On Investment (SROI) = {{ (socialReturnValue / intotal).toFixed(2) }}
-      </div>
-    </div>
-    
-    <div class="col-md-6">
-      <div class="core">
-        <div class="map_head core asc">
-          <h4>Social Return</h4>
-        </div>
-        <!-- <img src="img/progress.jpg" class="maps" width="100%" alt="map"> -->
-        <div id="socialReturnContainer">Coutry render here</div>
-        <div class="pro_pdng">
-          <div class="progress_div3 core" ng-repeat="MeasurableOutcomes in social_chart_arr track by $index">
-
-            <p><span>{{MeasurableOutcomes.Outcome_Definition}}</span> <span class="pull-right" id="sper_{{$index}}">{{((MeasurableOutcomes.pers)*100/socialReturnValue).toFixed(0)}}%</span>
-            </p>
-            <div class="progress ht">
-              <div id="sperprogress_{{$index}}" class="progress-bar progress-bar-success" role="progressbar"
-                aria-valuenow="{{((MeasurableOutcomes.pers)*100/socialReturnValue).toFixed(0)}}" aria-valuemin="0"
-                aria-valuemax="100" style="width: {{((MeasurableOutcomes.pers)*100/socialReturnValue).toFixed(0)}}%;background-color:{{social_color[$index].color}}">
-                <span class="sr-only">{{((MeasurableOutcomes.pers)*100/socialReturnValue).toFixed(0)}}% Complete
-                  (success)</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="sroi">
-          <p class="t_return">SROI: Total Investment/Total Return</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="core">
-        <div class="map_head core asc">
-          <h4>Investment</h4>
-        </div>
-        <!-- <img src="img/progress.jpg" class="maps" width="100%" alt="map"> -->
-        <div id="investmentContainer">Coutry render here</div>
-        <div class="pro_pdng">
-          <div class="progress_div3 core" ng-repeat="Invstblock in Investments track by $index">
-            <p><span>{{Invstblock.Label}}</span> <span class="pull-right" id="per_{{$index}}">{{((Invstblock.Value)*100/intotal).toFixed(0)}}%</span>
-            </p>
-            <div class="progress ht">
-              <div id="perprogress_{{$index}}" class="progress-bar progress-bar-success" role="progressbar"
-                aria-valuenow="{{Invstblock.Value}}" aria-valuemin="0" aria-valuemax="100" style="width: {{((Invstblock.Value)*100/intotal).toFixed(0)}}%;background-color: {{invest_color[$index].color}}">
-                <span class="sr-only">{{((Invstblock.Value)*100/intotal).toFixed(0)}}% Complete (success)</span>
-              </div>
-            </div>
-          </div>
-          <div class="sroi">
-            <p class="t_return"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--///row-->
 </section>
-<div class="s_r_o2">
-    Social Return On Investment (SROI) = {{ (socialReturnValue / intotal).toFixed(2) }}
-</div>
-<stakeholders stakeholders="selectedDataset.stakeholders" static-resources="projectData.sharedResources.stakeholders"></stakeholders>
+<social-return years-data="community.years" static-resources="projectData.sharedResources.stakeholders"></social-return>
 <section class="as_sec" style="margin-top: 10px;">
   <div class="table_tab_a" style="border: 1px solid #dedede;">
     <div class="container-fluid">

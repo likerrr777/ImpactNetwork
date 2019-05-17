@@ -1,0 +1,95 @@
+<div class="social-return-component" ng-if="$ctrl.yearsData">
+    <div class="header">
+        <div class="main-title-wrapper">
+            <span class="main-title">Social Return On Investment (SROI)</span>
+            <div class="title-underscore"></div>
+        </div>
+        <div class="dropdowns-wrapper">
+            <div class="year-dropdown">
+                <select ng-model="$ctrl.selectedYear"
+                    ng-options="year.name for year in $ctrl.yearsData track by year.name"
+                    ng-change="$ctrl.changeYear($ctrl.selectedYear)"></select>
+            </div>
+            <div class="dataset-dropdown">
+                <select ng-model="$ctrl.selectedDataset"
+                    ng-options="dataset.name for dataset in $ctrl.selectedYear.dataset track by dataset.name"
+                    ng-change="$ctrl.changeDataset($ctrl.selectedDataset)"></select>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="sroi-multiplier-title">
+            SROI Multiplier: $1:${{ $ctrl.calculateSroiMultiplier() }}
+        </div>
+        <div class="charts-section">
+            <div class="social-returns-chart">
+                <div class="title">Social Returns = ${{$ctrl.totalIncome}}</div>
+                <div id="socialReturnContainer"></div>
+                <div class="pro_pdng">
+                    <div class="progress_div3 core"
+                        ng-repeat="stakeholder in $ctrl.selectedDataset.stakeholders.data track by $index">
+                        <div>
+                            <div>
+                                <span>{{$ctrl.staticResources.nameLabel}} {{$index + 1}}</span>
+                                <span> : </span>
+                            </div>
+                            <div>{{stakeholder.name}}</div>
+                            <div>
+                                <span>{{$ctrl.staticResources.numberLabel}}</span>
+                                <span> : </span>
+                                <span>{{stakeholder.number}}</span>
+                            </div>
+                            <div class="stakeholder-percentage">{{$ctrl.calculateStakeholderValuePercent(stakeholder)}}%
+                            </div>
+                        </div>
+                        <div class="progress ht">
+                            <div id="sperprogress_{{$index}}" class="progress-bar progress-bar-success"
+                                role="progressbar"
+                                aria-valuenow="{{$ctrl.calculateStakeholderValuePercent(stakeholder)}}"
+                                aria-valuemin="0" aria-valuemax="100"
+                                style="width: {{$ctrl.calculateStakeholderValuePercent(stakeholder)}}%; background-color:{{$ctrl.stakeholdersColors[$index]}}">
+                                <span class="sr-only">{{$ctrl.calculateStakeholderValuePercent(stakeholder)}}% Complete
+                                    (success)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sroi">
+                    <p class="t_return">SROI: Total Investment/Total Return</p>
+                </div>
+            </div>
+            <div class="investment-chart">
+                <div class="title">Investment = ${{$ctrl.totalInvestment}}</div>
+                <div id="investmentContainer"></div>
+                <div class="pro_pdng">
+                    <div class="progress_div3 core"
+                        ng-repeat="investment in $ctrl.selectedDataset.investments track by $index">
+                        <p>
+                            <span>{{investment.name}}</span>
+                            <span class="pull-right"
+                                id="per_{{$index}}">{{$ctrl.calculateInvestmentValuePercent(investment)}}%</span>
+                        </p>
+                        <div class="progress ht">
+                            <div id="perprogress_{{$index}}" class="progress-bar progress-bar-success"
+                                role="progressbar" aria-valuenow="{{investment.value}}" aria-valuemin="0"
+                                aria-valuemax="100"
+                                style="width: {{$ctrl.calculateInvestmentValuePercent(investment)}}%;background-color: {{$ctrl.investmentsColors[$index]}}">
+                                <span class="sr-only">{{$ctrl.calculateInvestmentValuePercent(investment)}}% Complete
+                                    (success)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sroi">
+                        <p class="t_return"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sroi-multiplier-title">
+            SROI Multiplier: $1:${{ $ctrl.calculateSroiMultiplier() }}
+        </div>
+        <stakeholders stakeholders="$ctrl.selectedDataset.stakeholders" static-resources="$ctrl.staticResources">
+        </stakeholders>
+    </div>
+</div>

@@ -1,0 +1,82 @@
+@import "../../shared/shared.scss";
+
+.social-return-component {
+    background-color: white;
+    padding: 0 15px 20px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+
+        .dropdowns-wrapper {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .main-title-wrapper {
+            padding-top: 15px;
+        }
+    }
+
+    .year-dropdown,
+    .dataset-dropdown {
+        height: 50px;
+        text-align: center;
+        background-color: $color-green-white;
+    }
+
+    .year-dropdown {
+        width: 152px;
+        margin-right: 1px;
+    }
+
+    .dataset-dropdown {
+        width: 198px;
+    }
+
+    select {
+        height: 100%;
+        background-color: inherit;
+        font-size: 22px;
+        color: white;
+        border: none;
+    }
+
+    .content {
+        .sroi-multiplier-title {
+            color: white;
+            font-size: 20px;
+            background-color: $color-green;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .charts-section {
+            padding: 5px 10px 50px;
+            background-color: $color-grey-black;
+            display: flex;
+            justify-content: space-between;
+
+            .social-returns-chart {
+                margin-right: 10px;
+            }
+
+            .social-returns-chart,
+            .investment-chart {
+                background-color: white;
+            }
+
+            .title {
+                background-color: white;
+                margin-bottom: 5px;
+                padding: 5px 10px;
+                font-size: 20px;
+                border-top: 1px solid $color-green-black;
+            }
+
+            .stakeholder-percentage {
+                text-align: right;
+            }
+        }
+    }
+}
