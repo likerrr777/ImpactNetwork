@@ -6,167 +6,6 @@
   background-color: #01a25e;
   padding: 12px 0; }
 
-.stakeholders-component .stakeholders-slider {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 40px;
-  background-color: white; }
-  .stakeholders-component .stakeholders-slider .triangle-left,
-  .stakeholders-component .stakeholders-slider .triangle-right {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    cursor: pointer; }
-  .stakeholders-component .stakeholders-slider .triangle-left {
-    border-width: 22.5px 20px 22.5px 0;
-    border-color: transparent #07c776 transparent transparent; }
-  .stakeholders-component .stakeholders-slider .triangle-right {
-    border-width: 22.5px 0 22.5px 20px;
-    border-color: transparent transparent transparent #07c776; }
-
-.stakeholders-component .stakeholders-content .title {
-  font-size: 20px;
-  text-align: center;
-  background-color: white;
-  margin-top: 20px;
-  padding: 10px 0; }
-
-.stakeholders-component .stakeholders-content table thead td + td:nth-child(even) {
-  background-color: #07c776; }
-
-.stakeholders-component .stakeholders-content table thead td + td:nth-child(odd) {
-  background-color: white; }
-
-.stakeholders-component .stakeholders-content table tbody td {
-  font-size: 12px;
-  line-height: 12px; }
-  .stakeholders-component .stakeholders-content table tbody td + td:nth-child(even) {
-    border-top: 2px solid white; }
-  .stakeholders-component .stakeholders-content table tbody td:nth-child(odd) {
-    border-top: 2px solid #f1f1f1; }
-  .stakeholders-component .stakeholders-content table tbody td:first-child {
-    border-top: 2px solid transparent; }
-
-.stakeholders-component .stakeholders-content table td + td:nth-child(even) {
-  background-color: #e7e7e7; }
-
-.stakeholders-component .stakeholders-content table td + td:nth-child(odd) {
-  background-color: white; }
-
-.stakeholders-component .stakeholders-content table td:first-child {
-  width: 15%; }
-
-.stakeholders-component .stakeholders-content table td:nth-child(2) {
-  width: 15%; }
-
-.stakeholders-component .stakeholders-content table td:nth-child(3) {
-  width: 141px; }
-
-.stakeholders-component .stakeholders-content .dollar-quantifiables-block,
-.stakeholders-component .stakeholders-content .quantifiables-block,
-.stakeholders-component .stakeholders-content .non-quantifiables-block {
-  padding: 18px 28px; }
-
-.stakeholders-component .impact-title {
-  width: 58px;
-  text-align: center;
-  padding-top: 5px; }
-.highlighted-text {
-  display: block;
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  background-color: #01a25e;
-  padding: 12px 0; }
-
-.social-impact-component {
-  background-color: white;
-  padding: 15px 20px; }
-  .social-impact-component .main-title {
-    font-size: 20px;
-    color: #07c776; }
-  .social-impact-component .underscore {
-    width: 45px;
-    height: 6px;
-    background-color: #07c776;
-    border-radius: 3px;
-    margin: 15px 0 20px 0; }
-  .social-impact-component .highlighted-text {
-    cursor: pointer; }
-  .social-impact-component .content .year-dropdown,
-  .social-impact-component .content .dataset-dropdown {
-    height: 50px;
-    text-align: center; }
-  .social-impact-component .content .dataset-dropdown {
-    background-color: #07c776; }
-  .social-impact-component .content .year-dropdown {
-    background-color: #01a25e; }
-  .social-impact-component .content select {
-    height: 100%;
-    background-color: inherit;
-    font-size: 22px;
-    color: white;
-    border: none; }
-  .social-impact-component .content .image-description {
-    display: block;
-    text-align: center;
-    font-size: 12px;
-    padding-top: 7px; }
-  .social-impact-component .content .value {
-    font-size: 42px; }
-  .social-impact-component .quantifiables-container {
-    display: flex;
-    width: 100%; }
-    .social-impact-component .quantifiables-container > * {
-      flex-grow: 1;
-      flex-basis: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: stretch; }
-      .social-impact-component .quantifiables-container > *:first-child .quantifiables-content-wrapper {
-        padding-left: 25px;
-        padding-right: 25px; }
-      .social-impact-component .quantifiables-container > *:nth-child(2) {
-        margin: 0 3px; }
-    .social-impact-component .quantifiables-container .title {
-      text-align: center;
-      background-color: #e9f1f2;
-      height: 50px;
-      line-height: 50px;
-      font-size: 18px; }
-  .social-impact-component .quantifiables-content-wrapper {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    background-color: #f8f8f8;
-    padding: 37px 0 31px;
-    height: 100%; }
-    .social-impact-component .quantifiables-content-wrapper .quantifiables-content {
-      display: inline-block;
-      min-width: fit-content; }
-      .social-impact-component .quantifiables-content-wrapper .quantifiables-content .value,
-      .social-impact-component .quantifiables-content-wrapper .quantifiables-content .image-wrapper {
-        display: inline-block; }
-      .social-impact-component .quantifiables-content-wrapper .quantifiables-content .image-wrapper img {
-        width: 74px; }
-      .social-impact-component .quantifiables-content-wrapper .quantifiables-content .value {
-        margin-right: 8px;
-        line-height: 70px;
-        vertical-align: top; }
-      .social-impact-component .quantifiables-content-wrapper .quantifiables-content .description {
-        font-size: 14px;
-        padding-top: 20px;
-        text-align: left; }
-.highlighted-text {
-  display: block;
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  background-color: #01a25e;
-  padding: 12px 0; }
-
 .add_button a {
   background-color: #07c776;
   color: #fff;
@@ -3077,3 +2916,170 @@ span.functForm.popover__wrapper2 {
   background-color: #07c776;
   color: white;
   border: none; }
+.highlighted-text {
+  display: block;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background-color: #01a25e;
+  padding: 12px 0; }
+
+.stakeholders-component .input {
+  width: 76px;
+  padding: 3px 3px;
+  height: 24px;
+  text-align: center; }
+
+.stakeholders-component .stakeholders-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  background-color: white; }
+  .stakeholders-component .stakeholders-slider .triangle-left,
+  .stakeholders-component .stakeholders-slider .triangle-right {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    cursor: pointer; }
+  .stakeholders-component .stakeholders-slider .triangle-left {
+    border-width: 22.5px 20px 22.5px 0;
+    border-color: transparent #07c776 transparent transparent; }
+  .stakeholders-component .stakeholders-slider .triangle-right {
+    border-width: 22.5px 0 22.5px 20px;
+    border-color: transparent transparent transparent #07c776; }
+
+.stakeholders-component .stakeholders-content .title {
+  font-size: 20px;
+  text-align: center;
+  background-color: white;
+  margin-top: 20px;
+  padding: 10px 0; }
+
+.stakeholders-component .stakeholders-content table thead td + td:nth-child(even) {
+  background-color: #07c776; }
+
+.stakeholders-component .stakeholders-content table thead td + td:nth-child(odd) {
+  background-color: white; }
+
+.stakeholders-component .stakeholders-content table tbody td {
+  font-size: 12px;
+  line-height: 12px; }
+  .stakeholders-component .stakeholders-content table tbody td + td:nth-child(even) {
+    border-top: 2px solid white; }
+  .stakeholders-component .stakeholders-content table tbody td:nth-child(odd) {
+    border-top: 2px solid #f1f1f1; }
+  .stakeholders-component .stakeholders-content table tbody td:first-child {
+    border-top: 2px solid transparent; }
+
+.stakeholders-component .stakeholders-content table td + td:nth-child(even) {
+  background-color: #e7e7e7; }
+
+.stakeholders-component .stakeholders-content table td + td:nth-child(odd) {
+  background-color: white; }
+
+.stakeholders-component .stakeholders-content table td:first-child {
+  width: 15%; }
+
+.stakeholders-component .stakeholders-content table td:nth-child(2) {
+  width: 15%; }
+
+.stakeholders-component .stakeholders-content table td:nth-child(3) {
+  width: 141px; }
+
+.stakeholders-component .stakeholders-content .dollar-quantifiables-block,
+.stakeholders-component .stakeholders-content .quantifiables-block,
+.stakeholders-component .stakeholders-content .non-quantifiables-block {
+  padding: 18px 28px; }
+
+.stakeholders-component .impact-title {
+  width: 58px;
+  text-align: center;
+  padding-top: 5px; }
+.highlighted-text {
+  display: block;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background-color: #01a25e;
+  padding: 12px 0; }
+
+.social-impact-component {
+  background-color: white;
+  padding: 15px 20px; }
+  .social-impact-component .main-title {
+    font-size: 20px;
+    color: #07c776; }
+  .social-impact-component .underscore {
+    width: 45px;
+    height: 6px;
+    background-color: #07c776;
+    border-radius: 3px;
+    margin: 15px 0 20px 0; }
+  .social-impact-component .highlighted-text {
+    cursor: pointer; }
+  .social-impact-component .content .year-dropdown,
+  .social-impact-component .content .dataset-dropdown {
+    height: 50px;
+    text-align: center; }
+  .social-impact-component .content .dataset-dropdown {
+    background-color: #07c776; }
+  .social-impact-component .content .year-dropdown {
+    background-color: #01a25e; }
+  .social-impact-component .content select {
+    height: 100%;
+    background-color: inherit;
+    font-size: 22px;
+    color: white;
+    border: none; }
+  .social-impact-component .content .image-description {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 7px; }
+  .social-impact-component .content .value {
+    font-size: 42px; }
+  .social-impact-component .quantifiables-container {
+    display: flex;
+    width: 100%; }
+    .social-impact-component .quantifiables-container > * {
+      flex-grow: 1;
+      flex-basis: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch; }
+      .social-impact-component .quantifiables-container > *:first-child .quantifiables-content-wrapper {
+        padding-left: 25px;
+        padding-right: 25px; }
+      .social-impact-component .quantifiables-container > *:nth-child(2) {
+        margin: 0 3px; }
+    .social-impact-component .quantifiables-container .title {
+      text-align: center;
+      background-color: #e9f1f2;
+      height: 50px;
+      line-height: 50px;
+      font-size: 18px; }
+  .social-impact-component .quantifiables-content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 37px 0 31px;
+    height: 100%; }
+    .social-impact-component .quantifiables-content-wrapper .quantifiables-content {
+      display: inline-block;
+      min-width: fit-content; }
+      .social-impact-component .quantifiables-content-wrapper .quantifiables-content .value,
+      .social-impact-component .quantifiables-content-wrapper .quantifiables-content .image-wrapper {
+        display: inline-block; }
+      .social-impact-component .quantifiables-content-wrapper .quantifiables-content .image-wrapper img {
+        width: 74px; }
+      .social-impact-component .quantifiables-content-wrapper .quantifiables-content .value {
+        margin-right: 8px;
+        line-height: 70px;
+        vertical-align: top; }
+      .social-impact-component .quantifiables-content-wrapper .quantifiables-content .description {
+        font-size: 14px;
+        padding-top: 20px;
+        text-align: left; }

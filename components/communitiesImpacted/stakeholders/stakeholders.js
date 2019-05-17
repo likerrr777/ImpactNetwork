@@ -34,6 +34,7 @@ class StakeholdersController {
     }
 
     calculateTotalDollarValue(stakeholder) {
+        stakeholder = stakeholder || $ctrl.currentStakeholder;
         return stakeholder.dollarQuantifiables.reduce(
             (accumulator, currentValue) =>
                 accumulator +

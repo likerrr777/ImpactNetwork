@@ -10,12 +10,12 @@
             <div>
                 <span>{{$ctrl.staticResources.numberLabel}}</span>
                 <span> : </span>
-                <span>{{$ctrl.currentStakeholder.number}}</span>
+                <input type="text" class="input" ng-model="$ctrl.currentStakeholder.number"/>
             </div>
             <div>
                 <span>{{$ctrl.staticResources.totalValueLabel}}</span>
                 <span> : </span>
-                <span>${{$ctrl.totalDollarValue}}</span>
+                <span>${{$ctrl.calculateTotalDollarValue()}}</span>
             </div>
         </div>
         <div class="triangle-right" ng-click="$ctrl.slideStakeholder(true)"></div>
@@ -48,7 +48,10 @@
                         </td>
                         <td>{{$index + 1}}</td>
                         <td>{{quantifiable.description}}</td>
-                        <td>${{quantifiable.dollarValue}}</td>
+                        <td>
+                            <span>$</span>
+                            <input type="text" class="input" ng-model="quantifiable.dollarValue"/>
+                        </td>
                         <td>{{$ctrl.calculateDollarValue(quantifiable)}}</td>
                         <td>Link</td>
                     </tr>

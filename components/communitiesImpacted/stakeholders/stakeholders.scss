@@ -1,6 +1,13 @@
 @import "../../shared/shared.scss";
 
 .stakeholders-component {
+  .input {
+    width: 76px;
+    padding: 3px 3px;
+    height: 24px;
+    text-align: center;
+  }
+
   .stakeholders-slider {
     display: flex;
     justify-content: space-between;
@@ -50,22 +57,22 @@
       }
 
       tbody {
-          td {
-            font-size: 12px;
-            line-height: 12px;
+        td {
+          font-size: 12px;
+          line-height: 12px;
 
-            & + td:nth-child(even) {
-                border-top: 2px solid white;
-            }
-
-            &:nth-child(odd) {
-                border-top: 2px solid $color-grey-white;
-            }
-            
-            &:first-child {
-                border-top: 2px solid transparent;
-            }
+          & + td:nth-child(even) {
+            border-top: 2px solid white;
           }
+
+          &:nth-child(odd) {
+            border-top: 2px solid $color-grey-white;
+          }
+
+          &:first-child {
+            border-top: 2px solid transparent;
+          }
+        }
       }
 
       td + {
@@ -79,37 +86,34 @@
 
       td {
         &:first-child {
-            width: 15%;
+          width: 15%;
         }
         &:nth-child(2) {
-            width: 15%;
+          width: 15%;
         }
         &:nth-child(3) {
-            width: 141px;
+          width: 141px;
         }
       }
     }
-    
+
     .dollar-quantifiables-block,
     .quantifiables-block,
     .non-quantifiables-block {
-        padding: 18px 28px;
+      padding: 18px 28px;
     }
 
     .dollar-quantifiables-block {
-
     }
 
     .quantifiables-block {
-
     }
 
     .non-quantifiables-block {
-        
     }
   }
 
-  .impact-title{
+  .impact-title {
     width: 58px;
     text-align: center;
     padding-top: 5px;
