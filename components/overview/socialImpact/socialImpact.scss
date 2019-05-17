@@ -9,6 +9,7 @@
   }
 
   .content {
+
     .year-dropdown,
     .dataset-dropdown {
       height: 50px;
@@ -30,14 +31,20 @@
       color: white;
       border: none;
     }
+
     .image-description {
       display: block;
       text-align: center;
       font-size: 12px;
       padding-top: 7px;
     }
+
     .value {
       font-size: 42px;
+
+      @media (max-width: 768px) {
+        font-size: 22px;
+      }
     }
   }
 
@@ -45,19 +52,28 @@
     display: flex;
     width: 100%;
 
-    & > * {
+    @media (max-width: 768px) {
+      overflow-x: scroll;
+    }
+
+    &>* {
       flex-grow: 1;
       flex-basis: 0;
       display: flex;
       flex-direction: column;
       align-items: stretch;
 
+      @media (max-width: 768px) {
+        min-width: fit-content;
+      }
+
       &:first-child {
         .quantifiables-content-wrapper {
-            padding-left: 25px;
-            padding-right: 25px;
+          padding-left: 25px;
+          padding-right: 25px;
         }
       }
+
       &:nth-child(2) {
         margin: 0 3px;
       }
@@ -92,6 +108,10 @@
       .image-wrapper {
         img {
           width: 74px;
+
+          @media (max-width: 768px) {
+            width: 50px;
+          }
         }
       }
 
@@ -100,6 +120,7 @@
         line-height: 70px;
         vertical-align: top;
       }
+
       .description {
         font-size: 14px;
         padding-top: 20px;

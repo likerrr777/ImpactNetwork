@@ -4684,10 +4684,13 @@ h4.contyAtt {
         font-size: 12px;
     }
 
-    span.proj_Numb,
-    img.c_icons_v {
+    span.proj_Numb {
         position: relative;
         left: 60px;
+    }
+
+    img.c_icons_v {
+        display: none;
     }
 
     ul.list-style.fxd_w li {
@@ -4903,4 +4906,8 @@ span.functForm.popover__wrapper2 {
 .goal.highlighted {
     background-color: #07c776;
     color: #FFFFFF;
+}
+
+.example-image {
+    max-width: 100%;
 }

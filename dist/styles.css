@@ -2763,10 +2763,11 @@ h4.contyAtt {
     margin-right: 40px; }
   p.inner-elements {
     font-size: 12px; }
-  span.proj_Numb,
-  img.c_icons_v {
+  span.proj_Numb {
     position: relative;
     left: 60px; }
+  img.c_icons_v {
+    display: none; }
   ul.list-style.fxd_w li {
     font-size: 12px !important; }
   ul.list-style.fxd_w {
@@ -2913,6 +2914,9 @@ span.functForm.popover__wrapper2 {
 .goal.highlighted {
   background-color: #07c776;
   color: #FFFFFF; }
+
+.example-image {
+  max-width: 100%; }
 .highlighted-text {
   display: block;
   color: white;
@@ -2958,15 +2962,24 @@ span.functForm.popover__wrapper2 {
     padding-top: 7px; }
   .social-impact-component .content .value {
     font-size: 42px; }
+    @media (max-width: 768px) {
+      .social-impact-component .content .value {
+        font-size: 22px; } }
   .social-impact-component .quantifiables-container {
     display: flex;
     width: 100%; }
+    @media (max-width: 768px) {
+      .social-impact-component .quantifiables-container {
+        overflow-x: scroll; } }
     .social-impact-component .quantifiables-container > * {
       flex-grow: 1;
       flex-basis: 0;
       display: flex;
       flex-direction: column;
       align-items: stretch; }
+      @media (max-width: 768px) {
+        .social-impact-component .quantifiables-container > * {
+          min-width: fit-content; } }
       .social-impact-component .quantifiables-container > *:first-child .quantifiables-content-wrapper {
         padding-left: 25px;
         padding-right: 25px; }
@@ -2993,6 +3006,9 @@ span.functForm.popover__wrapper2 {
         display: inline-block; }
       .social-impact-component .quantifiables-content-wrapper .quantifiables-content .image-wrapper img {
         width: 74px; }
+        @media (max-width: 768px) {
+          .social-impact-component .quantifiables-content-wrapper .quantifiables-content .image-wrapper img {
+            width: 50px; } }
       .social-impact-component .quantifiables-content-wrapper .quantifiables-content .value {
         margin-right: 8px;
         line-height: 70px;

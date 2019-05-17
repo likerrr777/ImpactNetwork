@@ -105,7 +105,13 @@
     pointer-events: none;
 
     overflow: hidden;
+}
 
+@media (max-width: 425px) {
+    .csstransforms .smartcms_wrapper {
+        top: 75%;
+        left: 30%;
+    }
 }
 
 
