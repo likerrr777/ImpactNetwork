@@ -11,6 +11,7 @@
         .dropdowns-wrapper {
             display: flex;
             justify-content: flex-end;
+            flex-wrap: wrap;
         }
 
         .main-title-wrapper {
@@ -56,6 +57,11 @@
             background-color: $color-grey-black;
             display: flex;
             justify-content: space-between;
+            
+            @media (max-width: 768px) {
+                overflow-x: scroll;
+                flex-wrap: wrap;
+            }
 
             .social-returns-chart {
                 margin-right: 10px;
@@ -64,6 +70,8 @@
             .social-returns-chart,
             .investment-chart {
                 background-color: white;
+                flex-grow: 1;
+                flex-basis: 0;
             }
 
             .title {

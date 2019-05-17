@@ -6,6 +6,10 @@
     padding: 3px 3px;
     height: 24px;
     text-align: center;
+
+    @media (max-width: 768px) {
+      width: 50px;
+    }
   }
 
   .stakeholders-slider {
@@ -14,6 +18,14 @@
     align-items: center;
     padding: 24px 40px;
     background-color: white;
+
+    @media (max-width: 768px) {
+      padding: 24px 10px;
+    }
+
+    .slider-content {
+      padding: 0px 10px;
+    }
 
     .triangle-left,
     .triangle-right {
@@ -104,6 +116,9 @@
     }
 
     .dollar-quantifiables-block {
+      @media (max-width: 768px) {
+        overflow-x: scroll;
+      }
     }
 
     .quantifiables-block {

@@ -3041,6 +3041,9 @@ span.functForm.popover__wrapper2 {
   padding: 3px 3px;
   height: 24px;
   text-align: center; }
+  @media (max-width: 768px) {
+    .stakeholders-component .input {
+      width: 50px; } }
 
 .stakeholders-component .stakeholders-slider {
   display: flex;
@@ -3048,6 +3051,11 @@ span.functForm.popover__wrapper2 {
   align-items: center;
   padding: 24px 40px;
   background-color: white; }
+  @media (max-width: 768px) {
+    .stakeholders-component .stakeholders-slider {
+      padding: 24px 10px; } }
+  .stakeholders-component .stakeholders-slider .slider-content {
+    padding: 0px 10px; }
   .stakeholders-component .stakeholders-slider .triangle-left,
   .stakeholders-component .stakeholders-slider .triangle-right {
     display: inline-block;
@@ -3105,6 +3113,10 @@ span.functForm.popover__wrapper2 {
   padding: 18px 28px;
   background-color: #eff2f5; }
 
+@media (max-width: 768px) {
+  .stakeholders-component .stakeholders-content .dollar-quantifiables-block {
+    overflow-x: scroll; } }
+
 .stakeholders-component .impact-title {
   width: 58px;
   text-align: center;
@@ -3136,7 +3148,8 @@ span.functForm.popover__wrapper2 {
     justify-content: space-between; }
     .social-return-component .header .dropdowns-wrapper {
       display: flex;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+      flex-wrap: wrap; }
     .social-return-component .header .main-title-wrapper {
       padding-top: 15px; }
   .social-return-component .year-dropdown,
@@ -3166,11 +3179,17 @@ span.functForm.popover__wrapper2 {
     background-color: #eff2f5;
     display: flex;
     justify-content: space-between; }
+    @media (max-width: 768px) {
+      .social-return-component .content .charts-section {
+        overflow-x: scroll;
+        flex-wrap: wrap; } }
     .social-return-component .content .charts-section .social-returns-chart {
       margin-right: 10px; }
     .social-return-component .content .charts-section .social-returns-chart,
     .social-return-component .content .charts-section .investment-chart {
-      background-color: white; }
+      background-color: white;
+      flex-grow: 1;
+      flex-basis: 0; }
     .social-return-component .content .charts-section .title {
       background-color: white;
       margin-bottom: 5px;
