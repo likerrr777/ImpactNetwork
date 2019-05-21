@@ -62,7 +62,7 @@
     "Location": "Bahia, Brazil",
     "TotalInsight": "38",
     "TotalFollower": 124,
-    "FollowerLink": "http://www.clipbots.com/impact-network/uploads/",
+    "FollowerLink": "https://www.clipbots.com/impact-network/uploads/",
     "InvestLink": "https://impact.apicista.com/pub/overview?id=2snFCmfd&language=en"
   },
   "Overview": {
@@ -464,7 +464,7 @@
           "Date_Time": "11 jan 2018 - 15:45"
         },
         {
-          "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor2.png",
+          "Author_Image": "https://www.clipbots.com/impact-network/uploads/insightauthor2.png",
           "Author_Name": "Aaron Taylor 2",
           "Review_Description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking atits layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.",
           "Review_Image": "",
@@ -473,7 +473,7 @@
           "Date_Time": "11 jan 2018 - 15:45"
         },
         {
-          "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor3.png",
+          "Author_Image": "https://www.clipbots.com/impact-network/uploads/insightauthor3.png",
           "Author_Name": "Aaron Taylor 3",
           "Review_Description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking atits layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.",
           "Review_Image": "",
@@ -492,7 +492,7 @@
           "Date_Time": "11 jan 2018 - 15:45"
         },
         {
-          "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor2.png",
+          "Author_Image": "https://www.clipbots.com/impact-network/uploads/insightauthor2.png",
           "Author_Name": "Aaron Taylor 2",
           "Review_Description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking atits layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.",
           "Review_Image": "",
@@ -501,7 +501,7 @@
           "Date_Time": "11 jan 2018 - 15:45"
         },
         {
-          "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor3.png",
+          "Author_Image": "https://www.clipbots.com/impact-network/uploads/insightauthor3.png",
           "Author_Name": "Aaron Taylor 3",
           "Review_Description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking atits layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.",
           "Review_Image": "",
@@ -520,7 +520,7 @@
           "Date_Time": "11 jan 2018 - 15:45"
         },
         {
-          "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor2.png",
+          "Author_Image": "https://www.clipbots.com/impact-network/uploads/insightauthor2.png",
           "Author_Name": "Aaron Taylor 2",
           "Review_Description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking atits layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.",
           "Review_Image": "",
@@ -529,7 +529,7 @@
           "Date_Time": "11 jan 2018 - 15:45"
         },
         {
-          "Author_Image": "http://www.clipbots.com/impact-network/uploads/insightauthor3.png",
+          "Author_Image": "https://www.clipbots.com/impact-network/uploads/insightauthor3.png",
           "Author_Name": "Aaron Taylor 3",
           "Review_Description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking atits layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.",
           "Review_Image": "",
@@ -645,11 +645,11 @@
         "Task": ["Points 1", "Points 2", "Points 3", "Points 4"],
         "Attachment": [{
             "Label": "Title 1",
-            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+            "Url": "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           },
           {
             "Label": "Title 2",
-            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+            "Url": "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           }
         ]
       },
@@ -665,11 +665,11 @@
         "Task": ["Points 1", "Points 2"],
         "Attachment": [{
             "Label": "Title 1",
-            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+            "Url": "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           },
           {
             "Label": "Title 2",
-            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+            "Url": "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           }
         ]
       },
@@ -685,11 +685,11 @@
         "Task": ["Points 1", "Points 2", "Points 3", "Points 4"],
         "Attachment": [{
             "Label": "Title 1",
-            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+            "Url": "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           },
           {
             "Label": "Title 2",
-            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+            "Url": "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           }
         ]
       },
@@ -705,11 +705,11 @@
         "Task": ["Points 1", "Points 2", "Points 3"],
         "Attachment": [{
             "Label": "Title 1",
-            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+            "Url": "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           },
           {
             "Label": "Title 2",
-            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+            "Url": "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           }
         ]
       },
@@ -724,10 +724,10 @@
         "StatusPercentage": "38",
         "Task": ["Points 1", "Points 2", "Points 3", "Points 4"],
         "Attachment": [
-          "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx",
-          "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docxhttp://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+          "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docx",
+          "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docxhttps://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
         ],
-        "StatusIcon": "http://www.clipbots.com/impact-network/uploads/milestonestatusinprogress.png"
+        "StatusIcon": "https://www.clipbots.com/impact-network/uploads/milestonestatusinprogress.png"
       },
       {
         "MainTitle": "Project Main Title 6",
@@ -741,11 +741,11 @@
         "Task": ["Points 1"],
         "Attachment": [{
             "Label": "Title 1",
-            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+            "Url": "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           },
           {
             "Label": "Title 2",
-            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+            "Url": "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           }
         ]
       },
@@ -761,11 +761,11 @@
         "Task": ["Points 1", "Points 2", "Points 3", "Points 4"],
         "Attachment": [{
             "Label": "Title 1",
-            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+            "Url": "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           },
           {
             "Label": "Title 2",
-            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+            "Url": "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           }
         ]
       },
@@ -781,11 +781,11 @@
         "Task": ["Points 1", "Points 2", "Points 3", "Points 4"],
         "Attachment": [{
             "Label": "Title 1",
-            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+            "Url": "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           },
           {
             "Label": "Title 2",
-            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+            "Url": "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           }
         ]
       },
@@ -801,11 +801,11 @@
         "Task": ["Points 1", "Points 2"],
         "Attachment": [{
             "Label": "Title 1",
-            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+            "Url": "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           },
           {
             "Label": "Title 2",
-            "Url": "http://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
+            "Url": "https://www.clipbots.com/impact-network/uploads/TPS%20Report.docx"
           }
         ]
       }
@@ -816,7 +816,7 @@
     "Listing": [{
         "Image": "img/new_img/ban.jpg",
         "Title": "Institute of Electrical and Electronics Engineers",
-        "Url": "http://www.ieee.org",
+        "Url": "https://www.ieee.org",
         "Description": "The world's largest technical professional organization for the advancement of technology. It has 400,000+ Members in 190+ Countries",
         "RoleInvolved": [
           "Seed Grant Funding",
@@ -825,15 +825,15 @@
         ],
         "Tags": [{
             "Title": "Financial Support",
-            "Icon": "http://impactnetwork.vision/img/label.png"
+            "Icon": "https://impactnetwork.vision/img/label.png"
           },
           {
             "Title": "Technical Expertise",
-            "Icon": "http://impactnetwork.vision/img/label.png"
+            "Icon": "https://impactnetwork.vision/img/label.png"
           },
           {
             "Title": "Local Expertise",
-            "Icon": "http://impactnetwork.vision/img/label.png"
+            "Icon": "https://impactnetwork.vision/img/label.png"
           }
         ]
       },
@@ -848,11 +848,11 @@
         ],
         "Tags": [{
             "Title": "Due Diligence",
-            "Icon": "http://impactnetwork.vision/img/label.png"
+            "Icon": "https://impactnetwork.vision/img/label.png"
           },
           {
             "Title": "Crowdsourced Insights",
-            "Icon": "http://impactnetwork.vision/img/label.png"
+            "Icon": "https://impactnetwork.vision/img/label.png"
           }
         ]
       },
@@ -867,11 +867,11 @@
         ],
         "Tags": [{
             "Title": "Impact Assessment and Measurement",
-            "Icon": "http://impactnetwork.vision/img/label.png"
+            "Icon": "https://impactnetwork.vision/img/label.png"
           },
           {
             "Title": "Financial Expertise",
-            "Icon": "http://impactnetwork.vision/img/label.png"
+            "Icon": "https://impactnetwork.vision/img/label.png"
           }
         ]
       },
@@ -886,27 +886,27 @@
         ],
         "Tags": [{
             "Title": "Impact Assessment and Measurement",
-            "Icon": "http://impactnetwork.vision/img/label.png"
+            "Icon": "https://impactnetwork.vision/img/label.png"
           },
           {
             "Title": "Financial Expertise",
-            "Icon": "http://impactnetwork.vision/img/label.png"
+            "Icon": "https://impactnetwork.vision/img/label.png"
           }
         ]
       }
     ],
     "TeamMember": [{
-        "Image": "http://www.clipbots.com/impact-network/uploads/partnerteam.png",
+        "Image": "https://www.clipbots.com/impact-network/uploads/partnerteam.png",
         "Name": "Mario Aleman",
         "Degisnation": "Project Lead"
       },
       {
-        "Image": "http://www.clipbots.com/impact-network/uploads/partnerteam.png",
+        "Image": "https://www.clipbots.com/impact-network/uploads/partnerteam.png",
         "Name": "Alejandra Carlos",
         "Degisnation": "Project Secretary"
       },
       {
-        "Image": "http://www.clipbots.com/impact-network/uploads/partnerteam.png",
+        "Image": "https://www.clipbots.com/impact-network/uploads/partnerteam.png",
         "Name": "Emannuel Cardona",
         "Degisnation": "PR Manager"
       }
@@ -917,11 +917,11 @@
     "Fund_and_Risk_Insight": "30",
     "Funding_Round_Section": {
       "TotalNumber": "3",
-      "Icon": "http://www.clipbots.com/impact-network/uploads/fundingrouteicon.png"
+      "Icon": "https://www.clipbots.com/impact-network/uploads/fundingrouteicon.png"
     },
     "Funding_Amount_Section": {
       "Amount": "3,75,000",
-      "Icon": "http://www.clipbots.com/impact-network/uploads/fundingamounticon.png"
+      "Icon": "https://www.clipbots.com/impact-network/uploads/fundingamounticon.png"
     },
     "Source_of_Funding": {
       "Listing": [{
@@ -973,19 +973,19 @@
       "Financial_Insight": "600",
       "Listing": [{
           "Label": "Expense_Report.xlsx",
-          "DownloadUrl": "http://www.clipbots.com/impact-network/uploads/fundingrouteicon.png"
+          "DownloadUrl": "https://www.clipbots.com/impact-network/uploads/fundingrouteicon.png"
         },
         {
           "Label": "Expense_Report.xlsxk",
-          "DownloadUrl": "http://www.clipbots.com/impact-network/uploads/fundingrouteicon.png"
+          "DownloadUrl": "https://www.clipbots.com/impact-network/uploads/fundingrouteicon.png"
         },
         {
           "Label": "Expense_Report.xlsx",
-          "DownloadUrl": "http://www.clipbots.com/impact-network/uploads/fundingrouteicon.png"
+          "DownloadUrl": "https://www.clipbots.com/impact-network/uploads/fundingrouteicon.png"
         },
         {
           "Label": "Expense_Report.xlsx",
-          "DownloadUrl": "http://www.clipbots.com/impact-network/uploads/fundingrouteicon.png"
+          "DownloadUrl": "https://www.clipbots.com/impact-network/uploads/fundingrouteicon.png"
         }
       ]
     },
@@ -1031,7 +1031,7 @@
     "Communities": [{
         "CommunityName": "Bahia",
         "CountryName": "Brazil",
-        "CountryIcons": "http://www.clipbots.com/impact-network/uploads/brazilflag.png",
+        "CountryIcons": "https://www.clipbots.com/impact-network/uploads/brazilflag.png",
         "Latitude": "-13.6603615",
         "Longitude": "-69.6775883",
         "ShortName": "BR",
@@ -1068,7 +1068,7 @@
           {
             "Title": "Marginal  damage  done  by  1  ton  of  CO2 (US$) ",
             "Icon": "img/Unihamburg.gif",
-            "Link": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.175.5039&rep=rep1&type=pdf",
+            "Link": "https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.175.5039&rep=rep1&type=pdf",
             "Name": "Hamburg University",
             "Value": "5"
           }
@@ -1090,7 +1090,7 @@
                             "link": "img/entertainment-formula.png",
                             "linkText": "Click here",
                             "description": "Source: ",
-                            "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                            "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                           }
                         },
                         {
@@ -1101,7 +1101,7 @@
                             "link": "img/formula-additional-income.png",
                             "linkText": "Click here",
                             "description": "Source: ",
-                            "descriptionLink": "http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
+                            "descriptionLink": "https://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
                           }
                         },
                         {
@@ -1112,7 +1112,7 @@
                             "link": "img/entertainment-formula.png",
                             "linkText": "Click here",
                             "description": "Source: ",
-                            "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                            "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                           }
                         }
                       ],
@@ -1146,7 +1146,7 @@
                           "link": "img/entertainment-formula.png",
                           "linkText": "Click here",
                           "description": "Source: ",
-                          "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                          "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                         }
                       }],
                       "quantifiables": [{
@@ -1190,7 +1190,7 @@
                             "link": "img/entertainment-formula.png",
                             "linkText": "Click here",
                             "description": "Source: ",
-                            "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                            "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                           }
                         },
                         {
@@ -1201,7 +1201,7 @@
                             "link": "img/formula-additional-income.png",
                             "linkText": "Click here",
                             "description": "Source: ",
-                            "descriptionLink": "http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
+                            "descriptionLink": "https://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
                           }
                         }
                       ],
@@ -1235,7 +1235,7 @@
                           "link": "img/entertainment-formula.png",
                           "linkText": "Click here",
                           "description": "Source: ",
-                          "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                          "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                         }
                       }],
                       "quantifiables": [{
@@ -1283,7 +1283,7 @@
                             "link": "img/entertainment-formula.png",
                             "linkText": "Click here",
                             "description": "Source: ",
-                            "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                            "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                           }
                         },
                         {
@@ -1294,7 +1294,7 @@
                             "link": "img/formula-additional-income.png",
                             "linkText": "Click here",
                             "description": "Source: ",
-                            "descriptionLink": "http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
+                            "descriptionLink": "https://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
                           }
                         },
                         {
@@ -1305,7 +1305,7 @@
                             "link": "img/entertainment-formula.png",
                             "linkText": "Click here",
                             "description": "Source: ",
-                            "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                            "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                           }
                         }
                       ],
@@ -1339,7 +1339,7 @@
                           "link": "img/entertainment-formula.png",
                           "linkText": "Click here",
                           "description": "Source: ",
-                          "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                          "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                         }
                       }],
                       "quantifiables": [{
@@ -1383,7 +1383,7 @@
                             "link": "img/entertainment-formula.png",
                             "linkText": "Click here",
                             "description": "Source: ",
-                            "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                            "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                           }
                         },
                         {
@@ -1394,7 +1394,7 @@
                             "link": "img/formula-additional-income.png",
                             "linkText": "Click here",
                             "description": "Source: ",
-                            "descriptionLink": "http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
+                            "descriptionLink": "https://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
                           }
                         },
                         {
@@ -1405,7 +1405,7 @@
                             "link": "img/entertainment-formula.png",
                             "linkText": "Click here",
                             "description": "Source: ",
-                            "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                            "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                           }
                         }
                       ],
@@ -1439,7 +1439,7 @@
                           "link": "img/entertainment-formula.png",
                           "linkText": "Click here",
                           "description": "Source: ",
-                          "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                          "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                         }
                       }],
                       "quantifiables": [{
@@ -1487,7 +1487,7 @@
                           "link": "img/entertainment-formula.png",
                           "linkText": "Click here",
                           "description": "Source: ",
-                          "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                          "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                         }
                       },
                       {
@@ -1498,7 +1498,7 @@
                           "link": "img/formula-additional-income.png",
                           "linkText": "Click here",
                           "description": "Source: ",
-                          "descriptionLink": "http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
+                          "descriptionLink": "https://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
                         }
                       },
                       {
@@ -1509,7 +1509,7 @@
                           "link": "img/entertainment-formula.png",
                           "linkText": "Click here",
                           "description": "Source: ",
-                          "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                          "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                         }
                       }
                     ],
@@ -1543,7 +1543,7 @@
                         "link": "img/entertainment-formula.png",
                         "linkText": "Click here",
                         "description": "Source: ",
-                        "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                        "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                       }
                     }],
                     "quantifiables": [{
@@ -1578,7 +1578,7 @@
       {
         "CountryName": "Philippines",
         "CommunityName": "Manila outskirts",
-        "CountryIcons": "http://www.clipbots.com/impact-network/uploads/safricaflag.png",
+        "CountryIcons": "https://www.clipbots.com/impact-network/uploads/safricaflag.png",
         "Latitude": "-14.599512",
         "Longitude": "120.984222",
         "ShortName": "SA",
@@ -1614,7 +1614,7 @@
           {
             "Title": "Marginal  damage  done  by  1  ton  of  CO2 (US$) ",
             "Icon": "img/Unihamburg.gif",
-            "Link": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.175.5039&rep=rep1&type=pdf",
+            "Link": "https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.175.5039&rep=rep1&type=pdf",
             "Name": "Hamburg University",
             "Value": "5"
           }
@@ -1636,7 +1636,7 @@
                             "link": "img/entertainment-formula.png",
                             "linkText": "Click here",
                             "description": "Source: ",
-                            "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                            "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                           }
                         },
                         {
@@ -1647,7 +1647,7 @@
                             "link": "img/formula-additional-income.png",
                             "linkText": "Click here",
                             "description": "Source: ",
-                            "descriptionLink": "http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
+                            "descriptionLink": "https://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
                           }
                         },
                         {
@@ -1658,7 +1658,7 @@
                             "link": "img/entertainment-formula.png",
                             "linkText": "Click here",
                             "description": "Source: ",
-                            "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                            "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                           }
                         }
                       ],
@@ -1692,7 +1692,7 @@
                           "link": "img/entertainment-formula.png",
                           "linkText": "Click here",
                           "description": "Source: ",
-                          "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                          "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                         }
                       }],
                       "quantifiables": [{
@@ -1736,7 +1736,7 @@
                             "link": "img/entertainment-formula.png",
                             "linkText": "Click here",
                             "description": "Source: ",
-                            "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                            "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                           }
                         },
                         {
@@ -1747,7 +1747,7 @@
                             "link": "img/formula-additional-income.png",
                             "linkText": "Click here",
                             "description": "Source: ",
-                            "descriptionLink": "http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
+                            "descriptionLink": "https://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
                           }
                         },
                         {
@@ -1758,7 +1758,7 @@
                             "link": "img/entertainment-formula.png",
                             "linkText": "Click here",
                             "description": "Source: ",
-                            "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                            "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                           }
                         }
                       ],
@@ -1792,7 +1792,7 @@
                           "link": "img/entertainment-formula.png",
                           "linkText": "Click here",
                           "description": "Source: ",
-                          "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                          "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                         }
                       }],
                       "quantifiables": [{
@@ -1840,7 +1840,7 @@
                           "link": "img/entertainment-formula.png",
                           "linkText": "Click here",
                           "description": "Source: ",
-                          "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                          "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                         }
                       },
                       {
@@ -1851,7 +1851,7 @@
                           "link": "img/formula-additional-income.png",
                           "linkText": "Click here",
                           "description": "Source: ",
-                          "descriptionLink": "http://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
+                          "descriptionLink": "https://siteresources.worldbank.org/INTPSIA/Resources/490023-1120845825946/philippines_rural_electrification.pdf"
                         }
                       },
                       {
@@ -1862,7 +1862,7 @@
                           "link": "img/entertainment-formula.png",
                           "linkText": "Click here",
                           "description": "Source: ",
-                          "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                          "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                         }
                       }
                     ],
@@ -1896,7 +1896,7 @@
                         "link": "img/entertainment-formula.png",
                         "linkText": "Click here",
                         "description": "Source: ",
-                        "descriptionLink": "http://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
+                        "descriptionLink": "https://www.socialvalueuk.org/app/uploads/2016/03/SROI%20Developingpower%20GSVC.pdf"
                       }
                     }],
                     "quantifiables": [{
@@ -1945,15 +1945,15 @@
     "Impact_Reports": {
       "Listing": [{
           "Label": "Attachment",
-          "DownloadUrl": "http://www.africau.edu/images/default/sample.pdf"
+          "DownloadUrl": "https://www.africau.edu/images/default/sample.pdf"
         },
         {
           "Label": "Attachment",
-          "DownloadUrl": "http://www.africau.edu/images/default/sample.pdf"
+          "DownloadUrl": "https://www.africau.edu/images/default/sample.pdf"
         },
         {
           "Label": "Attachment",
-          "DownloadUrl": "http://www.africau.edu/images/default/sample.pdf"
+          "DownloadUrl": "https://www.africau.edu/images/default/sample.pdf"
         }
       ]
     }
