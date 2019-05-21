@@ -56,6 +56,8 @@ class SocialReturnController {
 
     calculateSroiMultiplier(dataset) {
         dataset = dataset || this.selectedDataset;
+        if(!dataset) return;
+        
         this.totalIncome = this.calculateTotalIncome(dataset);
 
         this.totalInvestment = dataset.investments.reduce((accumulator, investment) => {

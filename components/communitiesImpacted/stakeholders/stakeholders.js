@@ -26,6 +26,8 @@ class StakeholdersController {
 
     calculateDollarValue(quantifiable, stakeholder) {
         stakeholder = stakeholder || this.currentStakeholder;
+        if(!stakeholder || !this.stakeholders) return;
+
         return (
             quantifiable.dollarValue *
             this.stakeholders.multiplier *
@@ -35,6 +37,8 @@ class StakeholdersController {
 
     calculateTotalDollarValue(stakeholder) {
         stakeholder = stakeholder || this.currentStakeholder;
+        if(!stakeholder) return;
+
         return stakeholder.dollarQuantifiables.reduce(
             (accumulator, currentValue) =>
                 accumulator +
