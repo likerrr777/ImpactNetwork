@@ -563,40 +563,5 @@ app.controller("MainCtrl", [
         $scope.CountryIcons = community.CountryIcons;
       }
     }
-
-    $scope.invests = invests;
-
-    function invests(val, key) {
-      $scope.Investments[key].Value = val;
-
-      $.each($scope.Investments, function (k, dt) {
-        if (k == key) {
-          if (val == "") {
-            val = parseInt(0);
-          }
-        }
-      });
-      intotals();
-      $.each($scope.Investments, function (k, dt) {
-        $scope.Investments[k].color = $scope.invest_color[k].color;
-      });
-      //This function effected graph on-blur
-      getinputvalue();
-    }
-    $scope.intotals = $scope.intotals;
-
-    function intotals() {
-      $scope.intotal = 0;
-      $.each($scope.Investments, function (k, dt) {
-        if (dt.Value !== "") {
-          $scope.intotal += parseInt(dt.Value);
-        }
-      });
-    }
-    $scope.showInvestmentModal = showInvestmentModal;
-
-    function showInvestmentModal() {
-      $("#investmentModal").modal("show");
-    }
   }
 ]);

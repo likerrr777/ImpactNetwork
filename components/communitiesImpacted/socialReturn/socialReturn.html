@@ -91,7 +91,7 @@
         </div>
         <stakeholders stakeholders="$ctrl.selectedDataset.stakeholders" static-resources="$ctrl.staticResources">
         </stakeholders>
-        
+
         <section style="margin-top: 10px;">
             <div class="table_tab_a" style="border: 1px solid #dedede;">
               <div class="container-fluid">
@@ -136,6 +136,28 @@
                 </div>
               </div>
             </div>
+            <div class="modal fade" id="investmentModal" role="dialog">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="add_cl_rw">
+                        <div class="modal-body mx-3">
+                          <div class="md-form mb-5">
+                            <label for="text">Text</label>
+                            <input type="text" id="text1" class="form-control" ng-model="$ctrl.newInvestment.name">
+                          </div>
+                          <div class="md-form mb-4">
+                            <label for="text">Number</label>
+                            <input type="number" id="value1" class="form-control" ng-model="$ctrl.newInvestment.value">
+                          </div>
+                          <br>
+                          <button type="button" class="btn btn-primary" ng-click="$ctrl.addInvestment($ctrl.newInvestment)">Add</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </section>
     </div>
 </div>

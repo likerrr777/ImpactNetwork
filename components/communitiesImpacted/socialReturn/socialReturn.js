@@ -99,6 +99,21 @@ class SocialReturnController {
         return color;
     }
 
+    showInvestmentModal() {
+        this.newInvestment = {
+            name: '',
+            value: 0
+        };
+        this.investmentModal = $("#investmentModal");
+        this.investmentModal.modal("show");
+    }
+
+    addInvestment(newInvestment) {
+        this.selectedDataset.investments.push(newInvestment);
+        this.investmentModal.modal("toggle");
+        this.newInvestment = {};
+    }
+
     $onChanges(changesObj) {
         this.init();
     }
