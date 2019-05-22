@@ -56,13 +56,10 @@ class SocialReturnController {
 
     calculateSroiMultiplier(dataset) {
         dataset = dataset || this.selectedDataset;
-        if(!dataset) return;
-        
-        this.totalIncome = this.calculateTotalIncome(dataset);
+        if (!dataset) return;
 
-        this.totalInvestment = dataset.investments.reduce((accumulator, investment) => {
-            return accumulator + parseInt(investment.value);
-        }, 0);
+        this.totalIncome = this.calculateTotalIncome(dataset);
+        this.totalInvestment = this.calculateTotalInvestment(dataset);
 
         this.updateSocialReturnsChart();
         this.updateInvestmentChart();
@@ -74,6 +71,13 @@ class SocialReturnController {
         dataset = dataset || this.selectedDataset;
         return dataset.stakeholders.data.reduce((accumulator, stakeholder) => {
             return accumulator + this.stakeholdersController.calculateTotalDollarValue(stakeholder);
+        }, 0);
+    }
+
+    calculateTotalInvestment(dataset) {
+        dataset = dataset || this.selectedDataset;
+        return dataset.investments.reduce((accumulator, investment) => {
+            return accumulator + parseInt(investment.value);
         }, 0);
     }
 
