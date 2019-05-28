@@ -62,53 +62,6 @@
 <section class="progress_bar">
 </section>
 <social-return years-data="community.years" static-resources="projectData.sharedResources.stakeholders"></social-return>
-<section class="as_sec" style="margin-top: 10px;">
-  <div class="table_tab_a" style="border: 1px solid #dedede;">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12" style="padding-left: 0px; padding-right: 0px;">
-          <ul class="nav nav-tabs table_tabs7" id="myTabs" role="tablist">
-            <li role="presentation" class="active"><a href="#investment" id="home-tab" role="tab" data-toggle="tab" aria-controls="home"
-                aria-expanded="true">Investment (${{intotal}})</a></li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade" role="tabpanel" id="investment" aria-labelledby="home-tab">
-              <div class="container-fluid">
-                <div class="row" style="border-bottom: 1px solid #ccc;">
-                  <div class="col-md-12 elements-color" id="auto_height1" style="border-right: 1px solid #ccc;  padding-left: 0px; padding-right: 0px;">
-                    <ul class="list-style">
-                      <li ng-repeat="invest in Investments track by $index">
-                        <span class="tcl_b ng-binding" style="float: right;">
-                          <input type="text" ng-model="invest.Value" class="c_val" ng-blur="invests(invest.Value,$index)">
-                        </span>
-                        <span class="tcl_b ng-binding">{{invest.Label}}</span>
-                      </li>
-                    </ul>
-                    <a href="#" ng-click="showInvestmentModal()" class="plus2" style="margin-left: 5px; line-height: 3;">+
-                      Add</a>
-                  </div>
-
-                </div>
-                <div class="row">
-                  <div class="col-md-8" style="background-color: #01ab63;height: 38px;">
-                  </div>
-                  <div class="col-md-4" style="background-color: #01ab63;">
-                    <div class="total-amount">
-                      <span>Total</span>
-                      <span class="pull-right">${{intotal}}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--/investment-->
-          </div>
-        </div>
-        <!--/col-md-12-->
-      </div>
-    </div>
-  </div>
-</section>
 <section>
   <div class="content_box a3">
     <div class="row">
@@ -146,29 +99,6 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" ng-click="getSelReturn()">Add</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="investmentModal" role="dialog">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="modal-body">
-        <div class="add_cl_rw">
-          <div class="modal-body mx-3">
-            <div class="md-form mb-5">
-              <label for="text">Text</label>
-              <input type="text" id="text1" class="form-control" ng-model="text1">
-            </div>
-            <div class="md-form mb-4">
-              <label for="text">Number</label>
-              <input type="number" id="value1" class="form-control" ng-model="n1">
-            </div>
-            <br>
-            <button type="button" class="btn btn-primary" ng-click="getinputvalue()">Add</button>
-          </div>
-        </div>
       </div>
     </div>
   </div>

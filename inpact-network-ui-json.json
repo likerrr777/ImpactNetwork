@@ -1929,19 +1929,6 @@
         ]
       }
     ],
-    "Investments": [{
-        "Label": "Total Capital Expenses",
-        "Value": "6000"
-      },
-      {
-        "Label": "Total Operating Expenses",
-        "Value": "111560"
-      },
-      {
-        "Label": "Total Education and Outreach Expenses",
-        "Value": "23000"
-      }
-    ],
     "Impact_Reports": {
       "Listing": [{
           "Label": "Attachment",

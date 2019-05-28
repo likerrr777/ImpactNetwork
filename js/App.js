@@ -46,9 +46,7 @@ app.controller("MainCtrl", [
     $scope.obj1 = {};
     $scope.obj2 = {};
     $scope.outcomehighlight = outcomehighlight;
-    $scope.showformaula = showformaula;
     $scope.Funding_rasing_GraphPlotting1 = [];
-    $scope.Investments = [];
     $scope.impact_fg = {};
     $scope.MeasurableOutcomes1 = [];
     $scope.investmentChart = [];
@@ -221,10 +219,6 @@ app.controller("MainCtrl", [
         ///Chart code
         $scope.countryChart =
           response.data.CommunitiesImpactedPage.Communities[0].ListofItems;
-        $scope.Investments = response.data.CommunitiesImpactedPage.Investments;
-        $.each($scope.Investments, function (k, dt) {
-          $scope.intotal = $scope.intotal + parseInt(dt.Value);
-        });
         $scope.community = response.data.CommunitiesImpactedPage.Communities[0];
         $scope.selectedYear = $scope.community.years[0];
         $scope.selectedDataset = $scope.selectedYear.dataset[0];
@@ -241,16 +235,11 @@ app.controller("MainCtrl", [
           $scope.selcountry[dty.CountryName] = false;
         });
 
-        $scope.invstChart = response.data.CommunitiesImpactedPage.Investments;
-        $scope.invest_color = [];
-
         $scope.CommunityInsights =
           response.data.CommunitiesImpactedPage.CommunityInsights;
 
         $scope.Impact_Reports =
           response.data.CommunitiesImpactedPage.Impact_Reports.Listing;
-        //Investments
-        $scope.Investments = response.data.CommunitiesImpactedPage.Investments;
 
         $scope.Communities = response.data.CommunitiesImpactedPage.Communities;
         $.each($scope.Communities, function (key, dty) {
@@ -269,9 +258,6 @@ app.controller("MainCtrl", [
         });
         mapclickfun(0);
 
-        //Social Returns Bottom Block
-        $scope.socialReturnValue = 0;
-
         $scope.Funding_rasing_GraphPlotting =
           $scope.projectData.Fund_and_Risk.Funding_rasing_over_the_period_of_time.GraphPlotting;
         $.each($scope.Funding_rasing_GraphPlotting, function (ky, dty) {
@@ -289,14 +275,12 @@ app.controller("MainCtrl", [
     $scope.timeDiffInMinutes = timeDiffInMinutes;
     $scope.dateMonth = dateMonth;
     $scope.selectProject = selectProject;
-    $scope.showInvest = showInvest;
     $scope.hight_outcome = hight_outcome;
     $scope.showDesc = showDesc;
     $scope.mileStCmnt = mileStCmnt;
     $scope.testGal = testGal;
     $scope.selectProj = selectProj;
     $scope.impact_fg = {};
-    $scope.closeformula = closeformula;
 
     $scope.myDataSource = {
       chart: {
@@ -383,17 +367,6 @@ app.controller("MainCtrl", [
       $scope.activeCircle = actv;
     }
 
-    function closeformula(idx, index) {
-      $scope.impact_fg[idx][index] = false;
-    }
-
-    function showformaula(idx, index) {
-      $.each($scope.impact_fg[idx], function (key, dt) {
-        $scope.impact_fg[idx][key] = false;
-      });
-      $scope.impact_fg[idx][index] = true;
-    }
-
     $scope.showtag = showtag;
 
     function showtag(idx, index) {
@@ -409,6 +382,7 @@ app.controller("MainCtrl", [
       $scope.outputs_tag_[idx][index] = false;
     }
 
+    $scope.closeoutcometag = closeoutcometag;
     function closeoutcometag(idx, index) {
       $scope.outcomes_tag_[idx][index] = false;
     }
@@ -426,10 +400,6 @@ app.controller("MainCtrl", [
       $scope.CommunityName = $scope.Communities[index].CommunityName;
       $scope.CountryIcons = $scope.Communities[index].CountryIcons;
       $scope.selcountry[$scope.CountryName] = true;
-    }
-
-    function showInvest() {
-      $("#investModal").modal("show");
     }
 
     function selectProject(index) {
@@ -577,41 +547,6 @@ app.controller("MainCtrl", [
         $scope.CommunityName = community.CommunityName;
         $scope.CountryIcons = community.CountryIcons;
       }
-    }
-
-    $scope.invests = invests;
-
-    function invests(val, key) {
-      $scope.Investments[key].Value = val;
-
-      $.each($scope.Investments, function (k, dt) {
-        if (k == key) {
-          if (val == "") {
-            val = parseInt(0);
-          }
-        }
-      });
-      intotals();
-      $.each($scope.Investments, function (k, dt) {
-        $scope.Investments[k].color = $scope.invest_color[k].color;
-      });
-      //This function effected graph on-blur
-      getinputvalue();
-    }
-    $scope.intotals = $scope.intotals;
-
-    function intotals() {
-      $scope.intotal = 0;
-      $.each($scope.Investments, function (k, dt) {
-        if (dt.Value !== "") {
-          $scope.intotal += parseInt(dt.Value);
-        }
-      });
-    }
-    $scope.showInvestmentModal = showInvestmentModal;
-
-    function showInvestmentModal() {
-      $("#investmentModal").modal("show");
     }
   }
 ]);
