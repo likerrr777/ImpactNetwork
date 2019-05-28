@@ -10,6 +10,13 @@ let app = angular
   .component("stakeholders", StakeholderComponent)
   .component("socialReturn", SocialReturnComponent);
 
+app.config(['$locationProvider', function ($locationProvider) {
+  $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false
+  })
+}])
+
 app.filter("range", function () {
   return function (input, total) {
     total = parseInt(total);
@@ -25,7 +32,8 @@ app.filter("range", function () {
 app.controller("MainCtrl", [
   "$scope",
   "$http",
-  function ($scope, $http) {
+  "$location",
+  function ($scope, $http, $location) {
     $scope.mapclickfun = mapclickfun;
     $scope.output = [];
     $scope.social_chart_arr = [];
@@ -53,8 +61,15 @@ app.controller("MainCtrl", [
     $scope.multiplycm = 1;
     $scope.ttlsocialinvestment = 0;
 
-    $http
-      .get("inpact-network-ui-json.json")
+
+    
+    let dataSourceUrl = $location.search().dataSource || "inpact-network-ui-json.json";
+
+    let request = {
+      method: "GET",
+      url: dataSourceUrl
+    };
+    $http(request)
       .then(function (response) {
         $scope.projectData = response.data;
 
