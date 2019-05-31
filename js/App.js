@@ -63,20 +63,26 @@ app.controller("MainCtrl", [
 
 
     let dataSourceUrl = $location.search().dataSource;
+    let origin;
 
     if(!dataSourceUrl) {
       dataSourceUrl =  "inpact-network-ui-json.json";
     } else {
       dataSourceUrl = "https://cors-anywhere.herokuapp.com/" + dataSourceUrl; 
+      origin = new URL(dataSourceUrl).origin;
     }
 
     let request = {
       method: "GET",
-      url: dataSourceUrl,
-      headers: {
-        "origin": new URL(dataSourceUrl).origin
-      }
+      url: dataSourceUrl
     };
+    
+    if(origin) {
+      request.headers = {
+        "origin": origin
+      }
+    }
+
     $http(request)
       .then(function (response) {
         $scope.projectData = response.data;
