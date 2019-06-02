@@ -25,9 +25,42 @@ class SocialReturnController {
 
         this.selectedDataset = dataset;
         this.stakeholdersController.stakeholders = this.selectedDataset.stakeholders;
+        if(this.stakeholdersController.stakeholders.data.length > 2){
+            this.addScroll();
+        }
+        else{
+            this.removeScroll();
+        }
 
         this.stakeholdersColors = this.selectedDataset.stakeholders.data.map((stakeholder) => this.getRandomColor());
         this.investmentsColors = this.selectedDataset.investments.map((investment) => this.getRandomColor());
+    }
+
+    addScroll(){
+        var stakholdersWrapperInterval = setInterval(function(){
+            var stakholdersWrapper = document.querySelector(".pro_pdng.scrollable");
+            var stakholders = document.querySelectorAll(".pro_pdng.scrollable .progress_div3.core.ng-scope")
+            var firstStakholderHeight = stakholders[0].clientHeight;
+            if(stakholdersWrapper && firstStakholderHeight > 0 && stakholders){
+                var heightToSet = stakholders[0].clientHeight + stakholders[1].clientHeight;
+                stakholdersWrapper.style.height = heightToSet+'px';
+                stakholdersWrapper.style.overflowY = "scroll";
+                clearInterval(stakholdersWrapperInterval)
+            }
+        }, 100);
+    }
+
+    removeScroll(){
+        var stakholdersWrapperInterval = setInterval(function(){
+            var stakholdersWrapper = document.querySelector(".pro_pdng.scrollable");
+            var stakholders = document.querySelectorAll(".pro_pdng.scrollable .progress_div3.core.ng-scope")
+            var firstStakholderHeight = stakholders[0].clientHeight;
+            if(stakholdersWrapper && firstStakholderHeight > 0 && stakholders){
+                stakholdersWrapper.style.height = 'auto';
+                stakholdersWrapper.style.overflowY = "unset";
+                clearInterval(stakholdersWrapperInterval)
+            }
+        }, 100);
     }
 
     updateSocialReturnsChart() {
