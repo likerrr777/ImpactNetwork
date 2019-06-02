@@ -1,0 +1,12 @@
+<div class="dropdown-component" ng-if="$ctrl.data" tabindex="-1" ng-blur="$ctrl.close()">
+    <select ng-model="$ctrl.selectedItem" ng-options="item.name for item in $ctrl.data track by item.name"
+        ng-change="$ctrl.onChange({item: $ctrl.selectedItem})"></select>
+    <div class="selected-item" ng-click="$ctrl.toggle()">
+        <span>
+            {{$ctrl.selectedItem.name}}
+        </span>
+    </div>
+    <div class="items" ng-show="$ctrl.isOpened">
+        <div ng-repeat="item in $ctrl.data" ng-click="$ctrl.onItemClick(item)">{{item.name}}</div>
+    </div>
+</div>

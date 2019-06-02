@@ -3,14 +3,11 @@
   <div class="underscore"></div>
   <div class="content">
     <div>
-      <div class="col-sm-3 year-dropdown">
-        <select ng-model="$ctrl.selectedYear" ng-options="year.name for year in $ctrl.yearsData track by year.name"
-          ng-change="$ctrl.changeYear($ctrl.selectedYear)"></select>
+      <div class="year-dropdown">
+          <dropdown data="$ctrl.yearsData" on-change="$ctrl.changeYear(item)"></dropdown>
       </div>
-      <div class="col-sm-9 dataset-dropdown">
-        <select ng-model="$ctrl.selectedDataset"
-          ng-options="dataset.name for dataset in $ctrl.selectedYear.dataset track by dataset.name"
-          ng-change="$ctrl.changeDataset($ctrl.selectedDataset)"></select>
+      <div class="dataset-dropdown">
+          <dropdown data="$ctrl.selectedYear.dataset" on-change="$ctrl.changeDataset(item)"></dropdown>
       </div>
     </div>
     <div class="quantifiables-container">

@@ -1,4 +1,5 @@
 import "../css/styles.scss";
+import DropdownComponent from "../components/shared/dropdown/dropdown";
 import SocialImpactComponent from "../components/overview/socialImpact/socialImpact";
 import StakeholderComponent from "../components/communitiesImpacted/stakeholders/stakeholders";
 import SocialReturnComponent from "../components/communitiesImpacted/socialReturn/socialReturn";
@@ -6,6 +7,7 @@ import SocialReturnComponent from "../components/communitiesImpacted/socialRetur
 
 let app = angular
   .module("MainApp", ["ng-fusioncharts"])
+  .component("dropdown", DropdownComponent)
   .component("socialImpact", SocialImpactComponent)
   .component("stakeholders", StakeholderComponent)
   .component("socialReturn", SocialReturnComponent);
@@ -76,7 +78,7 @@ app.controller("MainCtrl", [
       method: "GET",
       url: dataSourceUrl
     };
-    
+
     if(origin) {
       request.headers = {
         "origin": origin
