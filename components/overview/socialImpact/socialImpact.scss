@@ -9,27 +9,21 @@
   }
 
   .content {
-
     .year-dropdown,
     .dataset-dropdown {
       height: 50px;
       text-align: center;
+      float: left;
     }
 
     .dataset-dropdown {
       background-color: $color-green;
+      width: 75%;
     }
 
     .year-dropdown {
       background-color: $color-green-black;
-    }
-
-    select {
-      height: 100%;
-      background-color: inherit;
-      font-size: 22px;
-      color: white;
-      border: none;
+      width: 25%;
     }
 
     .image-description {

@@ -2932,6 +2932,70 @@ span.functForm.popover__wrapper2 {
   font-size: 20px;
   color: #07c776; }
 
+.dropdown-component {
+  position: relative;
+  height: 100%; }
+  .dropdown-component:focus {
+    outline: none; }
+  .dropdown-component select {
+    display: none; }
+  .dropdown-component .selected-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    font-size: 22px;
+    cursor: pointer; }
+    .dropdown-component .selected-item span:after {
+      display: inline-block;
+      margin: 0 0 4px 2px;
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 6px 0 6px;
+      border-color: white transparent transparent transparent; }
+  .dropdown-component .items {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transform: translate(-50%, 100%);
+    background-color: #E8EAEB;
+    text-align: center;
+    color: #07c776;
+    font-size: 22px;
+    width: 100%;
+    max-width: 250px; }
+    .dropdown-component .items div {
+      line-height: 32px;
+      cursor: pointer;
+      margin: 0 auto;
+      padding: 0 34px; }
+      .dropdown-component .items div:not(:last-child) {
+        border-bottom: 1px solid #07c776; }
+.highlighted-text {
+  display: block;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background-color: #01a25e;
+  padding: 12px 0; }
+
+.title-underscore {
+  width: 45px;
+  height: 6px;
+  background-color: #07c776;
+  border-radius: 3px;
+  margin: 15px 0 20px 0; }
+
+.main-title {
+  font-size: 20px;
+  color: #07c776; }
+
 .social-impact-component {
   background-color: white;
   padding: 15px 20px; }
@@ -2940,17 +3004,14 @@ span.functForm.popover__wrapper2 {
   .social-impact-component .content .year-dropdown,
   .social-impact-component .content .dataset-dropdown {
     height: 50px;
-    text-align: center; }
+    text-align: center;
+    float: left; }
   .social-impact-component .content .dataset-dropdown {
-    background-color: #07c776; }
+    background-color: #07c776;
+    width: 75%; }
   .social-impact-component .content .year-dropdown {
-    background-color: #01a25e; }
-  .social-impact-component .content select {
-    height: 100%;
-    background-color: inherit;
-    font-size: 22px;
-    color: white;
-    border: none; }
+    background-color: #01a25e;
+    width: 25%; }
   .social-impact-component .content .image-description {
     display: block;
     text-align: center;
@@ -3158,12 +3219,6 @@ span.functForm.popover__wrapper2 {
     margin-right: 1px; }
   .social-return-component .dataset-dropdown {
     width: 198px; }
-  .social-return-component select {
-    height: 100%;
-    background-color: inherit;
-    font-size: 22px;
-    color: white;
-    border: none; }
   .social-return-component .content .sroi-multiplier-title {
     color: white;
     font-size: 20px;
