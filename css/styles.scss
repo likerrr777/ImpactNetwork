@@ -410,7 +410,12 @@ nav.navbar.navbar-default.navbar-fixed-top.nav2 {
 
     border: 0;
 
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
+
+
 
 .navbar-default .navbar-nav>li>a {
 
@@ -2043,13 +2048,6 @@ ul.nav.navbar-nav.select_btn li a:active {
 
     }
 
-    nav.navbar.navbar-default.nav_select {
-
-        display: block;
-        margin-top: 60px;
-
-    }
-
 }
 
 
@@ -3152,7 +3150,7 @@ a.menu-item {
 
     .csstransforms .smartcms_wrapper {
 
-        width: 40em;
+        width: 38em;
 
     }
 
@@ -4605,22 +4603,6 @@ a.ins_c {
     }
 }
 
-@media (max-width: 375px) {
-    nav.navbar.navbar-default.nav_select {
-        display: block;
-        margin-top: 91px;
-    }
-
-}
-
-@media (max-width: 320px) {
-    nav.navbar.navbar-default.nav_select {
-        display: block;
-        margin-top: 93px;
-    }
-
-}
-
 span.proj_Numb {
     font-size: 23px;
     margin-right: 5px;
@@ -4882,8 +4864,9 @@ span.functForm.popover__wrapper2 {
 
 .gol_h .second_col .proj_goals_title {
     margin-top: 20px;
-    background-color: #07c776;
-    color: #ffffff;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 700;
     text-align: center;
     padding: 4px 0;
 

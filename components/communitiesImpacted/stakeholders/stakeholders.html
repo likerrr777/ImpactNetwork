@@ -10,7 +10,7 @@
             <div>
                 <span>{{$ctrl.staticResources.numberLabel}}</span>
                 <span> : </span>
-                <input type="text" class="input" ng-model="$ctrl.currentStakeholder.number"/>
+                <input type="text" class="input" ng-model="$ctrl.currentStakeholder.number" />
             </div>
             <div>
                 <span>{{$ctrl.staticResources.totalValueLabel}}</span>
@@ -43,14 +43,18 @@
                             <div class="icon-wrapper" ng-class="quantifiable.isPositive ? 'positive': 'negative'">
                                 <img
                                     ng-src="{{quantifiable.isPositive ? $ctrl.staticResources.dollarPositiveImage: $ctrl.staticResources.dollarNegativeImage}}" />
-                                    <div class="impact-title">{{quantifiable.isPositive ? $ctrl.staticResources.positiveImpactTitle : $ctrl.staticResources.negativeImpactTitle}}</div>
+                                <div class="impact-title">
+                                    {{quantifiable.isPositive ? $ctrl.staticResources.positiveImpactTitle : $ctrl.staticResources.negativeImpactTitle}}
                                 </div>
+                            </div>
                         </td>
                         <td>{{$index + 1}}</td>
                         <td>{{quantifiable.description}}</td>
                         <td>
-                            <span>$</span>
-                            <input type="text" class="input" ng-model="quantifiable.dollarValue"/>
+                            <div class="input-wrapper">
+                                <span>$</span>
+                                <input type="text" class="input" ng-model="quantifiable.dollarValue" />
+                            </div>
                         </td>
                         <td>{{$ctrl.calculateDollarValue(quantifiable)}}</td>
                         <td>Link</td>
@@ -76,8 +80,10 @@
                             <div class="icon-wrapper" ng-class="quantifiable.isPositive ? 'positive': 'negative'">
                                 <img
                                     ng-src="{{quantifiable.isPositive ? $ctrl.staticResources.plusImage: $ctrl.staticResources.minusImage}}" />
-                                    <div class="impact-title">{{quantifiable.isPositive ? $ctrl.staticResources.positiveImpactTitle : $ctrl.staticResources.negativeImpactTitle}}</div>
+                                <div class="impact-title">
+                                    {{quantifiable.isPositive ? $ctrl.staticResources.positiveImpactTitle : $ctrl.staticResources.negativeImpactTitle}}
                                 </div>
+                            </div>
                         </td>
                         <td>{{$index + 1}}</td>
                         <td>{{quantifiable.description}}</td>
@@ -103,9 +109,11 @@
                             <div class="icon-wrapper" ng-class="quantifiable.isPositive ? 'positive': 'negative'">
                                 <img
                                     ng-src="{{quantifiable.isPositive ? $ctrl.staticResources.arrowTopImage: $ctrl.staticResources.arrowBottomImage}}" />
-                                    <div class="impact-title">{{quantifiable.isPositive ? $ctrl.staticResources.positiveImpactTitle : $ctrl.staticResources.negativeImpactTitle}}</div>
-
+                                <div class="impact-title">
+                                    {{quantifiable.isPositive ? $ctrl.staticResources.positiveImpactTitle : $ctrl.staticResources.negativeImpactTitle}}
                                 </div>
+
+                            </div>
                         </td>
                         <td>{{$index + 1}}</td>
                         <td>{{quantifiable.description}}</td>

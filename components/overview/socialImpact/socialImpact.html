@@ -4,10 +4,10 @@
   <div class="content">
     <div>
       <div class="year-dropdown">
-          <dropdown data="$ctrl.yearsData" on-change="$ctrl.changeYear(item)"></dropdown>
+        <dropdown data="$ctrl.yearsData" on-change="$ctrl.changeYear(item)"></dropdown>
       </div>
       <div class="dataset-dropdown">
-          <dropdown data="$ctrl.selectedYear.dataset" on-change="$ctrl.changeDataset(item)"></dropdown>
+        <dropdown data="$ctrl.selectedYear.dataset" on-change="$ctrl.changeDataset(item)"></dropdown>
       </div>
     </div>
     <div class="quantifiables-container">
@@ -20,7 +20,7 @@
             <span class="value">{{ $ctrl.sroiMultiplier }}</span>
             <div class="image-wrapper">
               <img ng-src="{{
-                  sroiMultiplier >= 1
+                $ctrl.sroiMultiplier >= 1
                     ? $ctrl.staticResources.dollarPositiveImage
                     : $ctrl.staticResources.dollarNegativeImage
                 }}" />

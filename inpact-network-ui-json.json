@@ -12,7 +12,7 @@
       "totalValueLabel": "Total dollar value",
       "dollarQuantifiablesTitle": "$ Quantifiables",
       "quantifiablesTitle": "Quantifiables",
-      "nonQuantifiablesTitle": "Nob Quantifiables",
+      "nonQuantifiablesTitle": "Non Quantifiables",
       "arrowTopImage": "img/arrow-top.png",
       "arrowBottomImage": "img/arrow-bottom.png",
       "dollarPositiveImage": "img/dollar-positive.png",
@@ -1120,6 +1120,11 @@
                         "description": "Some positive quantifiable",
                         "value": "5",
                         "isPositive": true
+                      },
+                      {
+                        "description": "Some negative quantifiable",
+                        "value": "10",
+                        "isPositive": false
                       }],
                       "nonQuantifiables": [{
                           "description": "Some positive nonQuantifiable",

@@ -47,7 +47,7 @@
     width: 100%;
 
     @media (max-width: 768px) {
-      overflow-x: scroll;
+      flex-flow: column;
     }
 
     &>* {
@@ -58,7 +58,7 @@
       align-items: stretch;
 
       @media (max-width: 768px) {
-        min-width: fit-content;
+        min-height: fit-content;
       }
 
       &:first-child {
@@ -101,7 +101,7 @@
 
       .image-wrapper {
         img {
-          width: 74px;
+          width: 58px;
 
           @media (max-width: 768px) {
             width: 50px;
@@ -111,7 +111,7 @@
 
       .value {
         margin-right: 8px;
-        line-height: 70px;
+        line-height: 60px;
         vertical-align: top;
       }
 

@@ -25,6 +25,10 @@
 
     .slider-content {
       padding: 0px 10px;
+
+      span:first-child {
+        font-weight: 700;
+      }
     }
 
     .triangle-left,
@@ -57,10 +61,11 @@
 
     table {
       thead {
-        td + {
+        td+ {
           & td:nth-child(even) {
             background-color: $color-green;
           }
+
           & td:nth-child(odd) {
             background-color: white;
           }
@@ -72,7 +77,7 @@
           font-size: 12px;
           line-height: 12px;
 
-          & + td:nth-child(even) {
+          &+td:nth-child(even) {
             border-top: 2px solid white;
           }
 
@@ -86,10 +91,11 @@
         }
       }
 
-      td + {
+      td+ {
         & td:nth-child(even) {
           background-color: $color-grey;
         }
+
         & td:nth-child(odd) {
           background-color: white;
         }
@@ -99,9 +105,11 @@
         &:first-child {
           width: 15%;
         }
+
         &:nth-child(2) {
           width: 15%;
         }
+
         &:nth-child(3) {
           width: 141px;
         }
@@ -119,13 +127,21 @@
       @media (max-width: 768px) {
         overflow-x: scroll;
       }
+
+      .input-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        span {
+          padding-right: 5px;
+        }
+      }
     }
 
-    .quantifiables-block {
-    }
+    .quantifiables-block {}
 
-    .non-quantifiables-block {
-    }
+    .non-quantifiables-block {}
   }
 
   .impact-title {
