@@ -439,10 +439,10 @@ nav.navbar.navbar-default.navbar-fixed-top.nav2 {
             color: white;
         }
     }
-}
 
-.navbar-header {
-    margin-top: 46px;
+    & + .navbar-header {
+        margin-top: 46px;
+    }
 }
 
 

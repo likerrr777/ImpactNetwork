@@ -253,9 +253,8 @@ nav.navbar.navbar-default.navbar-fixed-top.nav2 {
       font-size: 13px;
       line-height: 26px;
       color: white; }
-
-.navbar-header {
-  margin-top: 46px; }
+  .mobile-header + .navbar-header {
+    margin-top: 46px; }
 
 .navbar-default .navbar-nav > li > a {
   color: #fff;
