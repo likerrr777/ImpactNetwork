@@ -7,15 +7,16 @@
   padding: 12px 0; }
 
 .title-underscore {
-  width: 45px;
-  height: 6px;
+  width: 42px;
+  height: 4px;
   background-color: #07c776;
   border-radius: 3px;
-  margin: 15px 0 20px 0; }
+  margin: 10px 0 20px 0; }
 
 .main-title {
   font-size: 20px;
-  color: #07c776; }
+  color: #07c776;
+  font-weight: 700; }
 
 .dropdown-component {
   position: relative;
@@ -71,15 +72,16 @@
   padding: 12px 0; }
 
 .title-underscore {
-  width: 45px;
-  height: 6px;
+  width: 42px;
+  height: 4px;
   background-color: #07c776;
   border-radius: 3px;
-  margin: 15px 0 20px 0; }
+  margin: 10px 0 20px 0; }
 
 .main-title {
   font-size: 20px;
-  color: #07c776; }
+  color: #07c776;
+  font-weight: 700; }
 
 .social-impact-component {
   background-color: white;
@@ -168,15 +170,16 @@
   padding: 12px 0; }
 
 .title-underscore {
-  width: 45px;
-  height: 6px;
+  width: 42px;
+  height: 4px;
   background-color: #07c776;
   border-radius: 3px;
-  margin: 15px 0 20px 0; }
+  margin: 10px 0 20px 0; }
 
 .main-title {
   font-size: 20px;
-  color: #07c776; }
+  color: #07c776;
+  font-weight: 700; }
 
 .social-return-component {
   background-color: white;
@@ -239,15 +242,16 @@
   padding: 12px 0; }
 
 .title-underscore {
-  width: 45px;
-  height: 6px;
+  width: 42px;
+  height: 4px;
   background-color: #07c776;
   border-radius: 3px;
-  margin: 15px 0 20px 0; }
+  margin: 10px 0 20px 0; }
 
 .main-title {
   font-size: 20px;
-  color: #07c776; }
+  color: #07c776;
+  font-weight: 700; }
 
 .add_button a {
   background-color: #07c776;
@@ -3145,15 +3149,16 @@ span.functForm.popover__wrapper2 {
   padding: 12px 0; }
 
 .title-underscore {
-  width: 45px;
-  height: 6px;
+  width: 42px;
+  height: 4px;
   background-color: #07c776;
   border-radius: 3px;
-  margin: 15px 0 20px 0; }
+  margin: 10px 0 20px 0; }
 
 .main-title {
   font-size: 20px;
-  color: #07c776; }
+  color: #07c776;
+  font-weight: 700; }
 
 .stakeholders-component .input {
   width: 76px;

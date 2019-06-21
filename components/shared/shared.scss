@@ -16,14 +16,15 @@ $color-grey-black-1: #E8EAEB;
 }
 
 .title-underscore {
-  width: 45px;
-  height: 6px;
+  width: 42px;
+  height: 4px;
   background-color: $color-green;
   border-radius: 3px;
-  margin: 15px 0 20px 0;
+  margin: 10px 0 20px 0;
 }
 
 .main-title {
   font-size: 20px;
   color: $color-green;
+  font-weight: 700;
 }

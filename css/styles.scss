@@ -2030,14 +2030,10 @@ ul.nav.navbar-nav.select_btn li a:active {
 
 }
 
-@media (min-width: 768px) {
-
-    nav.navbar.navbar-default.nav_select {
-
+nav.navbar.navbar-default.nav_select {
+    @media (min-width: 768px) {
         display: none;
-
     }
-
 }
 
 @media (max-width: 768px) {
