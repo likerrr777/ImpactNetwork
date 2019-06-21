@@ -415,6 +415,12 @@ nav.navbar.navbar-default.navbar-fixed-top.nav2 {
     }
 }
 
+.navbar-default {
+    @media (max-width: 768px) {
+        background-color: white;
+    }
+}
+
 .mobile-header {
     @media (min-width: 768px) {
         display: none;
@@ -435,13 +441,14 @@ nav.navbar.navbar-default.navbar-fixed-top.nav2 {
 
         a {
             font-size: 13px;
-            line-height: 26px;
+            line-height: 29px;
             color: white;
         }
     }
 
-    & + .navbar-header {
-        margin-top: 46px;
+    &+.navbar-header {
+        margin-top: 90px;
+        background-color: #f8f8f8;
     }
 }
 

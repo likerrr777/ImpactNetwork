@@ -897,17 +897,17 @@
       }
     ],
     "TeamMember": [{
-        "Image": "https://www.clipbots.com/impact-network/uploads/partnerteam.png",
+        "Image": "img/project-lead.png",
         "Name": "Mario Aleman",
         "Degisnation": "Project Lead"
       },
       {
-        "Image": "https://www.clipbots.com/impact-network/uploads/partnerteam.png",
+        "Image": "img/project-secretary.png",
         "Name": "Alejandra Carlos",
         "Degisnation": "Project Secretary"
       },
       {
-        "Image": "https://www.clipbots.com/impact-network/uploads/partnerteam.png",
+        "Image": "img/pr-manager.png",
         "Name": "Emannuel Cardona",
         "Degisnation": "PR Manager"
       }
@@ -918,11 +918,11 @@
     "Fund_and_Risk_Insight": "30",
     "Funding_Round_Section": {
       "TotalNumber": "3",
-      "Icon": "https://www.clipbots.com/impact-network/uploads/fundingrouteicon.png"
+      "Icon": "img/funding-rounds.png"
     },
     "Funding_Amount_Section": {
       "Amount": "3,75,000",
-      "Icon": "https://www.clipbots.com/impact-network/uploads/fundingamounticon.png"
+      "Icon": "img/funding-amount.png"
     },
     "Source_of_Funding": {
       "Listing": [{
