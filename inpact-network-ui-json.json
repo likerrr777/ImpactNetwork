@@ -1032,7 +1032,7 @@
     "Communities": [{
         "CommunityName": "Bahia",
         "CountryName": "Brazil",
-        "CountryIcons": "https://www.clipbots.com/impact-network/uploads/brazilflag.png",
+        "CountryIcons": "img/flag-brazil.png",
         "Latitude": "-13.6603615",
         "Longitude": "-69.6775883",
         "ShortName": "BR",
