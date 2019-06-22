@@ -28,3 +28,12 @@ $color-grey-black-1: #E8EAEB;
   color: $color-green;
   font-weight: 700;
 }
+
+@mixin triangleBottom($size, $color) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: $size $size 0 $size;
+  border-color: $color transparent transparent transparent;
+}

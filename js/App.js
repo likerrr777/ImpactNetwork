@@ -629,5 +629,18 @@ app.controller("MainCtrl", [
     function showInvestmentModal() {
       $("#investmentModal").modal("show");
     }
+
+    (function initMobileHeader() {
+      let menuLinks = [].slice.call(document.querySelectorAll('#select_menu a'));
+      let menuSelectedItem = document.querySelector('#selectedMenuItem');
+      let menuToggleButton = document.querySelector('#menuToggleButton');
+
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          menuSelectedItem.innerText = link.innerText;
+          menuToggleButton.click();
+        })
+      });
+    })();
   }
 ]);

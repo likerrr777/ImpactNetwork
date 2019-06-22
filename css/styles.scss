@@ -421,37 +421,6 @@ nav.navbar.navbar-default.navbar-fixed-top.nav2 {
     }
 }
 
-.mobile-header {
-    @media (min-width: 768px) {
-        display: none;
-    }
-
-    margin-left: -15px;
-    background-color: #07c776;
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    border-bottom: 1px solid #00d078;
-
-    div {
-        min-width: fit-content;
-
-        a {
-            font-size: 13px;
-            line-height: 29px;
-            color: white;
-        }
-    }
-
-    &+.navbar-header {
-        margin-top: 90px;
-        background-color: #f8f8f8;
-    }
-}
-
 
 
 .navbar-default .navbar-nav>li>a {
@@ -4920,4 +4889,10 @@ span.functForm.popover__wrapper2 {
 
 .example-image {
     max-width: 100%;
+}
+
+.navbar-header {
+    .triangle-bottom {
+        @include triangleBottom(8px, #00b76a);
+    }
 }
