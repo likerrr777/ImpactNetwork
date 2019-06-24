@@ -639,6 +639,8 @@ app.controller("MainCtrl", [
         link.addEventListener('click', () => {
           menuSelectedItem.innerText = link.innerText;
           menuToggleButton.click();
+          let mainMenuItem = document.getElementById(link.dataset.target);
+          mainMenuItem.click();
         })
       });
     })();

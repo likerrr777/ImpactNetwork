@@ -97,7 +97,7 @@ class SocialReturnController {
         this.updateSocialReturnsChart();
         this.updateInvestmentChart();
 
-        return Math.round(this.totalIncome * 100 / this.totalInvestment);
+        return Math.round(this.totalIncome * 10 / this.totalInvestment) / 10.0;
     }
 
     calculateTotalIncome(dataset) {
